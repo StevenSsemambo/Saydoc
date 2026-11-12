@@ -1,0 +1,767 @@
+{
+  "remedies": [
+    {
+      "id": "ginger",
+      "name": "Ginger (Tangawizi)",
+      "local_names": [
+        "Tangawizi (Swahili/Uganda)",
+        "Ginger root"
+      ],
+      "evidence_rating": "strong",
+      "evidence_label": "Well-researched",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Nausea",
+        "Vomiting",
+        "Migraines",
+        "Inflammation",
+        "Period pain",
+        "Morning sickness",
+        "Sore throat"
+      ],
+      "active_compounds": "Gingerols and shogaols — natural anti-inflammatory and anti-nausea compounds",
+      "how_to_use": [
+        "Tea: Slice 5–6 pieces of fresh ginger, boil in 2 cups water for 10 minutes, strain, add honey and lemon",
+        "Raw: Chew a small piece for immediate nausea relief",
+        "Juice: Grate and squeeze fresh ginger, take 1 teaspoon in water",
+        "For headaches: Apply ginger paste (grated ginger + water) to temples for 20 minutes"
+      ],
+      "safety": "Very safe. Very high doses may cause heartburn. Safe in pregnancy for nausea. Mild blood-thinning effect — caution with warfarin.",
+      "science_note": "Clinical trials show ginger reduces nausea equivalent to some antiemetic medications. Anti-inflammatory compounds are well documented.",
+      "description": "A warming spice root widely used across Africa and Asia for thousands of years. One of the best-studied medicinal plants, particularly for digestive and inflammatory conditions."
+    },
+    {
+      "id": "moringa",
+      "name": "Moringa (Miracle Tree)",
+      "local_names": [
+        "Muwungu (Luganda)",
+        "Moringa oleifera"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Malnutrition",
+        "Anaemia",
+        "Inflammation",
+        "Blood sugar control",
+        "Immune support",
+        "Breastfeeding (increases milk)"
+      ],
+      "active_compounds": "Exceptionally rich in iron, vitamin A, vitamin C, calcium, protein, and antioxidants — more nutritious per gram than most foods",
+      "how_to_use": [
+        "Powder: Dry leaves in shade, grind, add 1–2 teaspoons to food or porridge daily",
+        "Tea: Boil fresh or dried leaves for 5 minutes, strain and drink",
+        "Fresh leaves: Add to soups, stews, and sauces as a vegetable — preserves nutrients",
+        "For anaemia: Combine with vitamin C (tomatoes, citrus) to maximise iron absorption"
+      ],
+      "safety": "Very safe as food. Avoid high doses of root (contains alkaloids). Avoid medicinal doses in pregnancy. Seeds have stronger medicinal effects — use leaves for general nutrition.",
+      "science_note": "One of the most nutrient-dense plants known. Contains all 9 essential amino acids. Well-studied for nutritional support in malnutrition and anaemia.",
+      "description": "Called the \"Miracle Tree\" and found throughout Uganda, moringa is one of the world's most nutrient-dense plants. Almost every part — leaf, seed, and pod — has nutritional or medicinal value."
+    },
+    {
+      "id": "turmeric",
+      "name": "Turmeric (Manjano)",
+      "local_names": [
+        "Manjano (Swahili)",
+        "Yellow ginger"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Joint inflammation",
+        "Arthritis",
+        "Digestive problems",
+        "Wound healing",
+        "Immune support",
+        "General anti-inflammatory"
+      ],
+      "active_compounds": "Curcumin — one of the most studied natural anti-inflammatory compounds",
+      "how_to_use": [
+        "Golden milk: 1 teaspoon turmeric in warm milk with black pepper and honey",
+        "Food: Add to rice, soups, curries freely — cooking in fat increases absorption",
+        "Tea: Boil 1 teaspoon in water for 10 minutes with ginger and honey",
+        "Paste: Mix with coconut oil and apply to wounds or joint areas (external use)"
+      ],
+      "safety": "Very safe at food quantities. May interact with blood-thinning medications at very high doses. Safe in pregnancy as a food spice.",
+      "science_note": "Curcumin has strong anti-inflammatory evidence comparable to some NSAIDs in laboratory studies. Key limitation: poor absorption alone — always combine with black pepper (piperine increases absorption by 2000%) and fat.",
+      "description": "A golden-yellow spice in the ginger family, used extensively in cooking and traditional medicine. Curcumin, its active compound, is among the most-studied natural anti-inflammatory substances."
+    },
+    {
+      "id": "aloe_vera",
+      "name": "Aloe Vera",
+      "local_names": [
+        "Aaloe (Luganda)",
+        "Gavakava"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Skin burns",
+        "Wound healing",
+        "Psoriasis",
+        "Eczema",
+        "Constipation (aloe latex)",
+        "Stomach lining soothing"
+      ],
+      "active_compounds": "Acemannan polysaccharides (gel) — anti-inflammatory, wound healing. Anthraquinones (latex/yellow layer) — laxative effect",
+      "how_to_use": [
+        "Gel for skin: Cut leaf, scoop out clear gel, apply directly to burns, rashes, or wounds",
+        "For stomach: 1–2 tablespoons of pure gel (not latex) in water daily",
+        "For constipation: Small amount of the yellow latex layer — use cautiously",
+        "Keep cut leaf in refrigerator up to 1 week"
+      ],
+      "safety": "Gel is very safe topically. AVOID the yellow latex layer in pregnancy, kidney disease, or long-term use — it is a strong laxative. Do not confuse the clear gel (safe) with the yellow layer (strong laxative).",
+      "science_note": "Strong evidence for wound healing and burn treatment. Good evidence for psoriasis and eczema. Growing evidence for blood sugar reduction with internal use.",
+      "description": "A succulent plant with thick, fleshy leaves containing a clear gel. Found in many Ugandan homes and gardens. Best known for its skin-soothing and wound-healing properties."
+    },
+    {
+      "id": "honey",
+      "name": "Raw Honey",
+      "local_names": [
+        "Obutukuzi (Luganda)",
+        "Honey"
+      ],
+      "evidence_rating": "strong",
+      "evidence_label": "Well-researched",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Sore throat",
+        "Cough",
+        "Wound healing",
+        "H. pylori (stomach bacteria)",
+        "Skin infections",
+        "Eye infections (with caution)",
+        "Burns"
+      ],
+      "active_compounds": "Hydrogen peroxide, methylglyoxal, bee defensin-1 — all with proven antibacterial activity",
+      "how_to_use": [
+        "For cough/sore throat: 1–2 teaspoons raw honey in warm (not boiling) water with lemon",
+        "For wounds: Apply a thin layer of raw honey directly and cover with clean cloth",
+        "For stomach: 1 tablespoon raw honey in warm water before meals for gastritis/ulcers",
+        "For burns: Apply honey after cooling burn under water — natural antibacterial dressing"
+      ],
+      "safety": "NEVER give honey to children under 1 year — risk of infant botulism. Very safe for everyone else. Raw honey is more medicinal than processed honey.",
+      "science_note": "Strong clinical evidence for wound healing — used in medical-grade products (Manuka honey). Good evidence for cough suppression — clinical trials show honey as effective as some cough syrups in children.",
+      "description": "Raw, unprocessed honey — especially dark local varieties — is far more medicinally active than commercially processed honey. One of humanity's oldest medicines, with genuine antimicrobial properties."
+    },
+    {
+      "id": "garlic",
+      "name": "Garlic (Vitunguu Saumu)",
+      "local_names": [
+        "Vitunguu saumu (Swahili)",
+        "Aayee (Luganda)"
+      ],
+      "evidence_rating": "strong",
+      "evidence_label": "Well-researched",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Blood pressure reduction",
+        "Immune support",
+        "Cholesterol",
+        "Common cold prevention",
+        "Antiparasitic (worms)",
+        "Antifungal (skin infections)"
+      ],
+      "active_compounds": "Allicin — released when garlic is crushed or chopped. Strongest antibiotic, antifungal, and cardiovascular effects",
+      "how_to_use": [
+        "For blood pressure: 1–2 raw cloves daily, crushed and left 10 minutes before eating",
+        "For immunity: Add to food when cooking — crush first then add at end of cooking",
+        "For infections: Crush 2 cloves, mix with honey, take twice daily during illness",
+        "For skin fungal infection: Crush garlic, mix with coconut oil, apply to affected area"
+      ],
+      "safety": "Very safe as food. Raw garlic can irritate an empty stomach — take with food. Can increase bleeding time — caution before surgery or with blood thinners. May cause breath odour.",
+      "science_note": "Multiple clinical trials confirm blood pressure reduction comparable to some antihypertensive medications. Good evidence for cholesterol reduction and cold prevention.",
+      "description": "One of the most well-researched medicinal plants in the world. Called \"nature's antibiotic\" for its genuine antimicrobial compounds, particularly allicin which is released when garlic is crushed or chopped."
+    },
+    {
+      "id": "lemon",
+      "name": "Lemon / Lime",
+      "local_names": [
+        "Ndimu (Luganda/Swahili)",
+        "Citrus"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Vitamin C boost",
+        "Iron absorption",
+        "Kidney stone prevention",
+        "Immune support",
+        "Sore throat",
+        "Digestive aid",
+        "Dehydration recovery"
+      ],
+      "active_compounds": "Vitamin C (ascorbic acid), citric acid, flavonoids",
+      "how_to_use": [
+        "Immune support: Squeeze half a lemon into warm water with honey every morning",
+        "For iron absorption: Always eat iron-rich foods with lemon juice",
+        "For kidney stones: Lemon juice in water daily inhibits stone formation",
+        "For sore throat: Warm water + honey + lemon 3–4 times daily",
+        "For fever: Lemon water aids rehydration"
+      ],
+      "safety": "Very safe. Acidic — rinse mouth after drinking undiluted lemon juice to protect tooth enamel. Avoid on mouth ulcers directly.",
+      "science_note": "Strong evidence that combining lemon/vitamin C with iron-rich foods doubles iron absorption. Good evidence for kidney stone prevention with regular citrate intake.",
+      "description": "The juice and peel of lemons and limes are rich in vitamin C, flavonoids, and citric acid. A staple home remedy across Africa for colds, sore throats, and digestive complaints."
+    },
+    {
+      "id": "papaya",
+      "name": "Papaya (Pawpaw)",
+      "local_names": [
+        "Papaali (Luganda)",
+        "Papai (Swahili)"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Growing evidence",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Dengue (platelet support)",
+        "Digestive enzyme support",
+        "Constipation",
+        "Wound healing",
+        "Intestinal parasites (seeds)",
+        "Inflammation"
+      ],
+      "active_compounds": "Papain (digestive enzyme), carpaine (antiparasitic), carotenoids, vitamin C",
+      "how_to_use": [
+        "For dengue: Blend fresh papaya leaves, strain, drink 30ml twice daily — not proven but widely used",
+        "For digestion: Eat ripe papaya regularly — papain aids protein digestion",
+        "For worms: Grind dried papaya seeds, mix 1 tablespoon with honey, take on empty stomach",
+        "Unripe papaya: Used as a natural meat tenderiser and has antiparasitic compounds"
+      ],
+      "safety": "Ripe papaya is very safe and nutritious. Unripe/green papaya should be avoided in pregnancy — may stimulate uterine contractions. Papaya latex can cause allergic reactions in some people. Papaya seeds are safe in small quantities.",
+      "science_note": "Emerging evidence for platelet-raising effect in dengue — still being researched. Papain's digestive properties are well established. Antiparasitic effects of seeds are documented.",
+      "description": "Every part of the papaya plant — fruit, leaves, seeds, and latex — has traditional medicinal uses. The papain enzyme in the fruit is a well-established digestive aid."
+    },
+    {
+      "id": "coconut",
+      "name": "Coconut Water and Oil",
+      "local_names": [
+        "Nazi (Swahili/Luganda)"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Rehydration (coconut water)",
+        "Electrolyte replacement",
+        "Skin infections (oil)",
+        "Scalp conditions",
+        "Antifungal (oil)",
+        "Wound care (oil)"
+      ],
+      "active_compounds": "Coconut water: Natural electrolytes (potassium, sodium, magnesium). Coconut oil: Lauric acid — antifungal, antibacterial",
+      "how_to_use": [
+        "Rehydration: Fresh coconut water during diarrhoea, vomiting, or fever — replace lost electrolytes",
+        "Skin fungal infections: Apply pure coconut oil to affected areas twice daily",
+        "For dry skin/eczema: Coconut oil as a moisturiser and anti-inflammatory",
+        "For dandruff: Massage coconut oil into scalp, leave overnight, wash out"
+      ],
+      "safety": "Coconut water is extremely safe. Coconut oil is safe topically. High in saturated fat — consume in moderation if cardiovascular risk. Avoid on latex-allergy individuals (cross-reactivity possible).",
+      "science_note": "Coconut water has electrolyte composition similar to mild ORS — good for mild rehydration. Coconut oil's antifungal properties against Candida are well documented in laboratory studies.",
+      "description": "Both coconut water (from young green coconuts) and coconut oil (pressed from mature coconut meat) have distinct and well-studied properties. Coconut water is one of the best natural oral rehydration options."
+    },
+    {
+      "id": "neem",
+      "name": "Neem (Omubirizi)",
+      "local_names": [
+        "Omubirizi (Luganda)",
+        "Mwarobaini (Swahili — '40 diseases')"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Traditional + growing research",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Skin infections",
+        "Dandruff",
+        "Scabies",
+        "Malaria prevention (mosquito repellent)",
+        "Dental hygiene",
+        "Blood sugar (early evidence)",
+        "Antifungal"
+      ],
+      "active_compounds": "Azadirachtin, nimbin, nimbidin — antiparasitic, antifungal, antibacterial, and insect-repelling compounds",
+      "how_to_use": [
+        "For skin infections: Boil neem leaves, cool water, wash affected skin area",
+        "For scabies: Apply neem oil or neem leaf paste to affected skin",
+        "For dental hygiene: Chew neem twig as traditional toothbrush — antibacterial",
+        "Mosquito repellent: Burn dry neem leaves in evening — repels mosquitoes",
+        "For dandruff: Boil leaves, use water as hair rinse"
+      ],
+      "safety": "Topical use is very safe. Do NOT consume neem oil orally — toxic to children. Avoid medicinal internal doses in pregnancy. Neem leaf tea should be used cautiously and in small amounts.",
+      "science_note": "Azadirachtin has proven antiparasitic and insecticidal properties. Good laboratory evidence for antifungal and antibacterial effects. Mwarobaini ('40 diseases') reflects deep traditional knowledge now being validated by research.",
+      "description": "One of Uganda's most valued medicinal trees, known locally as Omubirizi. Sometimes called the \"village pharmacy\" — nearly every part of the tree has documented uses for skin, teeth, and fever."
+    },
+    {
+      "id": "bitter_leaf",
+      "name": "Bitter Leaf (Vernonia amygdalina)",
+      "local_names": [
+        "Mululuza (Luganda)",
+        "Ewuro (Yoruba)",
+        "Grawa (Amharic)"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Research ongoing",
+      "available_in_uganda": true,
+      "helps_with": [
+        "Blood sugar control (diabetes)",
+        "Malaria (mild antiparasitic)",
+        "Liver support",
+        "Cholesterol",
+        "Anti-inflammatory",
+        "Digestive aid"
+      ],
+      "active_compounds": "Vernonin, vernolide, elemolide — bitter sesquiterpene lactones with documented biological activity",
+      "how_to_use": [
+        "For blood sugar: Squeeze juice from fresh leaves, drink 1–2 tablespoons before meals",
+        "Tea: Boil 5–6 leaves in 2 cups water for 10 minutes, strain, add honey to reduce bitterness",
+        "For malaria (supportive only, not replacement for treatment): Traditional preparation as tea",
+        "Fresh leaves can be added to soups and stews as a vegetable"
+      ],
+      "safety": "Generally safe at food quantities. Bitter taste limits overuse. Avoid in pregnancy — some evidence of uterine stimulation at high doses. Do not use as a replacement for diabetes medication without medical supervision.",
+      "science_note": "Good laboratory and some clinical evidence for blood glucose reduction. Antiparasitic activity against malaria parasites shown in some studies. One of the most studied African medicinal plants.",
+      "description": "Vernonia amygdalina is one of the most widely used medicinal plants in East and Central Africa. The bitterness signals the presence of active alkaloids and sesquiterpene lactones with genuine biological activity."
+    },
+    {
+      "id": "hibiscus",
+      "name": "Hibiscus Tea (Sorrel / Zobo)",
+      "local_names": [
+        "Bisukari (Uganda)",
+        "Zobo (West Africa)",
+        "Karkade (East Africa)"
+      ],
+      "evidence_rating": "strong",
+      "evidence_label": "Well-researched",
+      "available_in_uganda": true,
+      "helps_with": [
+        "High blood pressure",
+        "Cholesterol",
+        "Antioxidant support",
+        "Liver protection",
+        "Urinary tract health"
+      ],
+      "active_compounds": "Anthocyanins, hibiscus acid, polyphenols — proven antihypertensive and antioxidant compounds",
+      "how_to_use": [
+        "Tea: Steep 1–2 tablespoons of dried hibiscus flowers in hot water for 10 minutes, do not boil",
+        "Cold drink: Steep overnight in cold water — preserves more anthocyanins",
+        "For blood pressure: Drink 2–3 cups of unsweetened hibiscus tea daily",
+        "Avoid adding excessive sugar — reduces health benefits"
+      ],
+      "safety": "Very safe. Do not take with hydrochlorothiazide (blood pressure drug) — may increase its effect. Avoid in pregnancy at medicinal doses — may have uterotonic effects. May interact with some diabetes medications.",
+      "science_note": "Multiple clinical trials show hibiscus tea reduces systolic blood pressure by 7–10 mmHg in people with mild hypertension — comparable to some medications. One of the best-evidenced herbal remedies for blood pressure.",
+      "description": "Dried hibiscus flowers (Hibiscus sabdariffa) make the deep red tea known as zobo in West Africa, sorrel in the Caribbean, and rosella in Uganda. One of the few herbal remedies with solid human trial data for blood pressure."
+    },
+    {
+      "id": "black_seed",
+      "name": "Black Seed (Nigella sativa)",
+      "local_names": [
+        "Kalonji",
+        "Black cumin",
+        "Fennel flower"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Growing evidence",
+      "description": "Seeds with multiple bioactive compounds including thymoquinone. Used in Islamic medicine for centuries. Growing scientific evidence for several uses.",
+      "helps_with": [
+        "High blood pressure",
+        "Blood sugar control",
+        "Asthma",
+        "Immune support",
+        "Anti-inflammatory",
+        "H. pylori"
+      ],
+      "how_to_use": [
+        "Seed oil: take 1 teaspoon (5ml) daily, preferably on an empty stomach or with honey.",
+        "Seeds: add half a teaspoon to food, tea, or porridge daily.",
+        "For topical use: apply black seed oil directly to affected skin or scalp.",
+        "For respiratory issues: inhale steam from a pot of boiling water with 1 teaspoon of seeds added."
+      ],
+      "cautions": [
+        "Can lower blood pressure — use caution with BP medication",
+        "Can lower blood sugar — monitor if diabetic",
+        "Avoid in pregnancy — may stimulate uterine contractions"
+      ],
+      "local_availability": "Available at herbal medicine shops and some supermarkets in Kampala and major towns",
+      "active_compounds": "Thymoquinone (TQ), thymol, carvacrol, nigellone, fixed oils",
+      "safety": "Generally safe at food doses. Avoid medicinal doses during pregnancy (can stimulate uterine contractions). May lower blood sugar — monitor if diabetic. Do not take with blood-thinning medications without medical advice.",
+      "science_note": "Thymoquinone has demonstrated anti-inflammatory, antioxidant, and antimicrobial properties in laboratory and animal studies. Some small human trials support benefits for asthma and blood sugar. More large-scale human trials are needed."
+    },
+    {
+      "id": "soursop_leaves",
+      "name": "Soursop (Graviola) Leaves",
+      "local_names": [
+        "Guanabana",
+        "Mululu"
+      ],
+      "evidence_rating": "limited",
+      "evidence_label": "Traditional use, limited evidence",
+      "description": "Leaves of the soursop tree. Popular in Uganda and Africa as a traditional remedy. Limited but growing scientific interest in its compounds.",
+      "helps_with": [
+        "Blood sugar control",
+        "High blood pressure",
+        "Insomnia",
+        "Inflammation",
+        "Parasite infections"
+      ],
+      "how_to_use": [
+        "Tea: boil 3–5 dried or fresh leaves in 1 litre of water for 15 minutes.",
+        "Strain and drink 1 cup once or twice daily, not more than 2 cups per day.",
+        "Do not boil continuously — prepare fresh each time.",
+        "Fresh leaves can also be made into a poultice and applied to skin for itching or inflammation."
+      ],
+      "cautions": [
+        "Not for pregnant women",
+        "Excessive use linked to atypical Parkinson's-like symptoms (annonacin compound)",
+        "Do not use as sole treatment for serious conditions"
+      ],
+      "local_availability": "Trees grow in Uganda — leaves can be collected fresh or dried. Sold at herbal shops.",
+      "active_compounds": "Acetogenins (annonacins), alkaloids, flavonoids, tannins, saponins",
+      "safety": "Do not use during pregnancy. Limit use to 2–3 weeks at a time — long-term heavy use has been linked to nerve damage (annonacin toxicity). People with Parkinson's disease should avoid. Do not exceed 2 cups daily.",
+      "science_note": "Soursop acetogenins have shown anti-cancer activity against cancer cell lines in laboratory studies, but NO human clinical trials have proven it treats cancer. The \"cures cancer\" claim is unproven. Traditional use for blood sugar and infections has some preliminary evidence but requires more research."
+    },
+    {
+      "id": "cinnamon",
+      "name": "Cinnamon (Mdalasini)",
+      "local_names": [
+        "Mdalasini",
+        "Dalchini"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence for blood sugar",
+      "description": "The inner bark of Cinnamomum trees. Has been shown in multiple clinical trials to modestly reduce fasting blood sugar levels and improve insulin sensitivity.",
+      "helps_with": [
+        "Blood sugar control (Type 2 diabetes)",
+        "Cholesterol reduction",
+        "Anti-inflammatory",
+        "Antimicrobial",
+        "PCOS"
+      ],
+      "how_to_use": [
+        "Add half a teaspoon of Ceylon cinnamon powder to food, tea, or porridge daily.",
+        "Cinnamon tea: steep one cinnamon stick in hot water for 10 minutes.",
+        "For blood sugar support, take with meals.",
+        "Cinnamon sticks can be used in cooking — add to rice, stews, or soups."
+      ],
+      "cautions": [
+        "Cassia cinnamon (most common) contains coumarin — limit to 1 teaspoon daily long-term",
+        "Can enhance blood sugar-lowering medication — monitor glucose if diabetic",
+        "Not for pregnant women in large amounts"
+      ],
+      "local_availability": "Widely available at all markets and shops in Uganda. Affordable.",
+      "active_compounds": "Cinnamaldehyde, coumarin, eugenol, procyanidins, polyphenols",
+      "safety": "Prefer Ceylon cinnamon over Cassia cinnamon for regular use — Cassia contains high coumarin which can harm the liver in large amounts. Safe at culinary doses. Consult a doctor before using as a supplement alongside diabetes medication — may enhance blood sugar lowering effect.",
+      "science_note": "Multiple small trials suggest Ceylon cinnamon modestly reduces fasting blood sugar in Type 2 diabetes. Effect size is small (similar to 10–15% reduction). Not a replacement for prescribed medication. Anti-inflammatory and antifungal properties are well-established in laboratory studies."
+    },
+    {
+      "id": "neem_leaves",
+      "name": "Neem (Omubirizi / Mwarobaini)",
+      "local_names": [
+        "Omubirizi",
+        "Mwarobaini",
+        "Margosa"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Good evidence, multiple uses",
+      "description": "One of the most versatile medicinal plants in Africa and Asia. Called 'Mwarobaini' in Swahili — meaning '40 diseases'. Has demonstrated antifungal, antibacterial, and antiparasitic properties.",
+      "helps_with": [
+        "Skin infections",
+        "Dandruff",
+        "Scabies",
+        "Fungal infections",
+        "Malaria (mosquito repellent — prevention only)",
+        "Dental hygiene",
+        "Blood sugar (early evidence)",
+        "Anti-inflammatory"
+      ],
+      "how_to_use": [
+        "Skin conditions: crush fresh neem leaves into a paste and apply directly to affected area for 20–30 minutes. Rinse with clean water.",
+        "Dental hygiene: chew a fresh neem twig (miswak) for 5 minutes to clean teeth and freshen breath.",
+        "Neem tea: boil a handful of fresh leaves in 2 cups of water for 10 minutes. Drink once daily for short periods only.",
+        "Scalp and hair: boil leaves in coconut oil, cool and strain. Apply neem oil to scalp to fight dandruff and lice."
+      ],
+      "cautions": [
+        "Neem oil toxic if swallowed in large amounts — topical use safe",
+        "Not for pregnant women — may cause miscarriage",
+        "Long-term internal use not recommended without guidance",
+        "Not for infants"
+      ],
+      "local_availability": "Neem trees grow throughout Uganda. Leaves free from trees. Neem products available at herbal shops.",
+      "active_compounds": "Nimbin, nimbidin, azadirachtin, quercetin, catechin, limonoids",
+      "safety": "Topical use is generally safe. Internal use (tea or supplements) should be limited to short periods — do not exceed 2 weeks continuous use. Avoid during pregnancy (can cause miscarriage). Do not give neem tea to children under 12. Large internal doses are toxic.",
+      "science_note": "Strong laboratory evidence for antimicrobial and antifungal properties supports its traditional skin and dental uses. Azadirachtin is a proven insect repellent. Modest human evidence for blood sugar reduction. The immunostimulant and anticancer claims lack robust human trial evidence."
+    },
+    {
+      "id": "tamarind",
+      "name": "Tamarind (Mkwaju)",
+      "local_names": [
+        "Mkwaju",
+        "Ukwaju"
+      ],
+      "evidence_rating": "moderate",
+      "evidence_label": "Traditional use with evidence",
+      "description": "The fruit pulp and leaves of the tamarind tree are used medicinally across Africa and Asia. Rich in tartaric acid, B vitamins, and minerals.",
+      "helps_with": [
+        "Constipation (laxative effect)",
+        "Liver support",
+        "Blood pressure (mild reduction)",
+        "Antimicrobial",
+        "Sore throat",
+        "Malaria fever (antipyretic)",
+        "Iron absorption (vitamin C content)"
+      ],
+      "how_to_use": [
+        "For constipation: dissolve 10–30g of tamarind pulp in warm water and drink.",
+        "Cooling drink: dissolve tamarind pulp in water with a pinch of salt — hydrating in hot weather.",
+        "Leaf tea for fever: boil a handful of young leaves in 2 cups of water for 10 minutes, strain and drink.",
+        "Sore throat: gargle with tamarind-infused warm water (pulp dissolved in water with a little honey)."
+      ],
+      "cautions": [
+        "Laxative effect — do not use in diarrhoea",
+        "Contains salicylates — interact with aspirin and NSAIDs",
+        "Can lower blood sugar — monitor if diabetic and on medication"
+      ],
+      "local_availability": "Tamarind trees common throughout Uganda. Pods widely sold at markets. Affordable.",
+      "active_compounds": "Tartaric acid, malic acid, citric acid, potassium bitartrate, flavonoids, phenols, vitamins B1/B2/B3",
+      "safety": "Generally very safe as a food. Excessive amounts may cause loose stools. The high tartaric acid content may worsen acid reflux in sensitive individuals. May interact with aspirin and ibuprofen — use with caution if on these medications.",
+      "science_note": "The laxative effect is well-established and due to tartaric acid. Some animal studies show blood sugar lowering effects but human evidence is limited. Antioxidant content is high and well-documented. Antimicrobial activity against common pathogens has been demonstrated in laboratory studies."
+    },
+    {
+      "id": "artemisia_afra",
+      "name": "African Wormwood (Omwetango)",
+      "local_names": [
+        "Omwetango",
+        "Mutete"
+      ],
+      "evidence_rating": "limited",
+      "evidence_label": "Traditional use — caution",
+      "description": "A plant related to the source of artemisinin (malaria drug). Used across East Africa for respiratory infections, fever, and malaria. IMPORTANT: Artemisia afra is NOT the same as artemisinin-containing Artemisia annua. It should NEVER replace tested antimalarials.",
+      "helps_with": [
+        "Respiratory infections (cough)",
+        "Fever relief",
+        "Intestinal worms",
+        "Indigestion"
+      ],
+      "how_to_use": [
+        "Tea (umhlonyane): boil a small handful of fresh or dried leaves in 2 cups of water for 10 minutes. Strain and drink 1 cup twice daily for up to 5 days.",
+        "Steam inhalation: boil leaves in water, remove from heat, place face over the pot with a towel over your head, inhale steam for 5–10 minutes. Helps relieve nasal congestion and cold symptoms.",
+        "Poultice: crush fresh leaves and apply to forehead or chest for headache and chest congestion relief.",
+        "Do not use for more than 5–7 consecutive days without a break."
+      ],
+      "cautions": [
+        "CRITICAL: Must NOT be used as malaria treatment — always use tested antimalarials (Coartem) for confirmed malaria",
+        "Not for pregnant women — may stimulate uterus",
+        "Long-term use not established as safe",
+        "Can interact with anticoagulants"
+      ],
+      "local_availability": "Grows in Uganda highlands. Found at herbal medicine markets.",
+      "active_compounds": "Camphor, artemisia ketone, 1,8-cineole, alpha-thujone, borneol, sesquiterpene lactones",
+      "safety": "Do not use during pregnancy — thujone can stimulate uterine contractions. Not for use in children under 6. Do not use alongside artemisinin-based malaria treatment (Coartem) — may interfere. Avoid in people with liver disease. Thujone is toxic in large amounts — do not exceed recommended amounts.",
+      "science_note": "Artemisia afra is one of the most widely used medicinal plants in Africa and has been studied more rigorously than most traditional plants. Laboratory and some clinical studies support anti-inflammatory, antimicrobial, and cough-relieving properties. It is being studied for COVID-19 but results are preliminary. NOT a proven malaria treatment despite the name similarity to Artemisia annua (which is a different species)."
+    },
+    {
+      "name": "Bitter Lemon / Wild Lemon (Entanda / Ebikekeyi)",
+      "local_names": [
+        "Entanda (Luganda)",
+        "Ebikekeyi",
+        "Eitanda (Runyankore)"
+      ],
+      "scientific_name": "Momordica foetida or Momordica charantia",
+      "description": "Bitter wild fruits and leaves used in traditional Ugandan medicine for generations. Bitter melon (karela) is the cultivated relative.",
+      "traditional_uses": [
+        "Malaria fever management",
+        "Diabetes (blood sugar lowering)",
+        "Digestive complaints",
+        "Skin conditions"
+      ],
+      "evidence_level": "Traditional use with some scientific basis",
+      "preparation": [
+        "Leaf tea: boil 5-6 fresh leaves in 2 cups water for 15 minutes, strain, drink 1 cup twice daily",
+        "Bitter gourd (karela): cook as vegetable or juice fresh fruit"
+      ],
+      "active_compounds": "Charantin, momordicin, polypeptide-P — blood sugar lowering properties studied",
+      "safe_for_pregnancy": false,
+      "pregnancy_caution": "AVOID — Bitter melon/gourd stimulates uterine contractions and can cause miscarriage. Do not use in pregnancy.",
+      "safe_for_children": "Use with caution — reduce dose significantly. Seeds are toxic to children.",
+      "interactions": "May enhance effects of diabetes medications — monitor blood sugar carefully",
+      "cautions": [
+        "Avoid seeds — toxic",
+        "Do not use in pregnancy",
+        "Not a replacement for diabetes medication"
+      ],
+      "buy_or_find": "Wild bitter fruits found in rural Uganda. Bitter gourd (karela) sold in markets, particularly around Kampala and near Asian communities"
+    },
+    {
+      "name": "Eucalyptus (Oluwembe / Kabuzi)",
+      "local_names": [
+        "Oluwembe (Luganda)",
+        "Kabuzi",
+        "Eucalyptus tree"
+      ],
+      "scientific_name": "Eucalyptus globulus",
+      "description": "Eucalyptus trees are ubiquitous in Uganda — planted for timber, firewood, and poles. The leaves have strong medicinal properties for respiratory conditions and are widely used in traditional Ugandan medicine.",
+      "traditional_uses": [
+        "Chest infections and congestion",
+        "Sinusitis",
+        "Cold and flu relief",
+        "Headache (steam inhalation)",
+        "Muscle aches (topical)"
+      ],
+      "evidence_level": "Good scientific evidence for respiratory benefits — contains cineole (eucalyptol)",
+      "preparation": [
+        "Steam inhalation: boil 10-15 fresh eucalyptus leaves in 2 litres water. Remove from heat. Drape towel over head, lean over pot, inhale steam for 10 minutes. Clears congestion very effectively.",
+        "Leaf decoction: boil 5-6 leaves in water, strain, drink with honey for chest congestion and cough",
+        "Fresh leaves in hot shower: bruise leaves and hang in shower — steam releases cineole"
+      ],
+      "active_compounds": "Cineole (eucalyptol) — proven anti-inflammatory, antimicrobial, bronchodilator effects",
+      "safe_for_pregnancy": true,
+      "pregnancy_caution": "Steam inhalation is safe. Internal consumption in large amounts: caution. Topical use safe.",
+      "safe_for_children": "Steam inhalation safe for older children (5+) under supervision. Do not give eucalyptus oil internally to children under 6 years.",
+      "interactions": "Eucalyptus oil can interact with some medications if taken internally in large amounts",
+      "cautions": [
+        "Pure eucalyptus essential oil is toxic if swallowed — keep away from children",
+        "Do not apply undiluted oil directly to infants' faces or airways"
+      ],
+      "buy_or_find": "Trees everywhere in Uganda — take 10-15 fresh leaves. Eucalyptus essential oil available in pharmacies and herbal shops."
+    },
+    {
+      "name": "African Basil (Omujaaja / Effiirin)",
+      "local_names": [
+        "Omujaaja (Luganda)",
+        "Effiirin (Yoruba/West African name also known)",
+        "Nchuanwu (Igbo name)"
+      ],
+      "scientific_name": "Ocimum gratissimum (African basil / Fever plant)",
+      "description": "A fragrant herb with large, velvety leaves. One of the most widely used medicinal plants in East and West Africa. Different from Italian basil — stronger medicinal properties.",
+      "traditional_uses": [
+        "Malaria and fever management (traditional antipyretic)",
+        "Diarrhoea and gastroenteritis",
+        "Respiratory infections and cough",
+        "Headache",
+        "Skin infections (topical)",
+        "Postpartum recovery"
+      ],
+      "evidence_level": "Good scientific evidence — eugenol and other compounds have antimicrobial and antipyretic properties",
+      "preparation": [
+        "Fever tea: boil 10-12 fresh leaves in 1 litre water for 10 minutes. Strain. Drink 2-3 cups daily when feverish.",
+        "Steam inhalation: boil leaves and inhale steam for respiratory congestion",
+        "Fresh leaves: crush and apply to forehead for headache",
+        "Diarrhoea tea: strong decoction, 1 cup 3x daily"
+      ],
+      "active_compounds": "Eugenol, thymol, linalool — antimicrobial, antifungal, anti-inflammatory",
+      "safe_for_pregnancy": "Use with caution in first trimester. Traditional postpartum use is common.",
+      "pregnancy_caution": "Avoid large medicinal doses in first trimester. Culinary amounts safe. Widely used in postpartum care in Uganda.",
+      "safe_for_children": "Yes — at appropriate doses. Used for childhood fevers traditionally.",
+      "interactions": "None well-established at food/herbal doses",
+      "cautions": [
+        "This is a SUPPORTIVE remedy for fever management, not a replacement for testing and treating malaria"
+      ],
+      "buy_or_find": "Grown in most Ugandan home gardens. Available in local markets throughout Uganda. Easy to grow from cutting."
+    },
+    {
+      "name": "Shea Butter (Mafuta ga Ente / Kadanya)",
+      "local_names": [
+        "Kadanya (Luganda)",
+        "Mafuta ga Ente",
+        "Ori (Yoruba)",
+        "Karité butter"
+      ],
+      "scientific_name": "Vitellaria paradoxa",
+      "description": "Pure plant butter extracted from the nut of the shea tree. Used medicinally and cosmetically across Africa for centuries. One of the most scientifically well-validated traditional African remedies for skin conditions.",
+      "traditional_uses": [
+        "Dry skin and eczema",
+        "Psoriasis management",
+        "Stretch marks (prevention and treatment)",
+        "Burns and wound healing",
+        "Baby skin care",
+        "Joint pain (topical)",
+        "Nasal congestion (small amount in nostrils)",
+        "Chapped lips"
+      ],
+      "evidence_level": "Very good evidence for skin conditions — fatty acid profile well-documented",
+      "preparation": [
+        "Skin condition: apply raw/unrefined shea butter directly to affected area, 2-3 times daily after bathing while skin is still slightly damp",
+        "For dry skin: small amount warmed in hands, apply over dry areas",
+        "Scalp/hair: work through hair and scalp for moisture"
+      ],
+      "active_compounds": "Oleic acid, stearic acid, triterpenes (lupeol, butyrospermol) — anti-inflammatory, emollient",
+      "safe_for_pregnancy": true,
+      "pregnancy_caution": "Topical use is completely safe. Widely used in Uganda to prevent stretch marks in pregnancy.",
+      "safe_for_children": "Yes — excellent for baby skin. Ugandan tradition of applying shea butter to infants' skin.",
+      "interactions": "None — topical use only",
+      "cautions": [
+        "Use raw/unrefined shea butter — refined versions have reduced medicinal properties",
+        "Rare nut allergies possible but uncommon"
+      ],
+      "buy_or_find": "Widely available in Ugandan markets, cosmetics shops, and supermarkets. Northern Uganda (West Nile, Acholi) has significant shea tree populations. Look for unrefined, raw shea butter."
+    },
+    {
+      "name": "Lemongrass (Omubazi / Mchaichai)",
+      "local_names": [
+        "Omubazi (Luganda)",
+        "Mchaichai (Swahili)",
+        "Sereh"
+      ],
+      "scientific_name": "Cymbopogon citratus",
+      "description": "A fragrant tropical grass with lemon-scented leaves. Widely grown in Ugandan gardens and used for both culinary and medicinal purposes. Related to but different from citronella (mosquito repellent grass).",
+      "traditional_uses": [
+        "Fever reduction",
+        "Headache relief",
+        "Anxiety and stress (calming)",
+        "Digestive problems and bloating",
+        "High blood pressure (modest effect)",
+        "Cough and congestion"
+      ],
+      "evidence_level": "Moderate evidence — citral, limonene compounds well studied",
+      "preparation": [
+        "Lemongrass tea: crush 2-3 fresh stalks (or 1 tablespoon dried leaves), boil in 2 cups water for 10 minutes, strain, add honey. Drink 1-2 cups daily.",
+        "Fever compress: strong lemongrass decoction as body wash or compress",
+        "Inhalation: add crushed lemongrass to steam inhalation for respiratory relief"
+      ],
+      "active_compounds": "Citral, limonene, geraniol — antimicrobial, anti-inflammatory, mild anxiolytic",
+      "safe_for_pregnancy": "Moderate amounts as tea are generally considered safe. Avoid concentrated extracts/essential oil in pregnancy.",
+      "pregnancy_caution": "Regular tea in normal amounts: likely safe. Medicinal large doses: avoid in first trimester.",
+      "safe_for_children": "Yes — mild, pleasant-tasting. Good for children's fevers alongside paracetamol.",
+      "interactions": "May slightly lower blood pressure — caution if on antihypertensives",
+      "cautions": [
+        "Pleasant taste makes overconsumption easy — don't drink more than 3 cups daily",
+        "Rare allergic reactions"
+      ],
+      "buy_or_find": "Grown in most Ugandan gardens. Available in local markets throughout Uganda. Easy to grow from division."
+    },
+    {
+      "name": "Paw-Paw Seeds and Leaves (Ebibo by'Epapali)",
+      "local_names": [
+        "Ebibo by'Epapali (papaya seeds)",
+        "Epapali (papaya)"
+      ],
+      "scientific_name": "Carica papaya",
+      "description": "While ripe papaya fruit is well-known, the seeds and leaves have distinct and powerful medicinal properties used across Uganda. Black papaya seeds have antiparasitic properties; papaya leaves have been used for dengue and fever.",
+      "traditional_uses": [
+        "Papaya seeds: intestinal worms and parasites (natural antiparasitic)",
+        "Papaya leaf: dengue fever (traditional — platelet effect under study)",
+        "Papaya leaf: liver support and jaundice",
+        "Unripe papaya: digestive enzyme supplementation",
+        "Papaya leaf decoction: malaria (traditional — fever management)"
+      ],
+      "evidence_level": "Good evidence for antiparasitic (seeds); emerging evidence for dengue (leaves)",
+      "preparation": [
+        "Worm treatment (adult): 2 tablespoons of fresh black papaya seeds, blend with honey, take first thing in morning on empty stomach for 3 consecutive days",
+        "Papaya leaf tea: crush 5-6 fresh leaves, squeeze juice into 1 cup, take 2 tablespoons twice daily (bitter) — traditional for dengue and fever"
+      ],
+      "active_compounds": "Carpaine, benzyl isothiocyanate (seeds — antiparasitic); papain (enzyme in unripe fruit); acetogenins (leaves)",
+      "safe_for_pregnancy": false,
+      "pregnancy_caution": "STRONGLY AVOID seeds and unripe papaya in pregnancy — papain can stimulate uterine contractions and cause miscarriage. Ripe fruit is safe in normal portions.",
+      "safe_for_children": "Seeds: small doses for older children (5+) for worms. Reduce dose to 1 teaspoon for child.",
+      "interactions": "Papain may enhance warfarin — caution",
+      "cautions": [
+        "Avoid in pregnancy (seeds and unripe papaya)",
+        "Ripe fruit is completely safe for everyone",
+        "Seeds in large amounts are mildly toxic — use recommended doses only"
+      ],
+      "buy_or_find": "Papaya trees common throughout Uganda — eat fruit and save seeds. Growing in most rural and peri-urban compounds."
+    }
+  ]
+}

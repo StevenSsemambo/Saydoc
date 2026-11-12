@@ -1,0 +1,792 @@
+{
+  "situations": [
+    {
+      "id": "burn",
+      "name": "Burn or Scald",
+      "icon": "🔥",
+      "severity": "moderate",
+      "call_for_help": false,
+      "steps": [
+        "COOL the burn immediately — run cool (not cold) water over the burn for at least 20 minutes. This is the most important step and must be done within 30 minutes of the burn.",
+        "Remove jewellery, clothing, or anything near the burned area — swelling happens quickly and these can cut off circulation. Exception: do NOT remove clothing if it is stuck to the burn.",
+        "Cover loosely with a clean cloth or cling wrap — do not use fluffy materials like cotton wool.",
+        "Give paracetamol for pain — burns are very painful.",
+        "Keep the person warm — burns cause heat loss from the body."
+      ],
+      "do_not": [
+        "Do NOT use ice or very cold water — causes further tissue damage and shock",
+        "Do NOT apply toothpaste, butter, oil, egg, or any traditional remedy — these trap heat, worsen the burn, and cause infection",
+        "Do NOT break blisters — this dramatically increases infection risk",
+        "Do NOT use fluffy cotton dressings that will stick to the wound",
+        "Do NOT remove clothing that is stuck to the burn — cut around it instead"
+      ],
+      "when_to_seek_help": "Any burn larger than the palm of the person's hand. Burns to face, hands, feet, genitals, or joints. Chemical or electrical burns. Burns in children under 5 or elderly. Burns that appear deep (white, brown, or black).",
+      "recovery_note": "Small superficial burns heal in 1-2 weeks. Keep clean and covered. Signs of infection: increasing redness, pus, smell, fever — see a doctor."
+    },
+    {
+      "id": "bleeding",
+      "name": "Severe Bleeding / Wound",
+      "icon": "🩸",
+      "severity": "high",
+      "call_for_help": true,
+      "steps": [
+        "PRESS firmly on the wound with the cleanest material available — a folded cloth, bandage, or clothing. Do NOT remove the cloth if it becomes soaked — add more on top.",
+        "Maintain FIRM continuous pressure for at least 10 minutes without lifting to check. This is how clotting works — interrupting it restarts the clock.",
+        "Elevate the injured limb above the level of the heart if possible — this slows blood flow.",
+        "Keep the person lying down and still — movement increases blood pressure and bleeding.",
+        "Keep them warm and reassured — shock can develop from blood loss.",
+        "Once bleeding is controlled — clean the wound with boiled (cooled) water, apply antibiotic cream if available, and cover with clean dressing.",
+        "For embedded objects (glass, knife, etc.): do NOT remove — stabilise around it and get to hospital."
+      ],
+      "do_not": [
+        "Do NOT remove dressings once applied — press more on top",
+        "Do NOT use a tourniquet unless bleeding is life-threatening and from a limb",
+        "Do NOT pour alcohol directly into deep wounds",
+        "Do NOT remove embedded objects"
+      ],
+      "when_to_seek_help": "Bleeding that does not stop after 15 minutes of firm pressure. Deep wounds that may need stitches. Wounds with embedded objects. Any significant cut in a diabetic or person on blood thinners. Signs of infection after 24-48 hours.",
+      "recovery_note": "Minor cuts: clean with water, apply honey or antibiotic cream, cover. Change dressing daily. Signs of infection: increasing redness spreading out, warmth, pus, fever — see a doctor."
+    },
+    {
+      "id": "choking",
+      "name": "Choking (Adult or Child over 1)",
+      "icon": "🫁",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "Confirm they are choking — ask 'Are you choking?' If they can cough, speak, or breathe, encourage them to keep coughing. DO NOT intervene.",
+        "If they CANNOT breathe, speak, or cough — act immediately.",
+        "Give 5 BACK BLOWS: Stand to the side and slightly behind. Support the chest with one hand. Lean them forward. Give 5 firm blows between the shoulder blades with the heel of your other hand.",
+        "Check if the object has come out after each blow.",
+        "If back blows fail — give 5 ABDOMINAL THRUSTS (Heimlich): Stand behind the person. Wrap your arms around their waist. Place one fist above the navel. Grab your fist with the other hand. Give 5 sharp upward thrusts.",
+        "Alternate 5 back blows and 5 abdominal thrusts until the object comes out or emergency help arrives.",
+        "If the person becomes unconscious — lower them to the floor, call for help, and begin CPR."
+      ],
+      "do_not": [
+        "Do NOT do blind finger sweeps in the mouth — you may push the object deeper",
+        "Do NOT give abdominal thrusts to a pregnant woman — use chest thrusts instead",
+        "Do NOT slap their back while they are upright and still trying to cough"
+      ],
+      "when_to_seek_help": "After any choking episode where the object was expelled — seek medical assessment as the airway may be damaged. If the person loses consciousness — emergency immediately.",
+      "recovery_note": "After successful removal of the object, the person may have throat soreness for a day or two. Any breathing difficulty, chest pain, or difficulty swallowing — go to hospital."
+    },
+    {
+      "id": "choking_infant",
+      "name": "Choking (Infant under 1 year)",
+      "icon": "👶",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "Hold the infant FACE DOWN along your forearm, supporting their head lower than their body.",
+        "Give 5 BACK BLOWS using the heel of your hand between the shoulder blades — firm but controlled for a baby.",
+        "Turn the infant FACE UP. Give 5 CHEST THRUSTS — two fingers on the breastbone, just below the nipple line. Push inward and upward 1-2 cm.",
+        "After each cycle, check the mouth — only remove an object if you can clearly see it.",
+        "Alternate 5 back blows and 5 chest thrusts until the object comes out or the baby becomes unconscious.",
+        "If the infant becomes unconscious — begin infant CPR immediately."
+      ],
+      "do_not": [
+        "NEVER do abdominal thrusts on an infant — you will damage their internal organs",
+        "Do NOT do blind finger sweeps",
+        "Do NOT hold the baby upright during back blows — face down is essential"
+      ],
+      "when_to_seek_help": "All infant choking episodes — take to hospital after the object is expelled. If infant becomes unconscious — emergency immediately.",
+      "recovery_note": "Infant choking is one of the leading causes of accidental death in Uganda. Prevention: keep small objects away from infants, supervise eating, avoid giving hard foods before teeth are developed."
+    },
+    {
+      "id": "snake_bite",
+      "name": "Snake Bite",
+      "icon": "🐍",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "Get the person AWAY from the snake — but do not waste time trying to catch or kill it. Note the appearance if safe to do so for medical treatment.",
+        "Keep the person CALM and still — movement speeds up venom circulation through the lymphatic system.",
+        "Remove watches, rings, and tight clothing from the affected limb before swelling starts.",
+        "Position the bitten limb BELOW the level of the heart to slow venom spread.",
+        "Mark the edge of any swelling with a pen and note the time — this helps monitor progression.",
+        "Get to hospital as quickly as possible — antivenom is the only effective treatment for many snake bites.",
+        "Keep the person hydrated if conscious and not vomiting.",
+        "If they stop breathing — begin rescue breathing."
+      ],
+      "do_not": [
+        "Do NOT cut the bite wound or try to suck out venom — this does not work and causes infection",
+        "Do NOT apply a tourniquet — this concentrates venom, causes tissue death, and increases amputations",
+        "Do NOT apply cold pack or ice",
+        "Do NOT give alcohol — it accelerates venom absorption",
+        "Do NOT waste time — every minute matters for venomous bites"
+      ],
+      "when_to_seek_help": "ALL snake bites need hospital assessment — even if the snake is non-venomous, bite wounds need cleaning and tetanus prevention. Go immediately.",
+      "recovery_note": "Most snake bites in Uganda are from non-venomous snakes. However, puff adder, spitting cobra, black mamba, and boomslang are present and dangerous. Antivenom works best when given early."
+    },
+    {
+      "id": "fainting",
+      "name": "Fainting / Unconsciousness",
+      "icon": "😵",
+      "severity": "moderate",
+      "call_for_help": false,
+      "steps": [
+        "If the person is about to faint (pale, sweating, dizzy) — help them lie down before they fall.",
+        "Once unconscious — lay them on their back and check for breathing. Look, listen, and feel for 10 seconds.",
+        "If breathing — place in RECOVERY POSITION: Roll them onto their side, bend the upper knee, tilt the head back to keep airway open.",
+        "Raise their legs above heart level — helps blood return to the brain for simple fainting.",
+        "Loosen any tight clothing around the neck, chest, or waist.",
+        "Do NOT give food or water to an unconscious person.",
+        "When they regain consciousness — have them remain lying for a few minutes before sitting up slowly.",
+        "If NOT breathing — begin CPR immediately and call for emergency help."
+      ],
+      "do_not": [
+        "Do NOT give water or food to an unconscious person — choking risk",
+        "Do NOT slap the face to try to wake them",
+        "Do NOT leave an unconscious person alone",
+        "Do NOT give anything by mouth until fully conscious"
+      ],
+      "when_to_seek_help": "Unconsciousness lasting more than 1 minute. Fainting during exercise. Fainting with chest pain or irregular heartbeat. Fainting in a diabetic — may be hypoglycaemia. Fainting in someone with heart disease. Any head injury after falling unconscious.",
+      "recovery_note": "Simple fainting (vasovagal syncope) is common and usually harmless — caused by standing too long, heat, dehydration, or strong emotion. The person wakes quickly. Eating, drinking water, and lying down helps. See a doctor if it recurs."
+    },
+    {
+      "id": "seizure_aid",
+      "name": "Seizure / Fit",
+      "icon": "⚡",
+      "severity": "high",
+      "call_for_help": false,
+      "steps": [
+        "STAY CALM — most seizures end on their own within 2-3 minutes.",
+        "TIME the seizure — note when it started.",
+        "Clear the area — gently move anything dangerous away from the person. Do NOT restrain them.",
+        "Cushion their head — use a folded cloth, jacket, or your hands if nothing else is available.",
+        "Turn them on their side (recovery position) if possible — prevents choking if they vomit.",
+        "Stay with them throughout — they need your reassurance when they regain consciousness.",
+        "After the seizure: they will be confused and exhausted — this is normal (postictal state). Speak calmly and reassure them.",
+        "Call for emergency help if the seizure lasts more than 5 minutes, or they do not regain consciousness, or have another seizure immediately."
+      ],
+      "do_not": [
+        "Do NOT hold the person down or restrain their movements",
+        "Do NOT put anything in their mouth — the tongue cannot be swallowed",
+        "Do NOT give water or food during or immediately after",
+        "Do NOT leave them alone until fully recovered"
+      ],
+      "when_to_seek_help": "Seizure lasting more than 5 minutes — status epilepticus, emergency. First ever seizure. Seizure in a pregnant woman. Seizure in someone with diabetes. Injury during seizure. Person does not wake up after the seizure.",
+      "recovery_note": "After a seizure, the person needs to rest. They may sleep for hours. This is normal and restorative. Do not drive after a seizure. See a doctor — this is essential after any first seizure."
+    },
+    {
+      "id": "anaphylaxis",
+      "name": "Severe Allergic Reaction (Anaphylaxis)",
+      "icon": "🚨",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "Call for emergency help IMMEDIATELY — anaphylaxis can kill within minutes.",
+        "If the person has an adrenaline auto-injector (EpiPen) — use it immediately in the outer thigh.",
+        "Lay the person flat with legs raised — unless breathing is difficult, in which case let them sit up.",
+        "If breathing stops — begin CPR.",
+        "Keep them still and warm.",
+        "If they have prescribed antihistamines — give them while waiting for emergency help.",
+        "Second dose of adrenaline can be given after 5-15 minutes if no improvement.",
+        "Even if they seem to recover — they MUST go to hospital. Anaphylaxis has a biphasic reaction."
+      ],
+      "do_not": [
+        "Do NOT give antihistamines alone for anaphylaxis — they are too slow-acting",
+        "Do NOT let the person stand or walk",
+        "Do NOT leave them alone",
+        "Do NOT assume they are recovered without hospital assessment"
+      ],
+      "when_to_seek_help": "All cases of anaphylaxis — immediate emergency. Signs: sudden swelling of throat, lips, or tongue + difficulty breathing + skin rash + drop in blood pressure.",
+      "recovery_note": "Anaphylaxis is caused by insect stings, certain foods (peanuts, shellfish), medications (penicillin, aspirin). After recovery, an allergy referral is essential. Some people need to carry adrenaline at all times."
+    },
+    {
+      "id": "fracture",
+      "name": "Fracture / Broken Bone",
+      "icon": "🦴",
+      "severity": "moderate",
+      "call_for_help": false,
+      "steps": [
+        "Keep the injured person still — do NOT attempt to straighten a broken bone.",
+        "IMMOBILISE the fracture — use whatever is available: two straight sticks, rolled newspaper, cardboard as splints. Tie above and below the fracture, not over it.",
+        "Padding is essential — wrap the splint in cloth to prevent pressure sores.",
+        "Elevate the injured limb if possible — reduces swelling and pain.",
+        "Apply ice pack wrapped in cloth — 20 minutes on, 20 off — reduces swelling and pain.",
+        "Give paracetamol or ibuprofen for pain.",
+        "Get to hospital for X-ray and proper treatment.",
+        "For suspected spinal injury: do NOT move the person unless there is immediate danger. If you must move them, keep the spine completely straight."
+      ],
+      "do_not": [
+        "Do NOT try to straighten or 'set' a broken bone",
+        "Do NOT move someone with a suspected spinal injury",
+        "Do NOT remove shoes or boots if the foot/ankle is injured — swelling makes replacement impossible"
+      ],
+      "when_to_seek_help": "All suspected fractures need X-ray to confirm and proper casting or surgery. Open fractures (bone visible through skin) are medical emergencies — risk of serious infection.",
+      "recovery_note": "Simple fractures in healthy adults heal in 6-8 weeks with proper immobilisation. Children heal faster. Good nutrition (calcium, vitamin D, protein) speeds bone healing."
+    },
+    {
+      "id": "eye_injury",
+      "name": "Eye Injury / Chemical in Eye",
+      "icon": "👁️",
+      "severity": "high",
+      "call_for_help": false,
+      "steps": [
+        "For CHEMICAL in the eye: Immediately flush with large amounts of clean water for 15-20 minutes continuously. Hold eyelids open. Tilt head so water flows from inner to outer corner.",
+        "For FOREIGN OBJECT (dust, wood chip): Do NOT rub. Blink rapidly to try to flush it out. Flush gently with clean water.",
+        "For PENETRATING INJURY (knife, glass): Do NOT remove the object. Cover the eye loosely with a clean cup or folded cloth. Go to hospital immediately.",
+        "For BLUNT INJURY (hit by ball, fist): Apply cold compress gently. Go to hospital for assessment — bleeding inside the eye is not visible.",
+        "After treating: cover the injured eye and go to a hospital or eye clinic."
+      ],
+      "do_not": [
+        "Do NOT rub the eye — worsens injury and embeds foreign objects deeper",
+        "Do NOT remove penetrating objects",
+        "Do NOT use eye drops you are unsure about immediately after chemical exposure"
+      ],
+      "when_to_seek_help": "All eye injuries warrant medical assessment. Immediately for: chemicals, penetrating injuries, persistent pain after first aid, vision changes, blood visible in the eye.",
+      "recovery_note": "The eye has remarkable healing capacity for minor injuries. However, even seemingly minor injuries can have serious consequences — always have significant eye injuries assessed professionally."
+    },
+    {
+      "id": "heart_attack_aid",
+      "name": "Heart Attack / Not Breathing (CPR)",
+      "icon": "❤️",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "Check for response — tap shoulders and shout. If no response, check for breathing (look, listen, feel for 10 seconds).",
+        "If NOT breathing normally — begin CPR immediately.",
+        "CHEST COMPRESSIONS: Place heel of one hand on centre of chest (lower half of breastbone). Cover with other hand, fingers interlaced. Push down hard and fast — at least 5-6 cm deep, 100-120 times per minute (to the beat of 'Stayin' Alive').",
+        "Allow full chest recoil between compressions — do not lean on the chest.",
+        "RESCUE BREATHS (if trained): After 30 compressions, tilt head back, lift chin, pinch nose. Give 2 breaths, each over 1 second, watching chest rise.",
+        "Compression-only CPR (if not trained in rescue breaths): Just do continuous chest compressions — this is effective.",
+        "Continue until emergency help arrives, the person breathes normally, or you are physically unable to continue.",
+        "If an AED (automated defibrillator) is available — use it as soon as possible."
+      ],
+      "do_not": [
+        "Do NOT delay starting CPR to look for a defibrillator",
+        "Do NOT worry about being too rough — broken ribs from CPR heal, death from no CPR does not",
+        "Do NOT stop CPR until emergency help takes over or you are completely exhausted"
+      ],
+      "when_to_seek_help": "All cardiac emergencies — call for emergency transport to hospital while doing CPR. Do not stop CPR to make phone calls — ask someone else to call.",
+      "recovery_note": "CPR doubles survival chances from cardiac arrest. Bystander CPR before emergency services arrive is the most critical factor in survival. Every person should learn basic CPR."
+    },
+    {
+      "id": "drowning",
+      "name": "Drowning / Near-Drowning",
+      "icon": "🌊",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "GET THE PERSON OUT OF THE WATER — ensure your own safety first. Use a rope, branch, or clothing to pull them out rather than swimming if possible.",
+        "CHECK FOR RESPONSE — shout their name and tap their shoulders firmly. If unresponsive, shout for help immediately.",
+        "CALL FOR HELP — send someone to get emergency assistance while you start resuscitation.",
+        "IF NOT BREATHING — begin CPR immediately. Tilt head back, lift chin, give 2 rescue breaths, then 30 chest compressions. Continue 30:2 ratio.",
+        "DO NOT STOP CPR — drowning victims can recover after prolonged CPR. Continue until they breathe, help arrives, or you are physically unable to continue.",
+        "IF BREATHING — place in recovery position (on their side), keep warm, and keep airways clear of water and vomit.",
+        "ALL NEAR-DROWNING VICTIMS MUST GO TO HOSPITAL — even if they appear to recover completely. Secondary drowning can occur hours later when water in lungs causes breathing problems.",
+        "Keep the person warm — hypothermia from water is a serious additional risk."
+      ],
+      "do_not": [
+        "Do NOT hold the person upside down or press on the abdomen to remove water — this wastes critical time and can cause vomiting that blocks airways",
+        "Do NOT give up on CPR — drowning in cold water particularly can allow survival after prolonged resuscitation",
+        "Do NOT leave the person alone even if they seem to recover — secondary drowning is real"
+      ],
+      "when_to_seek_help": "Every near-drowning victim must go to hospital, even if apparently fully recovered. Water in the lungs can cause delayed breathing problems (secondary drowning) 1-24 hours later. Children especially.",
+      "recovery_note": "Near-drowning survivors often make full recovery with prompt resuscitation. Secondary drowning symptoms: increasing breathlessness, persistent cough, extreme fatigue, or confusion in the hours after rescue — return to hospital immediately if these develop."
+    },
+    {
+      "id": "stroke",
+      "name": "Suspected Stroke",
+      "icon": "🧠",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "USE THE FAST TEST to recognise stroke: Face drooping (ask them to smile — is one side drooping?), Arm weakness (ask to raise both arms — does one drift down?), Speech difficulty (ask to repeat a simple phrase — is it slurred or strange?), Time to call for help immediately if any of these.",
+        "NOTE THE EXACT TIME symptoms started — this is critical information for doctors as it determines treatment options.",
+        "CALL FOR HELP and get to hospital IMMEDIATELY — stroke treatment must start within 4.5 hours for the most effective treatment. Every minute brain cells are dying.",
+        "Do NOT give anything to eat or drink — a stroke may affect the ability to swallow safely.",
+        "If the person is conscious: lay them down with head and shoulders slightly raised. Loosen tight clothing around the neck.",
+        "If unconscious but breathing: place in recovery position (on their side) to prevent choking.",
+        "If not breathing: begin CPR.",
+        "Reassure the person — they may be very frightened and unable to communicate but may still understand you."
+      ],
+      "do_not": [
+        "Do NOT give aspirin unless directed by a health worker — some strokes are caused by bleeding (not clot) and aspirin would be harmful",
+        "Do NOT let the person 'sleep it off' — every minute counts",
+        "Do NOT give anything to eat or drink — choking risk",
+        "Do NOT leave the person alone"
+      ],
+      "when_to_seek_help": "IMMEDIATELY for any signs of stroke. Time is brain — every minute of delay, 1.9 million brain cells die. Go to the nearest hospital with emergency services immediately.",
+      "recovery_note": "Stroke outcomes depend entirely on speed of treatment. With early treatment, many people make significant or complete recovery. Rehabilitation (physiotherapy, speech therapy) is crucial after stroke."
+    },
+    {
+      "id": "head_injury",
+      "name": "Head Injury",
+      "icon": "🪖",
+      "severity": "high",
+      "call_for_help": true,
+      "steps": [
+        "ASSESS CONSCIOUSNESS — are they awake and responding? Check if they know their name, where they are, and what happened.",
+        "DO NOT MOVE the person if you suspect a neck injury (any fall from height, vehicle accident, dive into water) — stabilise the neck and wait for help.",
+        "If conscious with no neck injury concern: help them sit or lie in a comfortable position. Apply a cold compress or ice pack wrapped in cloth to any visible swelling.",
+        "CONTROL BLEEDING from scalp wounds: scalp bleeds heavily — apply firm, sustained pressure with a clean cloth for at least 10 minutes.",
+        "MONITOR CLOSELY for danger signs: confusion, repeated vomiting, unequal pupil sizes, severe headache, drowsiness, weakness on one side — these require urgent hospital care.",
+        "If they lose consciousness, begin CPR if not breathing. Place in recovery position if breathing but unconscious.",
+        "Get to hospital for assessment — a CT scan may be needed to rule out brain bleeding."
+      ],
+      "do_not": [
+        "Do NOT give aspirin or ibuprofen for pain — these thin blood and can worsen bleeding",
+        "Do NOT leave a head injury person alone in the first 24 hours — check every 30 minutes",
+        "Do NOT let them drive",
+        "Do NOT give alcohol",
+        "Do NOT remove an object if it is stuck in the skull — stabilise around it and go to hospital"
+      ],
+      "when_to_seek_help": "Any loss of consciousness, even brief. Repeated vomiting. Seizure after head injury. Confusion, drowsiness, or personality change. Unequal pupils. Weakness or numbness. Child under 2 years with any head injury. Severe headache that is worsening.",
+      "recovery_note": "Minor head injuries (no loss of consciousness, brief confusion only) can be managed at home with close observation. Rest completely for 24-48 hours. Return to hospital if any worsening occurs. Concussion symptoms (headache, poor concentration, emotional changes) may last weeks — avoid contact sports until fully recovered."
+    },
+    {
+      "id": "poisoning",
+      "name": "Poisoning / Substance Ingestion",
+      "icon": "☠️",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "IDENTIFY WHAT WAS TAKEN if possible — the container, substance, and amount. This information is critical for treatment.",
+        "CALL FOR HELP and get to hospital immediately — bring the container or substance with you.",
+        "If the person is conscious and alert: give them water to drink if they swallowed something — do NOT induce vomiting unless specifically told to by a health professional.",
+        "If unconscious but breathing: place in recovery position (on their side) to prevent choking on vomit.",
+        "If not breathing: start CPR.",
+        "For chemical on skin: remove contaminated clothing and flush skin with large amounts of water for at least 20 minutes.",
+        "For chemical in eyes: flush with clean water continuously for 20 minutes — do not rub eyes."
+      ],
+      "do_not": [
+        "Do NOT induce vomiting — dangerous for caustic substances (bleach, battery acid) as they burn on the way back up",
+        "Do NOT give milk, charcoal, or other home antidotes without medical advice",
+        "Do NOT leave the person alone if unconscious",
+        "Do NOT wait for symptoms to develop — act immediately"
+      ],
+      "when_to_seek_help": "Always go to hospital after any significant ingestion of chemicals, medications, or unknown substances. Even if no symptoms yet — some poisons (paracetamol overdose, certain plants) cause delayed damage. Take the container with you.",
+      "recovery_note": "Most poisonings are treatable if hospital treatment is sought promptly. Do not be embarrassed if the ingestion was intentional — hospital staff are there to help without judgement."
+    },
+    {
+      "id": "electric_shock",
+      "name": "Electric Shock",
+      "icon": "⚡",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "DO NOT TOUCH the person until the electricity is OFF — you will be electrocuted too. Switch off the power at the source (switch, fuse box, or pull out the plug).",
+        "If you cannot switch off the power: use a non-conducting object (dry wooden stick, plastic chair, rubber item — NOT metal or wet objects) to push the person away from the source.",
+        "ONCE SAFE TO TOUCH: check for breathing and consciousness. Start CPR immediately if not breathing.",
+        "Call for help and get to hospital — all significant electric shock victims must be assessed at hospital.",
+        "Lie the person down and treat for shock: keep them warm, raise their legs (unless head injury suspected).",
+        "Do not give anything to eat or drink.",
+        "Treat any burns from the electrical entry and exit points with cool running water."
+      ],
+      "do_not": [
+        "Do NOT touch the person until you are certain the power is off — you WILL be electrocuted",
+        "Do NOT use metal or wet objects to move the person from the electrical source",
+        "Do NOT assume they are fine because they are conscious — internal injuries, heart rhythm problems, and delayed complications are common"
+      ],
+      "when_to_seek_help": "Every significant electric shock victim must go to hospital. Electric current can cause heart rhythm abnormalities that may develop hours later. Internal burns may not be visible. Lightning strikes require the same approach.",
+      "recovery_note": "Survivors of electric shock may have burns, muscle damage, heart rhythm problems, and psychological effects. All require hospital assessment. Follow-up heart monitoring for at least 24 hours after significant shock."
+    },
+    {
+      "id": "diabetic_emergency",
+      "name": "Diabetic Emergency (Hypoglycaemia)",
+      "icon": "🩸",
+      "severity": "high",
+      "call_for_help": false,
+      "steps": [
+        "RECOGNISE hypoglycaemia (low blood sugar): sudden sweating, shaking, confusion, pale skin, fast heartbeat, hunger, dizziness in a known diabetic.",
+        "IF CONSCIOUS AND CAN SWALLOW: give sugar immediately — 3-4 glucose tablets, OR 15ml (3 teaspoons) of sugar dissolved in water, OR a glass of fruit juice, OR 3-4 sweets. Act fast.",
+        "RECHECK in 15 minutes — if still symptomatic, give another portion of fast sugar.",
+        "After symptoms resolve: give a starchy snack (bread, banana, ugali) to prevent the blood sugar from dropping again.",
+        "IF UNCONSCIOUS: do NOT give anything by mouth — choking risk. Place in recovery position and get to hospital immediately.",
+        "Get to hospital if: unconscious, seizure, symptoms not improving after two sugar portions, or you are unsure."
+      ],
+      "do_not": [
+        "Do NOT give sugar to an unconscious person — they cannot swallow safely",
+        "Do NOT delay — brain damage from very low blood sugar can occur within minutes",
+        "Do NOT give insulin or diabetes medication during a hypoglycaemic episode",
+        "Do NOT leave the person alone"
+      ],
+      "when_to_seek_help": "Unconscious diabetic — hospital immediately. Hypoglycaemia not responding to 2 rounds of sugar. First episode of hypoglycaemia (review diabetes management). Frequent hypoglycaemic episodes.",
+      "recovery_note": "Most hypoglycaemic episodes resolve quickly with sugar. If the person is on sulphonylurea diabetes medication (glibenclamide, glipizide), hypoglycaemia can recur — monitor for several hours and go to hospital for any recurring symptoms."
+    },
+    {
+      "id": "severe_asthma",
+      "name": "Severe Asthma Attack",
+      "icon": "💨",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "STAY CALM — anxiety makes breathing harder. Sit the person upright, leaning slightly forward with hands on knees (tripod position) — this opens airways.",
+        "Give the BLUE RELIEVER INHALER (salbutamol) immediately — 4 puffs, one at a time, with 1 minute between each puff. Use a spacer if available.",
+        "If no improvement in 15 minutes: give 4 more puffs of the blue inhaler. If still no improvement — get to hospital urgently.",
+        "SIGNS OF LIFE-THREATENING ATTACK requiring immediate hospital: unable to speak in sentences, breathing very fast with visible effort, lips or fingertips turning blue, silent chest (no wheeze — means very little air moving), exhausted, confused.",
+        "In hospital: nebulised salbutamol, IV magnesium sulphate, IV steroids, oxygen.",
+        "Keep giving salbutamol every 20 minutes while getting to hospital.",
+        "Remove from any obvious trigger (smoke, animal, dust) immediately."
+      ],
+      "do_not": [
+        "Do NOT lay the person flat — sitting upright is essential for breathing",
+        "Do NOT leave them alone",
+        "Do NOT give sedatives or antihistamines that can cause drowsiness",
+        "Do NOT delay getting to hospital if not responding to inhaler"
+      ],
+      "when_to_seek_help": "Not improving after 8 puffs of blue inhaler. Any signs of severe attack (unable to speak, blue lips, silent chest, exhaustion). Children with asthma attacks always need prompt medical assessment.",
+      "recovery_note": "Asthma deaths are largely preventable. After any severe attack, review management with a health worker — preventive inhaler may need to be started or dose increased. Identify and avoid triggers."
+    },
+    {
+      "id": "rape_sexual_assault",
+      "name": "Sexual Assault — Emergency Care",
+      "icon": "💙",
+      "severity": "high",
+      "call_for_help": false,
+      "steps": [
+        "You are not alone. What happened is not your fault. You deserve care and support.",
+        "Go to a health facility AS SOON AS POSSIBLE — ideally within 72 hours. Emergency post-exposure prophylaxis (PEP) to prevent HIV must start within 72 hours.",
+        "Try not to wash, change clothes, or go to the toilet if possible before going to hospital — this preserves evidence. But your safety and health come first — do what you need to do.",
+        "At the health facility: you can receive emergency contraception (to prevent pregnancy), HIV PEP (to prevent HIV infection), STI treatment, wound care, and mental health support.",
+        "You do not have to report to police to receive medical care — medical care is your right regardless.",
+        "Safe spaces in Uganda: MILDMAY Uganda, Mulago Hospital, UGANET (Uganda Network on Law, Ethics and HIV/AIDS), Gender Violence helpline."
+      ],
+      "do_not": [
+        "Do NOT blame yourself — sexual violence is never the victim's fault",
+        "Do NOT feel you must face this alone — tell someone you trust",
+        "Do NOT delay going to hospital — time is critical for PEP and emergency contraception effectiveness"
+      ],
+      "when_to_seek_help": "Immediately. Within 72 hours is critical for HIV PEP. Within 120 hours (5 days) for emergency contraception. Mental health support should be ongoing.",
+      "recovery_note": "Recovery from sexual violence is a process. Physical treatment is urgent but so is emotional support. FIDA Uganda (feminist lawyers), MILDMAY, and Hospice Africa offer counselling. Tell someone you trust. You are not alone and you deserve support."
+    },
+    {
+      "id": "postpartum_haemorrhage",
+      "name": "Postpartum Haemorrhage (Heavy Bleeding After Birth)",
+      "icon": "🤱",
+      "severity": "emergency",
+      "call_for_help": true,
+      "steps": [
+        "CALL FOR HELP immediately — shout for a health worker or other people. Heavy bleeding after birth can cause death within 2 hours.",
+        "MASSAGE the uterus firmly through the abdomen — make a fist and press rhythmically on the lower abdomen just above the pubic bone. This stimulates uterine contraction to close blood vessels.",
+        "If oxytocin is available: give 10 IU IM injection immediately (a health worker should do this).",
+        "Keep the woman lying flat with legs raised slightly.",
+        "Breastfeed the baby if possible — suckling stimulates natural oxytocin release which contracts the uterus.",
+        "Keep the woman warm — blood loss causes rapid cooling.",
+        "Get to hospital as fast as possible — she will need IV fluids, medications, and possibly blood transfusion."
+      ],
+      "do_not": [
+        "Do NOT leave the mother alone",
+        "Do NOT give anything by mouth if she is very faint or unconscious",
+        "Do NOT delay getting to hospital"
+      ],
+      "when_to_seek_help": "Any bleeding after delivery that soaks more than 1 pad in an hour is heavy. Any feeling of faintness, rapid heartbeat, or paleness with bleeding — hospital immediately.",
+      "recovery_note": "Postpartum haemorrhage is the leading cause of maternal death in Uganda. With prompt treatment at hospital it is usually survivable. The most important prevention is ensuring health workers give oxytocin immediately after delivery."
+    },
+    {
+      "id": "malaria_emergency",
+      "name": "Suspected Cerebral Malaria / Severe Malaria Emergency",
+      "icon": "🦟",
+      "urgency": "LIFE-THREATENING",
+      "description": "Malaria that has reached the brain or other organs. Can kill within hours. Most common paediatric emergency in Uganda.",
+      "warning_signs": [
+        "Child cannot wake up or is very difficult to rouse",
+        "Repeated seizures/convulsions",
+        "Breathing very fast or deeply (laboured breathing)",
+        "Jaundice (yellow skin and eyes)",
+        "Very pale skin and lips (severe anaemia)",
+        "Unable to drink or breastfeed",
+        "Vomiting everything"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "Call for transport NOW",
+          "action": "This is a LIFE-THREATENING EMERGENCY. Get the person to hospital immediately — do not wait. Call boda boda, car, or ambulance. Every minute counts with cerebral malaria."
+        },
+        {
+          "step": 2,
+          "title": "If seizing — recovery position",
+          "action": "If child or adult is convulsing: roll onto their side (recovery position). Do NOT put anything in the mouth. Do NOT restrain forcefully. Protect head from injury. The seizure will usually stop in 1-3 minutes."
+        },
+        {
+          "step": 3,
+          "title": "Control fever if possible",
+          "action": "Remove excess clothing. Sponge body with lukewarm (NOT cold) water. If still able to swallow: give paracetamol syrup (child) or tablets (adult) for fever. Do NOT give aspirin or ibuprofen in suspected malaria."
+        },
+        {
+          "step": 4,
+          "title": "Do not give food or drink if unconscious",
+          "action": "An unconscious person can choke. Nothing by mouth until they are fully awake and responsive."
+        },
+        {
+          "step": 5,
+          "title": "At hospital",
+          "action": "Hospital treatment: IV artesunate (injectable anti-malarial), IV glucose if blood sugar low, oxygen, IV fluids if dehydrated. Blood transfusion for severe anaemia. Anti-seizure medication if needed."
+        },
+        {
+          "step": 6,
+          "title": "Prevention note",
+          "action": "After recovery: insecticide-treated nets every night without fail. Treat curtains and walls with insecticide if possible. Remove stagnant water near home. Start a malaria prevention routine."
+        }
+      ],
+      "do_not": [
+        "Do not wait to see if they recover at home — cerebral malaria can kill in under 24 hours",
+        "Do not give aspirin or ibuprofen for malaria fever — increases bleeding risk",
+        "Do not give herbal remedies and delay hospital — use herbs ALONGSIDE medical care at most"
+      ],
+      "call_for_help_if": "ANY of the warning signs above — go to hospital IMMEDIATELY, do not wait"
+    },
+    {
+      "id": "dehydration_child",
+      "name": "Severe Dehydration in a Child",
+      "icon": "💧",
+      "urgency": "URGENT",
+      "description": "Children with diarrhoea and vomiting can become life-threateningly dehydrated very quickly — faster than adults. Diarrhoea disease with dehydration kills thousands of Ugandan children annually.",
+      "warning_signs": [
+        "Sunken eyes",
+        "No tears when crying",
+        "Very dry mouth and tongue",
+        "Skin pinched stays up (poor skin turgor)",
+        "No urine in more than 6 hours",
+        "Sunken fontanelle (soft spot on top of head in infants)",
+        "Very drowsy or difficult to wake",
+        "Rapid weak pulse",
+        "Fast shallow breathing"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "Assess severity",
+          "action": "Mild dehydration: some thirst, slightly dry mouth, still urinating — treat at home. Moderate/severe dehydration: sunken eyes, no tears, sunken fontanelle, very drowsy — hospital NOW."
+        },
+        {
+          "step": 2,
+          "title": "Give ORS — Oral Rehydration Solution",
+          "action": "Mix 1 sachet of ORS in 1 litre of clean (boiled and cooled) water. Give small amounts frequently:\n• Infant under 2: 50-100ml ORS after every loose stool or vomit\n• Child 2-10 years: 100-200ml after every episode\n• Sip slowly — do not give large amounts at once (causes vomiting)"
+        },
+        {
+          "step": 3,
+          "title": "Home ORS if no packet available",
+          "action": "Emergency home solution: 1 litre boiled clean water + 6 level teaspoons sugar + 1/2 level teaspoon salt. Mix thoroughly. This is a temporary measure — get proper ORS packets from health facility as soon as possible."
+        },
+        {
+          "step": 4,
+          "title": "Continue breastfeeding",
+          "action": "Breastfed infants: CONTINUE breastfeeding throughout diarrhoea and dehydration — breastmilk is the best ORS for infants and provides immunity. Never stop breastfeeding during diarrhoea."
+        },
+        {
+          "step": 5,
+          "title": "Give zinc",
+          "action": "For children 2 months to 5 years with diarrhoea: zinc 20mg daily for 10 days reduces severity and prevents recurrence. Available free at health centres."
+        },
+        {
+          "step": 6,
+          "title": "Go to hospital if",
+          "action": "No improvement after 4 hours of home ORS. Signs of severe dehydration. Blood in stool. Child becomes unconscious or very weak. Continued high fever."
+        }
+      ],
+      "do_not": [
+        "Do not give plain water alone to replace severe fluid losses (no electrolytes)",
+        "Do not use antibiotics for simple diarrhoea — most Ugandan childhood diarrhoea is viral or from rotavirus",
+        "Do not give anti-diarrhoeal tablets (codeine, loperamide) to children under 5 — dangerous",
+        "Do not stop breastfeeding"
+      ],
+      "call_for_help_if": "Sunken eyes, no tears, no urine for 6+ hours, very drowsy or unconscious"
+    },
+    {
+      "id": "obstetric_haemorrhage_expanded",
+      "name": "Heavy Bleeding in Pregnancy (Antepartum Haemorrhage)",
+      "icon": "🤰",
+      "urgency": "LIFE-THREATENING",
+      "description": "Bleeding during pregnancy (especially after 20 weeks) can indicate placenta praevia or placental abruption — both can be immediately life-threatening. Different from the postpartum haemorrhage (after delivery) which has its own protocol.",
+      "warning_signs": [
+        "Heavy vaginal bleeding during pregnancy (any amount is concerning after 20 weeks)",
+        "Bleeding with severe abdominal pain (placental abruption)",
+        "Painless bright red bleeding (may indicate placenta praevia)",
+        "Dizziness, fainting, or rapid heart rate with bleeding",
+        "Baby stops moving with bleeding"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "EMERGENCY — hospital immediately",
+          "action": "Any bleeding in second half of pregnancy is an obstetric emergency. Call for transport NOW. Do not wait. Go to the nearest facility with a theatre and blood supply."
+        },
+        {
+          "step": 2,
+          "title": "Lay down on left side",
+          "action": "Lie down on the LEFT side — this relieves pressure on the vena cava (major vein) and improves blood supply to placenta and baby. Keep calm and breathe steadily."
+        },
+        {
+          "step": 3,
+          "title": "Do not do vaginal examination",
+          "action": "NEVER perform an internal (vaginal) examination when a pregnant woman is bleeding — if placenta praevia is present, this can cause catastrophic bleeding and death. Hospital only."
+        },
+        {
+          "step": 4,
+          "title": "Monitor for shock",
+          "action": "Signs of shock: rapid weak pulse, pale sweaty skin, confusion, rapid breathing, falling blood pressure. If in shock: raise legs (unless breathing is difficult), keep warm, get to hospital urgently."
+        },
+        {
+          "step": 5,
+          "title": "At hospital",
+          "action": "Hospital will: check baby's heartbeat (CTG), do ultrasound (identifies placenta position), provide IV fluids and blood if needed. Emergency caesarean section may be life-saving."
+        }
+      ],
+      "do_not": [
+        "Do not perform vaginal examination",
+        "Do not give food or drink (surgery may be needed urgently)",
+        "Do not delay seeking care — wait at home is not an option"
+      ],
+      "call_for_help_if": "ANY bleeding in second half of pregnancy"
+    },
+    {
+      "id": "mob_violence_assault",
+      "name": "Injury from Violence / Assault (Including Mob Violence)",
+      "icon": "🆘",
+      "urgency": "URGENT",
+      "description": "Managing injuries from violence or assault. Includes blunt trauma (beatings), cuts, and injuries from mob violence — a significant cause of injury in Uganda.",
+      "warning_signs": [
+        "Unconsciousness or altered consciousness",
+        "Severe bleeding from head injuries",
+        "Suspected internal bleeding (rigid painful abdomen, shock without obvious external bleeding)",
+        "Spinal injury (neck or back trauma — numbness or weakness in limbs)",
+        "Multiple injuries"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "Ensure safety first",
+          "action": "Do not approach until the scene is safe. Remove victim from ongoing danger if possible without risking yourself."
+        },
+        {
+          "step": 2,
+          "title": "Check consciousness and breathing",
+          "action": "Call their name and tap shoulder. If unresponsive: check for breathing — look for chest movement, listen, feel. If not breathing: begin CPR."
+        },
+        {
+          "step": 3,
+          "title": "Control severe bleeding",
+          "action": "Apply firm, direct pressure with cleanest available cloth. Maintain pressure without lifting to check — continue pressing for at least 10 minutes. Do not remove clotted blood. For limb injuries: if direct pressure fails, improvised tourniquet above the wound."
+        },
+        {
+          "step": 4,
+          "title": "Do NOT move if spinal injury suspected",
+          "action": "If the victim was hit on the head or back, fell from height, or has neck pain, numbness, or weakness in limbs — DO NOT move neck. Hold head completely still until help arrives. Moving a spinal injury can cause permanent paralysis."
+        },
+        {
+          "step": 5,
+          "title": "Head injuries",
+          "action": "All head injuries: go to hospital. Danger signs: unconsciousness, repeated vomiting, severe headache, one pupil larger than other, clear fluid from ears/nose, seizures, weakness on one side."
+        },
+        {
+          "step": 6,
+          "title": "Document injuries for medico-legal purposes",
+          "action": "If assault victim: photographing injuries and getting a Police Form 3 (PF3) examination at hospital is important for legal proceedings. Time-sensitive — do as soon as victim is medically stabilised."
+        }
+      ],
+      "do_not": [
+        "Do not give food, drinks, or painkillers before hospital assessment of serious injuries",
+        "Do not remove objects embedded in wounds (knives, sticks) — stabilise in place and transport",
+        "Do not move a victim with potential spinal injury without expert help"
+      ],
+      "call_for_help_if": "Unconsciousness, suspected internal bleeding, severe head injury, spinal injury"
+    },
+    {
+      "id": "hypoglycaemia_severe",
+      "name": "Severe Low Blood Sugar (Hypoglycaemia) — Diabetic or Non-Diabetic",
+      "icon": "🍬",
+      "urgency": "URGENT",
+      "description": "Dangerously low blood sugar — most common in diabetics on medication or insulin, but also in severely malnourished children (especially with malaria). Can cause brain damage and death if not treated within minutes.",
+      "warning_signs": [
+        "Sudden confusion or strange behaviour",
+        "Trembling and shakiness",
+        "Excessive sweating (cold, clammy sweat)",
+        "Rapid heartbeat and palpitations",
+        "Extreme hunger",
+        "Pale skin",
+        "Difficulty speaking or concentrating",
+        "Seizures (severe)",
+        "Unconsciousness (severe)"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "If conscious and able to swallow — give sugar IMMEDIATELY",
+          "action": "Give 15-20g of fast-acting glucose:\n• 3-4 teaspoons of sugar dissolved in water\n• A glass of fruit juice\n• 4-6 glucose sweets/dextrose tablets\n• A can of regular soda (not diet)\n• A tablespoon of honey"
+        },
+        {
+          "step": 2,
+          "title": "Wait 15 minutes",
+          "action": "Wait 15 minutes then reassess. If still symptomatic or blood glucose still low — give another 15g sugar."
+        },
+        {
+          "step": 3,
+          "title": "Once recovered — give slow-release food",
+          "action": "After recovery, give a meal with complex carbohydrate to prevent recurrence:\n• Posho and beans\n• Bread and groundnut paste\n• Matoke with groundnut sauce"
+        },
+        {
+          "step": 4,
+          "title": "If unconscious — DO NOT give anything by mouth",
+          "action": "Risk of choking and aspiration. Get to hospital URGENTLY for IV dextrose. Place in recovery position. Monitor breathing."
+        },
+        {
+          "step": 5,
+          "title": "In malaria-sick child",
+          "action": "Children with severe malaria often have dangerous hypoglycaemia. Any child with malaria who is unconscious or seizing: treat for hypoglycaemia AND cerebral malaria simultaneously — go to hospital immediately."
+        }
+      ],
+      "do_not": [
+        "Do not give food or sugar by mouth to an unconscious person — they can choke and die",
+        "Do not use diet or sugar-free drinks — they will not raise blood sugar",
+        "Do not leave the person alone until fully recovered and eating a proper meal"
+      ],
+      "call_for_help_if": "Unconsciousness, seizures, or no improvement after 30 minutes of treatment"
+    },
+    {
+      "id": "spinal_neck_injury",
+      "name": "Suspected Spinal or Neck Injury",
+      "icon": "🦴",
+      "urgency": "CRITICAL",
+      "description": "Any injury that may have damaged the spine or neck — road accident, fall from height, dive into water, or heavy blow to back/neck. Incorrect handling can permanently paralyse someone who might otherwise recover.",
+      "warning_signs": [
+        "Neck or back pain after trauma",
+        "Numbness or tingling in arms or legs after injury",
+        "Weakness or inability to move limbs after injury",
+        "Unconsciousness after head/neck trauma"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "DO NOT MOVE THE SPINE",
+          "action": "Most important rule: minimise movement of the head and spine. Moving an unstable spinal injury is the most common cause of permanent paralysis."
+        },
+        {
+          "step": 2,
+          "title": "Hold head still",
+          "action": "If you must keep the person still: cup your hands around both sides of the head and hold it in whatever position you found it. DO NOT try to straighten it. Maintain this position until help arrives."
+        },
+        {
+          "step": 3,
+          "title": "Keep them still and calm",
+          "action": "Keep the person calm. Tell them not to try to get up. Keep them warm. Talk to them reassuringly."
+        },
+        {
+          "step": 4,
+          "title": "If moving is absolutely necessary",
+          "action": "If there is immediate danger (fire, flooding): log roll — multiple people move the whole body as one rigid unit, keeping head, neck, and body in alignment. One person controls and calls the movement."
+        },
+        {
+          "step": 5,
+          "title": "Monitor breathing",
+          "action": "Check breathing regularly. High spinal injuries can impair breathing muscles. Be prepared to start CPR if breathing stops."
+        },
+        {
+          "step": 6,
+          "title": "Transport correctly",
+          "action": "Hospital transport requires a backboard/spine board ideally. If none: carry on flat rigid surface. Boda bodas should NOT be used for suspected spinal injuries if avoidable — if no choice, immobilise as best possible."
+        }
+      ],
+      "do_not": [
+        "Do not attempt to straighten or reposition the head or neck",
+        "Do not allow the person to sit up or walk",
+        "Do not put on a boda boda without proper immobilisation",
+        "Do not remove a helmet until a spinal injury is excluded"
+      ],
+      "call_for_help_if": "Any numbness, weakness, or paralysis after trauma — immediate hospital by ambulance if possible"
+    }
+  ]
+}

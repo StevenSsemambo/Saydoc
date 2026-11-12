@@ -1,0 +1,991 @@
+{
+  "plans": [
+    {
+      "id": "anaemia",
+      "name": "Nutrition for Anaemia (Iron Deficiency)",
+      "intro": "Anaemia affects over 40% of women and 50% of children under 5 in Uganda. Most cases are iron-deficiency anaemia, caused by insufficient iron intake, poor absorption, or blood loss (including heavy periods and malaria). Diet and supplementation together are the solution.",
+      "goal": "Increase iron intake and absorption to rebuild blood",
+      "targets": [
+        "Women of reproductive age",
+        "Pregnant women",
+        "Children under 5",
+        "People with heavy periods"
+      ],
+      "eat_more": [
+        {
+          "food": "Liver (chicken or goat)",
+          "reason": "Richest iron source available in Uganda — one portion twice weekly is highly effective",
+          "portion": "80-100g, 2x/week",
+          "local_names": [
+            "Lifu (chicken liver)",
+            "Enkoko (goat liver)"
+          ]
+        },
+        {
+          "food": "Beans (any type)",
+          "reason": "Most affordable everyday iron source — must pair with Vitamin C food",
+          "portion": "1 cup cooked daily",
+          "local_names": [
+            "Obwobe",
+            "Ebijanjaalo (groundnut sauce)",
+            "Emwogo na obwobe"
+          ]
+        },
+        {
+          "food": "Moringa leaves",
+          "reason": "Very high iron and Vitamin C together — rare combination",
+          "portion": "2 tablespoons dried powder or 1 cup fresh leaves daily",
+          "local_names": [
+            "Muwungu (Luganda)",
+            "Oyibo drum stick"
+          ]
+        },
+        {
+          "food": "Mukene (Silver fish/Dagaa)",
+          "reason": "Small whole fish — high iron, calcium, and Vitamin B12. Very affordable.",
+          "portion": "3 tablespoons daily",
+          "local_names": [
+            "Mukene (Uganda/Lake Victoria)",
+            "Omena (Kenya)"
+          ]
+        },
+        {
+          "food": "Dark green leafy vegetables",
+          "reason": "Good plant iron source — always eat with Vitamin C",
+          "portion": "1 large handful daily",
+          "local_names": [
+            "Sukuma wiki (kale)",
+            "Dodo (amaranth)",
+            "Nakati",
+            "Bbugga"
+          ]
+        },
+        {
+          "food": "Vitamin C foods with every iron-rich meal",
+          "reason": "Doubles iron absorption — ESSENTIAL with plant iron sources",
+          "portion": "Squeeze of lemon/lime, or half a guava, or tomato",
+          "local_names": [
+            "Ndimu (lemon/lime)",
+            "Pera (guava)",
+            "Nyanya (tomato)"
+          ]
+        },
+        {
+          "food": "Groundnuts (simsim/sesame)",
+          "reason": "Good plant iron, protein, and healthy fats",
+          "portion": "3 tablespoons daily",
+          "local_names": [
+            "Ebinyeebwa (groundnuts)",
+            "Simsim (sesame)"
+          ]
+        },
+        {
+          "food": "Pumpkin seeds (dried)",
+          "reason": "Highly concentrated iron source",
+          "portion": "2 tablespoons",
+          "local_names": [
+            "Ensogasoga"
+          ]
+        },
+        {
+          "food": "Eggs",
+          "reason": "Iron and Vitamin B12",
+          "portion": "2 eggs daily if possible",
+          "local_names": [
+            "Amagi"
+          ]
+        }
+      ],
+      "eat_less": [
+        {
+          "food": "Tea and coffee with meals",
+          "reason": "Tannins in tea and coffee block up to 60% of iron absorption — drink 1 hour before or 2 hours after iron-rich meals"
+        },
+        {
+          "food": "Cow's milk with meals",
+          "reason": "Calcium competes with iron absorption at the same meal"
+        },
+        {
+          "food": "Antacids with iron-rich meals",
+          "reason": "Reduce stomach acid needed for iron absorption"
+        }
+      ],
+      "supplements": "Iron tablets (ferrous sulphate or ferrous fumarate) are available at health centres. Take with a glass of orange juice or with a vitamin C food. Black stools are normal and harmless.",
+      "warning_signs": [
+        "Extreme fatigue making it hard to do daily tasks",
+        "Breathlessness on mild exertion",
+        "Rapid heart rate at rest",
+        "Yellow or pale yellow skin (consider other causes of anaemia)"
+      ],
+      "uganda_note": "Malaria destroys red blood cells and worsens anaemia significantly. Prevent malaria with insecticide-treated nets. Intestinal worms also cause anaemia — deworm regularly with mebendazole every 6 months."
+    },
+    {
+      "id": "diabetes",
+      "name": "Nutrition for Type 2 Diabetes",
+      "intro": "Type 2 diabetes is rapidly increasing in Uganda, especially in urban areas. Diet is the most powerful tool for managing blood sugar — many people can significantly reduce or even eliminate medication with the right eating pattern.",
+      "goal": "Keep blood sugar stable throughout the day — no spikes, no crashes",
+      "targets": [
+        "People with Type 2 diabetes",
+        "Pre-diabetes (borderline blood sugar)",
+        "Overweight individuals with family history of diabetes"
+      ],
+      "eat_more": [
+        {
+          "food": "Whole grain posho (unrefined maize flour)",
+          "reason": "Slower sugar release than refined white posho. Millet posho is even better.",
+          "portion": "Small portion (size of your fist) per meal"
+        },
+        {
+          "food": "Millet (finger millet / obulo)",
+          "reason": "Low glycaemic index — steadiest blood sugar of all Uganda staples. Best choice.",
+          "portion": "Moderate portion twice daily",
+          "local_names": [
+            "Obulo (finger millet)",
+            "Ebhulo"
+          ]
+        },
+        {
+          "food": "Sorghum (omwenge / odunga)",
+          "reason": "Low GI staple — good alternative to white posho",
+          "portion": "Moderate portion"
+        },
+        {
+          "food": "Green plantain / unripe matoke",
+          "reason": "Ripe matoke raises sugar quickly. Unripe / green matoke is much better for diabetics.",
+          "portion": "Medium portion (not overripe)"
+        },
+        {
+          "food": "Beans and lentils",
+          "reason": "Very low GI. Protein and fibre slow sugar absorption. Best staple for diabetics.",
+          "portion": "At least 1 cup cooked at every meal"
+        },
+        {
+          "food": "Non-starchy vegetables",
+          "reason": "Low calories, low sugar — eat as much as you want",
+          "portion": "Fill half your plate",
+          "local_names": [
+            "Sukuma wiki",
+            "Nakati",
+            "Dodo",
+            "Cabbages",
+            "Tomatoes",
+            "Onions"
+          ]
+        },
+        {
+          "food": "Fish (any type)",
+          "reason": "Protein without raising blood sugar. Tilapia and Nile perch — excellent.",
+          "portion": "At least 3x weekly"
+        },
+        {
+          "food": "Avocado",
+          "reason": "Healthy fat that does not raise blood sugar. Helps insulin sensitivity.",
+          "portion": "Half an avocado daily"
+        }
+      ],
+      "eat_less": [
+        {
+          "food": "White refined posho (sifted maize flour)",
+          "reason": "Very high GI — rapid blood sugar spike. Use millet or whole grain instead."
+        },
+        {
+          "food": "White bread and mandazi",
+          "reason": "Rapidly raise blood sugar — eat small amounts occasionally at most"
+        },
+        {
+          "food": "Ripe matoke (very ripe / yellow)",
+          "reason": "Starch has converted to sugar — raises blood sugar rapidly"
+        },
+        {
+          "food": "White rice (large portions)",
+          "reason": "High GI — if you eat rice, pair with large amount of beans and vegetables to slow absorption"
+        },
+        {
+          "food": "Sugary drinks — Fanta, Pepsi, Mirinda, sodas, concentrated juices",
+          "reason": "Most dangerous for diabetics — drink only water, black tea, or black coffee"
+        },
+        {
+          "food": "Cassava flour (plain)",
+          "reason": "Very high GI — one of the worst foods for blood sugar management"
+        },
+        {
+          "food": "Deep fried foods (chips, fried chicken)",
+          "reason": "High fat worsens insulin resistance over time"
+        },
+        {
+          "food": "Sugar in tea (large amounts)",
+          "reason": "Reduces to 1/2 teaspoon maximum or use no sugar"
+        }
+      ],
+      "meal_pattern": "3 small to moderate meals per day at regular times. Never skip meals (especially if on medication). Eat similar amounts at each meal — consistency helps stabilise blood sugar. Walk for 30 minutes after meals — significantly reduces post-meal blood sugar spike.",
+      "supplements": "No specific supplements. Metformin (if prescribed) causes Vitamin B12 deficiency — supplement B12 or eat liver and eggs regularly.",
+      "uganda_note": "Diabetes is increasing rapidly in Ugandan cities (Kampala, Jinja, Mbarara). Key drivers: reduced physical activity, increased consumption of refined starchy foods, sodas, and processed foods. Rural Ugandans eating traditional foods of millet, sorghum, beans, and fish have far lower diabetes rates."
+    },
+    {
+      "id": "hypertension",
+      "name": "Nutrition for High Blood Pressure (Hypertension)",
+      "intro": "High blood pressure (hypertension) affects approximately 30% of Ugandan adults. Diet changes can reduce blood pressure significantly — sometimes as much as medication. The DASH eating pattern is the most evidence-based dietary approach.",
+      "goal": "Lower blood pressure through diet — reduce sodium, increase potassium and magnesium",
+      "targets": [
+        "People with hypertension",
+        "Family history of stroke or heart attack",
+        "Overweight individuals",
+        "People over 40"
+      ],
+      "eat_more": [
+        {
+          "food": "Potassium-rich foods",
+          "reason": "Potassium counteracts sodium and directly lowers blood pressure",
+          "examples": [
+            "Banana (empogola) — most affordable potassium source",
+            "Avocado",
+            "Sweet potato",
+            "Beans",
+            "Orange sweet potato",
+            "Tomatoes"
+          ]
+        },
+        {
+          "food": "Beans and legumes",
+          "reason": "Potassium, magnesium, protein, fibre — all beneficial for blood pressure",
+          "portion": "At least 1 cup daily"
+        },
+        {
+          "food": "Vegetables (especially dark leafy)",
+          "reason": "Potassium and magnesium",
+          "portion": "Large portions at every meal",
+          "local_names": [
+            "Sukuma wiki",
+            "Nakati",
+            "Dodo",
+            "Omwono"
+          ]
+        },
+        {
+          "food": "Mukene (small fish — whole)",
+          "reason": "Calcium and potassium without high sodium if unsalted",
+          "portion": "Small portion daily"
+        },
+        {
+          "food": "Garlic",
+          "reason": "Compounds in garlic have modest blood pressure lowering effects",
+          "portion": "1-2 cloves daily"
+        },
+        {
+          "food": "Hibiscus tea (Zobo/Rosella)",
+          "reason": "Clinical evidence shows hibiscus tea lowers blood pressure",
+          "portion": "2 cups daily, unsweetened",
+          "local_names": [
+            "Zobo",
+            "Rosella",
+            "Omukajjo (in some areas)"
+          ]
+        },
+        {
+          "food": "Groundnuts and simsim",
+          "reason": "Magnesium content helps blood vessel relaxation",
+          "portion": "Moderate — 2 tablespoons daily (high in calories)"
+        }
+      ],
+      "eat_less": [
+        {
+          "food": "Salt (sodium)",
+          "reason": "Most important dietary change for hypertension. Target: less than 5g salt per day (1 teaspoon total)",
+          "tips": [
+            "Do not add salt at table",
+            "Reduce salt in cooking gradually",
+            "Dried salted fish (mukene, smoked fish) are very high in salt — rinse before cooking",
+            "Cube Royco and Maggi stock cubes are extremely high in salt — use minimally or not at all"
+          ]
+        },
+        {
+          "food": "Alcohol",
+          "reason": "Directly raises blood pressure. Limit to maximum 1-2 drinks/day — ideally none."
+        },
+        {
+          "food": "Red meat (fatty beef, pork)",
+          "reason": "Saturated fat contributes to artery damage and hypertension over time"
+        },
+        {
+          "food": "Fried and fatty foods",
+          "reason": "Weight gain raises blood pressure — healthy weight management is essential"
+        },
+        {
+          "food": "Sugary drinks and processed snacks",
+          "reason": "Drive weight gain and worsen metabolic syndrome"
+        }
+      ],
+      "lifestyle_note": "Salt is the most important dietary change. Reducing to 5g per day can lower blood pressure by 5-7 mmHg — as much as one blood pressure tablet. Exercise is also extremely powerful: 30 minutes of walking 5 days/week reduces blood pressure significantly.",
+      "uganda_note": "Traditional Ugandan salt use is changing — Maggi and Royco bouillon cubes are now extremely common and are very high in sodium. Processed and packaged foods are increasingly consumed. The traditional diet of millet, beans, groundnuts, and vegetables is naturally low in sodium and protective."
+    },
+    {
+      "id": "malaria_recovery",
+      "name": "Nutrition During and After Malaria",
+      "intro": "Malaria causes fever, anaemia, liver strain, and often loss of appetite. Good nutrition supports faster recovery, prevents complications like anaemia, and strengthens the immune system for ongoing protection.",
+      "goal": "Rebuild blood, support liver, restore energy and immune function",
+      "targets": [
+        "People currently recovering from malaria",
+        "Pregnant women with malaria",
+        "Children recovering from malaria",
+        "People with recurrent malaria"
+      ],
+      "eat_more": [
+        {
+          "food": "Fluids — water, coconut water, fresh fruit juice",
+          "reason": "Fever causes rapid dehydration. Drink at least 8-10 glasses daily during illness.",
+          "priority": "HIGHEST"
+        },
+        {
+          "food": "ORS (Oral Rehydration Salts)",
+          "reason": "If not keeping fluids down well, ORS replaces salts lost in fever and vomiting",
+          "priority": "HIGH"
+        },
+        {
+          "food": "Liver (chicken or goat)",
+          "reason": "Iron to rebuild blood destroyed by malaria. Also B vitamins for recovery.",
+          "portion": "3x per week during recovery"
+        },
+        {
+          "food": "Orange or yellow foods (Vitamin A)",
+          "reason": "Vitamin A strengthens immunity and helps recovery. Malaria depletes Vitamin A.",
+          "examples": [
+            "Orange sweet potato",
+            "Pumpkin",
+            "Mango",
+            "Carrot",
+            "Eggs",
+            "Liver"
+          ]
+        },
+        {
+          "food": "Small frequent meals",
+          "reason": "Appetite is poor during malaria. Small amounts frequently is better than forcing large meals.",
+          "examples": [
+            "Porridge (obushera)",
+            "Ripe banana mashed",
+            "Soft ugali with avocado",
+            "Rice with fish soup"
+          ]
+        },
+        {
+          "food": "Zinc-rich foods",
+          "reason": "Zinc is depleted during infection and is essential for immune recovery",
+          "examples": [
+            "Groundnuts",
+            "Simsim",
+            "Liver",
+            "Beans",
+            "Eggs"
+          ]
+        },
+        {
+          "food": "Moringa leaves",
+          "reason": "Iron, Vitamin C, and multiple micronutrients — excellent recovery food",
+          "portion": "Add to soups and porridges"
+        },
+        {
+          "food": "Guava and citrus (Vitamin C)",
+          "reason": "Vitamin C with every iron-rich meal doubles iron absorption for anaemia recovery"
+        }
+      ],
+      "eat_less": [
+        {
+          "food": "Tea and coffee during recovery (large amounts)",
+          "reason": "Reduces iron absorption when trying to rebuild blood"
+        },
+        {
+          "food": "Fatty fried foods in acute illness",
+          "reason": "Hard to digest when liver is under strain from malaria"
+        },
+        {
+          "food": "Sugar (concentrated sweet drinks)",
+          "reason": "Suppress immune function"
+        }
+      ],
+      "special_note": "Take the complete course of anti-malarial medication (all 6 doses of artemether-lumefantrine) regardless of how you feel. Nutrition cannot replace medication. Children recovering from malaria should also receive a Vitamin A capsule if not had one in 3 months.",
+      "uganda_note": "Malaria is the most common cause of anaemia in Uganda's children. A child with repeated malaria becomes progressively more anaemic. Iron supplementation alongside malaria treatment is recommended. Insecticide-treated nets prevent malaria — use them every night."
+    },
+    {
+      "id": "healthy_plate_uganda",
+      "name": "The Uganda Healthy Plate (General Nutrition)",
+      "intro": "Uganda has exceptional nutritional diversity — a wide variety of traditional foods that together form a complete, affordable, and healthy diet. The challenge is not lack of food variety but ensuring balance and variety in daily meals.",
+      "goal": "A balanced, varied diet using affordable Ugandan foods for overall health",
+      "plate_guide": {
+        "half_plate": {
+          "category": "Vegetables and fruits",
+          "examples": [
+            "Sukuma wiki (kale)",
+            "Nakati (African nightshade)",
+            "Dodo (amaranth)",
+            "Bbugga",
+            "Moringa",
+            "Guava",
+            "Mango",
+            "Pineapple",
+            "Banana",
+            "Pumpkin",
+            "Tomatoes",
+            "Onions"
+          ],
+          "tip": "The more colours, the more nutrients"
+        },
+        "quarter_plate": {
+          "category": "Energy foods (starchy staples)",
+          "examples": [
+            "Millet porridge (BEST choice)",
+            "Sweet potato (especially orange-fleshed)",
+            "Banana/matoke",
+            "Whole grain posho",
+            "Sorghum",
+            "Cassava (paired with protein and vegetables)"
+          ],
+          "tip": "Millet and sorghum are healthier than refined white posho and white rice"
+        }
+      },
+      "superfoods_uganda": [
+        {
+          "name": "Moringa (Muwungu)",
+          "why": "Contains iron, calcium, Vitamin A, C, protein — exceptional nutrition. Powder from dried leaves can be added to any food."
+        },
+        {
+          "name": "Orange Sweet Potato (OFSP)",
+          "why": "Rich in beta-carotene (Vitamin A) — critical for child eye health and immunity. Uganda promotes OFSP nationally."
+        },
+        {
+          "name": "Mukene (Silver cyprinid fish)",
+          "why": "Whole small fish — eaten with bones, providing calcium, iron, B12, and protein. Most affordable complete protein."
+        },
+        {
+          "name": "Simsim (Sesame)",
+          "why": "Calcium, iron, and healthy fats. Ground into paste (simsim paste / tahini) is one of Africa's most nutritious traditional foods."
+        },
+        {
+          "name": "Termites (Ngwen/Enswa — white ants)",
+          "why": "Seasonal (November-December). Exceptionally high in protein, zinc, iron, and healthy fats. Traditional Ugandan superfood."
+        },
+        {
+          "name": "Avocado (Ovakado)",
+          "why": "Healthy fats, potassium, folate, Vitamin E. Available year-round in Uganda and relatively affordable."
+        },
+        {
+          "name": "Beans (all types)",
+          "why": "Iron, protein, fibre, B vitamins. The backbone of a healthy affordable Ugandan diet."
+        }
+      ],
+      "water_guidance": "Drink at least 6-8 glasses (1.5-2 litres) of clean water daily. Boil or treat water from unsafe sources. Breastfeeding mothers need 3+ litres daily. Sodas, Fanta, juice drinks are not water.",
+      "uganda_warning": "Key nutritional gaps in many Ugandan diets: (1) Not enough Vitamin A — eat orange sweet potato, pumpkin, mango, eggs, liver. (2) Insufficient iron — eat beans with lemon/tomato, liver, moringa. (3) Too much salt from Royco/Maggi cubes and salted dried fish. (4) Too many refined carbohydrates replacing traditional millet/sorghum."
+    },
+    {
+      "id": "pregnancy_nutrition",
+      "name": "Nutrition During Pregnancy",
+      "intro": "A mother's diet during pregnancy directly shapes her baby's development, birth weight, brain growth, and lifelong health. In Uganda, where malnutrition and anaemia in pregnant women are common, getting nutrition right is critical.",
+      "goal": "Support mother's health and baby's growth while preventing anaemia and deficiency",
+      "targets": [
+        "All pregnant women",
+        "Women planning pregnancy"
+      ],
+      "eat_more": [
+        {
+          "food": "Iron-rich foods (every day)",
+          "reason": "Blood volume increases 50% in pregnancy — massive iron demand",
+          "examples": [
+            "Liver (small portions 2x/week)",
+            "Beans at every meal",
+            "Moringa powder",
+            "Dark green vegetables",
+            "Mukene fish"
+          ],
+          "tip": "Always with Vitamin C food to double absorption"
+        },
+        {
+          "food": "Folate/Folic acid foods",
+          "reason": "Prevents neural tube defects (spina bifida) — CRITICAL in first trimester",
+          "examples": [
+            "Beans",
+            "Dark green vegetables (sukuma wiki, dodo)",
+            "Avocado",
+            "Eggs"
+          ],
+          "supplement": "Also take folic acid 400mcg tablet daily (or 5mg if on cotrimoxazole)"
+        },
+        {
+          "food": "Calcium-rich foods",
+          "reason": "Baby's bone formation + prevents pre-eclampsia",
+          "examples": [
+            "Mukene (small whole fish with bones)",
+            "Simsim/sesame paste",
+            "Moringa",
+            "Calcium-fortified foods",
+            "Beans"
+          ],
+          "supplement": "Calcium 1.5g/day supplement recommended from 20 weeks in Uganda (reduces pre-eclampsia risk 50%)"
+        },
+        {
+          "food": "Protein foods",
+          "reason": "Baby's organ and brain development",
+          "examples": [
+            "Beans at every meal",
+            "Eggs",
+            "Fish",
+            "Groundnuts",
+            "Simsim"
+          ]
+        },
+        {
+          "food": "Orange and yellow vegetables/fruits",
+          "reason": "Vitamin A for baby's immune system and vision",
+          "examples": [
+            "Orange sweet potato",
+            "Pumpkin",
+            "Mango",
+            "Carrot"
+          ],
+          "caution": "Avoid high-dose Vitamin A supplements (above 10,000 IU) — teratogenic in excess"
+        },
+        {
+          "food": "Water and fluids",
+          "reason": "Amniotic fluid, increased blood volume, kidney function",
+          "amount": "At least 8-10 glasses daily"
+        }
+      ],
+      "eat_less": [
+        {
+          "food": "Raw meat and raw fish",
+          "reason": "Risk of Toxoplasma, Salmonella, Listeria — all dangerous in pregnancy"
+        },
+        {
+          "food": "High-dose Vitamin A supplements",
+          "reason": "Teratogenic at high doses — food sources are safe"
+        },
+        {
+          "food": "Alcohol (any amount)",
+          "reason": "Fetal alcohol syndrome — no safe amount in pregnancy"
+        },
+        {
+          "food": "Raw or undercooked eggs",
+          "reason": "Salmonella risk"
+        },
+        {
+          "food": "Unpasteurised/raw milk",
+          "reason": "Brucellosis risk (especially in cattle-keeping areas)"
+        }
+      ],
+      "antenatal_supplements": [
+        "Folic acid 400mcg daily (5mg if on cotrimoxazole)",
+        "Iron tablets (ferrous sulphate) throughout pregnancy",
+        "Calcium 1.5g/day from 20 weeks where available",
+        "Vitamin A in postpartum period (NOT high doses in pregnancy)"
+      ],
+      "antenatal_care": "Attend all antenatal visits. Target: at least 4 visits in pregnancy. Blood pressure checked at every visit detects pre-eclampsia early. Iron and folic acid given free at government antenatal clinics.",
+      "uganda_note": "Anaemia affects over 40% of Ugandan pregnant women and is a major cause of maternal death (by increasing risk of haemorrhage). Every pregnant Ugandan woman should receive and take iron-folic acid tablets throughout pregnancy. Orange-fleshed sweet potato has been promoted nationally for its Vitamin A content — highly recommended in pregnancy."
+    }
+  ],
+  "foods_database": [
+    {
+      "name": "Beans (Obwobe/Ebijanjaalo)",
+      "iron_mg_100g": 8.2,
+      "protein_g_100g": 22,
+      "calories_100g": 347,
+      "key_nutrients": [
+        "Iron",
+        "Protein",
+        "Fibre",
+        "Folate",
+        "Potassium"
+      ],
+      "notes": "Uganda's most affordable everyday protein and iron. Always pair with Vitamin C food for best iron absorption. Cook from scratch — tinned beans less available and more expensive.",
+      "best_for": [
+        "Anaemia",
+        "Diabetes (low GI)",
+        "Hypertension",
+        "Pregnancy",
+        "General health"
+      ]
+    },
+    {
+      "name": "Liver (Chicken/Goat — Lifu/Enkoko)",
+      "iron_mg_100g": 12,
+      "protein_g_100g": 26,
+      "calories_100g": 165,
+      "key_nutrients": [
+        "Iron (highest source)",
+        "Vitamin B12",
+        "Vitamin A",
+        "Folate",
+        "Zinc",
+        "Protein"
+      ],
+      "notes": "Most concentrated iron and B12 source available in Uganda. 100g liver twice weekly dramatically improves anaemia. Eat in moderation in pregnancy (avoid exceeding 1-2 portions/week due to high Vitamin A).",
+      "best_for": [
+        "Anaemia",
+        "Malnutrition recovery",
+        "Pregnancy (small portions)"
+      ]
+    },
+    {
+      "name": "Moringa leaves (Muwungu)",
+      "iron_mg_100g": 28,
+      "protein_g_100g": 9,
+      "calories_100g": 64,
+      "key_nutrients": [
+        "Iron (exceptional)",
+        "Vitamin C",
+        "Calcium",
+        "Vitamin A",
+        "Potassium"
+      ],
+      "notes": "Uganda's nutritional superfood — rare combination of iron AND Vitamin C in same food. Dried powder can be added to any food. Grows easily in backyard. Fresh leaves in soups and stews.",
+      "best_for": [
+        "Anaemia",
+        "Malnutrition",
+        "Pregnancy",
+        "Breastfeeding",
+        "Child nutrition"
+      ]
+    },
+    {
+      "name": "Mukene (Silver Cyprinid fish — Dagaa)",
+      "iron_mg_100g": 4.5,
+      "protein_g_100g": 72,
+      "calories_100g": 290,
+      "key_nutrients": [
+        "Protein (highest)",
+        "Calcium",
+        "Iron",
+        "Vitamin B12",
+        "Omega-3"
+      ],
+      "notes": "Eaten whole — bones provide calcium. Most affordable complete protein source in Uganda. Very high calcium when bones eaten. Lake Victoria and Lake Albert supply. Buy and store dried — long shelf life.",
+      "best_for": [
+        "Anaemia",
+        "Bone health",
+        "Protein malnutrition",
+        "Pregnancy"
+      ]
+    },
+    {
+      "name": "Orange Sweet Potato (OFSP)",
+      "iron_mg_100g": 0.6,
+      "protein_g_100g": 1.6,
+      "calories_100g": 86,
+      "key_nutrients": [
+        "Beta-carotene / Vitamin A (very high)",
+        "Vitamin C",
+        "Fibre",
+        "Potassium"
+      ],
+      "notes": "Uganda promotes orange sweet potato nationally for Vitamin A. One medium OFSP provides entire daily Vitamin A need. Far healthier than ordinary white-fleshed sweet potato. Can identify by bright orange flesh.",
+      "best_for": [
+        "Vitamin A deficiency",
+        "Child eye and immune health",
+        "Pregnancy"
+      ]
+    },
+    {
+      "name": "Sukuma Wiki (Kale)",
+      "iron_mg_100g": 1.5,
+      "protein_g_100g": 3.3,
+      "calories_100g": 35,
+      "key_nutrients": [
+        "Iron",
+        "Calcium",
+        "Vitamin A",
+        "Vitamin C",
+        "Folate",
+        "Vitamin K"
+      ],
+      "notes": "Name means 'stretch the week' in Swahili — extremely affordable nutrition. Cook briefly (do not overcook) to preserve vitamins. Available year-round across Uganda.",
+      "best_for": [
+        "General nutrition",
+        "Anaemia",
+        "Hypertension",
+        "Bone health"
+      ]
+    },
+    {
+      "name": "Groundnuts (Ebinyeebwa)",
+      "iron_mg_100g": 4.6,
+      "protein_g_100g": 26,
+      "calories_100g": 567,
+      "key_nutrients": [
+        "Iron",
+        "Protein",
+        "Healthy fats",
+        "Magnesium",
+        "Niacin",
+        "Zinc"
+      ],
+      "notes": "Essential protein and fat source in Ugandan diet. Groundnut stew (peanut sauce) is nutritious when not overly salted. Grind into paste for spreading. Avoid mouldy groundnuts — aflatoxin risk.",
+      "best_for": [
+        "Anaemia",
+        "Malnutrition recovery",
+        "Energy",
+        "Protein intake"
+      ]
+    },
+    {
+      "name": "Simsim (Sesame)",
+      "iron_mg_100g": 14.6,
+      "protein_g_100g": 18,
+      "calories_100g": 573,
+      "key_nutrients": [
+        "Iron (very high)",
+        "Calcium (very high)",
+        "Protein",
+        "Zinc",
+        "Healthy fats"
+      ],
+      "notes": "Extremely high in iron AND calcium — one of few plant foods with both. Grind into paste for spreading. Toast and sprinkle on foods. Common in northern Uganda and available nationally.",
+      "best_for": [
+        "Anaemia",
+        "Bone health",
+        "Breastfeeding calcium needs"
+      ]
+    },
+    {
+      "name": "Avocado (Ovakado)",
+      "iron_mg_100g": 0.6,
+      "protein_g_100g": 2,
+      "calories_100g": 160,
+      "key_nutrients": [
+        "Healthy monounsaturated fats",
+        "Potassium",
+        "Folate",
+        "Vitamin E",
+        "Vitamin K"
+      ],
+      "notes": "Excellent source of potassium (better than banana per serving). Healthy fat helps absorption of fat-soluble vitamins from other foods. Available cheaply across Uganda in season.",
+      "best_for": [
+        "Hypertension",
+        "Pregnancy (folate)",
+        "Heart health",
+        "Diabetes (healthy fat)"
+      ]
+    },
+    {
+      "name": "Guava (Pera)",
+      "iron_mg_100g": 0.3,
+      "protein_g_100g": 2.6,
+      "calories_100g": 68,
+      "key_nutrients": [
+        "Vitamin C (very high — 4x orange)",
+        "Folate",
+        "Fibre",
+        "Potassium"
+      ],
+      "notes": "Uganda's highest Vitamin C fruit — far higher than orange. Affordable and widely available. Eat the pink-fleshed varieties for highest lycopene too. Vitamin C dramatically improves iron absorption from plant sources.",
+      "best_for": [
+        "Iron absorption (Vitamin C)",
+        "Immunity",
+        "Pregnancy (folate + C)"
+      ]
+    },
+    {
+      "name": "Amaranth / Dodo",
+      "iron_mg_100g": 2.3,
+      "protein_g_100g": 2.5,
+      "calories_100g": 23,
+      "key_nutrients": [
+        "Iron",
+        "Calcium",
+        "Vitamin A",
+        "Vitamin C",
+        "Folate"
+      ],
+      "notes": "Traditional Ugandan leafy vegetable, often overlooked for modern vegetables. Highly nutritious and drought-tolerant — grows easily. Seeds also nutritious. Prepare like sukuma wiki.",
+      "best_for": [
+        "Anaemia",
+        "General nutrition",
+        "Affordable micronutrient source"
+      ]
+    },
+    {
+      "name": "Millet (Obulo / Finger Millet)",
+      "iron_mg_100g": 3,
+      "protein_g_100g": 7.3,
+      "calories_100g": 336,
+      "key_nutrients": [
+        "Iron",
+        "Calcium (highest of all cereals)",
+        "Fibre",
+        "Magnesium",
+        "B vitamins"
+      ],
+      "notes": "Traditional Ugandan grain with far superior nutrition to refined white posho. Calcium content exceptional for a grain. Low glycaemic index — ideal for diabetics. Fermented millet porridge (obushera) is excellent for children. Being replaced by white posho — important to preserve use.",
+      "best_for": [
+        "Diabetes",
+        "Hypertension",
+        "Bone health",
+        "Anaemia",
+        "Child nutrition",
+        "General health"
+      ]
+    },
+    {
+      "name": "Sorghum (Emwenge / Odunga)",
+      "iron_mg_100g": 4.2,
+      "protein_g_100g": 11,
+      "calories_100g": 329,
+      "key_nutrients": [
+        "Iron",
+        "Protein",
+        "Fibre",
+        "B vitamins",
+        "Antioxidants"
+      ],
+      "notes": "Traditional Ugandan grain — nutritionally superior to maize posho. Drought-tolerant — important food security crop in northern Uganda. Can be used for porridge, ugali, and brewing. Low GI — good for diabetics.",
+      "best_for": [
+        "Diabetes",
+        "Anaemia",
+        "General health"
+      ]
+    },
+    {
+      "name": "Banana / Matoke (Empogola/Gonja)",
+      "iron_mg_100g": 0.3,
+      "protein_g_100g": 1.1,
+      "calories_100g": 89,
+      "key_nutrients": [
+        "Potassium (high)",
+        "Vitamin B6",
+        "Vitamin C",
+        "Energy"
+      ],
+      "notes": "Uganda's national staple. Matoke (cooking banana) is the foundation of many Ugandan meals. High potassium helpful for blood pressure. Ripe bananas raise blood sugar faster than unripe — diabetics should use green/unripe matoke. Gonja (plantain) is good for fibre.",
+      "best_for": [
+        "Hypertension (potassium)",
+        "Energy",
+        "Diarrhoea recovery (ripe banana)"
+      ]
+    },
+    {
+      "name": "Pumpkin (Omuzigo/Enseke)",
+      "iron_mg_100g": 0.8,
+      "protein_g_100g": 1,
+      "calories_100g": 26,
+      "key_nutrients": [
+        "Beta-carotene/Vitamin A (very high)",
+        "Vitamin C",
+        "Potassium",
+        "Fibre"
+      ],
+      "notes": "Very affordable and widely available across Uganda. Both flesh and seeds nutritious. Seeds: high iron and zinc. Pumpkin leaves also edible and nutritious. Excellent Vitamin A source for children.",
+      "best_for": [
+        "Vitamin A deficiency",
+        "Child nutrition",
+        "Eye health"
+      ]
+    },
+    {
+      "name": "Eggs (Amagi)",
+      "iron_mg_100g": 1.9,
+      "protein_g_100g": 13,
+      "calories_100g": 155,
+      "key_nutrients": [
+        "Protein (complete — all essential amino acids)",
+        "Vitamin B12",
+        "Iron",
+        "Vitamin A (yolk)",
+        "Choline (brain development)"
+      ],
+      "notes": "One of the most complete nutritious foods available. The egg yolk contains most of the nutrition — do not discard it. Affordable source of complete protein and Vitamin B12. Daily egg for children, pregnant women, and anyone with anaemia is excellent.",
+      "best_for": [
+        "Child nutrition",
+        "Pregnancy",
+        "Anaemia",
+        "General health",
+        "Brain development"
+      ]
+    },
+    {
+      "name": "Tilapia / Nile Perch (Emputa/Ngege)",
+      "iron_mg_100g": 0.6,
+      "protein_g_100g": 20,
+      "calories_100g": 96,
+      "key_nutrients": [
+        "Protein (complete)",
+        "Vitamin B12",
+        "Selenium",
+        "Phosphorus"
+      ],
+      "notes": "Uganda's most widely eaten freshwater fish from lakes Victoria, Albert, George. Excellent lean protein. Lake Victoria Nile perch widely exported — tilapia more commonly eaten locally. Affordable near lakeshores.",
+      "best_for": [
+        "Protein intake",
+        "Pregnancy",
+        "Weight management",
+        "General health"
+      ]
+    },
+    {
+      "name": "Termites (Ngwen / Enswa — white ants)",
+      "iron_mg_100g": 13,
+      "protein_g_100g": 36,
+      "calories_100g": 535,
+      "key_nutrients": [
+        "Protein (very high)",
+        "Iron (very high)",
+        "Zinc",
+        "Healthy fats",
+        "Calcium"
+      ],
+      "notes": "Seasonal Ugandan delicacy (November-December) — nutritionally exceptional. Higher iron than beef, higher protein than many meats. Traditional food eaten fried or dried. Nutritionally underappreciated. Harvested sustainably.",
+      "best_for": [
+        "Anaemia",
+        "Protein malnutrition",
+        "Seasonal nutrition boost"
+      ]
+    },
+    {
+      "name": "Coconut (Njigo)",
+      "iron_mg_100g": 2.4,
+      "protein_g_100g": 3.3,
+      "calories_100g": 354,
+      "key_nutrients": [
+        "Healthy fats (medium-chain triglycerides)",
+        "Manganese",
+        "Iron",
+        "Fibre"
+      ],
+      "notes": "More common in coastal / eastern Uganda. Coconut water is an excellent oral rehydration fluid. Coconut oil for cooking and skin. Use in moderation — very calorie dense.",
+      "best_for": [
+        "Rehydration (coconut water)",
+        "Energy"
+      ]
+    },
+    {
+      "name": "Cassava (Muwogo)",
+      "iron_mg_100g": 0.3,
+      "protein_g_100g": 1.4,
+      "calories_100g": 160,
+      "key_nutrients": [
+        "Energy/Carbohydrate",
+        "Vitamin C (fresh only)",
+        "Some potassium"
+      ],
+      "notes": "Major staple especially in northern Uganda. Nutritionally, primarily an energy (starch) food — very low in protein, iron, and vitamins. MUST be paired with protein (beans, fish, groundnuts) and vegetables at every meal to prevent malnutrition. Fermented cassava and cassava leaves have more nutritional value. Do not rely on cassava alone.",
+      "best_for": [
+        "Energy",
+        "Food security staple"
+      ]
+    },
+    {
+      "name": "Mango (Emyembe)",
+      "iron_mg_100g": 0.2,
+      "protein_g_100g": 0.8,
+      "calories_100g": 60,
+      "key_nutrients": [
+        "Vitamin C",
+        "Beta-carotene/Vitamin A",
+        "Folate",
+        "Vitamin B6"
+      ],
+      "notes": "Abundant seasonal fruit in Uganda (main season: Oct-Jan, with shorter rains season). Very high Vitamin A and C when ripe. Cheap and widely available in season. Eat with meals to enhance iron absorption from beans and vegetables.",
+      "best_for": [
+        "Vitamin A",
+        "Iron absorption (Vitamin C)",
+        "Child nutrition",
+        "Pregnancy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3059 @@
+{
+  "conditions": {
+    "diabetes_type2": {
+      "name": "Type 2 Diabetes",
+      "category": "metabolic",
+      "severity_class": "high",
+      "emergency": false,
+      "icd11": "5A11",
+      "description": "A chronic metabolic disorder where the body either does not produce enough insulin or does not use it effectively, causing blood sugar to remain persistently elevated. One of the fastest-growing conditions in Uganda \u2014 estimates suggest up to 8% of Kampala residents may have it, most undiagnosed.",
+      "body_mechanism": "Insulin is produced by the pancreas to help cells absorb glucose from the blood. In Type 2 diabetes, cells become resistant to insulin signals \u2014 they stop responding properly. The pancreas works harder and harder to produce more insulin, eventually becoming exhausted. Blood glucose stays high and damages blood vessels, nerves, kidneys, and eyes over years. The damage is silent until it is advanced, which is why early detection is critical.",
+      "epidemiology_uganda": "Estimated 8% of Kampala adults have type 2 diabetes. Uganda has seen a rapid rise in NCD burden alongside infectious diseases, creating a 'double burden'. Most cases remain undiagnosed due to lack of screening.",
+      "required_symptoms": [
+        "urinary_frequency"
+      ],
+      "supporting_symptoms": [
+        "fatigue",
+        "blurred_vision",
+        "thirst",
+        "anorexia",
+        "numbness",
+        "tingling",
+        "slow_healing",
+        "dark_urine",
+        "weakness"
+      ],
+      "against_symptoms": [
+        "fever",
+        "chills",
+        "cyclical_fever",
+        "neck_stiffness"
+      ],
+      "follow_up_keys": [
+        "fu_diabetes_thirst",
+        "fu_diabetes_fatigue",
+        "fu_diabetes_family",
+        "fu_diabetes_weight"
+      ],
+      "action_plan": {
+        "immediate": [
+          "See a doctor or nurse TODAY for a blood glucose test \u2014 this is the only way to know",
+          "Avoid sugary drinks, white bread, and processed foods until you are tested",
+          "If you feel dizzy, confused, or extremely thirsty \u2014 drink water (not juice) immediately",
+          "Do not self-medicate with traditional herbs without medical guidance \u2014 they can interact with proper treatment",
+          "If you are already diagnosed and feel very unwell, go to hospital \u2014 could be diabetic emergency"
+        ],
+        "short_term": [
+          "Get your blood glucose tested \u2014 fasting glucose test or HbA1c are the standard",
+          "If diagnosed, start the medication exactly as prescribed \u2014 never stop without doctor advice",
+          "Reduce sugar, refined carbohydrates (white rice, posho, bread), and sugary drinks drastically",
+          "Begin walking 30 minutes daily \u2014 exercise lowers blood glucose more effectively than many drugs",
+          "Check your feet daily for cuts, sores, or numbness \u2014 diabetic foot problems can escalate fast"
+        ],
+        "long_term": [
+          "Eat smaller portions of staple foods \u2014 maize, rice, cassava all raise blood glucose significantly",
+          "Increase vegetables, legumes (beans, lentils), and lean protein at every meal",
+          "Get HbA1c checked every 3 months \u2014 shows average blood glucose over 3 months",
+          "Have eyes, kidneys (urine test), and feet checked at least once a year",
+          "Maintain healthy weight \u2014 every kilogram lost significantly improves glucose control",
+          "Quit smoking if applicable \u2014 tobacco causes the very vascular damage diabetes worsens"
+        ]
+      },
+      "see_doctor_if": [
+        "Extremely high thirst, frequent urination, and rapid unexplained weight loss \u2014 possible new diabetes",
+        "Confusion, extreme weakness, rapid breathing \u2014 could be diabetic ketoacidosis (emergency)",
+        "Any foot wound that is not healing normally within 1 week",
+        "Sudden vision changes",
+        "Blood glucose reading above 20 mmol/L or below 3.5 mmol/L on a glucometer"
+      ],
+      "local_context": "Diabetes is dramatically rising in Uganda as diets shift toward processed foods and sugar-sweetened drinks. The typical Ugandan diet \u2014 posho, matoke, white rice \u2014 is high in refined carbohydrates that spike blood glucose. Many Ugandans with diabetes have no symptoms for years until serious complications arise. If you are over 35, overweight, or have family history \u2014 test today.",
+      "home_remedies": [
+        "Bitter leaf (Vernonia amygdalina / Omujjajjali) \u2014 traditional remedy with evidence of mild glucose-lowering effect. Use as a supplement, not replacement for medication",
+        "Moringa leaves \u2014 emerging evidence of blood glucose benefit. Can be dried and added to food",
+        "Walking 30\u201345 minutes daily \u2014 the most powerful blood glucose tool available without a prescription",
+        "Reduce sugar: replace sodas with water, reduce added sugar in tea/coffee",
+        "Fenugreek seeds soaked overnight \u2014 traditional remedy with some evidence of glucose benefit"
+      ],
+      "warning_signs": [
+        "confusion",
+        "rapid_breathing",
+        "vomiting",
+        "extreme_weakness",
+        "sweet_breath_odour"
+      ]
+    },
+    "tuberculosis": {
+      "name": "Tuberculosis (TB)",
+      "category": "infectious",
+      "severity_class": "high",
+      "emergency": false,
+      "icd11": "1B10",
+      "description": "A serious bacterial infection caused by Mycobacterium tuberculosis, primarily affecting the lungs but capable of affecting any organ. Africa accounts for 25% of global TB cases and 42% of TB deaths. Uganda is classified as a high-burden TB country. TB is curable with the correct antibiotic course.",
+      "body_mechanism": "TB bacteria are inhaled through the air from an infected person who coughs, sneezes, or talks. The bacteria settle in the lungs where the immune system walls them off in granulomas. In most people they stay dormant (latent TB). When the immune system weakens \u2014 from HIV, malnutrition, stress, or age \u2014 the bacteria reactivate, destroy lung tissue, and produce the classic symptoms. The characteristic cough lasting weeks produces mucus and sometimes blood as the bacteria erode the airways.",
+      "epidemiology_uganda": "Uganda is a high TB-burden country. TB is the leading infectious cause of death globally. HIV co-infection dramatically increases TB risk \u2014 someone with HIV is 18x more likely to develop active TB. TB and HIV together cause significant mortality in Uganda.",
+      "required_symptoms": [
+        "cough_productive"
+      ],
+      "supporting_symptoms": [
+        "cough",
+        "fever",
+        "night_sweats",
+        "fatigue",
+        "anorexia",
+        "weakness",
+        "haemoptysis",
+        "chest_pain",
+        "weight_loss"
+      ],
+      "against_symptoms": [
+        "cyclical_fever",
+        "diarrhoea",
+        "rash"
+      ],
+      "follow_up_keys": [
+        "fu_tb_cough_duration",
+        "fu_tb_night_sweats",
+        "fu_tb_blood",
+        "fu_tb_contact",
+        "fu_tb_hiv"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Cover your mouth and nose when coughing \u2014 TB is airborne and you may be contagious",
+          "Go to your nearest health centre for a sputum test and chest X-ray \u2014 free at government facilities",
+          "Tell the health worker how long you have been coughing \u2014 this is critical diagnostic information",
+          "Do not share cups, plates, or close spaces with others until you have been assessed",
+          "If you have HIV and develop a cough \u2014 go to hospital today. TB + HIV is a medical emergency"
+        ],
+        "short_term": [
+          "If TB is confirmed, start treatment immediately \u2014 treatment is FREE at all government health facilities in Uganda",
+          "Take ALL the medication EVERY DAY for the FULL course (typically 6 months) \u2014 stopping early causes drug-resistant TB",
+          "Register with the Directly Observed Therapy (DOT) programme if your health centre offers it",
+          "Eat nutritious food \u2014 TB is worsened by malnutrition. Protein (beans, eggs, meat), vitamins, calories",
+          "Open your living space \u2014 fresh air and sunlight kill TB bacteria"
+        ],
+        "long_term": [
+          "Complete the full 6-month treatment \u2014 even if you feel better after 2 months",
+          "Test all household contacts for TB \u2014 especially children and those with HIV",
+          "Get tested for HIV if you haven't \u2014 TB and HIV require coordinated treatment",
+          "Improve nutrition, sleep, and reduce alcohol \u2014 these strengthen immunity against TB reactivation",
+          "Regular ventilation of your home \u2014 TB spreads in enclosed, poorly ventilated spaces"
+        ]
+      },
+      "see_doctor_if": [
+        "Cough lasting more than 2 weeks \u2014 especially with fever and weight loss",
+        "Coughing up blood or blood-stained mucus at any point",
+        "Night sweats that soak your clothing \u2014 classic TB symptom",
+        "Unexplained weight loss of more than 2kg without dieting",
+        "Chest pain with coughing",
+        "Any of these symptoms if you have HIV \u2014 urgent"
+      ],
+      "local_context": "TB is common across Uganda, especially in crowded urban areas like Kampala slums, and in people living with HIV. Government health facilities provide free TB testing and treatment. There is no need to pay for TB care in Uganda. The 'three Cs' of TB concern: Cough over 2 weeks, Constitutional symptoms (fever, night sweats, weight loss), Contact with a TB patient.",
+      "home_remedies": [
+        "TB MUST be treated with antibiotics \u2014 there are no effective herbal substitutes",
+        "Nutritious diet is essential: protein (beans, groundnuts, eggs, meat), vitamin C (fruits), zinc",
+        "Fresh air and sunlight in the home \u2014 these naturally reduce bacterial load in the environment",
+        "Rest adequately \u2014 your immune system does its best work when you sleep well",
+        "Avoid alcohol completely during treatment \u2014 it interferes with TB medications and damages the liver"
+      ]
+    },
+    "pneumonia": {
+      "name": "Pneumonia",
+      "category": "respiratory",
+      "severity_class": "high",
+      "emergency": true,
+      "emergency_threshold": 80,
+      "icd11": "CA40",
+      "description": "A serious lung infection causing the air sacs (alveoli) to fill with fluid or pus, making breathing painful and difficult. Pneumonia is the leading cause of death in children under 5 in Uganda and a top killer across all ages. It can be bacterial, viral, or fungal and always requires prompt medical attention.",
+      "body_mechanism": "Bacteria or viruses infect the alveoli \u2014 the tiny sacs where oxygen transfers to blood. The immune response floods these sacs with fluid and white blood cells, making gas exchange very difficult. This is why pneumonia causes breathlessness, low oxygen, and the characteristic productive cough as the body tries to clear the infected fluid. Without treatment, oxygen levels fall and organs begin to fail.",
+      "required_symptoms": [
+        "dyspnoea",
+        "fever"
+      ],
+      "supporting_symptoms": [
+        "cough_productive",
+        "chest_pain",
+        "chills",
+        "fatigue",
+        "body_aches",
+        "cough"
+      ],
+      "against_symptoms": [
+        "headache_unilateral",
+        "nausea",
+        "rash"
+      ],
+      "follow_up_keys": [
+        "fu_pneumonia_breathing",
+        "fu_pneumonia_lips",
+        "fu_pneumonia_confusion"
+      ],
+      "action_plan": {
+        "immediate": [
+          "GO TO A HEALTH FACILITY OR HOSPITAL TODAY \u2014 pneumonia is life-threatening if untreated",
+          "Sit upright \u2014 this position makes breathing easier than lying down",
+          "Take paracetamol for fever \u2014 do not take ibuprofen if breathing is already difficult",
+          "Drink plenty of water to stay hydrated",
+          "If breathing is very difficult or lips are turning blue \u2014 this is an EMERGENCY. Go now."
+        ],
+        "short_term": [
+          "Take the full course of antibiotics prescribed \u2014 even if you feel better after 3 days",
+          "Rest completely \u2014 pneumonia is serious and requires genuine rest to recover",
+          "Prop yourself upright when sleeping \u2014 use extra pillows",
+          "Monitor your breathing rate \u2014 if it is increasing, return to hospital",
+          "Eat small nutritious meals to maintain immune strength"
+        ],
+        "long_term": [
+          "Complete full antibiotic course \u2014 incomplete treatment leads to antibiotic resistance",
+          "Avoid smoking completely \u2014 smoking destroys the lung defences that prevent pneumonia",
+          "Vaccinate children against pneumococcal pneumonia \u2014 this vaccine is available in Uganda",
+          "Improve indoor air quality \u2014 cooking smoke is a major risk factor for pneumonia in Uganda",
+          "If HIV positive, discuss preventive treatment options with your doctor"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY case of suspected pneumonia \u2014 this condition always needs medical assessment",
+        "Rapid breathing (more than 30 breaths per minute in adults)",
+        "Blue lips or fingernails \u2014 go to hospital immediately",
+        "Confusion or difficulty staying awake",
+        "Chest pain that is severe or worsening",
+        "Child under 5 with fever and fast breathing \u2014 go to hospital NOW"
+      ],
+      "local_context": "Pneumonia kills more children in Uganda than any other disease. Indoor cooking smoke, malnutrition, and HIV co-infection dramatically increase the risk. Free antibiotics for pneumonia are available at government health facilities. Distinguish from TB: pneumonia comes on more suddenly, while TB develops over weeks. Both need immediate medical assessment.",
+      "home_remedies": [
+        "Pneumonia REQUIRES antibiotics \u2014 home remedies alone are not sufficient",
+        "Steam inhalation helps loosen mucus and ease breathing while getting medical care",
+        "Stay upright \u2014 gravity helps clear fluid from the lower lungs",
+        "Honey and warm water \u2014 soothes the throat and airway (not for children under 1)",
+        "Adequate hydration \u2014 helps thin the mucus and supports immune function"
+      ]
+    },
+    "diabetes_emergency": {
+      "name": "Diabetic Emergency",
+      "category": "metabolic",
+      "severity_class": "critical",
+      "emergency": true,
+      "emergency_threshold": 90,
+      "description": "A life-threatening condition in a person with diabetes where blood glucose is dangerously high (hyperglycaemia/DKA) or dangerously low (hypoglycaemia). Both require immediate action.",
+      "body_mechanism": "In hypoglycaemia, blood glucose falls so low that the brain \u2014 which runs entirely on glucose \u2014 starts to shut down, causing confusion, trembling, and unconsciousness. In diabetic ketoacidosis (DKA), no insulin means cells starve. The body breaks down fat for energy, producing toxic ketones that acidify the blood, causing vomiting, rapid breathing, and coma.",
+      "required_symptoms": [
+        "confusion",
+        "weakness"
+      ],
+      "supporting_symptoms": [
+        "sweating",
+        "palpitations",
+        "vomiting",
+        "dyspnoea"
+      ],
+      "follow_up_keys": [],
+      "action_plan": {
+        "immediate": [
+          "If conscious and hypoglycaemia suspected (shaky, sweating, confused): give sugar NOW \u2014 3 glucose tablets, or 150ml fruit juice, or 3 teaspoons of sugar dissolved in water",
+          "If improving after 15 minutes, give a carbohydrate snack (bread, banana)",
+          "If not improving or unconscious: GO TO HOSPITAL IMMEDIATELY \u2014 do not try to give food/drink to an unconscious person",
+          "If DKA suspected (fruity breath, rapid breathing, vomiting): GO TO HOSPITAL NOW",
+          "Never leave a diabetic person who is confused or semi-conscious alone"
+        ],
+        "short_term": [
+          "After any diabetic emergency, review medication and diet with a doctor",
+          "Identify what triggered the episode \u2014 skipped meal, too much insulin, illness, exercise",
+          "Always carry fast-acting sugar (glucose tablets or hard sweets) if on insulin or sulfonylureas",
+          "Family members should know how to recognise and respond to hypoglycaemia"
+        ],
+        "long_term": [
+          "Never skip meals if on insulin or certain tablets",
+          "Monitor glucose more frequently during illness or unusual physical activity",
+          "Wear a medical alert bracelet or keep a card in your wallet noting diabetic status",
+          "Teach family members the signs of low blood glucose and what to do"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY diabetic who is confused, unconscious, or cannot be roused \u2014 EMERGENCY NOW",
+        "Rapid or laboured breathing with vomiting in a known diabetic",
+        "Blood glucose reading below 3.5 mmol/L that does not respond to sugar intake",
+        "Blood glucose above 25 mmol/L with symptoms"
+      ],
+      "local_context": "Diabetic emergencies are increasingly common in Uganda as diabetes prevalence rises. Many people do not realise they have diabetes until they present in crisis. Hypoglycaemia is common in diabetics who skip meals \u2014 very common in Uganda where meal timing is irregular.",
+      "home_remedies": [
+        "Immediate: Give sugar \u2014 glucose tablets, fruit juice, sugar water",
+        "Wait 15 minutes and re-assess",
+        "If no improvement: hospital immediately",
+        "Prevention: never skip meals, carry quick sugar, take medication at consistent times"
+      ]
+    },
+    "sickle_cell": {
+      "name": "Sickle Cell Disease / Crisis",
+      "category": "haematological",
+      "severity_class": "high",
+      "emergency": false,
+      "icd11": "3A51.0",
+      "description": "A genetic blood disorder common in sub-Saharan Africa where red blood cells become abnormally shaped (sickle-shaped) and block blood vessels. Uganda has one of the highest sickle cell prevalence rates in the world \u2014 about 20,000 children are born with it annually in Uganda.",
+      "body_mechanism": "Normal red blood cells are round and flexible, flowing easily through vessels. Sickle cells are rigid and crescent-shaped. They clump together and block small blood vessels, cutting off oxygen to tissues and organs. This causes the severe pain of a 'crisis' \u2014 the body's tissues literally starving for oxygen. The abnormal cells also break down quickly, causing chronic anaemia.",
+      "epidemiology_uganda": "Uganda has extremely high sickle cell prevalence \u2014 roughly 1 in 25 Ugandans carries the sickle cell trait. About 15,000-20,000 children are born with sickle cell disease annually. It is most prevalent in the western, northern, and eastern regions.",
+      "required_symptoms": [
+        "body_aches",
+        "weakness"
+      ],
+      "supporting_symptoms": [
+        "fatigue",
+        "pallor",
+        "jaundice",
+        "chest_pain",
+        "fever",
+        "joint_pain",
+        "back_pain"
+      ],
+      "against_symptoms": [
+        "cyclical_fever",
+        "diarrhoea"
+      ],
+      "follow_up_keys": [
+        "fu_sickle_known",
+        "fu_sickle_pain_location",
+        "fu_sickle_trigger"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Drink large amounts of water \u2014 dehydration is the #1 trigger of sickle cell crisis",
+          "Take your prescribed pain medication (paracetamol or stronger as prescribed) immediately",
+          "Apply warm compresses to the area of pain \u2014 warmth relieves vascular spasm",
+          "Rest completely \u2014 do not push through a crisis",
+          "Go to hospital if the pain is severe, if fever develops, or if breathing is affected"
+        ],
+        "short_term": [
+          "Stay hydrated at all times \u2014 carry water everywhere",
+          "Take prescribed hydroxyurea or folic acid exactly as directed",
+          "Avoid cold temperatures \u2014 cold triggers vessel constriction and crisis",
+          "Avoid high altitude and strenuous exercise without preparation",
+          "Get infections treated promptly \u2014 infections are a major crisis trigger"
+        ],
+        "long_term": [
+          "Attend the sickle cell clinic regularly \u2014 monitoring prevents complications",
+          "Take folic acid daily \u2014 helps produce healthy red blood cells",
+          "Vaccinate against pneumococcal pneumonia and influenza \u2014 critical with sickle cell",
+          "Drink 8-10 glasses of water daily, every single day \u2014 non-negotiable",
+          "Genetic counselling if planning a family \u2014 carrier testing for partner is important"
+        ]
+      },
+      "see_doctor_if": [
+        "Severe pain crisis not responding to home pain management within 2 hours",
+        "Fever above 38.5\u00b0C \u2014 sickle cell patients are at high risk of serious infections",
+        "Breathing difficulty or chest pain during a crisis \u2014 could be acute chest syndrome",
+        "Stroke symptoms: sudden weakness, vision loss, difficulty speaking",
+        "Severe headache or neck stiffness",
+        "Priapism (painful prolonged erection in men) \u2014 urological emergency"
+      ],
+      "local_context": "Uganda has one of the highest sickle cell burdens in the world. Many families do not know a child has sickle cell disease until a crisis occurs. Government hospitals provide free sickle cell treatment under the National Sickle Cell Programme. Children with sickle cell should be identified early and enrolled in the programme.",
+      "home_remedies": [
+        "Water, water, water \u2014 the most powerful sickle cell prevention tool",
+        "Warm compresses on painful areas",
+        "Paracetamol for mild-to-moderate pain (avoid ibuprofen if kidneys are affected)",
+        "Rest and warmth during a crisis",
+        "Folic acid daily \u2014 helps build healthy red blood cells, available cheaply in Uganda"
+      ]
+    },
+    "malnutrition": {
+      "name": "Malnutrition / Nutritional Deficiency",
+      "category": "nutritional",
+      "severity_class": "moderate_high",
+      "emergency": false,
+      "icd11": "5B5Z",
+      "description": "A condition resulting from inadequate intake or absorption of essential nutrients \u2014 protein, calories, vitamins, or minerals. Very common in Uganda, especially in children, pregnant women, and people with chronic illness. Malnutrition worsens every other health condition and is a major cause of child mortality.",
+      "body_mechanism": "The body requires a constant supply of macro and micronutrients to maintain immune function, growth, wound healing, brain function, and energy. When intake falls short, the body breaks down its own muscle and fat for energy. The immune system weakens, making infections more severe. In children, brain development is permanently impaired by early malnutrition. Specific deficiencies cause specific diseases: iron deficiency causes anaemia, vitamin A deficiency causes blindness, iodine deficiency causes goitre.",
+      "required_symptoms": [
+        "fatigue",
+        "weakness"
+      ],
+      "supporting_symptoms": [
+        "pallor",
+        "body_aches",
+        "anorexia",
+        "oedema",
+        "dizziness",
+        "confusion"
+      ],
+      "against_symptoms": [
+        "fever",
+        "cyclical_fever",
+        "cough"
+      ],
+      "follow_up_keys": [
+        "fu_nutrition_diet",
+        "fu_nutrition_child",
+        "fu_nutrition_pregnancy"
+      ],
+      "action_plan": {
+        "immediate": [
+          "If a child appears severely wasted (very thin, swollen feet, apathetic) \u2014 go to health facility TODAY",
+          "Eat protein at every meal: beans, lentils, groundnuts, eggs, fish, meat",
+          "Include colourful vegetables and fruits daily \u2014 these provide essential vitamins",
+          "If breastfeeding: continue breastfeeding while improving your own diet",
+          "ORS (oral rehydration salts) if dehydration is suspected alongside malnutrition"
+        ],
+        "short_term": [
+          "Prioritise protein intake at every meal \u2014 malnutrition is primarily a protein energy problem",
+          "Include iron-rich foods: dark leafy greens (sukuma wiki), beans, liver, red meat",
+          "Include vitamin C-rich foods with iron-rich meals \u2014 dramatically improves iron absorption",
+          "If child has malnutrition, seek referral to therapeutic feeding programme \u2014 available free at health centres",
+          "Deworm every 6 months \u2014 worms significantly worsen malnutrition by stealing nutrients"
+        ],
+        "long_term": [
+          "Grow and eat diverse foods \u2014 kitchen gardens provide year-round vegetable access",
+          "Ensure children receive all vaccinations \u2014 vaccinated children absorb food better",
+          "Practice exclusive breastfeeding for 6 months, then introduce diverse solid foods",
+          "Deworm all children regularly \u2014 available free at government health facilities",
+          "Improve hygiene \u2014 infections drain nutrients and reduce appetite"
+        ]
+      },
+      "see_doctor_if": [
+        "Child with visible wasting \u2014 thin limbs, prominent ribs, apathetic",
+        "Swollen feet or legs in a child (kwashiorkor) \u2014 always a medical emergency",
+        "Child not eating for more than 24 hours",
+        "Pregnant woman losing weight",
+        "Any adult losing weight unexpectedly without trying"
+      ],
+      "local_context": "Malnutrition in Uganda often coexists with food insecurity, especially in northern and eastern regions. Even in Kampala, diets high in posho, matoke, and rice with minimal protein and vegetables are common. Iron deficiency anaemia affects over 50% of children under 5 in Uganda. Vitamin A supplementation programmes exist \u2014 ensure your child receives them at health centres.",
+      "home_remedies": [
+        "Increase protein: beans, groundnuts, silver fish (mukene), eggs, soya",
+        "Dark leafy greens: sukuma wiki, malakwang, nakati \u2014 eaten with vitamin C sources",
+        "Porridge enriched with groundnut paste \u2014 high calorie and protein for young children",
+        "Moringa powder \u2014 extremely nutrient-dense, add to porridge or sauces",
+        "Avoid giving children tea \u2014 it blocks iron absorption. Give water or milk instead"
+      ]
+    },
+    "conjunctivitis": {
+      "name": "Conjunctivitis (Pink Eye)",
+      "category": "eye",
+      "severity_class": "mild_moderate",
+      "emergency": false,
+      "icd11": "9A60",
+      "description": "Inflammation of the conjunctiva \u2014 the clear membrane covering the white of the eye and inner eyelid. Extremely common in Uganda, particularly in children. Can be bacterial (yellow/green discharge), viral (watery, more contagious), or allergic (itchy, both eyes).",
+      "body_mechanism": "The conjunctiva is exposed to the environment constantly. When bacteria, viruses, or allergens irritate it, the immune system responds with inflammation \u2014 causing redness, discharge, and the sensation of grit in the eye. Bacterial conjunctivitis produces thick discharge that may seal the eye shut on waking. Viral spreads very easily through hand-to-eye contact. Allergic is not contagious but recurs with allergen exposure.",
+      "required_symptoms": [
+        "eye_redness"
+      ],
+      "supporting_symptoms": [
+        "lacrimation",
+        "eye_pain",
+        "itching",
+        "fever",
+        "runny_nose"
+      ],
+      "against_symptoms": [
+        "headache_unilateral",
+        "chest_pain",
+        "fever"
+      ],
+      "follow_up_keys": [
+        "fu_eye_discharge",
+        "fu_eye_both",
+        "fu_eye_vision"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Clean the eye gently with clean cotton wool soaked in clean warm water \u2014 remove discharge",
+          "Do not rub the eye \u2014 this spreads the infection and worsens irritation",
+          "Wash hands thoroughly before and after touching your eyes",
+          "If bacterial (thick yellow/green discharge): see a health worker for antibiotic eye drops",
+          "Keep the infected eye covered or away from others \u2014 viral conjunctivitis is highly contagious"
+        ],
+        "short_term": [
+          "Apply antibiotic eye drops if prescribed \u2014 4-6 times daily for 5-7 days",
+          "Do not share towels, pillows, or eye makeup with others",
+          "Change pillowcases daily while infected",
+          "Wear sunglasses if light sensitivity is present",
+          "For allergic conjunctivitis: avoid the trigger, cold compresses help with itching"
+        ],
+        "long_term": [
+          "Practice hand hygiene \u2014 the main way conjunctivitis spreads",
+          "Do not share personal items that touch the face",
+          "For recurring allergic conjunctivitis: identify and avoid triggers (dust, pollen, cosmetics)",
+          "Keep your home well-ventilated and reduce dust in sleeping areas"
+        ]
+      },
+      "see_doctor_if": [
+        "Vision changes or blurred vision with eye redness",
+        "Severe eye pain \u2014 not just discomfort",
+        "No improvement after 3 days of treatment",
+        "Redness in a newborn \u2014 always needs urgent assessment",
+        "Sensitivity to light with headache \u2014 could indicate uveitis or meningitis"
+      ],
+      "local_context": "Conjunctivitis is extremely common in Uganda, especially in schools and crowded communities. Viral conjunctivitis spreads rapidly in dry, dusty conditions. Antibiotic eye drops are available at most pharmacies and government health centres. Many cases in Uganda are bacterial and respond well to chloramphenicol eye drops.",
+      "home_remedies": [
+        "Warm clean water compresses \u2014 clean the discharge and soothe irritation",
+        "Cold compresses for allergic conjunctivitis \u2014 reduces itching and swelling",
+        "Clean hands before touching eyes \u2014 always",
+        "Honey dissolved in warm water as eye wash \u2014 traditional remedy with some antibacterial evidence (use very dilute solution)",
+        "Cucumber slices on closed eyes \u2014 cooling and soothing for allergic types"
+      ]
+    },
+    "diarrhoea_acute": {
+      "name": "Acute Diarrhoea / Gastroenteritis",
+      "category": "gastrointestinal",
+      "severity_class": "moderate_high",
+      "emergency": false,
+      "icd11": "DA91",
+      "description": "Sudden onset of loose or watery stools, often with stomach cramps, nausea, and vomiting. Usually caused by contaminated food or water (bacteria, viruses, or parasites). The leading cause of child mortality in Uganda is dehydration from diarrhoea. Most cases resolve in 3-7 days with proper hydration.",
+      "body_mechanism": "Pathogens enter the gut and irritate or invade the intestinal lining. The gut responds by secreting large amounts of fluid to flush out the infection \u2014 this produces watery stools. The body loses enormous amounts of water, salts, and electrolytes. Dehydration sets in rapidly, especially in children and the elderly. The electrolyte losses (particularly sodium and potassium) affect heart and muscle function \u2014 this is what makes diarrhoea potentially fatal.",
+      "required_symptoms": [
+        "diarrhoea"
+      ],
+      "supporting_symptoms": [
+        "abdominal_pain",
+        "nausea",
+        "vomiting",
+        "fever",
+        "body_aches",
+        "anorexia",
+        "bloating"
+      ],
+      "against_symptoms": [
+        "headache_unilateral",
+        "chest_pain",
+        "cough"
+      ],
+      "follow_up_keys": [
+        "fu_diarrhoea_blood",
+        "fu_diarrhoea_duration",
+        "fu_diarrhoea_child"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Start ORS (Oral Rehydration Salts) immediately \u2014 available at every pharmacy and health centre in Uganda",
+          "Drink ORS in small sips frequently \u2014 not large amounts at once if vomiting",
+          "If no ORS available: mix 1 litre clean water + 6 level teaspoons sugar + 0.5 teaspoon salt",
+          "For a child: give ORS after every loose stool \u2014 about 100-200ml per stool",
+          "CONTINUE FEEDING \u2014 do not stop eating or breast milk. Food helps recovery"
+        ],
+        "short_term": [
+          "Drink more fluids than usual to replace losses \u2014 water, ORS, coconut water, clear broth",
+          "Eat soft, easily digestible foods: rice, banana, boiled potato, plain bread",
+          "Avoid dairy, fatty foods, and raw vegetables until fully recovered",
+          "Wash hands thoroughly with soap before eating and after toilet \u2014 prevent spreading",
+          "If symptoms worsen or do not improve in 3 days, see a doctor"
+        ],
+        "long_term": [
+          "Drink only treated, boiled, or bottled water",
+          "Wash hands with soap before cooking and eating, after toilet",
+          "Store food properly \u2014 cooked food should not sit at room temperature for more than 2 hours",
+          "Keep food covered from flies",
+          "Ensure all children receive rotavirus vaccination \u2014 prevents the most common severe diarrhoea"
+        ]
+      },
+      "see_doctor_if": [
+        "Blood or pus in stools \u2014 could indicate dysentery or cholera",
+        "Signs of dehydration: sunken eyes, dry mouth, no urine for 8 hours, extreme weakness",
+        "Diarrhoea in a child under 1 year \u2014 always needs medical assessment",
+        "More than 10 loose stools per day",
+        "High fever with diarrhoea",
+        "Symptoms not improving after 3 days"
+      ],
+      "local_context": "Diarrhoeal disease is the second leading cause of child death in Uganda after malaria. Contaminated water and poor sanitation are the primary causes. ORS is the single most life-saving treatment \u2014 available free at government health centres. Many deaths occur because families do not know to use ORS or wait too long to seek care. Give ORS first, then seek help.",
+      "home_remedies": [
+        "ORS \u2014 the most important treatment. Make at home if needed: 1L water + 6tsp sugar + 0.5tsp salt",
+        "Banana \u2014 contains potassium lost through diarrhoea, BRAT diet staple",
+        "Plain boiled rice \u2014 easily digestible, provides energy without stressing gut",
+        "Coconut water \u2014 naturally contains electrolytes, good rehydration fluid",
+        "Ginger tea \u2014 anti-nausea and anti-spasmodic properties. Slice fresh ginger, boil 10 minutes"
+      ]
+    },
+    "hypertensive_crisis": {
+      "name": "Hypertensive Crisis",
+      "category": "cardiovascular",
+      "severity_class": "critical",
+      "emergency": true,
+      "emergency_threshold": 92,
+      "icd11": "BA80",
+      "description": "A medical emergency where blood pressure rises to extremely dangerous levels (typically above 180/120 mmHg), potentially causing immediate organ damage \u2014 stroke, heart attack, kidney failure, or vision loss.",
+      "body_mechanism": "At extremely high pressures, blood vessel walls are stressed beyond their limits. Vessels can rupture (causing stroke or bleeding in the eye), the heart strains severely (causing chest pain or heart attack), and the kidneys begin to fail under the pressure load. Every minute of extremely high blood pressure increases the risk of permanent, irreversible damage.",
+      "required_symptoms": [
+        "headache",
+        "chest_pain"
+      ],
+      "supporting_symptoms": [
+        "blurred_vision",
+        "dizziness",
+        "dyspnoea",
+        "nausea",
+        "confusion",
+        "palpitations"
+      ],
+      "follow_up_keys": [],
+      "action_plan": {
+        "immediate": [
+          "STOP all activity \u2014 sit or lie down quietly immediately",
+          "If you have prescribed blood pressure medication: take it NOW",
+          "Go to hospital \u2014 do not drive yourself. Call for help or have someone drive you",
+          "Avoid stimulants: no coffee, tea, cigarettes, or physical exertion",
+          "Do not take extra blood pressure medication beyond your prescribed dose without guidance"
+        ],
+        "short_term": [
+          "Hospital treatment required \u2014 IV medications and monitoring",
+          "Review all medications with doctor",
+          "Identify and address precipitating cause"
+        ],
+        "long_term": [
+          "Never miss blood pressure medication",
+          "Regular monitoring",
+          "Lifestyle modification"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY reading above 180/120 mmHg \u2014 go to hospital immediately",
+        "Severe headache with vision changes",
+        "Chest pain with high blood pressure",
+        "Confusion or difficulty speaking with high blood pressure"
+      ],
+      "local_context": "Hypertensive crisis is increasingly seen in Uganda as undiagnosed and uncontrolled hypertension is very common. Many people stop medication when they feel better \u2014 this is extremely dangerous and commonly leads to crisis.",
+      "home_remedies": [
+        "This is a MEDICAL EMERGENCY \u2014 home remedies are not appropriate",
+        "Take your prescribed medication if you have it",
+        "Sit quietly and get to hospital as fast as possible",
+        "Call for someone to help you \u2014 do not drive"
+      ]
+    },
+    "anaemia": {
+      "name": "Anaemia (Iron Deficiency)",
+      "category": "haematological",
+      "severity_class": "moderate",
+      "emergency": false,
+      "icd11": "3A00",
+      "description": "A condition where the blood lacks enough healthy red blood cells or haemoglobin to carry adequate oxygen throughout the body. Iron deficiency is the most common cause. Over 50% of Ugandan children under 5 and over 40% of pregnant women in Uganda have anaemia.",
+      "body_mechanism": "Red blood cells carry oxygen using haemoglobin \u2014 a protein that requires iron. When iron is depleted (through poor diet, blood loss, worm infestation, or malaria), haemoglobin production falls, cells shrink, and the blood's oxygen-carrying capacity drops. Every tissue in the body receives less oxygen \u2014 causing the fatigue, pallor, breathlessness, and poor concentration characteristic of anaemia.",
+      "epidemiology_uganda": "Anaemia affects over 50% of children under 5 and 40% of pregnant women in Uganda. Major causes: iron-poor diet, malaria (destroys red blood cells), intestinal worms (steal iron), and repeated pregnancies. Sickle cell disease also causes chronic haemolytic anaemia.",
+      "required_symptoms": [
+        "fatigue",
+        "pallor"
+      ],
+      "supporting_symptoms": [
+        "weakness",
+        "dyspnoea",
+        "dizziness",
+        "palpitations",
+        "headache",
+        "cold_hands",
+        "anorexia"
+      ],
+      "against_symptoms": [
+        "fever",
+        "cyclical_fever",
+        "jaundice"
+      ],
+      "follow_up_keys": [
+        "fu_anaemia_diet",
+        "fu_anaemia_bleeding",
+        "fu_anaemia_pregnancy"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Get a blood test at your nearest health centre \u2014 haemoglobin measurement diagnoses anaemia",
+          "Start eating iron-rich foods at every meal: dark leafy greens, beans, liver, fish, meat",
+          "Eat iron-rich foods WITH vitamin C \u2014 dramatically improves iron absorption",
+          "Stop drinking tea with meals \u2014 tea blocks iron absorption significantly",
+          "If pregnant with anaemia: see a midwife or doctor today \u2014 it affects the baby"
+        ],
+        "short_term": [
+          "Take iron supplements as prescribed \u2014 they cause black stools which is normal",
+          "Deworm \u2014 intestinal worms steal iron. Free deworming at government health centres",
+          "Test for malaria if you have been ill recently \u2014 malaria destroys red blood cells",
+          "Eat vitamin C with iron-rich foods: tomatoes, oranges, pawpaw with beans",
+          "Avoid drinking tea or coffee within an hour of meals while treating anaemia"
+        ],
+        "long_term": [
+          "Maintain iron-rich diet long-term: beans, dark leafy greens, fish, liver weekly",
+          "Deworm every 6 months \u2014 available free for children",
+          "Prevent malaria \u2014 treated mosquito nets are highly effective",
+          "Space pregnancies \u2014 repeated pregnancies without recovery depletes iron stores",
+          "For children: ensure they eat varied diet with iron sources from 6 months"
+        ]
+      },
+      "see_doctor_if": [
+        "Severe breathlessness or chest pain with anaemia",
+        "Fainting or near-fainting episodes",
+        "Anaemia in pregnancy \u2014 any severity needs medical attention",
+        "Child who is very pale, listless, or breathless",
+        "Anaemia that does not improve with 3 months of iron supplements"
+      ],
+      "local_context": "Anaemia is extremely common across Uganda, particularly in women of reproductive age, pregnant women, and young children. The Ugandan diet is often iron-poor \u2014 high in carbohydrate staples with limited meat and dark leafy vegetables. Free iron supplements and deworming tablets are available at all government health centres.",
+      "home_remedies": [
+        "Leafy greens cooked in a cast iron pot \u2014 the iron from the pot actually transfers into food",
+        "Beans cooked with tomatoes \u2014 iron + vitamin C combination enhances absorption significantly",
+        "Liver once a week \u2014 extremely iron-dense, also provides B12 and folate",
+        "Silver fish (mukene) \u2014 abundant in Uganda, excellent iron and protein source",
+        "Avoid tea with meals \u2014 switch to water or juice instead to maximise iron absorption"
+      ]
+    },
+    "depression": {
+      "name": "Depression",
+      "category": "mental_health",
+      "severity_class": "moderate_high",
+      "emergency": false,
+      "icd11": "6A70",
+      "description": "A serious mental health condition characterised by persistent low mood, loss of interest, fatigue, and feelings of worthlessness lasting at least 2 weeks. Not simply 'feeling sad' \u2014 depression is a medical condition with clear biological causes and effective treatments. Nearly 1 in 3 Ugandans will experience a mental health condition in their lifetime.",
+      "body_mechanism": "Depression involves actual changes in brain chemistry \u2014 particularly serotonin, dopamine, and norepinephrine \u2014 and brain structure. Chronic stress causes the hippocampus (memory centre) to shrink. Inflammation markers increase. These are not character weaknesses \u2014 they are measurable biological changes. The brain in depression literally processes information differently, making negative thoughts feel overwhelmingly true and the future feel hopeless.",
+      "epidemiology_uganda": "A 2022 analysis found nearly 1 in 3 Ugandans (32%) experience a mental illness at some point. The 2024 National Household Survey found 5.5 million people facing probable mental health challenges. Uganda has fewer than 100 psychiatrists for 45 million people. Depression is dramatically under-diagnosed and under-treated.",
+      "required_symptoms": [
+        "low_mood"
+      ],
+      "supporting_symptoms": [
+        "insomnia",
+        "fatigue",
+        "anorexia",
+        "anxiety",
+        "headache",
+        "body_aches",
+        "loss_of_interest"
+      ],
+      "against_symptoms": [
+        "fever",
+        "cyclical_fever",
+        "rash"
+      ],
+      "follow_up_keys": [
+        "fu_depression_duration",
+        "fu_depression_function",
+        "fu_depression_safety",
+        "fu_depression_sleep"
+      ],
+      "action_plan": {
+        "immediate": [
+          "You are not weak. Depression is a medical condition, not a character flaw or spiritual failure",
+          "Talk to someone you trust about how you are feeling \u2014 isolation worsens depression",
+          "Get outside and move your body \u2014 even a 15-minute walk has measurable antidepressant effect",
+          "Maintain a basic routine \u2014 wake at the same time, eat regular meals, sleep at consistent time",
+          "If you are having thoughts of harming yourself: tell someone NOW and go to hospital or call for help"
+        ],
+        "short_term": [
+          "See a doctor or counsellor \u2014 depression responds very well to treatment",
+          "Antidepressant medication (if prescribed) takes 2-4 weeks to work \u2014 continue taking it",
+          "Exercise daily \u2014 has proven antidepressant effects comparable to medication in mild-moderate cases",
+          "Reduce or eliminate alcohol \u2014 it is a depressant that worsens symptoms even though it temporarily numbs pain",
+          "Maintain social contact even when you don't want to \u2014 isolation is depression's greatest ally"
+        ],
+        "long_term": [
+          "Counselling or talk therapy \u2014 highly effective when combined with medication",
+          "Build a reliable daily routine \u2014 structure is protective against depression",
+          "Regular physical activity \u2014 30 minutes of aerobic exercise 5 days a week",
+          "Treat underlying causes: address financial stress, relationship problems, trauma",
+          "Faith community and social support \u2014 proven protective factors against relapse"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY thoughts of suicide or self-harm \u2014 seek help immediately",
+        "Symptoms lasting more than 2 weeks that are affecting work, relationships, or daily function",
+        "Severe depression with inability to eat or get out of bed",
+        "Depression in a pregnant or postpartum woman \u2014 requires immediate specialist care",
+        "If medication does not seem to be working after 4 weeks \u2014 dosage may need adjustment"
+      ],
+      "local_context": "Mental health challenges carry significant stigma in Uganda \u2014 many people attribute depression to spiritual causes, character weakness, or witchcraft. This delays treatment and causes enormous suffering. Depression is a medical condition with effective treatments. Butabika National Referral Hospital provides specialist care. Many district hospitals have counsellors. Faith leaders are increasingly being trained to recognise and refer mental health conditions.",
+      "home_remedies": [
+        "Physical exercise \u2014 the single most evidence-based non-pharmacological antidepressant",
+        "Social connection \u2014 visit a friend, attend a community gathering, talk to family",
+        "Sunlight exposure \u2014 20-30 minutes of morning sunlight has proven mood-lifting effects",
+        "Omega-3 rich foods: fish, especially mukene (silver fish) \u2014 associated with lower depression rates",
+        "Establish a sleep routine \u2014 poor sleep and depression reinforce each other dangerously"
+      ]
+    },
+    "malaria_severe": {
+      "name": "Severe Malaria",
+      "category": "infectious",
+      "severity_class": "critical",
+      "emergency": true,
+      "emergency_threshold": 90,
+      "icd11": "1F40.1",
+      "description": "A life-threatening form of malaria where Plasmodium falciparum parasites (97% of Uganda malaria) overwhelm the body's defences and begin damaging the brain, kidneys, lungs, and blood clotting system. Most common in children under 5 and pregnant women. Causes tens of thousands of deaths in Uganda annually.",
+      "body_mechanism": "In severe malaria, infected red blood cells clump together and stick to blood vessel walls in the brain (cerebral malaria), lungs, and kidneys \u2014 blocking circulation. The brain starves for oxygen causing seizures and coma. Red blood cells rupture faster than the body can replace them causing severe anaemia. The immune response causes extreme inflammation throughout the body. Without IV treatment within hours, death or permanent brain damage results.",
+      "required_symptoms": [
+        "fever",
+        "confusion"
+      ],
+      "supporting_symptoms": [
+        "seizure",
+        "weakness",
+        "pallor",
+        "jaundice",
+        "dyspnoea",
+        "vomiting",
+        "dark_urine"
+      ],
+      "follow_up_keys": [],
+      "action_plan": {
+        "immediate": [
+          "THIS IS AN EMERGENCY \u2014 GO TO HOSPITAL IMMEDIATELY. Do not wait.",
+          "Give paracetamol to bring down the fever while transporting to hospital",
+          "If seizure occurs: lay patient on their side, clear airway, do not put anything in mouth",
+          "Do not give food or drink if unconscious \u2014 risk of aspiration",
+          "Call ahead to hospital if possible \u2014 they need to prepare IV artesunate"
+        ],
+        "short_term": [
+          "IV artesunate in hospital \u2014 the only effective treatment",
+          "Blood transfusion if severely anaemic",
+          "Seizure control medications",
+          "IV fluids under careful monitoring"
+        ],
+        "long_term": [
+          "Prevent future malaria \u2014 mosquito nets every night",
+          "Prompt treatment of any future fever",
+          "Malaria testing before any fever treatment"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY malaria with confusion, seizures, or inability to respond \u2014 EMERGENCY",
+        "Child who cannot sit, stand, or respond normally with fever",
+        "Malaria with severe anaemia \u2014 pale gums and conjunctiva, extreme weakness",
+        "Malaria with breathing difficulty",
+        "Dark or black urine with malaria \u2014 indicates severe haemolysis"
+      ],
+      "local_context": "Severe malaria kills thousands of children in Uganda each year \u2014 the northern and eastern regions have the highest burden. Every second counts. Government hospitals have IV artesunate which is the most effective treatment. Never treat severe malaria at home with oral medications. Transport to hospital immediately.",
+      "home_remedies": [
+        "SEVERE MALARIA HAS NO EFFECTIVE HOME TREATMENT",
+        "Give paracetamol only to lower fever WHILE going to hospital",
+        "Keep patient cool and hydrated WHILE going to hospital",
+        "Hospital IV artesunate is the only life-saving treatment"
+      ]
+    },
+    "stroke": {
+      "name": "Stroke",
+      "category": "neurological",
+      "severity_class": "critical",
+      "emergency": true,
+      "emergency_threshold": 95,
+      "icd11": "8B20",
+      "description": "A medical emergency where blood flow to part of the brain is suddenly cut off \u2014 either by a clot (ischaemic stroke, 80% of cases) or a burst blood vessel (haemorrhagic stroke). Every minute of stroke untreated, 1.9 million brain cells die. Stroke is the third leading cause of disability in Uganda.",
+      "body_mechanism": "Brain cells are extremely sensitive to oxygen deprivation. When a blood vessel is blocked or ruptures, the area of brain it supplies starts dying within minutes. The FAST symptoms (Face drooping, Arm weakness, Speech difficulty, Time to call for help) reflect which area of the brain is affected. The damage is permanent \u2014 only emergency treatment within hours can salvage the affected brain tissue.",
+      "required_symptoms": [
+        "weakness",
+        "confusion"
+      ],
+      "supporting_symptoms": [
+        "headache",
+        "blurred_vision",
+        "numbness",
+        "dizziness"
+      ],
+      "follow_up_keys": [],
+      "action_plan": {
+        "immediate": [
+          "USE THE FAST TEST: Face drooping? Arm weakness? Speech slurred? Time \u2014 go NOW",
+          "GO TO HOSPITAL IMMEDIATELY \u2014 stroke treatment is time-critical, every minute matters",
+          "Note the exact time symptoms started \u2014 this determines treatment options",
+          "Do not give food, water, or medication by mouth \u2014 they may not be able to swallow",
+          "Lay the patient on their side if unconscious \u2014 prevents choking"
+        ],
+        "short_term": [
+          "Hospital emergency assessment and treatment",
+          "CT scan to determine stroke type",
+          "Clot-busting drugs if ischaemic and within 4.5 hours",
+          "Blood pressure control"
+        ],
+        "long_term": [
+          "Rehabilitation",
+          "Blood pressure medication",
+          "Antiplatelet drugs",
+          "Risk factor management"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY of the FAST signs \u2014 Face drooping, Arm weakness, Speech difficulty \u2014 GO NOW",
+        "Sudden severe headache described as the worst ever \u2014 possible haemorrhagic stroke",
+        "Sudden loss of vision in one eye",
+        "Sudden inability to walk or loss of coordination"
+      ],
+      "local_context": "Stroke risk in Uganda is rising rapidly due to increasing hypertension, diabetes, and lifestyle changes. High blood pressure is the single most important stroke risk factor \u2014 and most Ugandans with hypertension are untreated. Controlling blood pressure prevents stroke more effectively than any other single intervention.",
+      "home_remedies": [
+        "STROKE IS AN EMERGENCY \u2014 no home remedies are appropriate",
+        "Get to hospital as fast as possible",
+        "PREVENTION: Control blood pressure. Take medication daily. Monitor regularly.",
+        "PREVENTION: Reduce salt, exercise daily, stop smoking, control diabetes"
+      ]
+    },
+    "preeclampsia": {
+      "name": "Pre-eclampsia / Eclampsia",
+      "category": "obstetric",
+      "severity_class": "critical",
+      "emergency": true,
+      "emergency_threshold": 90,
+      "icd11": "JA24",
+      "description": "A serious pregnancy complication characterised by high blood pressure and organ damage, typically after 20 weeks. Pre-eclampsia is the leading cause of maternal death in Uganda. Eclampsia (seizures with pre-eclampsia) is immediately life-threatening to both mother and baby.",
+      "body_mechanism": "The placenta releases substances that damage blood vessels throughout the body. Blood pressure rises dramatically, the kidneys spill protein into urine, and fluid accumulates in tissues (causing swelling). The brain becomes vulnerable to seizures (eclampsia). The liver and blood clotting system can also fail. Both mother and baby are at immediate risk without hospitalisation.",
+      "required_symptoms": [
+        "headache",
+        "oedema"
+      ],
+      "supporting_symptoms": [
+        "blurred_vision",
+        "epigastric_pain",
+        "vomiting",
+        "seizure"
+      ],
+      "follow_up_keys": [],
+      "action_plan": {
+        "immediate": [
+          "GO TO HOSPITAL IMMEDIATELY \u2014 pre-eclampsia is a medical emergency",
+          "If seizure occurs: lay on left side, protect from injury, clear airway",
+          "Do not give herbal medicines or traditional remedies \u2014 they can worsen the condition",
+          "Record when symptoms started and what happened",
+          "Delivery is the only cure \u2014 the decision about timing is for doctors to make"
+        ],
+        "short_term": [
+          "Hospitalisation and monitoring",
+          "Blood pressure medication",
+          "Magnesium sulphate to prevent seizures",
+          "Monitoring of baby"
+        ],
+        "long_term": [
+          "Blood pressure monitoring post-delivery",
+          "Follow-up to check kidneys",
+          "Future pregnancy planning with doctor"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY pregnant woman after 20 weeks with severe headache \u2014 go to hospital TODAY",
+        "Swollen face, hands, or feet in pregnancy \u2014 always needs assessment",
+        "Blurred vision or seeing flashing lights in pregnancy",
+        "Severe upper abdominal pain in pregnancy",
+        "Seizure in pregnancy \u2014 EMERGENCY, go immediately"
+      ],
+      "local_context": "Pre-eclampsia is the leading direct cause of maternal death in Uganda. Many women die because they do not recognise the warning signs or delay seeking care. Every pregnant woman should know: if you develop severe headache, vision changes, or severe swelling after 6 months of pregnancy \u2014 go to hospital TODAY. Magnesium sulphate (the life-saving treatment) is available at all regional hospitals.",
+      "home_remedies": [
+        "PRE-ECLAMPSIA HAS NO HOME TREATMENT \u2014 it is a medical emergency",
+        "Bed rest on the left side can reduce blood pressure temporarily WHILE going to hospital",
+        "Do not take herbal medicines \u2014 they can interact dangerously with medications",
+        "Prevention: attend all antenatal care appointments. Blood pressure is checked at each visit."
+      ]
+    },
+    "angina": {
+      "name": "Angina Pectoris (Chest Pain on Exertion)",
+      "category": "cardiovascular",
+      "severity_class": "moderate_high",
+      "emergency": false,
+      "emergency_threshold": 80,
+      "alt_names": [
+        "angina",
+        "chest tightness on walking",
+        "exertional chest pain"
+      ],
+      "description": "Chest pain or discomfort caused by reduced blood flow to the heart muscle, typically triggered by physical activity or stress and relieved by rest. It is a warning sign of coronary artery disease.",
+      "body_mechanism": "The heart muscle needs a constant oxygen supply delivered by the coronary arteries. When these arteries are narrowed by plaque (atherosclerosis), extra demand during exertion cannot be met. The oxygen-starved muscle sends pain signals \u2014 felt as tightness, pressure, or squeezing in the chest, sometimes radiating to the left arm or jaw.",
+      "required_symptoms": [
+        "chest_pain"
+      ],
+      "supporting_symptoms": [
+        "chest_tightness",
+        "chest_pressure",
+        "dyspnoea",
+        "fatigue",
+        "left_arm_pain",
+        "jaw_pain",
+        "palpitations"
+      ],
+      "against_symptoms": [
+        "fever",
+        "cough",
+        "diarrhoea"
+      ],
+      "follow_up_keys": [
+        "fu_chest_exertion",
+        "fu_chest_relief",
+        "fu_chest_radiation",
+        "fu_chest_duration"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Stop all physical activity immediately \u2014 sit or lie down",
+          "If prescribed GTN (glyceryl trinitrate) spray or tablet: use it under your tongue now",
+          "Loosen any tight clothing around your chest",
+          "If pain does not improve within 5 minutes after rest or GTN, or if this is your first episode: go to hospital NOW \u2014 this may be a heart attack",
+          "Chew one aspirin (325mg) if available and you are not allergic \u2014 do NOT swallow whole"
+        ],
+        "short_term": [
+          "See a doctor urgently if this is a new symptom or is getting worse",
+          "Do not ignore worsening or more frequent angina \u2014 it can precede a heart attack",
+          "Keep a record of when pain occurs, how long it lasts, and what triggers it"
+        ],
+        "long_term": [
+          "Take all prescribed medications daily \u2014 especially aspirin, beta-blockers, and statins",
+          "Reduce salt, saturated fat, and fried food intake",
+          "Stop smoking completely \u2014 smoking is a major cause of coronary artery disease",
+          "Regular moderate exercise as guided by your doctor",
+          "Lose weight if overweight \u2014 even 5% weight loss reduces cardiac strain"
+        ]
+      },
+      "see_doctor_if": [
+        "Any chest pain that does not go away with 5 minutes of rest or GTN",
+        "Chest pain at rest \u2014 this is unstable angina, a medical emergency",
+        "Pain radiating to your left arm, jaw, neck, or back",
+        "New-onset chest pain of any kind",
+        "Chest pain with sweating, nausea, or shortness of breath"
+      ],
+      "home_remedies": [
+        "Rest immediately when pain begins",
+        "Deep slow breathing to reduce anxiety and lower heart rate",
+        "Avoid large heavy meals \u2014 they increase demand on the heart",
+        "Avoid extreme cold \u2014 cold constricts coronary arteries"
+      ],
+      "local_context": "Angina is increasingly common in Uganda as diets shift toward more salt and fat, and physical activity declines in cities. It is often missed because chest pain is attributed to other causes. If you experience chest tightness on climbing stairs or walking uphill, please see a doctor."
+    },
+    "acute_coronary_syndrome": {
+      "name": "Possible Heart Attack (Acute Coronary Syndrome)",
+      "category": "cardiovascular",
+      "severity_class": "critical",
+      "emergency": true,
+      "emergency_threshold": 95,
+      "alt_names": [
+        "heart attack",
+        "myocardial infarction",
+        "MI",
+        "NSTEMI",
+        "STEMI"
+      ],
+      "description": "A life-threatening emergency where blood supply to part of the heart is suddenly blocked. Without immediate treatment, heart muscle begins to die. Time is critical \u2014 every minute of delay causes more permanent damage.",
+      "body_mechanism": "A plaque (fatty deposit) in a coronary artery ruptures, triggering an emergency clotting response. The clot blocks blood flow completely. The heart muscle supplied by that artery is starved of oxygen and begins to die \u2014 causing the characteristic crushing chest pain and life-threatening heart rhythm problems.",
+      "required_symptoms": [
+        "chest_pain"
+      ],
+      "supporting_symptoms": [
+        "chest_pressure",
+        "chest_tightness",
+        "left_arm_pain",
+        "jaw_pain",
+        "dyspnoea",
+        "sweating",
+        "nausea",
+        "dizziness",
+        "weakness"
+      ],
+      "against_symptoms": [
+        "fever"
+      ],
+      "follow_up_keys": [
+        "fu_acs_onset",
+        "fu_acs_quality",
+        "fu_acs_radiation",
+        "fu_acs_associated",
+        "fu_acs_risk"
+      ],
+      "action_plan": {
+        "immediate": [
+          "CALL FOR EMERGENCY HELP IMMEDIATELY \u2014 do not drive yourself to hospital",
+          "Chew 300\u2013325mg aspirin NOW if available and not allergic (do not swallow whole \u2014 chew it)",
+          "Sit or lie in whatever position is most comfortable",
+          "Loosen all tight clothing",
+          "Stay as calm as possible \u2014 minimize physical effort",
+          "If you have GTN spray or sublingual tablet: use it",
+          "If unconscious with no pulse: begin CPR and call for help"
+        ],
+        "short_term": [
+          "Hospital treatment is the ONLY effective treatment \u2014 thrombolysis or angioplasty must happen within hours",
+          "Every 10-minute delay increases permanent heart muscle damage"
+        ],
+        "long_term": [
+          "Lifelong medication after a heart attack: aspirin, statin, beta-blocker, ACE inhibitor",
+          "Cardiac rehabilitation programme",
+          "Stop smoking completely",
+          "Strict blood pressure and diabetes control",
+          "Regular cardiac follow-up"
+        ]
+      },
+      "see_doctor_if": [
+        "ANY crushing, squeezing, or heavy chest pain \u2014 especially if not relieved by rest",
+        "Chest pain with left arm pain, jaw pain, or back pain",
+        "Chest pain with sweating and nausea",
+        "Chest pain with shortness of breath",
+        "Any chest pain lasting more than 5 minutes that does not fully go away with rest"
+      ],
+      "home_remedies": [
+        "This is a MEDICAL EMERGENCY \u2014 there are no effective home remedies",
+        "Aspirin (chewed, not swallowed) is the only home intervention with proven benefit",
+        "Call for emergency transport to hospital immediately"
+      ],
+      "local_context": "Heart attacks are increasingly common in Uganda and are often fatal because patients delay going to hospital, hoping the pain will pass. Mulago National Referral Hospital and major regional hospitals have cardiac units. Do not wait \u2014 the difference between life and death in a heart attack is often measured in minutes."
+    },
+    "gerd": {
+      "name": "GERD / Acid Reflux (Gastroesophageal Reflux Disease)",
+      "category": "gastrointestinal",
+      "severity_class": "mild_moderate",
+      "emergency": false,
+      "emergency_threshold": 40,
+      "alt_names": [
+        "acid reflux",
+        "heartburn",
+        "GERD",
+        "reflux",
+        "acidic stomach",
+        "burning chest"
+      ],
+      "description": "A condition where stomach acid regularly flows back up into the oesophagus (food pipe), causing a burning sensation in the chest or throat. Very common and usually manageable with lifestyle changes and medication.",
+      "body_mechanism": "The lower oesophageal sphincter \u2014 a ring of muscle at the top of the stomach \u2014 normally acts as a one-way valve. When it weakens or relaxes inappropriately, acidic stomach contents flow back up, irritating and burning the unprotected oesophageal lining, causing the characteristic burning pain that can be mistaken for chest pain.",
+      "required_symptoms": [
+        "heartburn"
+      ],
+      "supporting_symptoms": [
+        "chest_discomfort",
+        "epigastric_pain",
+        "nausea",
+        "chest_pain",
+        "regurgitation",
+        "bloating",
+        "abdominal_pain"
+      ],
+      "against_symptoms": [
+        "fever",
+        "left_arm_pain",
+        "sweating"
+      ],
+      "follow_up_keys": [
+        "fu_acid_timing",
+        "fu_acid_food",
+        "fu_acid_position",
+        "fu_acid_severity"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Sit upright \u2014 lying down worsens acid reflux",
+          "Take an antacid if available (sodium bicarbonate in water, milk, or commercial antacid)",
+          "Sip cold water slowly \u2014 dilutes acid and may temporarily reduce burning",
+          "Avoid food, coffee, tea, or citrus until symptoms settle"
+        ],
+        "short_term": [
+          "Avoid large meals \u2014 eat smaller, more frequent portions",
+          "Wait 2\u20133 hours after eating before lying down",
+          "Avoid common triggers: spicy food, fried food, alcohol, coffee, tea, citrus, tomatoes",
+          "Elevate the head of your bed by 15\u201320cm if symptoms occur at night",
+          "Over-the-counter antacids (omeprazole, ranitidine) are widely available"
+        ],
+        "long_term": [
+          "Maintain healthy weight \u2014 excess abdominal weight increases abdominal pressure",
+          "Stop smoking \u2014 nicotine weakens the lower oesophageal sphincter",
+          "Avoid eating within 3 hours of sleep",
+          "See a doctor if symptoms occur more than twice a week \u2014 may need prescription medication"
+        ]
+      },
+      "see_doctor_if": [
+        "Difficulty swallowing food or liquids",
+        "Unintentional weight loss",
+        "Vomiting blood or black stool",
+        "Symptoms despite lifestyle changes and antacids",
+        "Symptoms more than 2 times per week for more than 3 weeks"
+      ],
+      "home_remedies": [
+        "Baking soda (sodium bicarbonate) in water \u2014 neutralises stomach acid temporarily",
+        "Cold milk \u2014 provides temporary relief through acid neutralisation",
+        "Ginger tea \u2014 has anti-inflammatory properties",
+        "Aloe vera juice \u2014 may soothe the oesophagus",
+        "Chewing gum after meals \u2014 increases saliva production which neutralises acid"
+      ],
+      "local_context": "Acid reflux is very common in Uganda, often triggered by spicy foods, posho, and eating large late-night meals. Many people confuse the chest burning of acid reflux with heart problems. The key difference: acid reflux burning usually starts after meals and is associated with a sour/acidic taste in the mouth."
+    },
+    "costochondritis": {
+      "name": "Costochondritis (Chest Wall Pain)",
+      "category": "musculoskeletal",
+      "severity_class": "mild",
+      "emergency": false,
+      "emergency_threshold": 25,
+      "alt_names": [
+        "chest wall pain",
+        "rib pain",
+        "cartilage chest pain",
+        "non-cardiac chest pain"
+      ],
+      "description": "Inflammation of the cartilage connecting the ribs to the breastbone, causing chest pain that is often sharp and worsens with movement or pressing on the chest. It is not dangerous and not related to the heart.",
+      "body_mechanism": "The costochondral junctions \u2014 where rib cartilage meets the breastbone \u2014 become inflamed, usually from minor trauma, vigorous coughing, or unknown causes. This inflammation causes localised chest pain that is reproducible by pressing the area, and worsens with deep breathing or certain movements.",
+      "required_symptoms": [
+        "chest_pain"
+      ],
+      "supporting_symptoms": [
+        "chest_discomfort",
+        "chest_tightness"
+      ],
+      "against_symptoms": [
+        "fever",
+        "dyspnoea",
+        "palpitations",
+        "left_arm_pain",
+        "sweating"
+      ],
+      "follow_up_keys": [
+        "fu_chest_touch",
+        "fu_chest_movement",
+        "fu_chest_location"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Take ibuprofen or paracetamol as directed \u2014 these reduce inflammation and pain",
+          "Apply a warm compress to the painful area",
+          "Rest and avoid activities that worsen the pain"
+        ],
+        "short_term": [
+          "Anti-inflammatory medications (ibuprofen) for 1\u20132 weeks",
+          "Avoid activities that strain the chest wall: heavy lifting, vigorous exercise, lying in certain positions",
+          "Use heat therapy \u2014 warm cloth or hot water bottle on the chest wall"
+        ],
+        "long_term": [
+          "Most cases resolve within a few weeks without treatment",
+          "Avoid the triggering activity if identified",
+          "See a doctor if pain persists beyond 3\u20134 weeks"
+        ]
+      },
+      "see_doctor_if": [
+        "Chest pain is severe and not reproduced by pressing the chest",
+        "Associated with shortness of breath, arm pain, or sweating",
+        "Fever is present",
+        "Pain has persisted for more than a month without improvement"
+      ],
+      "home_remedies": [
+        "Warm compress on painful area \u2014 reduces muscle and cartilage inflammation",
+        "Ibuprofen from any pharmacy \u2014 most effective anti-inflammatory for this condition",
+        "Rest and avoid heavy lifting for 1\u20132 weeks",
+        "Gentle stretching of the chest \u2014 if tolerated"
+      ],
+      "local_context": "Costochondritis is a very common cause of chest pain in Uganda, especially in people who do heavy manual labour, carry heavy loads, or have been coughing severely. It is harmless but can be frightening because it feels like heart pain. The key test: if pressing on your chest with a finger reproduces or worsens the pain, it is almost certainly costochondritis, not a heart problem."
+    },
+    "pleuritis": {
+      "name": "Pleuritis / Pleurisy (Inflamed Lung Lining)",
+      "category": "respiratory",
+      "severity_class": "moderate",
+      "emergency": false,
+      "emergency_threshold": 55,
+      "alt_names": [
+        "pleurisy",
+        "pleuritis",
+        "sharp chest pain on breathing",
+        "pain when breathing deep"
+      ],
+      "description": "Inflammation of the pleura \u2014 the two-layered membrane surrounding the lungs. Causes sharp chest pain that worsens dramatically with every breath, cough, or movement. Always requires investigation to find the underlying cause.",
+      "body_mechanism": "The pleural membranes normally slide smoothly over each other during breathing. When inflamed, their surfaces become rough and rub against each other like sandpaper with every breath, causing sharp, stabbing pain. The inflammation may be caused by infection, autoimmune disease, or fluid accumulation.",
+      "required_symptoms": [
+        "chest_pain"
+      ],
+      "supporting_symptoms": [
+        "dyspnoea",
+        "cough",
+        "fever"
+      ],
+      "against_symptoms": [
+        "heartburn",
+        "left_arm_pain"
+      ],
+      "follow_up_keys": [
+        "fu_pleurisy_breathing",
+        "fu_pleurisy_cause"
+      ],
+      "action_plan": {
+        "immediate": [
+          "Take a pain reliever \u2014 ibuprofen works best as it reduces inflammation",
+          "Lie on the side of the pain \u2014 this may reduce the pain slightly",
+          "Breathe shallowly if deep breathing is very painful",
+          "If severely breathless or in extreme pain: go to hospital"
+        ],
+        "short_term": [
+          "See a doctor \u2014 pleuritis always needs investigation to find the cause",
+          "The underlying cause (infection, TB, etc.) needs specific treatment",
+          "Do not ignore this \u2014 TB is a common cause in Uganda"
+        ],
+        "long_term": [
+          "Treatment depends on the cause",
+          "TB-related pleuritis: full 6-month TB treatment",
+          "Viral pleuritis: usually resolves in 1\u20132 weeks"
+        ]
+      },
+      "see_doctor_if": [
+        "Sharp chest pain that worsens with every breath",
+        "Difficulty breathing",
+        "Fever with chest pain",
+        "Any chest pain of this type \u2014 it requires diagnosis to rule out TB, pneumonia, and other serious causes"
+      ],
+      "home_remedies": [
+        "Ibuprofen \u2014 most effective pain relief for pleuritis",
+        "Rest in a comfortable position",
+        "Apply warm compress to chest \u2014 may reduce discomfort"
+      ],
+      "local_context": "In Uganda, pleuritis is often caused by tuberculosis or pneumonia. Sharp chest pain that gets worse when you breathe deeply should always be seen by a health worker \u2014 TB is very treatable when caught early, and is FREE to treat at government facilities."
+    }
+  },
+  "follow_up_questions": {
+    "fu_diabetes_thirst": {
+      "question": "Are you feeling extremely thirsty \u2014 drinking far more water than usual \u2014 and needing to urinate much more frequently, even at night?",
+      "answers": {
+        "yes_both": {
+          "add": [
+            {
+              "key": "urinary_frequency",
+              "severity": 7
+            },
+            {
+              "key": "thirst",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "thirst_only": {
+          "add": [
+            {
+              "key": "thirst",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "urination_only": {
+          "add": [
+            {
+              "key": "urinary_frequency",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": [
+            "urinary_frequency",
+            "thirst"
+          ]
+        }
+      }
+    },
+    "fu_diabetes_fatigue": {
+      "question": "Is your fatigue persistent \u2014 meaning you feel tired even after sleeping \u2014 and are you losing weight without trying to?",
+      "answers": {
+        "fatigue_and_weight": {
+          "add": [
+            {
+              "key": "fatigue",
+              "severity": 7
+            },
+            {
+              "key": "weight_loss",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "fatigue_only": {
+          "add": [
+            {
+              "key": "fatigue",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_diabetes_family": {
+      "question": "Does diabetes run in your family \u2014 parent, sibling, or close relative with diabetes?",
+      "answers": {
+        "yes": {
+          "add": [],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        },
+        "not_sure": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_diabetes_weight": {
+      "question": "Are you overweight, or have you gained significant weight in the past few years?",
+      "answers": {
+        "yes": {
+          "add": [],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_tb_cough_duration": {
+      "question": "How long have you been coughing? Has it been more than 2 weeks?",
+      "answers": {
+        "over_2_weeks": {
+          "add": [
+            {
+              "key": "cough_productive",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "1_2_weeks": {
+          "add": [
+            {
+              "key": "cough_productive",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "under_1_week": {
+          "add": [],
+          "remove": [
+            "cough_productive"
+          ]
+        }
+      }
+    },
+    "fu_tb_night_sweats": {
+      "question": "Are you waking up at night drenched in sweat \u2014 soaking your clothes or bedding?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "night_sweats",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "sometimes": {
+          "add": [
+            {
+              "key": "night_sweats",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": [
+            "night_sweats"
+          ]
+        }
+      }
+    },
+    "fu_tb_blood": {
+      "question": "Have you ever coughed up blood, or have you noticed blood in your mucus?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "haemoptysis",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_tb_contact": {
+      "question": "Have you been in close contact with someone who has tuberculosis (TB), or who has a chronic cough?",
+      "answers": {
+        "yes": {
+          "add": [],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        },
+        "not_sure": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_tb_hiv": {
+      "question": "Do you know your HIV status? Being HIV positive significantly changes the urgency of evaluating a cough.",
+      "answers": {
+        "hiv_positive": {
+          "add": [
+            {
+              "key": "immunocompromised",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "hiv_negative": {
+          "add": [],
+          "remove": []
+        },
+        "not_tested": {
+          "add": [],
+          "remove": []
+        },
+        "prefer_not": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_pneumonia_breathing": {
+      "question": "Is your breathing unusually fast or laboured \u2014 are you having to work hard to breathe?",
+      "answers": {
+        "yes_very": {
+          "add": [
+            {
+              "key": "dyspnoea",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "somewhat": {
+          "add": [
+            {
+              "key": "dyspnoea",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_pneumonia_lips": {
+      "question": "Are your lips or fingertips turning blue or very pale?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "cyanosis",
+              "severity": 10
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_pneumonia_confusion": {
+      "question": "Are you feeling confused, or is it hard to stay awake and follow a conversation?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "confusion",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_sickle_known": {
+      "question": "Have you been told you have sickle cell disease, or have you ever had a sickle cell test?",
+      "answers": {
+        "yes_sickle": {
+          "add": [
+            {
+              "key": "sickle_cell_known",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "sickle_trait": {
+          "add": [
+            {
+              "key": "sickle_trait",
+              "severity": 4
+            }
+          ],
+          "remove": []
+        },
+        "no_or_unknown": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_sickle_pain_location": {
+      "question": "Where is the pain \u2014 in your bones, joints, chest, or abdomen?",
+      "answers": {
+        "bones_joints": {
+          "add": [
+            {
+              "key": "joint_pain",
+              "severity": 8
+            },
+            {
+              "key": "body_aches",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "chest": {
+          "add": [
+            {
+              "key": "chest_pain",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "abdomen": {
+          "add": [
+            {
+              "key": "abdominal_pain",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "multiple": {
+          "add": [
+            {
+              "key": "body_aches",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_sickle_trigger": {
+      "question": "Did anything trigger this episode \u2014 cold weather, dehydration, illness, or intense physical activity?",
+      "answers": {
+        "cold": {
+          "add": [],
+          "remove": []
+        },
+        "dehydration": {
+          "add": [],
+          "remove": []
+        },
+        "illness": {
+          "add": [
+            {
+              "key": "fever",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "exercise": {
+          "add": [],
+          "remove": []
+        },
+        "no_trigger": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_nutrition_diet": {
+      "question": "How would you describe your usual diet \u2014 do you eat a variety of foods including protein, vegetables, and fruits regularly?",
+      "answers": {
+        "very_limited": {
+          "add": [
+            {
+              "key": "anorexia",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "mostly_staples": {
+          "add": [
+            {
+              "key": "anorexia",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        },
+        "varied": {
+          "add": [],
+          "remove": [
+            "anorexia"
+          ]
+        }
+      }
+    },
+    "fu_nutrition_child": {
+      "question": "Is this for a child \u2014 and if so, how old are they and how long have they had these symptoms?",
+      "answers": {
+        "infant_under_1": {
+          "add": [
+            {
+              "key": "paediatric_concern",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "child_1_5": {
+          "add": [
+            {
+              "key": "paediatric_concern",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "child_older": {
+          "add": [
+            {
+              "key": "paediatric_concern",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "adult": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_nutrition_pregnancy": {
+      "question": "Are you currently pregnant or have you recently given birth?",
+      "answers": {
+        "pregnant": {
+          "add": [
+            {
+              "key": "pregnancy",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "postpartum": {
+          "add": [
+            {
+              "key": "postpartum",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_eye_discharge": {
+      "question": "What kind of discharge does the eye have \u2014 thick yellow or green pus, watery discharge, or no discharge?",
+      "answers": {
+        "thick_pus": {
+          "add": [
+            {
+              "key": "purulent_discharge",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "watery": {
+          "add": [
+            {
+              "key": "lacrimation",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        },
+        "none": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_eye_both": {
+      "question": "Is it affecting one eye or both eyes?",
+      "answers": {
+        "both": {
+          "add": [
+            {
+              "key": "bilateral_eye",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        },
+        "one": {
+          "add": [],
+          "remove": [
+            "bilateral_eye"
+          ]
+        }
+      }
+    },
+    "fu_eye_vision": {
+      "question": "Is your vision affected \u2014 is it blurred or reduced?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "blurred_vision",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_diarrhoea_blood": {
+      "question": "Is there blood or mucus in the diarrhoea?",
+      "answers": {
+        "blood": {
+          "add": [
+            {
+              "key": "bloody_stool",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "mucus": {
+          "add": [
+            {
+              "key": "mucus_stool",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_diarrhoea_duration": {
+      "question": "How long have you had diarrhoea \u2014 and how many loose stools per day?",
+      "answers": {
+        "over_3_days_many": {
+          "add": [
+            {
+              "key": "diarrhoea",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "1_3_days": {
+          "add": [
+            {
+              "key": "diarrhoea",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "started_today": {
+          "add": [
+            {
+              "key": "diarrhoea",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_diarrhoea_child": {
+      "question": "Is this for a child, especially under 5 years old?",
+      "answers": {
+        "yes_under_1": {
+          "add": [
+            {
+              "key": "paediatric_concern",
+              "severity": 10
+            }
+          ],
+          "remove": []
+        },
+        "yes_1_5": {
+          "add": [
+            {
+              "key": "paediatric_concern",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "yes_older": {
+          "add": [
+            {
+              "key": "paediatric_concern",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "adult": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_anaemia_diet": {
+      "question": "How often do you eat iron-rich foods \u2014 meat, liver, beans, or dark leafy greens?",
+      "answers": {
+        "rarely": {
+          "add": [
+            {
+              "key": "fatigue",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "sometimes": {
+          "add": [
+            {
+              "key": "fatigue",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        },
+        "daily": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_anaemia_bleeding": {
+      "question": "Have you had any unusual bleeding \u2014 heavy periods, blood in stool, or frequent nosebleeds?",
+      "answers": {
+        "heavy_periods": {
+          "add": [
+            {
+              "key": "menorrhagia",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "blood_stool": {
+          "add": [
+            {
+              "key": "bloody_stool",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "nosebleeds": {
+          "add": [],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_anaemia_pregnancy": {
+      "question": "Are you pregnant or have you recently given birth?",
+      "answers": {
+        "pregnant": {
+          "add": [
+            {
+              "key": "pregnancy",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "recent_birth": {
+          "add": [
+            {
+              "key": "postpartum",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_depression_duration": {
+      "question": "How long have you been feeling this way \u2014 more than 2 weeks?",
+      "answers": {
+        "over_2_weeks": {
+          "add": [
+            {
+              "key": "low_mood",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "1_2_weeks": {
+          "add": [
+            {
+              "key": "low_mood",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "under_1_week": {
+          "add": [
+            {
+              "key": "low_mood",
+              "severity": 4
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_depression_function": {
+      "question": "Is this affecting your ability to work, study, or take care of daily responsibilities?",
+      "answers": {
+        "yes_significantly": {
+          "add": [
+            {
+              "key": "low_mood",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "somewhat": {
+          "add": [
+            {
+              "key": "low_mood",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "managing": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_depression_safety": {
+      "question": "Have you had any thoughts of harming yourself or not wanting to be alive?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "suicidal_ideation",
+              "severity": 10
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        },
+        "prefer_not_say": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_depression_sleep": {
+      "question": "How is your sleep \u2014 are you sleeping too much, too little, or waking very early?",
+      "answers": {
+        "too_little": {
+          "add": [
+            {
+              "key": "insomnia",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "too_much": {
+          "add": [
+            {
+              "key": "hypersomnia",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "normal": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_water_source": {
+      "question": "What is your main source of drinking water \u2014 piped water, borehole, well, or river?",
+      "answers": {
+        "river_or_well": {
+          "add": [],
+          "remove": []
+        },
+        "borehole": {
+          "add": [],
+          "remove": []
+        },
+        "piped_treated": {
+          "add": [],
+          "remove": []
+        },
+        "bottled": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_malaria_test": {
+      "question": "Have you been tested for malaria recently \u2014 either a rapid test or blood smear?",
+      "answers": {
+        "tested_positive": {
+          "add": [
+            {
+              "key": "cyclical_fever",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "tested_negative": {
+          "add": [],
+          "remove": [
+            "cyclical_fever"
+          ]
+        },
+        "not_tested": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_typhoid_test": {
+      "question": "Have you had a blood test or Widal test for typhoid?",
+      "answers": {
+        "positive": {
+          "add": [
+            {
+              "key": "fever",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "negative": {
+          "add": [],
+          "remove": []
+        },
+        "not_done": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_painkiller_use": {
+      "question": "Do you take ibuprofen, aspirin, or diclofenac regularly \u2014 for pain, malaria, or other conditions?",
+      "answers": {
+        "yes_regularly": {
+          "add": [
+            {
+              "key": "epigastric_pain",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "occasionally": {
+          "add": [
+            {
+              "key": "epigastric_pain",
+              "severity": 4
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_respiratory": {
+      "question": "Do you have a cough, and is your breathing faster or more difficult than usual?",
+      "answers": {
+        "cough_and_breathing": {
+          "add": [
+            {
+              "key": "cough",
+              "severity": 7
+            },
+            {
+              "key": "dyspnoea",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "cough_only": {
+          "add": [
+            {
+              "key": "cough",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_worse_at_night": {
+      "question": "Are your breathing symptoms worse at night or early morning \u2014 do you wake up coughing or wheezing?",
+      "answers": {
+        "yes_worse_night": {
+          "add": [
+            {
+              "key": "nocturnal_wheeze",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_triggers": {
+      "question": "Do you notice your breathing problems are triggered by anything specific \u2014 dust, smoke, cold air, exercise, or animals?",
+      "answers": {
+        "dust_smoke": {
+          "add": [
+            {
+              "key": "wheeze",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "exercise": {
+          "add": [
+            {
+              "key": "wheeze",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "cold_air": {
+          "add": [
+            {
+              "key": "wheeze",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no_trigger": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_family_history_htn": {
+      "question": "Does hypertension (high blood pressure) or stroke run in your family?",
+      "answers": {
+        "yes": {
+          "add": [],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        },
+        "not_sure": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_headache_location": {
+      "question": "Where is the headache \u2014 at the back of your head, the top, or all over?",
+      "answers": {
+        "back_of_head": {
+          "add": [
+            {
+              "key": "headache",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "top": {
+          "add": [
+            {
+              "key": "headache",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "all_over": {
+          "add": [
+            {
+              "key": "headache",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_chest_exertion": {
+      "question": "Does the chest pain happen mainly when you are physically active \u2014 walking, climbing stairs, lifting things \u2014 and go away when you rest?",
+      "answers": {
+        "yes_exertion": {
+          "add": [
+            {
+              "key": "exertional_chest_pain",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "rest_also": {
+          "add": [
+            {
+              "key": "chest_pain_at_rest",
+              "severity": 9
+            }
+          ],
+          "remove": [
+            "exertional_chest_pain"
+          ]
+        },
+        "at_rest": {
+          "add": [
+            {
+              "key": "chest_pain_at_rest",
+              "severity": 9
+            }
+          ],
+          "remove": [
+            "exertional_chest_pain"
+          ]
+        }
+      }
+    },
+    "fu_chest_relief": {
+      "question": "Does the chest pain go away completely when you stop the activity and rest for a few minutes?",
+      "answers": {
+        "yes_rest_helps": {
+          "add": [
+            {
+              "key": "exertional_chest_pain",
+              "severity": 7
+            }
+          ],
+          "remove": [
+            "chest_pain_at_rest"
+          ]
+        },
+        "no_stays": {
+          "add": [
+            {
+              "key": "chest_pain_at_rest",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "partial": {
+          "add": [
+            {
+              "key": "chest_pain_at_rest",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_chest_radiation": {
+      "question": "Does the chest pain spread (radiate) to any other part of your body \u2014 like your left arm, shoulder, jaw, neck, or back?",
+      "answers": {
+        "left_arm": {
+          "add": [
+            {
+              "key": "left_arm_pain",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "jaw_neck": {
+          "add": [
+            {
+              "key": "jaw_pain",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "back": {
+          "add": [
+            {
+              "key": "back_radiation",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "no_radiation": {
+          "add": [],
+          "remove": [
+            "left_arm_pain",
+            "jaw_pain"
+          ]
+        }
+      }
+    },
+    "fu_chest_duration": {
+      "question": "How long does the chest pain last when it occurs?",
+      "answers": {
+        "under_5_mins": {
+          "add": [
+            {
+              "key": "exertional_chest_pain",
+              "severity": 7
+            }
+          ],
+          "remove": [
+            "chest_pain_at_rest"
+          ]
+        },
+        "5_to_20_mins": {
+          "add": [
+            {
+              "key": "chest_pain_prolonged",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "over_20_mins": {
+          "add": [
+            {
+              "key": "chest_pain_at_rest",
+              "severity": 10
+            },
+            {
+              "key": "chest_pain_prolonged",
+              "severity": 10
+            }
+          ],
+          "remove": []
+        },
+        "constant": {
+          "add": [
+            {
+              "key": "chest_pain_prolonged",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_acs_onset": {
+      "question": "Did the chest pain come on suddenly, or has it been building gradually?",
+      "answers": {
+        "sudden": {
+          "add": [
+            {
+              "key": "sudden_onset_chest",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "gradual": {
+          "add": [
+            {
+              "key": "exertional_chest_pain",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_acs_quality": {
+      "question": "How would you best describe the chest pain \u2014 crushing or squeezing, sharp and stabbing, burning, or aching/pressure?",
+      "answers": {
+        "crushing_squeezing": {
+          "add": [
+            {
+              "key": "chest_pressure",
+              "severity": 9
+            },
+            {
+              "key": "acs_quality",
+              "severity": 9
+            }
+          ],
+          "remove": [
+            "chest_pain_sharp"
+          ]
+        },
+        "sharp_stabbing": {
+          "add": [
+            {
+              "key": "chest_pain_sharp",
+              "severity": 7
+            }
+          ],
+          "remove": [
+            "chest_pressure",
+            "acs_quality"
+          ]
+        },
+        "burning": {
+          "add": [
+            {
+              "key": "heartburn",
+              "severity": 7
+            }
+          ],
+          "remove": [
+            "chest_pressure"
+          ]
+        },
+        "aching_pressure": {
+          "add": [
+            {
+              "key": "chest_pressure",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        }
+      }
+    },
+    "fu_acs_radiation": {
+      "question": "Is the pain spreading to your left arm, jaw, neck, or back?",
+      "answers": {
+        "yes_arm": {
+          "add": [
+            {
+              "key": "left_arm_pain",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "yes_jaw": {
+          "add": [
+            {
+              "key": "jaw_pain",
+              "severity": 9
+            }
+          ],
+          "remove": []
+        },
+        "yes_back": {
+          "add": [
+            {
+              "key": "back_radiation",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "no_radiation": {
+          "add": [],
+          "remove": [
+            "left_arm_pain",
+            "jaw_pain"
+          ]
+        }
+      }
+    },
+    "fu_acs_associated": {
+      "question": "Along with the chest pain, are you also experiencing sweating, nausea, or feeling faint?",
+      "answers": {
+        "yes_all": {
+          "add": [
+            {
+              "key": "sweating",
+              "severity": 8
+            },
+            {
+              "key": "nausea",
+              "severity": 7
+            },
+            {
+              "key": "dizziness",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "sweating_only": {
+          "add": [
+            {
+              "key": "sweating",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "nausea_only": {
+          "add": [
+            {
+              "key": "nausea",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "none": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_acs_risk": {
+      "question": "Do you have any of these risk factors: high blood pressure, diabetes, smoking history, or family members with heart attacks?",
+      "answers": {
+        "yes_multiple": {
+          "add": [
+            {
+              "key": "high_blood_pressure",
+              "severity": 7
+            },
+            {
+              "key": "cardiac_risk_factors",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "yes_one": {
+          "add": [
+            {
+              "key": "cardiac_risk_factors",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "none_known": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_acid_timing": {
+      "question": "Does the burning chest feeling mainly occur after meals, when lying down, or at night?",
+      "answers": {
+        "after_meals": {
+          "add": [
+            {
+              "key": "postprandial_symptoms",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "lying_down": {
+          "add": [
+            {
+              "key": "postprandial_symptoms",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "night": {
+          "add": [
+            {
+              "key": "postprandial_symptoms",
+              "severity": 7
+            },
+            {
+              "key": "night_symptoms",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "anytime": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_acid_food": {
+      "question": "Is the burning feeling triggered or worsened by spicy food, fried food, coffee, or acidic drinks?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "food_triggered_symptoms",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "not_sure": {
+          "add": [],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": [
+            "postprandial_symptoms"
+          ]
+        }
+      }
+    },
+    "fu_acid_position": {
+      "question": "Do you notice a sour or bitter taste in your mouth, especially when you bend over or lie down?",
+      "answers": {
+        "yes": {
+          "add": [
+            {
+              "key": "regurgitation",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "sometimes": {
+          "add": [
+            {
+              "key": "regurgitation",
+              "severity": 5
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": [
+            "regurgitation"
+          ]
+        }
+      }
+    },
+    "fu_acid_severity": {
+      "question": "Has this been happening more than twice a week for the past few weeks?",
+      "answers": {
+        "yes_frequent": {
+          "add": [
+            {
+              "key": "chronic_acid_reflux",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "occasionally": {
+          "add": [],
+          "remove": []
+        },
+        "first_time": {
+          "add": [],
+          "remove": [
+            "chronic_acid_reflux"
+          ]
+        }
+      }
+    },
+    "fu_chest_touch": {
+      "question": "If you press firmly with your finger on the painful area of your chest, does it reproduce or significantly worsen the pain?",
+      "answers": {
+        "yes_tender": {
+          "add": [
+            {
+              "key": "chest_wall_tenderness",
+              "severity": 8
+            }
+          ],
+          "remove": []
+        },
+        "no_same": {
+          "add": [],
+          "remove": [
+            "chest_wall_tenderness"
+          ]
+        },
+        "not_sure": {
+          "add": [],
+          "remove": []
+        }
+      }
+    },
+    "fu_chest_movement": {
+      "question": "Does the chest pain clearly get worse when you twist your body, raise your arms above your head, or take a very deep breath?",
+      "answers": {
+        "yes_movement": {
+          "add": [
+            {
+              "key": "musculoskeletal_chest",
+              "severity": 7
+            }
+          ],
+          "remove": [
+            "chest_pain_at_rest"
+          ]
+        },
+        "yes_breathing": {
+          "add": [
+            {
+              "key": "pleuritic_pain",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "no_movement": {
+          "add": [],
+          "remove": [
+            "musculoskeletal_chest"
+          ]
+        }
+      }
+    },
+    "fu_chest_location": {
+      "question": "Can you point to exactly where the chest pain is \u2014 is it on one side of the chest, near the breastbone (centre), or is it a general, diffuse pain you cannot pinpoint?",
+      "answers": {
+        "breastbone_centre": {
+          "add": [
+            {
+              "key": "chest_wall_tenderness",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "one_side": {
+          "add": [
+            {
+              "key": "pleuritic_pain",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "general_diffuse": {
+          "add": [
+            {
+              "key": "acs_quality",
+              "severity": 6
+            }
+          ],
+          "remove": [
+            "chest_wall_tenderness"
+          ]
+        }
+      }
+    },
+    "fu_pleurisy_breathing": {
+      "question": "Does the chest pain get dramatically sharper when you take a deep breath in?",
+      "answers": {
+        "yes_sharp_on_breath": {
+          "add": [
+            {
+              "key": "pleuritic_pain",
+              "severity": 9
+            }
+          ],
+          "remove": [
+            "heartburn",
+            "epigastric_pain"
+          ]
+        },
+        "mild_worse": {
+          "add": [
+            {
+              "key": "pleuritic_pain",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "no_difference": {
+          "add": [],
+          "remove": [
+            "pleuritic_pain"
+          ]
+        }
+      }
+    },
+    "fu_pleurisy_cause": {
+      "question": "Have you recently had a respiratory illness \u2014 cough, flu, or any illness involving breathing difficulties?",
+      "answers": {
+        "yes_recent": {
+          "add": [
+            {
+              "key": "recent_respiratory_illness",
+              "severity": 6
+            }
+          ],
+          "remove": []
+        },
+        "cough_weeks": {
+          "add": [
+            {
+              "key": "cough_productive",
+              "severity": 7
+            }
+          ],
+          "remove": []
+        },
+        "no": {
+          "add": [],
+          "remove": []
+        }
+      }
+    }
+  },
+  "emergency_flags": [
+    {
+      "id": "suicidal_ideation",
+      "name": "Mental Health Crisis",
+      "trigger_symptoms": [
+        "suicidal_ideation"
+      ],
+      "message": "\u26a0\ufe0f IMPORTANT: You mentioned thoughts of harming yourself. Please know that you are not alone and help is available. Please tell someone you trust right now, or go to Butabika National Referral Hospital (Kampala) or your nearest health facility. You matter and this can get better.",
+      "urgency": "emergency"
+    },
+    {
+      "id": "severe_malaria_child",
+      "name": "Severe Malaria \u2014 Child",
+      "trigger_symptoms": [
+        "fever",
+        "paediatric_concern",
+        "confusion"
+      ],
+      "message": "\u26a0\ufe0f EMERGENCY: A child with high fever and altered consciousness in Uganda must be treated as severe malaria until proven otherwise. This is a medical emergency. Go to hospital IMMEDIATELY. Every minute matters.",
+      "urgency": "emergency"
+    },
+    {
+      "id": "diabetic_emergency",
+      "name": "Possible Diabetic Emergency",
+      "trigger_symptoms": [
+        "confusion",
+        "sweating"
+      ],
+      "trigger_keywords": [
+        "diabetic",
+        "insulin",
+        "blood sugar",
+        "glucose",
+        "sweet smell",
+        "fruity breath"
+      ],
+      "message": "\u26a0\ufe0f URGENT: If this person has diabetes and is confused or semi-conscious, this could be a diabetic emergency (hypoglycaemia or DKA). If they can swallow safely, give sugar immediately. If not \u2014 go to hospital NOW.",
+      "urgency": "emergency"
+    },
+    {
+      "id": "preeclampsia",
+      "name": "Possible Pre-eclampsia",
+      "trigger_symptoms": [
+        "headache",
+        "oedema"
+      ],
+      "trigger_keywords": [
+        "pregnant",
+        "pregnancy",
+        "expecting",
+        "baby",
+        "antenatal"
+      ],
+      "message": "\u26a0\ufe0f URGENT: Severe headache or swelling during pregnancy can be pre-eclampsia \u2014 a life-threatening emergency for mother and baby. Go to the nearest hospital or health centre immediately. Do not wait.",
+      "urgency": "emergency"
+    },
+    {
+      "id": "sepsis",
+      "name": "Possible Sepsis",
+      "trigger_symptoms": [
+        "fever",
+        "confusion",
+        "dyspnoea"
+      ],
+      "trigger_keywords": [
+        "infection spreading",
+        "wound smells",
+        "very hot",
+        "can't wake",
+        "not responding"
+      ],
+      "message": "\u26a0\ufe0f EMERGENCY: High fever with confusion and breathing difficulty could indicate sepsis \u2014 a life-threatening response to infection. Go to hospital immediately. This condition deteriorates rapidly.",
+      "urgency": "emergency"
+    },
+    {
+      "id": "heart_attack_pattern",
+      "name": "Possible Heart Attack",
+      "trigger_symptoms": [
+        "chest_pain",
+        "left_arm_pain"
+      ],
+      "trigger_keywords": [
+        "heart attack",
+        "crushing chest",
+        "chest crushing",
+        "cannot breathe chest pain",
+        "chest pain arm",
+        "arm pain chest",
+        "jaw pain chest",
+        "squeezing chest"
+      ],
+      "message": "\u26a0\ufe0f URGENT: Chest pain spreading to your arm or jaw can be a sign of a heart attack \u2014 a life-threatening emergency. **Please call for help immediately or go to the nearest hospital NOW. Do not drive yourself. Chew an aspirin if you have one.**",
+      "urgency": "emergency"
+    },
+    {
+      "id": "severe_chest_pain_pattern",
+      "name": "Severe Chest Pain \u2014 Needs Urgent Assessment",
+      "trigger_symptoms": [
+        "chest_pain_at_rest"
+      ],
+      "trigger_keywords": [
+        "severe chest pain",
+        "chest pain not going away",
+        "crushing chest",
+        "worst chest pain",
+        "cannot move chest pain"
+      ],
+      "message": "\u26a0\ufe0f URGENT: Severe chest pain that does not go away with rest needs urgent medical assessment. Please go to a hospital or clinic as soon as possible. This may be a heart problem, and early treatment saves lives.",
+      "urgency": "urgent"
+    }
+  ]
+}

@@ -1,0 +1,2158 @@
+{
+  "medications": [
+    {
+      "id": "paracetamol",
+      "name": "Paracetamol (Acetaminophen)",
+      "brand_names": [
+        "Panadol",
+        "Tylenol",
+        "Calpol"
+      ],
+      "category": "analgesic",
+      "availability": "OTC",
+      "uses": [
+        "Fever",
+        "Mild to moderate pain",
+        "Headache",
+        "Body aches",
+        "Period pain"
+      ],
+      "adult_dose": "500mg–1000mg every 4–6 hours. Maximum 4000mg per day",
+      "child_dose": "10–15mg per kg body weight every 4–6 hours. Do not exceed 5 doses in 24 hours",
+      "how_it_works": "Reduces fever by acting on the heat-regulating centre in the brain. Reduces pain by blocking pain signals in the nervous system.",
+      "key_warnings": [
+        "Do not exceed the maximum dose — liver damage can occur",
+        "Avoid alcohol — increases liver damage risk",
+        "Check other medications for paracetamol content — many combination drugs contain it",
+        "Safe in pregnancy at recommended doses"
+      ],
+      "interactions": [
+        "Warfarin (increases effect)",
+        "Alcohol (liver damage risk)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at all pharmacies and health centres in Uganda. Very affordable.",
+      "side_effects": [
+        "Liver damage in overdose",
+        "Skin rash (rare)",
+        "Nausea at high doses"
+      ],
+      "contraindications": [
+        "Severe liver disease (hepatitis, cirrhosis)",
+        "Known allergy to paracetamol",
+        "Regular heavy alcohol use"
+      ],
+      "pregnancy_safety": "SAFE — Paracetamol is the pain and fever reliever of choice throughout pregnancy. Use the lowest effective dose for the shortest time."
+    },
+    {
+      "id": "ibuprofen",
+      "name": "Ibuprofen",
+      "brand_names": [
+        "Brufen",
+        "Advil",
+        "Nurofen"
+      ],
+      "category": "NSAID",
+      "availability": "OTC",
+      "uses": [
+        "Pain",
+        "Fever",
+        "Inflammation",
+        "Arthritis",
+        "Period pain",
+        "Dental pain"
+      ],
+      "adult_dose": "200mg–400mg every 4–6 hours with food. Maximum 1200mg per day (OTC)",
+      "child_dose": "5–10mg per kg every 6–8 hours with food. Do not use under 3 months",
+      "how_it_works": "Blocks prostaglandins — chemicals that cause pain, fever, and inflammation. More effective than paracetamol for inflammatory pain and period cramps.",
+      "key_warnings": [
+        "ALWAYS take with food — ibuprofen damages the stomach lining on an empty stomach",
+        "Do NOT use in peptic ulcer disease — will worsen it significantly",
+        "Do NOT give to people with kidney disease without doctor advice",
+        "Do NOT use in dengue fever — increases bleeding risk dangerously",
+        "Avoid in third trimester of pregnancy",
+        "Use cautiously in asthma — can trigger attacks in some people"
+      ],
+      "interactions": [
+        "Aspirin (reduces aspirin effect)",
+        "Warfarin (increases bleeding risk)",
+        "ACE inhibitors (reduces their effect)",
+        "Lithium (increases lithium levels)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Widely available in Uganda. Essential medicine. Often overused without food — causing widespread gastritis.",
+      "side_effects": [
+        "Stomach pain and nausea (very common)",
+        "Stomach ulcers and bleeding",
+        "Headache",
+        "Dizziness",
+        "Fluid retention",
+        "Kidney strain",
+        "Raised blood pressure with long-term use"
+      ],
+      "contraindications": [
+        "Active peptic ulcer or stomach bleeding",
+        "Severe kidney disease",
+        "Severe heart failure",
+        "Last trimester of pregnancy",
+        "Dengue fever (increases bleeding risk)",
+        "Aspirin-sensitive asthma"
+      ],
+      "pregnancy_safety": "AVOID in third trimester — causes premature closure of fetal ductus arteriosus and can delay labour. Use only under medical supervision in first/second trimester. Paracetamol is preferred throughout pregnancy."
+    },
+    {
+      "id": "amoxicillin",
+      "name": "Amoxicillin",
+      "brand_names": [
+        "Amoxil",
+        "Trimox"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "Chest infections",
+        "Ear infections",
+        "Throat infections (strep)",
+        "UTI",
+        "Skin infections",
+        "H. pylori (with other drugs)"
+      ],
+      "adult_dose": "250mg–500mg three times daily for 5–10 days (depends on condition)",
+      "child_dose": "25–50mg per kg per day divided into 3 doses",
+      "how_it_works": "A penicillin-type antibiotic that kills bacteria by destroying their cell walls. Effective against many common bacteria causing infections.",
+      "key_warnings": [
+        "ALWAYS complete the full course — stopping early causes antibiotic resistance",
+        "Tell doctor if allergic to penicillin — cross-reaction is possible",
+        "May cause diarrhoea — eat yoghurt to restore gut bacteria",
+        "Not effective against viruses — do not use for colds or flu"
+      ],
+      "interactions": [
+        "Warfarin (monitor INR)",
+        "Oral contraceptives (may reduce effectiveness)",
+        "Methotrexate (increases toxicity)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at pharmacies. Requires prescription but often sold without in Uganda. Do not self-prescribe.",
+      "side_effects": [
+        "Diarrhoea (common)",
+        "Nausea and vomiting",
+        "Skin rash",
+        "Thrush (yeast infection)",
+        "Severe allergic reaction (rare but serious)"
+      ],
+      "contraindications": [
+        "Penicillin allergy",
+        "History of severe allergic reaction to any beta-lactam antibiotic"
+      ],
+      "pregnancy_safety": "SAFE — Amoxicillin is one of the most commonly used and well-studied antibiotics in pregnancy. Safe in all trimesters."
+    },
+    {
+      "id": "metronidazole",
+      "name": "Metronidazole",
+      "brand_names": [
+        "Flagyl",
+        "Metrogel"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "Amoebic dysentery",
+        "Giardia",
+        "Bacterial vaginosis",
+        "Dental infections",
+        "H. pylori (with other drugs)",
+        "Trichomonas"
+      ],
+      "adult_dose": "400mg three times daily for 5–7 days (varies by condition)",
+      "child_dose": "7.5mg per kg three times daily",
+      "how_it_works": "Damages the DNA of bacteria and parasites — particularly effective against anaerobic bacteria (those that don't need oxygen) and protozoa.",
+      "key_warnings": [
+        "ABSOLUTELY NO alcohol during treatment and for 48 hours after — causes severe nausea and vomiting",
+        "May cause metallic taste in mouth — this is normal",
+        "Do not use in first trimester of pregnancy",
+        "May cause dizziness — avoid driving"
+      ],
+      "interactions": [
+        "Alcohol (dangerous reaction)",
+        "Warfarin (increases bleeding risk)",
+        "Lithium (increases lithium toxicity)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Very widely available in Uganda. One of the most used antibiotics. Often misused — should only be used for confirmed bacterial/parasitic infections.",
+      "side_effects": [
+        "Metallic taste in mouth (very common)",
+        "Nausea and vomiting",
+        "Headache",
+        "Dizziness",
+        "Dark urine (harmless)",
+        "Peripheral neuropathy with long-term use"
+      ],
+      "contraindications": [
+        "First trimester of pregnancy (especially high doses)",
+        "Known hypersensitivity to metronidazole",
+        "Alcohol consumption during treatment"
+      ],
+      "pregnancy_safety": "CAUTION — Avoid high doses in first trimester. Single-dose regimens are generally avoided in pregnancy. Can be used from second trimester when benefits outweigh risks. Widely used for bacterial vaginosis in pregnancy from 2nd trimester."
+    },
+    {
+      "id": "artemether_lumefantrine",
+      "name": "Artemether/Lumefantrine",
+      "brand_names": [
+        "Coartem",
+        "Riamet",
+        "Artefan"
+      ],
+      "category": "antimalarial",
+      "availability": "Prescription",
+      "uses": [
+        "Uncomplicated falciparum malaria",
+        "First-line treatment for malaria in Uganda"
+      ],
+      "adult_dose": "4 tablets at 0, 8, 24, 36, 48, and 60 hours (6 doses total). Always take with food or a fatty drink",
+      "child_dose": "Weight-based: 5–14kg: 1 tablet; 15–24kg: 2 tablets; 25–34kg: 3 tablets — same schedule",
+      "how_it_works": "Artemether rapidly kills malaria parasites. Lumefantrine stays in the body longer to eliminate remaining parasites and prevent recurrence.",
+      "key_warnings": [
+        "MUST be taken with food or milk — absorption is greatly reduced without fat",
+        "Complete ALL 6 doses even if feeling better after first 2 — prevents relapse and resistance",
+        "Confirm malaria diagnosis with a test before treatment — do not assume",
+        "Not for prevention — only for treating confirmed malaria",
+        "Avoid grapefruit juice during treatment"
+      ],
+      "interactions": [
+        "Drugs that prolong QT interval (arrhythmia risk)",
+        "Rifampicin (reduces effectiveness)",
+        "Mefloquine (increased seizure risk)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Available at all health centres and pharmacies in Uganda. Subsidised cost. First-line treatment — do not use older drugs like chloroquine which no longer work.",
+      "side_effects": [
+        "Dizziness and headache",
+        "Nausea and vomiting",
+        "Sleep disturbances",
+        "Palpitations (rare)",
+        "Anorexia"
+      ],
+      "contraindications": [
+        "Known hypersensitivity to either component",
+        "First trimester of pregnancy (use quinine + clindamycin instead)",
+        "Severe malaria (requires IV artesunate, not oral)"
+      ],
+      "pregnancy_safety": "CAUTION — Avoid in first trimester. From second trimester onwards, artemether-lumefantrine is the preferred treatment for uncomplicated malaria in pregnancy in Uganda. First trimester: use quinine."
+    },
+    {
+      "id": "ors",
+      "name": "Oral Rehydration Salts (ORS)",
+      "brand_names": [
+        "Electrolyte",
+        "Dioralyte",
+        "ORS sachets"
+      ],
+      "category": "rehydration",
+      "availability": "OTC",
+      "uses": [
+        "Diarrhoea",
+        "Vomiting",
+        "Dehydration from any cause",
+        "Cholera",
+        "Food poisoning",
+        "Heat exhaustion"
+      ],
+      "adult_dose": "200–400ml after every loose stool. Drink continuously as needed",
+      "child_dose": "50–100ml after every loose stool for children under 2. 100–200ml for older children",
+      "how_it_works": "The combination of glucose and sodium triggers the gut to absorb water — even during diarrhoea. More effective than plain water alone for dehydration.",
+      "key_warnings": [
+        "Do not add extra sugar or salt — the ratio is precisely calibrated",
+        "Make fresh solution each time — do not use solution that is more than 24 hours old",
+        "Breastfeeding should continue alongside ORS in infants",
+        "Seek medical care if no improvement after 24 hours or signs of severe dehydration"
+      ],
+      "interactions": [],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at all pharmacies and health centres in Uganda. Very affordable. Can be made at home: 1 litre clean water + 6 teaspoons sugar + 0.5 teaspoon salt.",
+      "side_effects": [
+        "Nausea if given too fast",
+        "Vomiting if given in large amounts quickly — give small frequent sips"
+      ],
+      "contraindications": [
+        "Inability to drink (unconscious or very severe vomiting — needs IV fluids)",
+        "Severe dehydration requiring IV therapy"
+      ],
+      "pregnancy_safety": "COMPLETELY SAFE — ORS is highly recommended in pregnancy and breastfeeding. Dehydration is dangerous in pregnancy."
+    },
+    {
+      "id": "omeprazole",
+      "name": "Omeprazole",
+      "brand_names": [
+        "Losec",
+        "Prilosec",
+        "Omez"
+      ],
+      "category": "proton_pump_inhibitor",
+      "availability": "Prescription/OTC",
+      "uses": [
+        "Peptic ulcer disease",
+        "GERD / acid reflux",
+        "Gastritis",
+        "H. pylori treatment (with antibiotics)",
+        "Prevention of NSAID-induced ulcers"
+      ],
+      "adult_dose": "20mg once daily before breakfast. 40mg for active ulcers or severe GERD",
+      "child_dose": "0.5–1mg per kg once daily (specialist guidance needed)",
+      "how_it_works": "Blocks the proton pump in stomach cells — the final step of acid production. Reduces acid dramatically regardless of the trigger. Allows ulcers to heal.",
+      "key_warnings": [
+        "Take 30 minutes before eating for maximum effectiveness",
+        "Long-term use (>1 year) may reduce magnesium and vitamin B12 absorption",
+        "Do not stop suddenly after long-term use — acid rebounds",
+        "Not a cure for H. pylori — needs antibiotics alongside"
+      ],
+      "interactions": [
+        "Clopidogrel (reduces clopidogrel effectiveness)",
+        "Methotrexate",
+        "Atazanavir (HIV drug — avoid combination)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at most pharmacies in Uganda. Relatively affordable. Widely prescribed for stomach problems.",
+      "side_effects": [
+        "Headache",
+        "Diarrhoea or constipation",
+        "Nausea",
+        "Vitamin B12 deficiency (long-term)",
+        "Magnesium deficiency (long-term)",
+        "Increased risk of gut infections with very long-term use"
+      ],
+      "contraindications": [
+        "Known hypersensitivity to proton pump inhibitors",
+        "Use with caution in severe liver disease"
+      ],
+      "pregnancy_safety": "GENERALLY SAFE — Omeprazole is widely used for heartburn and reflux in pregnancy. Large studies show no increased risk of birth defects. Antacids are first choice; omeprazole used when needed."
+    },
+    {
+      "id": "salbutamol",
+      "name": "Salbutamol (Albuterol)",
+      "brand_names": [
+        "Ventolin",
+        "Proventil",
+        "Asthalin"
+      ],
+      "category": "bronchodilator",
+      "availability": "Prescription",
+      "uses": [
+        "Asthma attack",
+        "Exercise-induced bronchospasm",
+        "COPD (with other drugs)"
+      ],
+      "adult_dose": "1–2 puffs (100mcg each) every 4–6 hours as needed. Maximum 8 puffs per day",
+      "child_dose": "1–2 puffs as needed. Use with spacer for under-5s",
+      "how_it_works": "Relaxes the muscles surrounding the airways, causing them to widen within minutes. Acts on beta-2 receptors. Relieves bronchospasm rapidly.",
+      "key_warnings": [
+        "This is a RELIEVER — use when symptoms occur, not daily",
+        "If using more than 3 times weekly, your asthma is not controlled — see a doctor",
+        "May cause trembling and fast heart rate — normal side effects",
+        "Shake inhaler before use",
+        "Rinse mouth after using — prevents thrush"
+      ],
+      "interactions": [
+        "Beta-blockers (oppose the effect)",
+        "Digoxin (low potassium increases toxicity risk)",
+        "Diuretics (low potassium risk)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available in Uganda but not always in stock at rural health centres. Keep a supply at all times if you have asthma. Essential medicine.",
+      "side_effects": [
+        "Trembling/shakiness (very common)",
+        "Fast heart rate (palpitations)",
+        "Headache",
+        "Muscle cramps",
+        "Low potassium with very frequent use"
+      ],
+      "contraindications": [
+        "Known hypersensitivity to salbutamol",
+        "Tachyarrhythmias (fast abnormal heart rhythms) — use with caution"
+      ],
+      "pregnancy_safety": "SAFE — Salbutamol is used safely throughout pregnancy for asthma. Uncontrolled asthma is far more dangerous to baby than the medication. At high IV doses near term it can affect uterine contractions — but this is only relevant in hospital settings."
+    },
+    {
+      "id": "cotrimoxazole",
+      "name": "Cotrimoxazole (Trimethoprim/Sulfamethoxazole)",
+      "brand_names": [
+        "Septrin",
+        "Bactrim",
+        "Co-trimoxazole"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "UTI",
+        "HIV prophylaxis (prevents opportunistic infections)",
+        "Pneumocystis pneumonia prevention",
+        "Toxoplasmosis prevention",
+        "Diarrhoea (some bacterial)"
+      ],
+      "adult_dose": "960mg (2 standard tablets) twice daily for UTI. 960mg once daily for HIV prophylaxis",
+      "child_dose": "Weight-based. HIV prophylaxis: start at 6 weeks in HIV-exposed infants",
+      "how_it_works": "Blocks two sequential steps in bacterial folic acid synthesis — bacteria need folate to make DNA and cannot use human folate. Double blockade makes resistance development harder.",
+      "key_warnings": [
+        "Drink plenty of water — helps prevent kidney crystals",
+        "Can cause skin rash — stop and see doctor if rash develops",
+        "Do NOT use in severe kidney or liver disease",
+        "Avoid in third trimester of pregnancy",
+        "HIV-positive patients should take this daily as standard prevention"
+      ],
+      "interactions": [
+        "Warfarin (increases effect)",
+        "Methotrexate (increases toxicity)",
+        "ACE inhibitors (high potassium risk)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Very widely available and affordable in Uganda. Essential for HIV-positive people — provided free at HIV clinics.",
+      "side_effects": [
+        "Skin rash (including rare severe Stevens-Johnson syndrome)",
+        "Nausea and vomiting",
+        "Folate deficiency with prolonged use",
+        "Bone marrow suppression (rare)",
+        "Kidney stones",
+        "Photosensitivity"
+      ],
+      "contraindications": [
+        "Sulfonamide allergy",
+        "Third trimester of pregnancy (risk of neonatal jaundice)",
+        "Severe kidney or liver disease",
+        "Megaloblastic anaemia due to folate deficiency"
+      ],
+      "pregnancy_safety": "CAUTION — Avoid in first trimester (folate antagonist — increases neural tube defect risk; take extra folic acid if must use). Avoid in third trimester (neonatal jaundice and kernicterus risk). Can be used with caution in second trimester. HIV-positive pregnant women on cotrimoxazole prophylaxis must also take folic acid 5mg daily."
+    },
+    {
+      "id": "mebendazole",
+      "name": "Mebendazole",
+      "brand_names": [
+        "Vermox",
+        "Wormin"
+      ],
+      "category": "anthelmintic",
+      "availability": "OTC",
+      "uses": [
+        "Roundworm",
+        "Hookworm",
+        "Whipworm",
+        "Pinworm",
+        "Intestinal worms (most types)"
+      ],
+      "adult_dose": "500mg single dose for roundworm, hookworm, whipworm. 100mg twice daily for 3 days for pinworm",
+      "child_dose": "Same as adult dose for children over 2 years. Not recommended under 1 year",
+      "how_it_works": "Blocks glucose uptake by worms — they cannot absorb the sugar they need for energy and die. Does not affect human glucose absorption.",
+      "key_warnings": [
+        "Safe and well-tolerated with very few side effects",
+        "Treat all household members simultaneously for pinworm — reinfection is common",
+        "Repeat after 2 weeks for pinworm",
+        "Pregnant women should avoid in first trimester",
+        "May cause brief abdominal pain as worms die — this is normal"
+      ],
+      "interactions": [],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Available at all pharmacies in Uganda. Very affordable. Routine deworming every 6 months is recommended for children.",
+      "side_effects": [
+        "Abdominal pain or cramps (usually mild and brief as worms die)",
+        "Diarrhoea (transient)",
+        "Nausea",
+        "Headache (uncommon)"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "First trimester of pregnancy"
+      ],
+      "pregnancy_safety": "AVOID in first trimester — animal studies showed embryotoxicity. Can be used from second trimester onwards when benefits clearly outweigh risks. Albendazole is also avoided in first trimester. For pinworms and roundworms, treatment after first trimester is acceptable."
+    },
+    {
+      "id": "iron_supplements",
+      "name": "Iron Supplements (Ferrous Sulphate)",
+      "brand_names": [
+        "Feospan",
+        "Slow-Fe",
+        "Ferrous Sulphate tablets"
+      ],
+      "category": "supplement",
+      "availability": "OTC/Prescription",
+      "uses": [
+        "Iron deficiency anaemia",
+        "Prevention of anaemia in pregnancy",
+        "After significant blood loss"
+      ],
+      "adult_dose": "200mg ferrous sulphate (65mg elemental iron) 1–3 times daily. Take with vitamin C for better absorption",
+      "child_dose": "3–6mg elemental iron per kg daily in divided doses",
+      "how_it_works": "Provides iron for haemoglobin production — the protein in red blood cells that carries oxygen. Anaemia improves as new red blood cells are produced over 4–8 weeks.",
+      "key_warnings": [
+        "Take with orange juice or vitamin C food — doubles absorption",
+        "Do NOT take with tea, coffee, or dairy — tannins and calcium block absorption",
+        "Causes black or dark stools — completely normal",
+        "May cause constipation — increase water and fibre intake",
+        "Keep away from children — iron overdose is dangerous",
+        "Pregnant women should take iron throughout pregnancy"
+      ],
+      "interactions": [
+        "Antacids (reduce absorption)",
+        "Tea and coffee (reduce absorption)",
+        "Tetracyclines (mutual absorption reduction)",
+        "Levodopa (reduced effect)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at pharmacies and health centres in Uganda. Provided free for pregnant women at antenatal clinics. Essential for addressing Uganda's high anaemia burden.",
+      "side_effects": [
+        "Constipation (very common)",
+        "Black/dark stools (normal)",
+        "Nausea and vomiting (especially on empty stomach)",
+        "Abdominal cramping",
+        "Diarrhoea (less common)"
+      ],
+      "contraindications": [
+        "Haemochromatosis (iron overload disease)",
+        "Haemolytic anaemia without iron deficiency",
+        "Regular blood transfusions"
+      ],
+      "pregnancy_safety": "STRONGLY RECOMMENDED — Iron supplementation is standard care throughout pregnancy in Uganda. Prevents maternal anaemia which is a major cause of maternal mortality. Take with Vitamin C for better absorption. Take at least 2 hours apart from antacids or calcium."
+    },
+    {
+      "id": "antihistamine",
+      "name": "Antihistamine (Chlorpheniramine / Cetirizine)",
+      "brand_names": [
+        "Piriton",
+        "Zyrtec",
+        "Chlorphenamine",
+        "Loratadine"
+      ],
+      "category": "antihistamine",
+      "availability": "OTC",
+      "uses": [
+        "Allergic reactions",
+        "Hay fever",
+        "Hives / urticaria",
+        "Itching from any cause",
+        "Insect bites",
+        "Motion sickness"
+      ],
+      "adult_dose": "Chlorpheniramine 4mg every 4–6 hours. Cetirizine 10mg once daily (less sedating)",
+      "child_dose": "Chlorpheniramine 2mg every 4–6 hours for children 6–12. Cetirizine 5mg for children 2–6",
+      "how_it_works": "Blocks histamine receptors — preventing histamine from causing the itching, swelling, and mucus production of allergic reactions.",
+      "key_warnings": [
+        "Chlorpheniramine causes significant drowsiness — do not drive",
+        "Cetirizine causes less drowsiness and is preferred for daytime use",
+        "Avoid alcohol — increases drowsiness",
+        "Not recommended for children under 2 without medical advice"
+      ],
+      "interactions": [
+        "Alcohol (increases sedation)",
+        "Other sedatives (additive effect)",
+        "MAO inhibitors (avoid combination)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Piriton (chlorpheniramine) is widely available and affordable in Uganda. Cetirizine is available at larger pharmacies.",
+      "side_effects": [
+        "Drowsiness (chlorpheniramine — very significant; cetirizine — milder)",
+        "Dry mouth",
+        "Blurred vision",
+        "Urinary retention (older men)",
+        "Constipation",
+        "Confusion in elderly"
+      ],
+      "contraindications": [
+        "Glaucoma (closed-angle)",
+        "Urinary retention / prostate enlargement",
+        "Children under 2 years (chlorpheniramine)",
+        "Avoid driving with chlorpheniramine"
+      ],
+      "pregnancy_safety": "GENERALLY SAFE — Chlorpheniramine and cetirizine are used when needed in pregnancy. Avoid in first trimester if possible. Loratadine is often preferred in pregnancy where available. Do not use for prolonged periods without medical advice."
+    },
+    {
+      "id": "metformin",
+      "name": "Metformin",
+      "brand_names": [
+        "Glucophage",
+        "Glucomin",
+        "Diformin"
+      ],
+      "category": "antidiabetic",
+      "availability": "Prescription",
+      "uses": [
+        "Type 2 diabetes",
+        "Prediabetes",
+        "Polycystic ovary syndrome (PCOS)",
+        "Insulin resistance"
+      ],
+      "adult_dose": "500mg twice daily with meals to start. Increase to 500mg three times daily or 850mg twice daily. Maximum 2000mg daily",
+      "child_dose": "Not recommended under 10 years. Age 10+: 500mg twice daily with meals",
+      "how_it_works": "Reduces glucose production in the liver and improves insulin sensitivity in muscle cells. Does not cause hypoglycaemia (blood sugar drops) on its own.",
+      "key_warnings": [
+        "Take with food — reduces nausea",
+        "Stop before any procedure using contrast dye — kidney risk",
+        "Avoid in severe kidney disease, liver disease, or heavy alcohol use",
+        "Causes vitamin B12 deficiency over time — monitor B12 levels"
+      ],
+      "interactions": [
+        "Alcohol (lactic acidosis risk)",
+        "Contrast dye (kidney risk)",
+        "Some antibiotics (quinolones)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Available at all government health facilities in Uganda. On the essential medicines list. Free at government facilities.",
+      "side_effects": [
+        "Nausea and vomiting (very common — especially when starting)",
+        "Diarrhoea (common)",
+        "Metallic taste in mouth",
+        "Abdominal pain",
+        "Vitamin B12 deficiency (long-term)",
+        "Lactic acidosis (rare but serious — risk increases in kidney disease)"
+      ],
+      "contraindications": [
+        "Severe kidney disease (eGFR <30)",
+        "Severe liver disease",
+        "Heart failure requiring medication",
+        "Active heavy alcohol use",
+        "IV contrast dye procedures (stop temporarily)",
+        "Diabetic ketoacidosis"
+      ],
+      "pregnancy_safety": "USED IN PREGNANCY — Metformin is increasingly used for gestational diabetes and PCOS in pregnancy. Does cross the placenta but growing evidence shows it is safe. Some guidelines still prefer insulin as the gold standard. Discuss with health provider. Folic acid supplementation essential."
+    },
+    {
+      "id": "amlodipine",
+      "name": "Amlodipine",
+      "brand_names": [
+        "Norvasc",
+        "Amlopin",
+        "Amlodep"
+      ],
+      "category": "calcium_channel_blocker",
+      "availability": "Prescription",
+      "uses": [
+        "Hypertension (high blood pressure)",
+        "Angina (chest pain from heart)",
+        "Coronary artery disease"
+      ],
+      "adult_dose": "5mg once daily. Can increase to 10mg once daily. Take at same time each day.",
+      "child_dose": "2.5–5mg once daily (age 6–17 only, under specialist supervision)",
+      "how_it_works": "Relaxes and widens blood vessels by blocking calcium from entering vessel muscle cells. This reduces the heart's workload and lowers blood pressure.",
+      "key_warnings": [
+        "Do not stop suddenly — blood pressure can rebound",
+        "May cause ankle swelling (common, usually not dangerous)",
+        "Grapefruit juice increases drug levels — avoid",
+        "Can cause flushing and headache when starting — usually settles"
+      ],
+      "interactions": [
+        "Grapefruit juice (increases levels)",
+        "Simvastatin (muscle damage risk — reduce statin dose)",
+        "Some antifungals (increase levels)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Available at most Ugandan pharmacies and government hospitals. On the essential medicines list.",
+      "side_effects": [
+        "Ankle and leg swelling (very common)",
+        "Flushing and feeling hot (especially when starting)",
+        "Headache",
+        "Dizziness",
+        "Palpitations",
+        "Fatigue",
+        "Nausea"
+      ],
+      "contraindications": [
+        "Severe hypotension (very low blood pressure)",
+        "Cardiogenic shock",
+        "Unstable angina (use with caution)",
+        "Known hypersensitivity to dihydropyridines"
+      ],
+      "pregnancy_safety": "CAUTION — Amlodipine crosses the placenta. Limited safety data in humans. For hypertension in pregnancy, methyldopa, labetalol, or nifedipine are preferred. Amlodipine may be used if alternatives are unavailable or not tolerated — discuss with doctor."
+    },
+    {
+      "id": "enalapril",
+      "name": "Enalapril",
+      "brand_names": [
+        "Vasotec",
+        "Enacard",
+        "Renitec"
+      ],
+      "category": "ACE_inhibitor",
+      "availability": "Prescription",
+      "uses": [
+        "Hypertension",
+        "Heart failure",
+        "Kidney protection in diabetes",
+        "After heart attack"
+      ],
+      "adult_dose": "2.5–5mg once daily to start. Maintenance 10–20mg daily. Maximum 40mg daily.",
+      "child_dose": "0.08mg/kg once daily (specialist use)",
+      "how_it_works": "Blocks angiotensin-converting enzyme (ACE), reducing production of angiotensin II — a hormone that narrows blood vessels. Lowers blood pressure and protects the kidneys.",
+      "key_warnings": [
+        "Do NOT use in pregnancy — causes serious fetal harm",
+        "Can cause persistent dry cough — switch to ARB if troublesome",
+        "Can cause dangerous high potassium — avoid potassium supplements",
+        "May cause first-dose low blood pressure — start at night"
+      ],
+      "interactions": [
+        "NSAIDs (reduce effect, worsen kidney function)",
+        "Potassium supplements (dangerous levels)",
+        "Lithium (increases lithium toxicity)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Available at government health facilities. On Uganda's essential medicines list. Free at government hospitals.",
+      "side_effects": [
+        "Dry persistent cough (very common — 10-20% of patients)",
+        "Dizziness and low blood pressure (especially first dose)",
+        "High potassium (hyperkalaemia)",
+        "Kidney function worsening",
+        "Angioedema (dangerous swelling of face/throat — rare but serious)",
+        "Headache"
+      ],
+      "contraindications": [
+        "Pregnancy (all trimesters — ABSOLUTELY CONTRAINDICATED)",
+        "Bilateral renal artery stenosis",
+        "History of angioedema with ACE inhibitor",
+        "High potassium (>5.5 mmol/L)",
+        "Severe kidney disease"
+      ],
+      "pregnancy_safety": "ABSOLUTELY CONTRAINDICATED — ACE inhibitors including enalapril cause serious fetal harm: renal failure in fetus, skull hypoplasia, oligohydramnios, fetal death. Discontinue immediately if pregnancy discovered. Switch to methyldopa, labetalol, or nifedipine."
+    },
+    {
+      "id": "atenolol",
+      "name": "Atenolol",
+      "brand_names": [
+        "Tenormin",
+        "Aten",
+        "Betacard"
+      ],
+      "category": "beta_blocker",
+      "availability": "Prescription",
+      "uses": [
+        "Hypertension",
+        "Angina",
+        "Atrial fibrillation (heart rate control)",
+        "After heart attack",
+        "Anxiety symptoms (heart racing)"
+      ],
+      "adult_dose": "25–50mg once daily. Maximum 100mg daily.",
+      "child_dose": "0.5–1mg/kg once daily (specialist use)",
+      "how_it_works": "Blocks adrenaline (beta receptors) in the heart, slowing heart rate and reducing the force of contraction. Lowers blood pressure and reduces the heart's oxygen demand.",
+      "key_warnings": [
+        "Never stop suddenly — can cause rebound angina or heart attack — taper slowly",
+        "May mask signs of hypoglycaemia in diabetics — use with caution",
+        "Can worsen asthma — avoid in asthmatics",
+        "Can cause fatigue, cold hands and feet, depression",
+        "May cause erectile dysfunction"
+      ],
+      "interactions": [
+        "Other heart rate-lowering drugs (additive effect)",
+        "NSAIDs (reduce antihypertensive effect)",
+        "Calcium channel blockers (excessive heart rate slowing)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Widely available at pharmacies and government hospitals in Uganda. On the essential medicines list.",
+      "side_effects": [
+        "Fatigue and tiredness (very common)",
+        "Cold hands and feet",
+        "Slow heart rate (bradycardia)",
+        "Low blood pressure",
+        "Dizziness",
+        "Sleep disturbances / nightmares",
+        "Depression",
+        "Erectile dysfunction",
+        "Masking hypoglycaemia symptoms in diabetics"
+      ],
+      "contraindications": [
+        "Asthma or COPD (can cause fatal bronchospasm)",
+        "Heart block (second/third degree)",
+        "Severe bradycardia",
+        "Cardiogenic shock",
+        "Uncontrolled heart failure"
+      ],
+      "pregnancy_safety": "CAUTION — Atenolol is associated with fetal growth restriction (low birth weight) when used throughout pregnancy. Labetalol is the preferred beta-blocker in pregnancy. If atenolol is being taken when pregnancy discovered, discuss switch with doctor urgently."
+    },
+    {
+      "id": "doxycycline",
+      "name": "Doxycycline",
+      "brand_names": [
+        "Vibramycin",
+        "Doxylin",
+        "Doxin"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "Malaria treatment (alternative)",
+        "Malaria prophylaxis (travellers)",
+        "Chlamydia",
+        "Syphilis (penicillin-allergic)",
+        "Respiratory infections",
+        "Lyme disease",
+        "Brucellosis",
+        "Cholera treatment"
+      ],
+      "adult_dose": "100mg twice daily (most infections). Malaria prophylaxis: 100mg once daily starting 2 days before travel.",
+      "child_dose": "NOT recommended under 8 years — permanently stains developing teeth",
+      "how_it_works": "Tetracycline antibiotic that stops bacteria producing proteins needed for growth and reproduction. Broad-spectrum — effective against many bacteria and some parasites.",
+      "key_warnings": [
+        "Take with full glass of water — sitting upright for 30 minutes after to avoid oesophageal ulcers",
+        "Take with food to reduce nausea",
+        "Causes severe photosensitivity — use sunscreen and avoid strong sun",
+        "Not in pregnancy or children under 8 years",
+        "Do not take with dairy, antacids, or iron — reduces absorption"
+      ],
+      "interactions": [
+        "Dairy products (reduces absorption)",
+        "Antacids and iron (reduces absorption)",
+        "Oral contraceptives (may reduce effectiveness)",
+        "Warfarin (increases anticoagulant effect)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Available at most pharmacies and health facilities in Uganda. Used widely for malaria prophylaxis.",
+      "side_effects": [
+        "Nausea and vomiting (very common)",
+        "Oesophageal ulcers (if not taken with full glass of water and remaining upright)",
+        "Photosensitivity (sunburn easily)",
+        "Diarrhoea",
+        "Thrush (vaginal and oral)",
+        "Tooth discolouration in children"
+      ],
+      "contraindications": [
+        "Pregnancy (all trimesters)",
+        "Children under 8 years (permanent tooth discolouration and bone effects)",
+        "Known tetracycline hypersensitivity",
+        "Severe liver disease"
+      ],
+      "pregnancy_safety": "CONTRAINDICATED — Doxycycline deposits in developing teeth and bones. Causes permanent yellowing and weakening of teeth in fetus and young children. Avoid in pregnancy and in children under 8 years. For malaria prevention in pregnancy, use other regimens. Exception: doxycycline is the only effective treatment for some rare rickettsial diseases and can be used short-term when no alternative exists and risk of disease is high."
+    },
+    {
+      "id": "ciprofloxacin",
+      "name": "Ciprofloxacin",
+      "brand_names": [
+        "Ciprobay",
+        "Ciproflox",
+        "Cipro"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "Urinary tract infections",
+        "Typhoid",
+        "Diarrhoea (bacterial)",
+        "Respiratory infections",
+        "Bone infections",
+        "Gonorrhoea (some strains — resistance increasing)"
+      ],
+      "adult_dose": "250–750mg twice daily depending on infection. UTI: 250–500mg twice daily for 3–7 days. Typhoid: 500mg twice daily for 10–14 days.",
+      "child_dose": "10–20mg/kg twice daily (maximum 750mg twice daily) — only when no safer option exists",
+      "how_it_works": "Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase and topoisomerase IV enzymes — essential for bacterial DNA replication. Bactericidal (kills rather than just stops growth).",
+      "key_warnings": [
+        "Risk of tendon damage (especially Achilles) — stop if tendon pain and seek care",
+        "Avoid in pregnancy",
+        "Can cause sun sensitivity — use sunscreen",
+        "Can worsen myasthenia gravis",
+        "NEVER use for simple colds or viral infections — causes resistance"
+      ],
+      "interactions": [
+        "Antacids, dairy (reduces absorption — take 2 hours apart)",
+        "Warfarin (increases bleeding risk)",
+        "NSAIDs (seizure risk)",
+        "Theophylline (increases toxicity)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Widely available in Uganda. Important: increasing resistance in Uganda — use only when prescribed and appropriate.",
+      "side_effects": [
+        "Nausea and diarrhoea",
+        "Headache",
+        "Dizziness",
+        "Photosensitivity",
+        "Tendon inflammation and rupture (especially Achilles)",
+        "QT interval prolongation (heart rhythm)",
+        "Peripheral neuropathy (rare)",
+        "Confusion in elderly"
+      ],
+      "contraindications": [
+        "Known quinolone hypersensitivity",
+        "History of tendon problems with fluoroquinolones",
+        "Myasthenia gravis (worsens weakness)",
+        "Avoid in growing children (unless no alternative)",
+        "Pregnancy (avoid unless essential — no alternative available)"
+      ],
+      "pregnancy_safety": "AVOID — Animal studies show damage to developing cartilage. Human data has not confirmed this definitively but ciprofloxacin is avoided in pregnancy as a precaution unless no safer alternative exists for a serious infection. Use for typhoid or anthrax exposure in pregnancy may be necessary."
+    },
+    {
+      "id": "fluconazole",
+      "name": "Fluconazole",
+      "brand_names": [
+        "Diflucan",
+        "Flucos",
+        "Triflucan"
+      ],
+      "category": "antifungal",
+      "availability": "Prescription/OTC",
+      "uses": [
+        "Vaginal thrush (candidiasis)",
+        "Oral thrush",
+        "Fungal skin infections",
+        "Cryptococcal meningitis (HIV patients)",
+        "Prevention of fungal infections in immunocompromised"
+      ],
+      "adult_dose": "Vaginal thrush: single 150mg dose. Oral thrush: 50–100mg once daily for 7–14 days. Cryptococcal meningitis: 800mg loading dose then 400mg daily (specialist use).",
+      "child_dose": "3–12mg/kg once daily depending on indication (specialist use for systemic infections)",
+      "how_it_works": "Inhibits an enzyme essential for synthesis of ergosterol — a critical component of the fungal cell membrane. Without ergosterol, the fungal cell membrane becomes leaky and the fungus dies.",
+      "key_warnings": [
+        "Can cause liver problems — avoid in severe liver disease",
+        "Many drug interactions — especially with warfarin and some HIV drugs",
+        "Can cause rare serious skin reactions — stop if severe rash develops",
+        "Single dose fluconazole often adequate for simple vaginal thrush"
+      ],
+      "interactions": [
+        "Warfarin (major — increases bleeding risk dramatically)",
+        "ARVs (multiple interactions)",
+        "Some statins (muscle damage risk)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Single-dose 150mg capsule available OTC at most pharmacies. Systemic fluconazole on prescription. Essential for HIV patients with cryptococcal meningitis.",
+      "side_effects": [
+        "Headache",
+        "Nausea and abdominal pain",
+        "Diarrhoea",
+        "Liver enzyme elevation",
+        "Serious skin reactions (very rare)",
+        "Drug interactions (warfarin, some HIV drugs, antifungals)"
+      ],
+      "contraindications": [
+        "Severe liver disease",
+        "Known azole hypersensitivity",
+        "Concomitant use of drugs that prolong QT interval",
+        "High doses in pregnancy"
+      ],
+      "pregnancy_safety": "CAUTION with high doses — Single dose 150mg for vaginal thrush: some studies show increased risk of miscarriage, use alternatives (clotrimazole cream/pessary) in first trimester. Long-term high-dose fluconazole (for cryptococcal meningitis etc) is associated with birth defects. Topical antifungals preferred in pregnancy."
+    },
+    {
+      "id": "prednisolone",
+      "name": "Prednisolone",
+      "brand_names": [
+        "Prelone",
+        "Delta-Cortef",
+        "Encortone"
+      ],
+      "category": "corticosteroid",
+      "availability": "Prescription",
+      "uses": [
+        "Severe asthma exacerbation",
+        "Severe allergic reactions",
+        "Rheumatoid arthritis",
+        "Inflammatory bowel disease",
+        "Nephrotic syndrome",
+        "Severe skin conditions",
+        "Croup (in children — dexamethasone preferred)"
+      ],
+      "adult_dose": "Varies by indication: 5–60mg daily. Asthma: 30–40mg daily for 5–7 days. Take with food in the morning.",
+      "child_dose": "1–2mg/kg once daily (maximum 40mg) for asthma. Specialist dosing for other conditions.",
+      "how_it_works": "Synthetic corticosteroid that powerfully suppresses inflammation and immune response. Reduces inflammation in airways, joints, skin, and other tissues.",
+      "key_warnings": [
+        "Do NOT stop suddenly after long-term use — must taper slowly (adrenal suppression)",
+        "Raises blood sugar — monitor closely in diabetics",
+        "Increases risk of infections — avoid contact with chickenpox and measles if not immune",
+        "Long-term use causes osteoporosis, weight gain, Cushing's syndrome, hypertension",
+        "Short courses (5-7 days) are generally safe — long-term use has significant side effects"
+      ],
+      "interactions": [
+        "NSAIDs (stomach ulcer risk)",
+        "Antifungals (increase steroid levels)",
+        "Rifampicin (reduces steroid effect)",
+        "Vaccines (live vaccines contraindicated)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Available at government hospitals and pharmacies in Uganda. On the essential medicines list.",
+      "side_effects": [
+        "Short-term: raised blood sugar, mood changes, insomnia, increased appetite, fluid retention",
+        "Long-term: weight gain, Cushing's features (moon face, central obesity), osteoporosis, hypertension, diabetes, easy bruising, muscle weakness, cataracts, immune suppression, adrenal suppression"
+      ],
+      "contraindications": [
+        "Active untreated infections (especially TB, fungal infections)",
+        "Live vaccines while on high-dose steroids",
+        "Do not stop suddenly after prolonged use"
+      ],
+      "pregnancy_safety": "USE WITH CAUTION — Prednisolone crosses the placenta minimally. Short courses are generally considered safe. Long-term use associated with gestational diabetes, hypertension, oral cleft (first trimester). Used when necessary for severe conditions like asthma, autoimmune disease, severe allergies. Discuss benefit-risk with doctor."
+    },
+    {
+      "id": "folic_acid",
+      "name": "Folic Acid",
+      "brand_names": [
+        "Folate",
+        "Folicin",
+        "Millfolate"
+      ],
+      "category": "vitamin",
+      "availability": "OTC",
+      "uses": [
+        "Prevention of neural tube defects in pregnancy",
+        "Treatment of folate-deficiency anaemia",
+        "Supplement in women of childbearing age"
+      ],
+      "adult_dose": "Prevention of birth defects: 5mg once daily from 3 months before conception to 12 weeks pregnancy. Anaemia treatment: 5mg once daily for 4 months. General supplement: 400mcg daily.",
+      "child_dose": "Age-dependent: 0.1–0.4mg daily under specialist guidance",
+      "how_it_works": "Folate is essential for DNA synthesis and cell division. Critically needed in the first weeks of pregnancy for neural tube formation (brain and spine). Deficiency causes spina bifida and anencephaly (serious birth defects). Also needed to make red blood cells.",
+      "key_warnings": [
+        "Take before pregnancy — neural tube forms in first 28 days (before many women know they are pregnant)",
+        "High-dose folic acid can mask vitamin B12 deficiency — do not use to treat unknown anaemia",
+        "Generally very safe"
+      ],
+      "interactions": [
+        "Methotrexate (antagonist — reduces folate effect)",
+        "Anti-epileptic drugs (reduce folate absorption)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Free at all antenatal clinics in Uganda. Available OTC at all pharmacies. Very affordable.",
+      "side_effects": [
+        "Generally very well tolerated",
+        "Rare: allergic reactions",
+        "At high doses: can mask vitamin B12 deficiency symptoms (subacute combined degeneration of spinal cord)"
+      ],
+      "contraindications": [
+        "Should not be used as primary treatment for B12-deficiency anaemia without also treating B12 (can mask neurological damage)"
+      ],
+      "pregnancy_safety": "ESSENTIAL in pregnancy — Folic acid prevents neural tube defects (spina bifida, anencephaly). All women trying to conceive should take 400mcg daily from at least 1 month before conception through the first 12 weeks. Women at high risk (previous neural tube defect, on some epilepsy medications) need 5mg daily. Take throughout pregnancy."
+    },
+    {
+      "id": "zinc_tablets",
+      "name": "Zinc Supplement",
+      "brand_names": [
+        "Zincofer",
+        "Zincovit",
+        "Solvezink"
+      ],
+      "category": "supplement",
+      "availability": "OTC",
+      "uses": [
+        "Treatment of diarrhoea in children (reduces duration by 25%)",
+        "Prevention of diarrhoea recurrence",
+        "Zinc deficiency",
+        "Growth promotion in stunted children",
+        "Immune support",
+        "Wound healing support"
+      ],
+      "adult_dose": "Zinc deficiency: 25–50mg elemental zinc daily. Not usually recommended for acute diarrhoea in adults.",
+      "child_dose": "Acute diarrhoea: Under 6 months: 10mg daily for 10 days. Over 6 months: 20mg daily for 10 days. Give with ORS.",
+      "how_it_works": "Zinc is essential for immune function, protein synthesis, DNA synthesis, wound healing, and cell division. In diarrhoea, zinc reduces intestinal inflammation, speeds recovery, and reduces subsequent diarrhoea episodes for 2-3 months.",
+      "key_warnings": [
+        "Take on empty stomach for better absorption but can cause nausea — take with small amount of food if nausea occurs",
+        "Do not exceed recommended dose — toxic in large amounts",
+        "Long-term high-dose zinc causes copper deficiency"
+      ],
+      "interactions": [
+        "Iron supplements (take 2 hours apart — mutual interference)",
+        "Antibiotics (tetracyclines, quinolones — take 2 hours apart)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available OTC at pharmacies. UNICEF zinc tablets distributed through health centres for childhood diarrhoea management. Low cost.",
+      "side_effects": [
+        "Nausea (most common, especially on empty stomach)",
+        "Vomiting",
+        "Stomach cramps",
+        "Diarrhoea",
+        "Copper deficiency with long-term high doses",
+        "Metallic taste"
+      ],
+      "contraindications": [
+        "Do not exceed recommended dose — toxic in large amounts",
+        "Avoid high-dose supplementation without medical advice"
+      ],
+      "pregnancy_safety": "SAFE at recommended doses — Zinc is important in pregnancy. Recommended dietary intake slightly increases in pregnancy. Avoid high-dose supplements (above 25mg/day) without medical advice. Zinc in ORS and diarrhoea treatment is safe."
+    },
+    {
+      "id": "acyclovir",
+      "name": "Acyclovir (Aciclovir)",
+      "brand_names": [
+        "Zovirax",
+        "Acivir",
+        "Herpex"
+      ],
+      "category": "antiviral",
+      "availability": "Prescription",
+      "uses": [
+        "Herpes simplex (genital herpes, cold sores)",
+        "Varicella (chickenpox)",
+        "Herpes zoster (shingles)",
+        "Prevention of herpes in immunocompromised patients"
+      ],
+      "adult_dose": "Genital herpes first episode: 400mg three times daily for 7–10 days. Suppression (to prevent outbreaks): 400mg twice daily. Shingles: 800mg five times daily for 7 days.",
+      "child_dose": "Chickenpox: 20mg/kg four times daily for 5 days (max 800mg per dose). Serious herpes in newborns: specialist use only.",
+      "how_it_works": "Inhibits herpes virus DNA polymerase — the enzyme the virus uses to replicate its DNA. Acyclovir is converted to its active form only inside virus-infected cells, making it very selective and safe.",
+      "key_warnings": [
+        "Drink plenty of water — acyclovir crystals can form in kidneys if dehydrated",
+        "Start treatment as early as possible — most effective in first 48-72 hours of outbreak",
+        "Does not cure herpes — suppresses virus only",
+        "Reduce dose in kidney disease"
+      ],
+      "interactions": [
+        "Probenecid (increases acyclovir levels)",
+        "Nephrotoxic drugs (increased kidney risk)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at pharmacies in Uganda. Price varies — generic versions available. Critical for HIV patients with herpes complications.",
+      "side_effects": [
+        "Headache",
+        "Nausea and vomiting",
+        "Diarrhoea",
+        "Dizziness",
+        "Kidney problems (crystalluria — requires good hydration)",
+        "Neurological effects at high IV doses",
+        "Fatigue"
+      ],
+      "contraindications": [
+        "Severe kidney disease (dose adjustment required)",
+        "Known hypersensitivity to acyclovir or valacyclovir"
+      ],
+      "pregnancy_safety": "GENERALLY SAFE — Acyclovir is the antiviral of choice for herpes simplex and varicella in pregnancy. Suppressive therapy in the last 4 weeks of pregnancy reduces the risk of neonatal herpes. Primary varicella (chickenpox) in pregnancy can be severe — acyclovir treatment is recommended. Valacyclovir can also be used."
+    },
+    {
+      "id": "metronidazole_vaginal",
+      "name": "Metronidazole (Vaginal / Extended Uses)",
+      "brand_names": [
+        "Flagyl",
+        "Metrozol",
+        "Metrogyl"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "Bacterial vaginosis",
+        "Trichomoniasis",
+        "Amoebic dysentery",
+        "Giardia",
+        "Dental infections",
+        "Anaerobic infections",
+        "Helicobacter pylori (with other drugs)"
+      ],
+      "adult_dose": "Bacterial vaginosis: 400mg twice daily for 7 days, OR single 2g dose. Trichomoniasis: single 2g dose (treat partner simultaneously). Dental infection: 200-400mg three times daily for 7 days.",
+      "child_dose": "7.5mg/kg three times daily for most infections",
+      "how_it_works": "Disrupts DNA in anaerobic bacteria and protozoa (organisms that thrive without oxygen), causing cell death. Does not work against aerobic bacteria.",
+      "key_warnings": [
+        "ABSOLUTELY NO alcohol during treatment and 48 hours after — causes severe nausea, vomiting, flushing (disulfiram reaction)",
+        "Can cause metallic taste",
+        "May cause neurological symptoms at high doses",
+        "Avoid in first trimester of pregnancy if possible"
+      ],
+      "interactions": [
+        "Alcohol (severe reaction)",
+        "Warfarin (increases bleeding risk)",
+        "Lithium (increases lithium toxicity)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Very widely available in Uganda at all pharmacies. Cheap. Available at all health facilities.",
+      "side_effects": [
+        "Vaginal burning or irritation",
+        "Metallic taste",
+        "Nausea (less with vaginal route than oral)",
+        "Vaginal discharge changes",
+        "SEVERE reaction with alcohol (disulfiram reaction) even via vaginal route"
+      ],
+      "contraindications": [
+        "Alcohol consumption during treatment",
+        "First trimester of pregnancy (when possible)",
+        "Hypersensitivity to metronidazole or nitroimidazoles"
+      ],
+      "pregnancy_safety": "CAUTION in first trimester — Bacterial vaginosis in pregnancy increases risk of preterm birth. Treatment is recommended especially in women with previous preterm birth. Oral metronidazole is actually more effective than vaginal gel for BV in pregnancy. Use from second trimester. Discuss with health provider."
+    },
+    {
+      "id": "cotrimoxazole_prophylaxis",
+      "name": "Cotrimoxazole Prophylaxis (HIV/TB)",
+      "brand_names": [
+        "Bactrim",
+        "Septrin",
+        "Trimoxazole"
+      ],
+      "category": "antibiotic_prophylaxis",
+      "availability": "Prescription",
+      "uses": [
+        "Prevention of opportunistic infections in HIV-positive patients (all HIV+ patients should take this)",
+        "Pneumocystis pneumonia prevention",
+        "Toxoplasmosis prevention",
+        "Treatment of urinary tract infections"
+      ],
+      "adult_dose": "HIV prophylaxis: 960mg (one double-strength tablet) once daily. Continue until CD4 count consistently above 350 cells/ml on ART. UTI treatment: 960mg twice daily for 3-7 days.",
+      "child_dose": "HIV-exposed/infected children: weight-based dosing daily from 6 weeks of age until HIV status confirmed negative or until on ART with good response.",
+      "how_it_works": "Combination of trimethoprim and sulfamethoxazole — blocks two sequential steps in bacterial folate synthesis. Broad-spectrum with activity against many bacteria and some protozoa.",
+      "key_warnings": [
+        "Can cause severe allergic reactions — rash with fever may indicate Stevens-Johnson syndrome — stop immediately",
+        "Can cause bone marrow suppression — monitor blood count",
+        "Avoid in severe kidney/liver disease",
+        "Can cause photosensitivity"
+      ],
+      "interactions": [
+        "Warfarin (increases bleeding risk)",
+        "Methotrexate (dangerous interaction)",
+        "ACE inhibitors (high potassium risk)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Free at all government ART clinics in Uganda for HIV-positive patients. Essential part of Uganda's HIV care programme.",
+      "side_effects": [
+        "Skin rash (can be severe — Stevens-Johnson syndrome)",
+        "Nausea",
+        "Bone marrow suppression",
+        "Folate antagonism (anaemia)",
+        "Photosensitivity",
+        "Kidney crystal formation"
+      ],
+      "contraindications": [
+        "Sulfonamide allergy",
+        "Severe kidney disease",
+        "Megaloblastic anaemia due to folate deficiency",
+        "Third trimester of pregnancy"
+      ],
+      "pregnancy_safety": "IMPORTANT — HIV-positive pregnant women in Uganda are recommended to continue cotrimoxazole prophylaxis. MUST take folic acid 5mg daily alongside it to counteract folate antagonism. Avoid in third trimester if possible (risk of neonatal jaundice). Discuss with HIV clinic — benefits in preventing opportunistic infections generally outweigh risks with folic acid supplementation."
+    },
+    {
+      "id": "tenofovir_lamivudine_efavirenz",
+      "name": "Tenofovir/Lamivudine/Efavirenz (ART — First-Line HIV)",
+      "brand_names": [
+        "TLE",
+        "Atripla",
+        "Odimune"
+      ],
+      "category": "antiretroviral",
+      "availability": "Prescription",
+      "uses": [
+        "HIV treatment (first-line regimen in Uganda)",
+        "Must be used as part of combination ART — never as single drug"
+      ],
+      "adult_dose": "One fixed-dose combination tablet once daily at night (efavirenz causes dizziness — bedtime reduces this). Take consistently — NEVER skip doses.",
+      "child_dose": "Weight-based paediatric formulations available. Specialist management required.",
+      "how_it_works": "Three drugs with three different mechanisms all targeting HIV replication: tenofovir and lamivudine block reverse transcriptase (converts viral RNA to DNA), efavirenz also blocks reverse transcriptase at a different site. Triple therapy prevents drug resistance.",
+      "key_warnings": [
+        "NEVER miss doses — resistance develops quickly to efavirenz with inconsistent dosing",
+        "Efavirenz causes vivid dreams, dizziness — take at bedtime",
+        "Tenofovir can damage kidneys — monitor kidney function annually",
+        "Efavirenz causes birth defects — use contraception if sexually active (females)",
+        "Viral load and CD4 monitoring every 6 months"
+      ],
+      "interactions": [
+        "Rifampicin for TB (significant interaction — dose adjustment needed)",
+        "Many other drugs — always disclose HIV status and all medications to any health provider"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "FREE at all government ART clinics in Uganda. Uganda has one of Africa's strongest ART programmes — over 1.4 million people on ART.",
+      "side_effects": [
+        "Efavirenz: vivid dreams, nightmares, dizziness (most common, usually improves after 2-4 weeks)",
+        "Efavirenz: rash (usually mild)",
+        "Tenofovir: kidney damage with long-term use",
+        "Tenofovir: bone mineral density loss",
+        "Lamivudine: generally well tolerated",
+        "Efavirenz: liver enzyme elevation",
+        "Efavirenz: mood changes, depression (rare)"
+      ],
+      "contraindications": [
+        "Efavirenz: pregnancy (especially first trimester — neural tube defect risk)",
+        "Severe psychiatric disorders with efavirenz",
+        "Severe liver disease"
+      ],
+      "pregnancy_safety": "BEING REPLACED — Uganda now uses TLD (Tenofovir/Lamivudine/Dolutegravir) as first-line ART. TLE (with Efavirenz) is being phased out partly because Efavirenz carries neural tube defect risk in first trimester. If already on TLE when pregnancy discovered, discuss urgent switch to TLD with HIV clinic. TLD (Dolutegravir-based) has a much better pregnancy safety profile. Women of reproductive age starting ART should receive TLD."
+    },
+    {
+      "id": "gentamicin",
+      "name": "Gentamicin (Injection)",
+      "brand_names": [
+        "Garamycin",
+        "Gentaject"
+      ],
+      "category": "antibiotic",
+      "availability": "Prescription",
+      "uses": [
+        "Serious bacterial infections",
+        "Neonatal sepsis",
+        "Pelvic inflammatory disease (with other antibiotics)",
+        "Severe UTI",
+        "Endocarditis (with other antibiotics)"
+      ],
+      "adult_dose": "5–7mg/kg once daily IV/IM (weight-based). Maximum duration 7-10 days. Requires dose adjustment in kidney disease.",
+      "child_dose": "Neonates: 4–5mg/kg IV/IM once daily. Children: 6–7.5mg/kg/day divided every 8 hours.",
+      "how_it_works": "Aminoglycoside antibiotic that irreversibly binds to bacterial ribosomes, preventing protein synthesis and killing bacteria. Most effective against aerobic gram-negative bacteria.",
+      "key_warnings": [
+        "Can cause permanent hearing loss (ototoxicity) — monitor for hearing changes",
+        "Can cause kidney damage (nephrotoxicity) — monitor kidney function and stay hydrated",
+        "Requires drug level monitoring in prolonged use",
+        "Very narrow therapeutic window — dosing must be precise"
+      ],
+      "interactions": [
+        "Other nephrotoxic drugs (additive kidney damage)",
+        "Loop diuretics (increased ototoxicity)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Available at government hospitals in Uganda. Injectable formulation. On the essential medicines list.",
+      "side_effects": [
+        "Hearing loss (ototoxicity — permanent, affects high frequencies first)",
+        "Tinnitus (ringing in ears)",
+        "Kidney damage (nephrotoxicity)",
+        "Dizziness and balance problems (vestibular toxicity)",
+        "Neuromuscular blockade at high doses"
+      ],
+      "contraindications": [
+        "Previous gentamicin-related hearing loss or kidney damage",
+        "Myasthenia gravis",
+        "Concurrent use of other nephrotoxic or ototoxic drugs (furosemide, vancomycin)",
+        "Caution in kidney disease — dose adjustment essential"
+      ],
+      "pregnancy_safety": "CAUTION — Aminoglycosides including gentamicin cross the placenta. Can cause hearing loss in the fetus (ototoxicity). Used in pregnancy only when no safer alternative exists for serious life-threatening gram-negative infections. If used, keep course as short as possible. Alternatives preferred when available."
+    },
+    {
+      "id": "diazepam",
+      "name": "Diazepam",
+      "brand_names": [
+        "Valium",
+        "Diazemuls",
+        "Stesolid"
+      ],
+      "category": "benzodiazepine",
+      "availability": "Prescription",
+      "uses": [
+        "Emergency treatment of seizures/convulsions",
+        "Eclampsia seizures (IV/rectal)",
+        "Alcohol withdrawal",
+        "Muscle spasm",
+        "Acute severe anxiety"
+      ],
+      "adult_dose": "Seizure emergency: 5–10mg IV slowly (or 10–20mg rectal). Muscle spasm: 2–5mg three times daily. Short-term anxiety: 2–10mg two to four times daily.",
+      "child_dose": "Seizure emergency: 0.3–0.5mg/kg rectal or slow IV. Rectal diazepam available and can be given at home by parents of epileptic children.",
+      "how_it_works": "Enhances the effect of GABA (the brain's main inhibitory neurotransmitter), causing sedation, anxiolysis, muscle relaxation, and anticonvulsant effects.",
+      "key_warnings": [
+        "High addiction potential — only use short-term for anxiety",
+        "Causes drowsiness and impairs driving and machinery use",
+        "Do not use with alcohol — dangerous respiratory depression",
+        "Can cause respiratory depression at high doses — have resuscitation available when giving IV"
+      ],
+      "interactions": [
+        "Alcohol (dangerous — respiratory depression)",
+        "Opioids (dangerous respiratory depression)",
+        "Other sedatives (additive effect)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Available at health facilities in Uganda. IV and rectal formulations at hospitals. On the essential medicines list for seizure management.",
+      "side_effects": [
+        "Drowsiness and sedation (very common)",
+        "Dizziness",
+        "Muscle weakness",
+        "Impaired coordination",
+        "Memory impairment",
+        "Respiratory depression (high doses or IV)",
+        "Dependence and withdrawal with prolonged use",
+        "Paradoxical agitation (especially in children and elderly)"
+      ],
+      "contraindications": [
+        "Respiratory depression",
+        "Sleep apnoea",
+        "Severe liver disease",
+        "Myasthenia gravis",
+        "Acute alcohol intoxication",
+        "Avoid in first and third trimester of pregnancy for non-emergency use"
+      ],
+      "pregnancy_safety": "EMERGENCY USE ONLY in pregnancy — Diazepam is used for eclamptic convulsions when magnesium sulphate is unavailable. For seizure control in status epilepticus threatening mother's life, it can be used. For anxiety or routine seizure management, safer alternatives exist. Crosses placenta freely — neonatal sedation, floppy infant syndrome, and withdrawal symptoms reported. Magnesium sulphate is preferred for eclampsia."
+    },
+    {
+      "id": "magnesium_sulphate",
+      "name": "Magnesium Sulphate",
+      "brand_names": [
+        "MgSO4",
+        "Epsom salt (IV)",
+        "Magnesium Sulfate Injection"
+      ],
+      "category": "obstetric_emergency",
+      "availability": "Prescription",
+      "uses": [
+        "Prevention and treatment of eclampsia seizures in pregnancy (most important use)",
+        "Pre-eclampsia neuroprotection",
+        "Severe asthma exacerbation (IV)",
+        "Magnesium deficiency"
+      ],
+      "adult_dose": "Eclampsia: Loading dose 4g IV over 15-20 minutes, then 1g/hour infusion. Continue 24 hours after last seizure or delivery. Monitor urine output, respiratory rate, and knee reflexes.",
+      "child_dose": "Specialist use only for paediatric conditions.",
+      "how_it_works": "Magnesium competitively inhibits calcium at neuromuscular junctions, preventing excessive muscle contraction. In eclampsia, prevents the uncontrolled electrical activity in the brain that causes seizures. More effective than diazepam for eclampsia prevention.",
+      "key_warnings": [
+        "Monitor for toxicity: loss of knee reflexes is first sign, then respiratory depression",
+        "Have calcium gluconate ready as antidote",
+        "Reduce dose in kidney disease — magnesium accumulates",
+        "Monitor urine output — at least 25ml/hour required"
+      ],
+      "interactions": [
+        "Calcium channel blockers (excessive hypotension)",
+        "Muscle relaxants (enhanced neuromuscular blockade)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": false,
+      "local_availability": "Available at all hospitals and health centre IVs in Uganda. On the essential medicines list. Critical for maternal mortality reduction — every facility managing deliveries should have it.",
+      "side_effects": [
+        "Flushing and warmth (very common — IV administration)",
+        "Sweating",
+        "Low blood pressure",
+        "Nausea",
+        "Loss of knee reflexes (first sign of toxicity)",
+        "Respiratory depression (toxicity)",
+        "Cardiac arrest (severe toxicity)",
+        "Drowsiness"
+      ],
+      "contraindications": [
+        "Respiratory rate <16 breaths/minute",
+        "Absent knee reflexes",
+        "Urine output <25ml/hour",
+        "Heart block",
+        "Severe kidney failure (accumulates — use with great caution)"
+      ],
+      "pregnancy_safety": "FIRST-LINE FOR ECLAMPSIA — Magnesium sulphate is the treatment of choice for eclampsia and severe pre-eclampsia in pregnancy. Reduces seizure risk and maternal mortality. Also used to delay preterm labour and for fetal neuroprotection (before 32 weeks). Short-term IV use in obstetric emergencies is standard of care. Antidote: Calcium gluconate 10ml of 10% IV."
+    },
+    {
+      "id": "oxytocin",
+      "name": "Oxytocin (Syntocinon)",
+      "brand_names": [
+        "Syntocinon",
+        "Pitocin",
+        "Orasthin"
+      ],
+      "category": "uterotonic",
+      "availability": "Prescription",
+      "uses": [
+        "Prevention and treatment of postpartum haemorrhage (most important use)",
+        "Induction and augmentation of labour",
+        "Management of incomplete abortion"
+      ],
+      "adult_dose": "PPH prevention: 10 IU IM immediately after delivery of baby. PPH treatment: 20–40 IU in 1L IV fluid. Labour induction: 1–4 mU/minute IV increasing gradually.",
+      "child_dose": "Not applicable",
+      "how_it_works": "Synthetic form of the natural hormone oxytocin. Stimulates uterine muscle contractions. After delivery, causes the uterus to contract and close the blood vessels that previously supplied the placenta — the most critical action for preventing fatal postpartum haemorrhage.",
+      "key_warnings": [
+        "Can cause overstimulation of uterus (hyperstimulation) if used incorrectly during labour",
+        "Can cause water retention and low sodium at high doses",
+        "Must be given as IM injection — not sublingual",
+        "Store correctly — degrades in heat"
+      ],
+      "interactions": [
+        "Prostaglandins (additive uterotonic effect)",
+        "Carbamazepine (unpredictable interaction)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": false,
+      "local_availability": "Available at all delivery facilities in Uganda. On the essential medicines list. Critical drug — shortage contributes to maternal deaths. All facilities doing deliveries must have it.",
+      "side_effects": [
+        "Uterine hyperstimulation (too strong/frequent contractions)",
+        "Fetal distress (if uterus overstimulated)",
+        "Low blood pressure (IV bolus)",
+        "Water retention and hyponatraemia at high doses",
+        "Nausea and vomiting"
+      ],
+      "contraindications": [
+        "Do not use for cervical ripening (use misoprostol)",
+        "Obstructed labour",
+        "Major cephalopelvic disproportion",
+        "Transverse lie",
+        "Previous classical (vertical) uterine scar",
+        "Active genital herpes"
+      ],
+      "pregnancy_safety": "OBSTETRIC USE ONLY — Oxytocin is an essential medicine for preventing and treating postpartum haemorrhage (PPH), the leading cause of maternal death in Uganda. 10 IU IM after delivery of baby is standard. In labour induction, must be used carefully with monitoring to avoid overstimulation. IV use in labour requires close clinical monitoring. Store refrigerated or in cool environment — heat degrades it."
+    },
+    {
+      "id": "levothyroxine",
+      "name": "Levothyroxine (Thyroid Hormone)",
+      "brand_names": [
+        "Synthroid",
+        "Eltroxin",
+        "Euthyrox"
+      ],
+      "category": "thyroid_hormone",
+      "availability": "Prescription",
+      "uses": [
+        "Hypothyroidism (underactive thyroid)",
+        "Goitre",
+        "Thyroid cancer management"
+      ],
+      "adult_dose": "Start low: 25–50mcg once daily on empty stomach, 30 minutes before food. Increase by 25mcg every 4-6 weeks until TSH normalises. Typical maintenance: 75–150mcg daily.",
+      "child_dose": "Weight-based. Newborns with congenital hypothyroidism: treatment within first 2 weeks critical for brain development.",
+      "how_it_works": "Synthetic T4 (thyroxine) — the main thyroid hormone. Taken orally and converted in the body to the active T3. Replaces what the underactive thyroid cannot produce. Restores normal metabolic rate.",
+      "key_warnings": [
+        "Take on empty stomach, 30 minutes before food or coffee — food significantly reduces absorption",
+        "Consistent timing every day — do not skip doses",
+        "Dose adjusted by blood tests (TSH) — see health worker every 6-12 months",
+        "Can cause heart problems if dose too high (fast heart rate, palpitations)",
+        "Interacts with many supplements — take iron/calcium 4 hours apart"
+      ],
+      "interactions": [
+        "Iron supplements (take 4 hours apart)",
+        "Calcium (take 4 hours apart)",
+        "Antacids (take 4 hours apart)",
+        "Warfarin (increases anticoagulant effect)",
+        "Digoxin (reduces effect)"
+      ],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Available at government hospitals in Uganda but can be in short supply. Essential for people with hypothyroidism — check availability before starting treatment.",
+      "side_effects": [
+        "At correct dose: usually none",
+        "If dose too high: palpitations, weight loss, tremor, sweating, diarrhoea, insomnia, anxiety, bone loss",
+        "Hair loss (often temporary, especially when starting)",
+        "Headache when starting"
+      ],
+      "contraindications": [
+        "Untreated adrenal insufficiency (treat adrenals first)",
+        "Thyrotoxicosis unless specific clinical reason",
+        "Cardiac conditions — start at very low dose and increase slowly"
+      ],
+      "pregnancy_safety": "ESSENTIAL in pregnancy — Hypothyroidism in pregnancy causes miscarriage, stillbirth, and intellectual disability in child. Thyroid hormone requirements INCREASE in pregnancy — typically by 25-50%. Check TSH every 4-6 weeks in first half of pregnancy and adjust dose. Never stop levothyroxine in pregnancy. Take at least 4 hours apart from iron supplements (iron blocks absorption)."
+    },
+    {
+      "id": "warfarin",
+      "name": "Warfarin",
+      "brand_names": [
+        "Coumadin",
+        "Marevan",
+        "Warf"
+      ],
+      "category": "anticoagulant",
+      "availability": "Prescription",
+      "uses": [
+        "Atrial fibrillation (stroke prevention)",
+        "Deep vein thrombosis (DVT)",
+        "Pulmonary embolism",
+        "Mechanical heart valves",
+        "Hypercoagulable states"
+      ],
+      "adult_dose": "Highly individualised — starting dose 5mg daily, then adjusted based on INR blood test. Target INR depends on indication: AF = 2-3, mechanical valves = 2.5-3.5.",
+      "child_dose": "Specialist use with very close INR monitoring",
+      "how_it_works": "Inhibits Vitamin K-dependent clotting factors (II, VII, IX, X). Vitamin K is needed to activate these clotting factors. By blocking Vitamin K, warfarin prevents the blood from clotting as easily. INR (international normalised ratio) measures how thin the blood is.",
+      "key_warnings": [
+        "REQUIRES regular INR blood tests — INR too low = clot risk, too high = bleeding risk",
+        "Hundreds of drug and food interactions — TELL EVERY HEALTH PROVIDER YOU TAKE WARFARIN",
+        "Consistent Vitamin K intake essential — sudden change in green vegetable intake changes INR",
+        "Bleeding is the main risk — seek care for any unusual bleeding",
+        "Many herbal medicines interact — especially garlic, ginger, St John's Wort"
+      ],
+      "interactions": [
+        "Almost everything — always check before adding any new medication",
+        "Vitamin K foods (spinach, kale — consistent intake, don't suddenly change amount)",
+        "Aspirin (increased bleeding risk)",
+        "Antibiotics (most alter INR)",
+        "Alcohol (increases bleeding risk)"
+      ],
+      "safe_in_pregnancy": false,
+      "safe_in_children": false,
+      "local_availability": "Available at government hospitals in Uganda. INR monitoring required — available at regional hospitals. Requires very careful management.",
+      "side_effects": [
+        "Bleeding (the main risk — can be minor like bruising or serious like internal bleeding)",
+        "Nausea",
+        "Hair loss (uncommon)",
+        "Skin necrosis (rare, early treatment)",
+        "Purple toe syndrome (rare)"
+      ],
+      "contraindications": [
+        "Pregnancy (causes embryopathy especially 6-12 weeks, fetal haemorrhage)",
+        "Active bleeding",
+        "Severe liver disease",
+        "Uncontrolled hypertension",
+        "Recent surgery/trauma with high bleeding risk",
+        "Non-compliance (unsafe without INR monitoring)"
+      ],
+      "pregnancy_safety": "CONTRAINDICATED in first trimester — Warfarin crosses placenta and causes warfarin embryopathy (nasal hypoplasia, bone stippling, growth retardation) especially weeks 6-12. Causes fetal haemorrhage. Switch to low-molecular-weight heparin (enoxaparin) pre-pregnancy or as soon as pregnancy confirmed. Can sometimes be used in second trimester only in very specific high-risk situations (mechanical heart valves) under specialist supervision. Never use in third trimester."
+    },
+    {
+      "id": "gentian_violet",
+      "name": "Gentian Violet (Crystal Violet)",
+      "brand_names": [
+        "Gentian Violet Solution"
+      ],
+      "category": "antifungal_topical",
+      "availability": "OTC",
+      "uses": [
+        "Oral thrush in infants (candidiasis)",
+        "Skin fungal infections",
+        "Minor wound antiseptic",
+        "Nipple thrush in breastfeeding mothers"
+      ],
+      "adult_dose": "Apply 0.5-1% solution to affected area twice daily for 3-7 days.",
+      "child_dose": "Use 0.5% solution (not 1%) in infants and young children. Apply once daily — twice maximum.",
+      "how_it_works": "Gentian violet is a triphenylmethane dye with antifungal, antibacterial, and antiparasitic properties. Disrupts cell membrane function in Candida and some bacteria.",
+      "key_warnings": [
+        "Stains skin, clothing, and surfaces purple — permanent on fabric",
+        "Can cause mouth ulcers if used too frequently or too concentrated",
+        "Do not swallow large amounts",
+        "Use 0.5% solution for infants — 1% too strong for infant mucosa",
+        "May stain teeth — transient"
+      ],
+      "interactions": [],
+      "safe_in_pregnancy": true,
+      "safe_in_children": true,
+      "local_availability": "Very widely available and cheap throughout Uganda at pharmacies. Used extensively for infant oral thrush.",
+      "side_effects": [
+        "Staining of skin and clothing (purple — permanent on fabric)",
+        "Mouth ulcers if used too frequently or too concentrated",
+        "Skin sensitisation (uncommon)",
+        "Mucosal irritation"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Do not use on open wounds",
+        "Avoid mucous membrane contact with >1% solution",
+        "Do not use 1% solution in infants (use 0.5%)"
+      ],
+      "pregnancy_safety": "GENERALLY SAFE topically — Gentian violet is used for oral thrush and skin infections. Topical application only — minimal systemic absorption. Used in pregnancy for thrush when other options unavailable. Some studies suggest possible carcinogenic effects with very prolonged use; occasional use is standard practice. Preferred options for vaginal thrush in pregnancy: clotrimazole pessaries."
+    },
+    {
+      "id": "vitamin_a_supplement",
+      "name": "Vitamin A Supplement",
+      "brand_names": [
+        "Vitamin A capsules",
+        "Retinol"
+      ],
+      "category": "supplement",
+      "availability": "OTC",
+      "uses": [
+        "Vitamin A deficiency prevention (given to children every 6 months in Uganda)",
+        "Treatment of measles",
+        "Night blindness",
+        "Nutritional support in severe malnutrition"
+      ],
+      "adult_dose": "Deficiency treatment: 200,000 IU on day 1, 2, and after 2 weeks. Post-partum: 200,000 IU single dose within 6 weeks of delivery.",
+      "child_dose": "6-11 months: 100,000 IU every 6 months. 12 months-5 years: 200,000 IU every 6 months (part of Uganda EPI). Measles: 200,000 IU on day 1 and 2.",
+      "how_it_works": "Vitamin A is essential for vision, immune function, skin integrity, and cell growth. Deficiency causes night blindness (first sign), then complete blindness, and severe immunosuppression making children vulnerable to measles, diarrhoea, and pneumonia. Supplementation reduces child mortality by 24%.",
+      "key_warnings": [
+        "Do NOT take high doses if pregnant — Vitamin A is teratogenic (causes birth defects) at high doses",
+        "Single high-dose capsules are safe for children and post-partum women only",
+        "Food sources of Vitamin A (sweet potato, carrot, eggs, liver) are safe in pregnancy"
+      ],
+      "interactions": [],
+      "safe_in_pregnancy": false,
+      "safe_in_children": true,
+      "local_availability": "Free at all Uganda health centres as part of the EPI programme every 6 months. Also available at pharmacies.",
+      "side_effects": [
+        "Single therapeutic dose: usually well tolerated — temporary nausea, headache, bulging fontanelle in infants",
+        "Overdose / chronic excess: liver damage, intracranial hypertension, bone pain, hair loss, dry skin"
+      ],
+      "contraindications": [
+        "Pregnancy (high-dose supplements)",
+        "History of liver disease with high doses",
+        "Concurrent vitamin A-containing medications"
+      ],
+      "pregnancy_safety": "HIGH-DOSE CONTRAINDICATED in pregnancy — High-dose Vitamin A (retinol) supplements (above 10,000 IU / 3,000 mcg daily) are teratogenic — cause birth defects particularly of the head, face, heart. The high-dose 200,000 IU capsules given in Uganda's child health campaigns are for children over 6 months and postpartum women ONLY — NOT for pregnant women. Pregnant women should get Vitamin A from food sources (sweet potato, eggs, carrot, liver in small amounts) and standard prenatal vitamins. Note: beta-carotene (plant sources) is safe in pregnancy."
+    },
+    {
+      "id": "tld_art",
+      "name": "Tenofovir/Lamivudine/Dolutegravir (TLD — First-Line HIV ART)",
+      "brand_names": [
+        "Symtuza (brand)",
+        "Dovato (2-in-1)",
+        "Generic TLD"
+      ],
+      "category": "antiretroviral",
+      "availability": "HIV clinic / ART centre — free via government programme",
+      "uses": [
+        "HIV-1 treatment (first-line, Uganda standard 2024)",
+        "Replacing TLE (Tenofovir/Lamivudine/Efavirenz) as standard first-line"
+      ],
+      "adult_dose": "1 tablet once daily at any time (with or without food). Take at the same time each day.",
+      "child_dose": "Paediatric formulations available at HIV clinics. Weight-based dosing — discuss with HIV clinic.",
+      "how_it_works": "Three antiretroviral drugs working together: Tenofovir and Lamivudine block the reverse transcriptase enzyme (preventing HIV from copying itself), while Dolutegravir blocks the integrase enzyme (preventing HIV DNA from inserting into human cell DNA). The combination makes it nearly impossible for HIV to develop resistance.",
+      "key_warnings": [
+        "NEVER miss doses — HIV resistance can develop quickly",
+        "Dolutegravir significantly increases neural tube defect risk if taken at conception — women of childbearing age must use effective contraception or take 5mg folic acid daily",
+        "Tenofovir affects kidney function and bones — annual kidney function test recommended",
+        "Dolutegravir raises blood glucose — monitor in diabetics",
+        "Drug interactions: antacids, calcium, iron supplements reduce dolutegravir absorption — take 2 hours apart",
+        "Rifampicin (TB treatment) reduces dolutegravir levels significantly — double dolutegravir dose required during TB treatment",
+        "Do not stop without discussing with HIV clinic — stopping allows viral rebound"
+      ],
+      "interactions": [
+        "Rifampicin (major — doubles TLD to TLD twice daily)",
+        "Antacids, calcium, iron (take 2 hours apart)",
+        "Metformin (dolutegravir increases metformin levels)",
+        "Carbamazepine and phenytoin (reduce dolutegravir levels)"
+      ],
+      "safe_in_pregnancy": "Preferred in pregnancy from second trimester onwards. Women already on TLD who discover pregnancy should continue and take 5mg folic acid. For women starting ART who may be pregnant: use with caution in first trimester due to neural tube defect risk — discuss with HIV clinic urgently.",
+      "safe_in_children": "Yes — paediatric formulations available at HIV clinics. Weight-based dosing.",
+      "local_availability": "Available FREE at all ART/HIV clinics in Uganda under the national programme (PEPFAR/Global Fund supported). Uganda adopted TLD as first-line for adults and adolescents in 2020.",
+      "side_effects": [
+        "Generally very well tolerated compared to older regimens",
+        "Insomnia and sleep disturbances (less than efavirenz)",
+        "Headache (usually resolves)",
+        "Nausea (mild, especially in first weeks)",
+        "Raised blood glucose (dolutegravir)",
+        "Weight gain (dolutegravir — more in women)",
+        "Liver enzyme elevation (uncommon)",
+        "Kidney effects from tenofovir (long-term)"
+      ],
+      "contraindications": [
+        "Do not use with rifampicin without doubling dolutegravir dose",
+        "Caution in severe liver disease",
+        "First trimester of pregnancy — discuss benefit/risk urgently with HIV clinic"
+      ],
+      "pregnancy_safety": "PREFERRED REGIMEN FROM SECOND TRIMESTER — TLD is Uganda's recommended ART for pregnant women from second trimester and postpartum. Women of reproductive age starting ART should take 5mg folic acid daily due to dolutegravir neural tube defect risk. If pregnancy occurs on TLD, continue and take folic acid. For first trimester initiation, some guidelines recommend continuing TLD while maximising folic acid — discuss with HIV specialist."
+    },
+    {
+      "id": "rifampicin",
+      "name": "Rifampicin (Rifampin)",
+      "brand_names": [
+        "Rifadine",
+        "Rimactane",
+        "Part of RHZ/RHZE fixed-dose combinations"
+      ],
+      "category": "antibiotic_antitubercular",
+      "availability": "TB clinic / health centre — free via government TB programme (National Drug Authority)",
+      "uses": [
+        "Tuberculosis (TB) treatment — all forms",
+        "TB prophylaxis in close contacts",
+        "Leprosy treatment",
+        "Prophylaxis for meningococcal meningitis contacts",
+        "Brucellosis (with doxycycline)"
+      ],
+      "adult_dose": "TB treatment: 10mg/kg (max 600mg) once daily, typically 450-600mg depending on weight. Always given in combination — never alone. Take on empty stomach (30 mins before food). Part of 2HRZE/4HR (6-month) or 2HRZE/4HRE regimen.",
+      "child_dose": "10-20mg/kg once daily (max 600mg). Fixed-dose paediatric combinations preferred. Given at TB clinic.",
+      "how_it_works": "Rifampicin kills tuberculosis bacteria by blocking the enzyme (RNA polymerase) they need to make proteins. It can kill both actively dividing TB bacteria and dormant ones — which is why it is essential for the full course of TB treatment.",
+      "key_warnings": [
+        "NEVER take as a single drug — always in combination with other TB drugs (Isoniazid, Pyrazinamide, Ethambutol)",
+        "Turns body fluids (urine, sweat, tears, semen) orange-red — WARN PATIENTS — this is harmless but alarming if unexpected",
+        "Stains soft contact lenses permanently — avoid during treatment",
+        "MAJOR drug interactions: rifampicin massively speeds up the breakdown of many drugs including contraceptives (OCP fails — use barrier method), ART drugs (especially dolutegravir — double dose required), warfarin, prednisolone, and dozens more",
+        "Monitor liver function — hepatotoxicity risk especially with alcohol use",
+        "Report yellow eyes, dark urine, or severe nausea immediately — signs of liver damage"
+      ],
+      "interactions": [
+        "Oral contraceptive pills (FAILS — use barrier method)",
+        "Dolutegravir (must double dose)",
+        "Warfarin (INR monitoring essential)",
+        "Prednisolone (reduced levels)",
+        "Fluconazole (reduced levels)",
+        "Methadone (withdrawal possible)",
+        "Many antiretrovirals"
+      ],
+      "safe_in_pregnancy": "USED WITH CAUTION — Rifampicin is essential for TB treatment in pregnancy. Untreated TB is far more dangerous than the medication. Rifampicin crosses the placenta but congenital defects not clearly established. Give Vitamin K to mother before delivery if on rifampicin (reduces neonatal bleeding risk). The full 6-month TB treatment course is recommended in pregnancy.",
+      "safe_in_children": "Yes — weight-based dosing, available as paediatric fixed-dose combinations. Essential component of childhood TB treatment.",
+      "local_availability": "Available FREE at all TB clinics and health centres in Uganda under the NTLP (National Tuberculosis and Leprosy Programme). Part of fixed-dose combination tablets (RHZ, RHZE).",
+      "side_effects": [
+        "Orange-red discolouration of body fluids (urine, tears, sweat — harmless)",
+        "Nausea and vomiting",
+        "Liver inflammation and hepatotoxicity (monitor)",
+        "Flu-like syndrome (with intermittent dosing)",
+        "Skin rash",
+        "Thrombocytopenia (low platelets — rare)",
+        "Headache",
+        "Drug interactions — major"
+      ],
+      "contraindications": [
+        "Severe liver disease (active hepatitis)",
+        "Known hypersensitivity to rifamycins",
+        "Do not use as single agent for active TB (resistance will develop)"
+      ],
+      "pregnancy_safety": "ESSENTIAL — TB in pregnancy must be treated with full drug regimen. Benefits far outweigh risks. Add Vitamin K 10mg/day in last weeks of pregnancy if on rifampicin to prevent haemorrhagic disease of newborn."
+    },
+    {
+      "id": "isoniazid",
+      "name": "Isoniazid (INH)",
+      "brand_names": [
+        "Isonex",
+        "Part of RHZ/RHZE combinations"
+      ],
+      "category": "antibiotic_antitubercular",
+      "availability": "TB clinic / health centre — free via government TB programme",
+      "uses": [
+        "Tuberculosis (TB) treatment — backbone drug in all regimens",
+        "TB preventive therapy (IPT) — 6 months in HIV-positive people and close contacts",
+        "Latent TB infection treatment"
+      ],
+      "adult_dose": "TB treatment: 5mg/kg (max 300mg) once daily. Always in combination. TB preventive therapy: 300mg daily for 6 months (with pyridoxine 25mg). Take on empty stomach if possible.",
+      "child_dose": "10mg/kg once daily (max 300mg). Paediatric syrups available at TB clinics.",
+      "how_it_works": "Isoniazid is a prodrug activated by a TB enzyme. It then destroys the cell wall of Mycobacterium tuberculosis bacteria. Highly effective against actively dividing TB bacteria — which is why it is essential in the intensive phase of treatment.",
+      "key_warnings": [
+        "ALWAYS take with pyridoxine (Vitamin B6) 25-50mg daily to prevent peripheral neuropathy (nerve damage)",
+        "Avoid alcohol completely — significantly increases hepatotoxicity risk",
+        "Monitor liver function — stop if jaundice, dark urine, or severe nausea develop",
+        "In HIV-positive patients: Isoniazid Preventive Therapy (IPT) — 6-month course — is standard care to prevent TB reactivation",
+        "NEVER use as single drug for active TB — resistance will develop rapidly"
+      ],
+      "interactions": [
+        "Phenytoin (isoniazid increases phenytoin levels — toxic)",
+        "Antacids (reduce absorption)",
+        "Alcohol (liver toxicity)",
+        "Carbamazepine"
+      ],
+      "safe_in_pregnancy": "SAFE AND ESSENTIAL — Isoniazid is used throughout TB treatment in pregnancy. Give pyridoxine (Vitamin B6) 25-50mg daily to mother when on isoniazid. TB Preventive Therapy with isoniazid is recommended for HIV-positive pregnant women in Uganda.",
+      "safe_in_children": "Yes — essential for childhood TB treatment. Paediatric formulations available.",
+      "local_availability": "FREE at all TB clinics in Uganda under NTLP. Available as part of fixed-dose combination tablets.",
+      "side_effects": [
+        "Peripheral neuropathy / nerve damage (prevented by pyridoxine)",
+        "Liver toxicity (hepatitis)",
+        "Nausea",
+        "Rash",
+        "Drug-induced lupus (rare)",
+        "Neurological effects without pyridoxine supplementation",
+        "Psychosis (rare)"
+      ],
+      "contraindications": [
+        "Active drug-induced hepatitis",
+        "Known isoniazid hypersensitivity",
+        "Never as single agent for active TB"
+      ],
+      "pregnancy_safety": "SAFE — Essential component of TB treatment in pregnancy. Always co-prescribe pyridoxine 25-50mg daily."
+    },
+    {
+      "id": "pyrazinamide",
+      "name": "Pyrazinamide (PZA)",
+      "brand_names": [
+        "Zinamide",
+        "Part of RHZ/RHZE combinations"
+      ],
+      "category": "antibiotic_antitubercular",
+      "availability": "TB clinic — free via government TB programme",
+      "uses": [
+        "Tuberculosis treatment — intensive phase only (first 2 months)",
+        "Sterilises TB bacteria in acidic environment inside cells"
+      ],
+      "adult_dose": "25mg/kg once daily (weight-based). Part of 2HRZE or 2HRZ intensive phase — used only in first 2 months, then stopped. Maximum 2000mg/day.",
+      "child_dose": "35mg/kg once daily (max 2000mg). Weight-based, given at TB clinic.",
+      "how_it_works": "Pyrazinamide works in the acidic environment inside macrophage cells (white blood cells that harbour dormant TB bacteria). It is essential for killing dormant, slowly-dividing TB bacteria that other drugs cannot reach — this is why it allows TB treatment to be shortened from 9 months to 6 months.",
+      "key_warnings": [
+        "Used in intensive phase (first 2 months) ONLY — then stopped in most regimens",
+        "Monitor liver function — hepatotoxicity is the main concern",
+        "Raises uric acid levels — can precipitate gout",
+        "Report joint pain, jaundice, or dark urine immediately",
+        "Avoid alcohol — increases hepatotoxicity",
+        "Blood sugar may rise in diabetics — monitor"
+      ],
+      "interactions": [
+        "Allopurinol (may reduce effect due to raised uric acid)",
+        "Alcohol (liver toxicity)",
+        "Probenecid"
+      ],
+      "safe_in_pregnancy": "GENERALLY USED — WHO recommends including pyrazinamide in TB treatment for pregnant women. Limited data but benefit (treating TB) outweighs theoretical risks. Some older guidelines recommended against it — current WHO position supports use throughout TB treatment in pregnancy.",
+      "safe_in_children": "Yes — paediatric weight-based dosing. Given for first 2 months of TB treatment.",
+      "local_availability": "FREE at TB clinics in Uganda. Available in fixed-dose combinations (RHZ, RHZE).",
+      "side_effects": [
+        "Liver toxicity (monitor liver tests)",
+        "Raised uric acid and gout",
+        "Joint pain (arthralgia)",
+        "Nausea and vomiting",
+        "Rash",
+        "Fever",
+        "Raised blood sugar in diabetics"
+      ],
+      "contraindications": [
+        "Severe liver disease",
+        "Gout (use with caution — raises uric acid)",
+        "Hypersensitivity to pyrazinamide"
+      ],
+      "pregnancy_safety": "USE WITH TB REGIMEN — WHO supports inclusion of pyrazinamide in TB treatment for pregnant women. Benefits of treating TB greatly outweigh risks."
+    },
+    {
+      "id": "ethambutol",
+      "name": "Ethambutol (EMB)",
+      "brand_names": [
+        "Myambutol",
+        "Part of RHZE combinations"
+      ],
+      "category": "antibiotic_antitubercular",
+      "availability": "TB clinic — free via government TB programme",
+      "uses": [
+        "Tuberculosis treatment — used in first 2 months (HRZE regimen)",
+        "Protects against resistance to other TB drugs"
+      ],
+      "adult_dose": "15-25mg/kg once daily. Weight-based. Used for 2 months in intensive phase then typically stopped.",
+      "child_dose": "15-25mg/kg once daily. CAUTION: visual monitoring difficult in young children — discuss with TB specialist.",
+      "how_it_works": "Ethambutol inhibits a component of the tuberculosis bacterial cell wall synthesis. Primarily bacteriostatic (stops bacteria growing) at standard doses. Its main role is protecting the other TB drugs from resistance developing during treatment.",
+      "key_warnings": [
+        "OPTIC NEURITIS — can cause dose-related eye problems (blurred vision, colour blindness — especially red/green, reduced visual acuity)",
+        "Eye test (visual acuity and colour vision) before starting",
+        "Stop IMMEDIATELY and report to TB clinic if any visual changes occur",
+        "Not recommended in young children who cannot report visual symptoms",
+        "Reduce dose in kidney disease",
+        "Regular visual acuity monitoring during treatment"
+      ],
+      "interactions": [
+        "Antacids containing aluminium (reduce absorption — take 4 hours apart)",
+        "Other drugs affecting vision"
+      ],
+      "safe_in_pregnancy": "GENERALLY USED — Ethambutol crosses the placenta but no clear evidence of teratogenicity at therapeutic doses. Used as part of standard TB treatment in pregnancy. Monitor visual changes. WHO supports use.",
+      "safe_in_children": "With caution — difficult to monitor vision in young children. Avoid in children <5 years if possible. When used, close monitoring required.",
+      "local_availability": "FREE at TB clinics in Uganda as part of RHZE fixed-dose combination.",
+      "side_effects": [
+        "Optic neuritis (eye problems — blurred vision, colour blindness)",
+        "Peripheral neuropathy",
+        "Nausea",
+        "Abdominal pain",
+        "Rash (uncommon)",
+        "Raised uric acid"
+      ],
+      "contraindications": [
+        "Pre-existing optic neuritis or significant visual impairment",
+        "Young children unable to report visual symptoms",
+        "Severe kidney disease (dose adjustment required)",
+        "Hypersensitivity"
+      ],
+      "pregnancy_safety": "USE AS PART OF TB REGIMEN — WHO includes ethambutol in standard TB treatment for pregnancy. Monitor visual symptoms."
+    },
+    {
+      "id": "praziquantel",
+      "name": "Praziquantel",
+      "brand_names": [
+        "Biltricide",
+        "Cestox"
+      ],
+      "category": "antiparasitic_anthelmintic",
+      "availability": "Health centres and hospitals. Also available during mass drug administration campaigns (MDA) in Uganda",
+      "uses": [
+        "Schistosomiasis / Bilharzia — main treatment",
+        "Taeniasis (tapeworm)",
+        "Neurocysticercosis (with albendazole)",
+        "Other trematode infections (liver flukes, lung flukes)"
+      ],
+      "adult_dose": "Schistosomiasis: 40mg/kg as single dose (or two divided doses 4 hours apart). Take with food. Neurocysticercosis: higher doses for longer periods under specialist supervision.",
+      "child_dose": "Same dose as adults (40mg/kg). Tablets can be crushed and mixed with food if child cannot swallow.",
+      "how_it_works": "Praziquantel causes rapid contraction and paralysis of schistosome (bilharzia) worm muscles by increasing cell permeability to calcium. The paralysed worms detach from blood vessel walls and are eliminated by the body's immune system. The immune system then destroys the affected worms.",
+      "key_warnings": [
+        "Take with food — significantly improves absorption and reduces side effects",
+        "Mild side effects (nausea, dizziness, abdominal pain) are very common but usually brief and mild",
+        "For neurocysticercosis — can cause severe neurological reactions as cysts die — MUST be given under specialist care with anticonvulsants and steroids",
+        "In Uganda, schistosomiasis is common especially around Lake Victoria, Lake Albert, Lake Edward — if you live near these or swim in them, screening recommended",
+        "Reinfection is common — prevention (avoid swimming/wading in fresh water) is essential"
+      ],
+      "interactions": [
+        "Rifampicin (dramatically reduces praziquantel levels — serious interaction)",
+        "Dexamethasone (reduces levels)",
+        "Cimetidine (increases levels)",
+        "Chloroquine (may reduce efficacy)"
+      ],
+      "safe_in_pregnancy": "SECOND AND THIRD TRIMESTER: SAFE — WHO recommends treating schistosomiasis in pregnant women from second trimester. Untreated schistosomiasis causes anaemia, malnutrition, and poor pregnancy outcomes. Single dose praziquantel for schistosomiasis in pregnancy is the standard approach. Avoid in first trimester unless risk is high.",
+      "safe_in_children": "Yes — used in children from age 4 (weight ≥15kg). Widely used in school-age children in MDA campaigns across Uganda.",
+      "local_availability": "Available at health centres and hospitals in Uganda. Included in mass drug administration programmes targeting school children in high-prevalence areas (Lake Victoria basin, western Uganda).",
+      "side_effects": [
+        "Nausea and vomiting (common, usually mild)",
+        "Abdominal pain",
+        "Dizziness and headache",
+        "Drowsiness",
+        "Fever (as worms die)",
+        "Skin rash (uncommon)",
+        "Severe reactions in neurocysticercosis (only)"
+      ],
+      "contraindications": [
+        "Ocular (eye) cysticercosis — destroying eye cysts can cause blindness (treat with surgical extraction first)",
+        "First trimester of pregnancy (relative — treat after first trimester)",
+        "Hypersensitivity to praziquantel"
+      ],
+      "pregnancy_safety": "TREAT FROM SECOND TRIMESTER — WHO supports treatment of schistosomiasis in pregnancy. Untreated bilharzia causes severe maternal anaemia."
+    },
+    {
+      "id": "dolutegravir",
+      "name": "Dolutegravir (DTG) — standalone",
+      "brand_names": [
+        "Tivicay"
+      ],
+      "category": "antiretroviral",
+      "availability": "HIV clinic — available as part of TLD fixed-dose combination or standalone at ART centres",
+      "uses": [
+        "HIV-1 treatment (integrase strand transfer inhibitor)",
+        "Second-line HIV treatment when used with other ARTs",
+        "Component of preferred first-line TLD regimen"
+      ],
+      "adult_dose": "50mg once daily (with TLD fixed-dose combination). For TB co-treatment: 50mg TWICE daily (rifampicin reduces levels significantly).",
+      "child_dose": "Weight-based dosing for children. Discuss with HIV clinic.",
+      "how_it_works": "Dolutegravir blocks the HIV integrase enzyme, preventing viral DNA from integrating into the human cell's DNA. This stops HIV replication. High genetic barrier to resistance — HIV rarely develops resistance to dolutegravir when taken consistently, unlike efavirenz.",
+      "key_warnings": [
+        "Neural tube defect risk at conception — women of reproductive age should take 5mg folic acid daily or use effective contraception",
+        "NEVER miss doses",
+        "Raises blood glucose (especially relevant for diabetics or pre-diabetics)",
+        "Weight gain (more in women — discuss with HIV clinic)",
+        "If taking rifampicin (TB treatment): must double dolutegravir to 50mg TWICE daily",
+        "Take 2 hours apart from antacids, calcium, iron supplements (reduces absorption)"
+      ],
+      "interactions": [
+        "Rifampicin (major — must double dose)",
+        "Antacids, calcium, iron (take 2 hours apart)",
+        "Metformin (increases metformin — monitor for metformin toxicity)",
+        "Carbamazepine and phenytoin (reduce dolutegravir levels)"
+      ],
+      "safe_in_pregnancy": "PREFERRED SECOND TRIMESTER ONWARDS — Dolutegravir has high neural tube defect risk around conception. Once past first trimester, TLD/DTG is the preferred regimen. Take folic acid 5mg daily.",
+      "safe_in_children": "Yes — weight-based paediatric dosing at HIV clinics.",
+      "local_availability": "Available FREE at all ART/HIV clinics in Uganda as part of TLD.",
+      "side_effects": [
+        "Weight gain (significant — especially in women)",
+        "Insomnia",
+        "Headache",
+        "Raised blood glucose",
+        "Liver enzyme elevation (uncommon)",
+        "Generally very well tolerated"
+      ],
+      "contraindications": [
+        "First trimester of pregnancy without folic acid and risk assessment",
+        "Severe liver disease",
+        "Rifampicin without dose adjustment"
+      ],
+      "pregnancy_safety": "With folic acid supplementation, TLD with dolutegravir is preferred from second trimester. Neural tube defect risk is the main concern at conception."
+    },
+    {
+      "id": "hydroxyurea",
+      "name": "Hydroxyurea (Hydroxycarbamide)",
+      "brand_names": [
+        "Hydrea",
+        "Siklos"
+      ],
+      "category": "sickle_cell_disease",
+      "availability": "Sickle cell disease clinics and referral hospitals (Mulago, regional referrals). Increasingly available in Uganda",
+      "uses": [
+        "Sickle Cell Disease — reduces painful crises, acute chest syndrome, hospitalisations",
+        "Increases fetal haemoglobin (HbF) which reduces sickling",
+        "Chronic myeloid leukaemia (at higher doses)"
+      ],
+      "adult_dose": "15mg/kg once daily, increasing gradually to 35mg/kg maximum. Long-term daily treatment. Dose adjusted based on blood counts (full blood count monitored).",
+      "child_dose": "Starting from 6 months — 20mg/kg/day. Paediatric liquid formulations being introduced. Discuss with sickle cell specialist.",
+      "how_it_works": "Hydroxyurea stimulates the bone marrow to produce fetal haemoglobin (HbF). HbF does not sickle — so increasing its proportion in the blood dramatically reduces the tendency of red blood cells to become sickle-shaped. This reduces painful crises, organ damage, and the need for blood transfusions.",
+      "key_warnings": [
+        "Requires regular full blood count (FBC) monitoring — can suppress bone marrow",
+        "Long-term commitment — must be taken daily continuously",
+        "Risk of infertility in males — discuss before starting if planning a family",
+        "Not a cure — but dramatically improves quality of life and reduces complications",
+        "Teratogenic — MUST use effective contraception in women of reproductive age",
+        "Patients with SCD in Uganda should be registered at a sickle cell disease clinic"
+      ],
+      "interactions": [
+        "Other bone marrow suppressants (additive toxicity)",
+        "Antiretrovirals didanosine and stavudine (avoid combination — serious toxicity)",
+        "Avoid live vaccines during treatment"
+      ],
+      "safe_in_pregnancy": "CONTRAINDICATED — Hydroxyurea is teratogenic. Must stop hydroxyurea before trying to conceive. Women with SCD who want to become pregnant should discuss alternative management with their SCD specialist and obstetrician before conception.",
+      "safe_in_children": "RECOMMENDED from 6 months in SCD — WHO and Uganda guidelines recommend early initiation of hydroxyurea in children with SCD. Dramatically reduces morbidity and mortality in children.",
+      "local_availability": "Available at Mulago National Referral Hospital, Butabika, regional referrals, and increasingly district hospitals in Uganda. Free or subsidised at some facilities through Ministry of Health programmes.",
+      "side_effects": [
+        "Bone marrow suppression (low blood counts)",
+        "Nausea (take at bedtime to reduce)",
+        "Hair thinning",
+        "Skin rash",
+        "Leg ulcers with long-term use",
+        "Increased susceptibility to infection",
+        "Headache"
+      ],
+      "contraindications": [
+        "Pregnancy or planning pregnancy",
+        "Severe bone marrow suppression",
+        "Severe anaemia (without SCD context)",
+        "Low white cell count or platelets at baseline"
+      ],
+      "pregnancy_safety": "CONTRAINDICATED — Stop at least 3 months before trying to conceive. Use effective contraception."
+    },
+    {
+      "id": "methyldopa",
+      "name": "Methyldopa (Alpha-methyldopa)",
+      "brand_names": [
+        "Aldomet",
+        "Dopamet"
+      ],
+      "category": "antihypertensive",
+      "availability": "District hospitals and referral hospitals. Some health centres with antenatal care",
+      "uses": [
+        "Hypertension in pregnancy — first-line choice",
+        "Hypertension generally when other drugs not tolerated",
+        "Pre-eclampsia blood pressure management"
+      ],
+      "adult_dose": "250mg two or three times daily initially, increasing to maximum 3000mg/day in divided doses. In pregnancy: 250-500mg 2-3 times daily.",
+      "child_dose": "10mg/kg/day in divided doses.",
+      "how_it_works": "Methyldopa acts in the brain's blood pressure regulation centres (brainstem) to reduce sympathetic nerve signals to blood vessels and the heart. This lowers blood pressure. It is safe for the developing baby because decades of evidence have confirmed its safety in pregnancy — more data than any other antihypertensive.",
+      "key_warnings": [
+        "First-choice antihypertensive for PREGNANCY",
+        "Causes significant drowsiness — especially when starting",
+        "Can cause depression — monitor mood, especially in postnatal period",
+        "Haemolytic anaemia (rare) — monitor blood count",
+        "Liver toxicity (rare) — stop if jaundice develops",
+        "Rebound hypertension if stopped suddenly — taper dose"
+      ],
+      "interactions": [
+        "Other antihypertensives (additive effect — can cause excessive lowering)",
+        "Iron supplements (reduce absorption)",
+        "Antidepressants (interaction)",
+        "Lithium (can increase lithium toxicity)"
+      ],
+      "safe_in_pregnancy": "FIRST-LINE IN PREGNANCY — Methyldopa is the most extensively studied antihypertensive in pregnancy. Decades of follow-up data show no adverse effects on child development. It is the preferred drug for chronic hypertension in pregnancy in Uganda. Can be used in all trimesters.",
+      "safe_in_children": "Yes — but not commonly used in children as first choice.",
+      "local_availability": "Available at district hospitals and above in Uganda. Essential medicine on Uganda National Formulary.",
+      "side_effects": [
+        "Drowsiness and fatigue (very common)",
+        "Depression",
+        "Dry mouth",
+        "Nasal congestion",
+        "Slow heart rate",
+        "Postural hypotension (dizziness on standing)",
+        "Liver inflammation (rare)",
+        "Haemolytic anaemia (rare — direct Coombs test turns positive)"
+      ],
+      "contraindications": [
+        "Active liver disease",
+        "History of liver disease with methyldopa previously",
+        "Depression (caution)",
+        "Pheochromocytoma"
+      ],
+      "pregnancy_safety": "FIRST-LINE AND PREFERRED — Most evidence for safety in pregnancy of any antihypertensive. Use throughout pregnancy for chronic hypertension. Continue postnatally if needed."
+    },
+    {
+      "id": "nifedipine_sr",
+      "name": "Nifedipine SR (Slow Release / Long-Acting)",
+      "brand_names": [
+        "Adalat LA",
+        "Procardia XL",
+        "Nifecard"
+      ],
+      "category": "antihypertensive_calcium_channel_blocker",
+      "availability": "Hospitals and pharmacies",
+      "uses": [
+        "Hypertension (second-line in pregnancy after methyldopa)",
+        "Acute severe hypertension in pregnancy (nifedipine immediate-release 10mg sublingually or orally for emergency)",
+        "Angina",
+        "Raynaud's phenomenon"
+      ],
+      "adult_dose": "SR: 30-60mg once daily. Immediate-release capsules: 10mg oral/sublingual for hypertensive emergency in pregnancy. Do not break/crush SR tablets.",
+      "child_dose": "Specialist use only — doses under medical supervision.",
+      "how_it_works": "Nifedipine blocks calcium channels in the smooth muscle of blood vessel walls, preventing vessel contraction and causing vasodilation (widening). This reduces blood pressure. In pregnancy it is particularly useful for acute severe hypertension where blood pressure needs to come down urgently.",
+      "key_warnings": [
+        "NEVER use short-acting nifedipine capsules sublingually — causes dangerous rapid blood pressure drop",
+        "For acute severe hypertension in pregnancy: oral immediate-release 10-20mg is appropriate under supervision",
+        "Do NOT break, crush, or chew slow-release formulations",
+        "Avoid grapefruit juice — increases drug levels",
+        "Ankle swelling is very common side effect"
+      ],
+      "interactions": [
+        "Rifampicin (reduces levels)",
+        "Grapefruit juice (increases levels)",
+        "Magnesium sulphate (combined use in obstetrics — monitor for extreme hypotension and neuromuscular blockade)",
+        "Digoxin (increases digoxin levels)"
+      ],
+      "safe_in_pregnancy": "SAFE FROM SECOND TRIMESTER — Second-line antihypertensive in pregnancy after methyldopa. Used widely in obstetric care. Oral immediate-release nifedipine is recommended for acute severe hypertension in pregnancy (hydralazine, labetalol are alternatives). No evidence of teratogenicity. Avoid in first trimester if possible.",
+      "safe_in_children": "Specialist use only.",
+      "local_availability": "Available at hospitals and well-stocked pharmacies in Uganda.",
+      "side_effects": [
+        "Ankle and leg swelling (very common)",
+        "Flushing and headache (when starting)",
+        "Dizziness",
+        "Palpitations",
+        "Nausea",
+        "Fatigue"
+      ],
+      "contraindications": [
+        "Cardiogenic shock",
+        "Severe aortic stenosis",
+        "Unstable angina with short-acting formulations",
+        "First trimester pregnancy (relative)"
+      ],
+      "pregnancy_safety": "SAFE — Second-line treatment for hypertension in pregnancy. Preferred over amlodipine due to more pregnancy safety data."
+    }
+  ]
+}
