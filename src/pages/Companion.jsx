@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { Send, RefreshCw, Sparkles, MessageCircle, BookOpen, Pill, Leaf, Heart, ChevronRight } from 'lucide-react'
 import { VoiceInputInline } from '../components/ui/VoiceInput.jsx'
 import { MessageAudioBtn } from '../components/ui/AudioReader.jsx'
+import { askAI, aiAvailable, parseAIReply, useAIStatus } from '../utils/aiClient.js'
 
 function TypingDots() {
   return (
@@ -35,9 +36,13 @@ function SuggestionChips({ suggestions, onSelect }) {
 function MessageBubble({ msg, onSuggestion }) {
   const isAI = msg.role === 'ai'
 
+  // Escape first: AI replies are untrusted text and this is rendered as HTML.
   const formatMessage = (text) => {
     if (!text) return text
     return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/\n\n/g, '<br/><br/>')
       .replace(/\n/g, '<br/>')
@@ -85,6 +90,8 @@ export default function Companion() {
   const sessionRef = useRef(null)
   const bottomRef = useRef(null)
   const inputRef = useRef(null)
+  const convoRef = useRef([]) // {role:'user'|'assistant', content} sent to the online AI
+  const aiStatus = useAIStatus()
 
   const addMsg = useCallback((role, data) => {
     const msg = typeof data === 'string'
@@ -127,6 +134,7 @@ export default function Companion() {
     setMessages([])
     setShowQuick(true)
     setInput('')
+    convoRef.current = []
 
     setTimeout(() => {
       const response = sessionRef.current.respond(`hello ${user?.name || ''}`)
@@ -158,9 +166,42 @@ export default function Companion() {
       return
     }
 
+    // 1. Offline engine runs first: instant, and it owns crisis detection.
     const response = sessionRef.current.respond(t)
+
+    if (response?.type === 'crisis' || response?.type === 'redirect_to_checker') {
+      handleResponse(response)
+      return
+    }
+
+    // 2. Online AI (Gemini → Groq, handled server-side). The offline answer
+    //    is passed along as verified grounding.
+    convoRef.current.push({ role: 'user', content: t })
+    if (aiAvailable()) {
+      const ai = await askAI({
+        mode: 'companion',
+        lang,
+        messages: convoRef.current,
+        profile: user,
+        grounding: response?.message,
+      })
+      if (ai) {
+        const { text, suggestions, wantsChecker } = parseAIReply(ai.text)
+        if (text) {
+          convoRef.current.push({ role: 'assistant', content: text })
+          const chips = [...suggestions]
+          if (wantsChecker) chips.push('Open Symptom Checker')
+          setTyping(false)
+          addMsg('ai', { text, type: 'companion', suggestions: chips })
+          return
+        }
+      }
+    }
+
+    // 3. Offline / AI failed → rule-based answer.
+    if (response?.message) convoRef.current.push({ role: 'assistant', content: response.message })
     handleResponse(response)
-  }, [input, typing, addMsg, handleResponse, nav])
+  }, [input, typing, addMsg, handleResponse, nav, lang, user])
 
   const handleSuggestion = useCallback((suggestion) => {
     if (suggestion === 'Open Symptom Checker') { nav('/chat'); return }
@@ -177,7 +218,9 @@ export default function Companion() {
           </div>
           <div>
             <p className="text-cream font-semibold text-sm">{tr('companion.header.name')}</p>
-            <p className="text-emerald-500 text-xs font-medium">{tr('companion.header.status')}</p>
+            <p className="text-emerald-500 text-xs font-medium">
+              {aiStatus === 'online' ? tr('ai.status.online') : aiStatus === 'checking' ? tr('companion.header.status') : tr('ai.status.offline')}
+            </p>
           </div>
         </div>
         <button onClick={startSession}

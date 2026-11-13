@@ -33,6 +33,8 @@ const translations = {
 
   'chat.placeholder':        { en: 'Describe how you feel...', lg: 'Gamba ebikolwa byawe...', sw: 'Eleza unavyohisi...' },
   'chat.ai.name':            { en: 'SayMyDoc AI', lg: 'SayMyDoc AI', sw: 'SayMyDoc AI' },
+  'ai.status.online':        { en: '● AI online', sw: '● AI mtandaoni' },
+  'ai.status.offline':       { en: '● Offline mode', sw: '● Hali ya nje ya mtandao' },
   'chat.online':             { en: '● Offline-ready', lg: '● Tobuze kutandiika', sw: '● Iko tayari bila mtandao' },
   'chat.new.check':          { en: 'New Check', lg: 'Okukebera Okupya', sw: 'Ukaguzi Mpya' },
   'chat.start.new':          { en: 'Start New Symptom Check', lg: 'Tandika Okukebera Okupya', sw: 'Anza Ukaguzi Mpya wa Dalili' },

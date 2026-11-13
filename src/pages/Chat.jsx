@@ -8,6 +8,7 @@ import { useLang } from '../context/LangContext.jsx'
 import { InferenceSession, getGreeting } from '../engine/InferenceEngine.js'
 import { saveSession } from '../db/database.js'
 import ConditionResult from '../components/chat/ConditionResult.jsx'
+import { askAI, aiAvailable, parseAIReply, toGrounding, useAIStatus } from '../utils/aiClient.js'
 
 function TypingDots() {
   return <div className="flex gap-1.5 items-center p-1"><div className="typing-dot" /><div className="typing-dot" /><div className="typing-dot" /></div>
@@ -129,14 +130,49 @@ export default function Chat() {
   const bottomRef = useRef(null)
   const inputRef = useRef(null)
   const sessionRef = useRef(null)
+  const chatLogRef = useRef([]) // text turns sent to the online AI
+  const aiStatus = useAIStatus()
 
   const addMsg = useCallback((role, content, type = 'text') => {
+    if (type === 'text' && typeof content === 'string') {
+      chatLogRef.current.push({ role: role === 'user' ? 'user' : 'assistant', content })
+    }
     setMessages(m => [...m, { role, content, type, id: Date.now() + Math.random() }])
   }, [])
+
+  // After a result, ask the online AI for a short plain-language explanation.
+  // Never blocks or changes the rule-engine result; silently skipped if offline.
+  const explainResult = useCallback(async (result, forSession) => {
+    if (!aiAvailable() || !result) return
+    const symptoms = (result.symptoms_detected || []).map(s => String(s).replace(/_/g, ' ')).join(', ')
+    const grounding = toGrounding({
+      'Possible condition': result.name,
+      'About': result.description,
+      'Suggested actions': result.action_plan,
+      'See a doctor urgently if': result.see_doctor_if,
+      'Local context': result.local_context,
+      'Other possibilities': (result.all_candidates || []).slice(1, 3).map(c => c.name),
+    })
+    const ai = await askAI({
+      mode: 'explain',
+      lang,
+      messages: [{ role: 'user', content: `My symptoms: ${symptoms || 'as described'}. Please explain this result in plain words.` }],
+      profile: user,
+      grounding,
+    })
+    if (!ai || sessionRef.current !== forSession) return // new check started meanwhile
+    const { text } = parseAIReply(ai.text)
+    if (text) addMsg('ai', `✨ ${text}`, 'text')
+  }, [lang, user, addMsg])
 
   const handleResponse = useCallback(async (response) => {
     setTyping(false)
     if (!response) return
+    if (response.type === 'crisis') {
+      addMsg('ai', response.message, 'emergency')
+      setDone(true)
+      return
+    }
     if (response.type === 'emergency') {
       addMsg('ai', response.message, 'emergency')
       setDone(true)
@@ -157,12 +193,13 @@ export default function Chat() {
       await saveSession({ user_id: user?.id, primary_condition: response.result.condition, confidence: response.result.confidence, symptoms: response.result.symptoms_detected, result: response.result, timestamp: Date.now() })
       addMsg('ai', response.result, 'result')
       setDone(true)
+      explainResult(response.result, sessionRef.current)
       return
     }
     if (response.type === 'clarify') {
       addMsg('ai', response.message, 'text')
     }
-  }, [addMsg, user])
+  }, [addMsg, user, explainResult])
 
   const startSession = useCallback(() => {
     const s = new InferenceSession({ name: user?.name, age: user?.age, sex: user?.sex, location: user?.location })
@@ -171,6 +208,7 @@ export default function Chat() {
     setMessages([])
     setDone(false)
     setInput('')
+    chatLogRef.current = []
     setTimeout(() => addMsg('ai', getGreeting(user?.name), 'text'), 300)
   }, [user, addMsg])
 
@@ -201,8 +239,23 @@ export default function Chat() {
     setTyping(true)
     await new Promise(r => setTimeout(r, 800 + Math.random() * 600))
     const response = sessionRef.current.process(t)
+
+    // The rule engine could not understand the message → let the online AI
+    // have a go (emergencies and self-harm are already handled above it).
+    if (response?.type === 'clarify' && aiAvailable()) {
+      const forSession = sessionRef.current
+      const ai = await askAI({ mode: 'checker', lang, messages: chatLogRef.current, profile: user })
+      if (ai && sessionRef.current === forSession) {
+        const { text } = parseAIReply(ai.text)
+        if (text) {
+          setTyping(false)
+          addMsg('ai', text, 'text')
+          return
+        }
+      }
+    }
     handleResponse(response)
-  }, [input, typing, addMsg, handleResponse])
+  }, [input, typing, addMsg, handleResponse, lang, user])
 
   const answerFollowUp = useCallback(async (questionKey, answerKey) => {
     if (!sessionRef.current || typing) return
@@ -246,7 +299,9 @@ export default function Chat() {
           </div>
           <div>
             <p className="text-cream font-semibold text-sm">{tr('chat.ai.name')}</p>
-            <p className="text-emerald-500 text-xs font-medium">{tr('chat.online')}</p>
+            <p className="text-emerald-500 text-xs font-medium">
+              {aiStatus === 'online' ? tr('ai.status.online') : aiStatus === 'checking' ? tr('chat.online') : tr('ai.status.offline')}
+            </p>
           </div>
         </div>
         {done && (

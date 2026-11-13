@@ -106,3 +106,39 @@ src/
 Founder: Ssemambo Steven | Kampala, Uganda | 2026
 
 > "If this conversation was valuable to you — imagine what a structured, intelligent app version would do for someone with no access to this kind of information."
+
+---
+
+## 🤖 Online AI (Gemini → Groq → offline engine)
+
+SayMyDoc answers with a real LLM when the person is online and falls back to the
+built-in offline rule engine when they are not, or when the AI services fail.
+
+```
+Browser ──► /.netlify/functions/ai-chat ──► Gemini Flash (primary)
+                                      └──► Groq          (fallback if Gemini errors / hits its limit)
+   └── offline or both failed ──► built-in rule-based engine (always works)
+```
+
+API keys live **only** in Netlify environment variables and are used by the
+Netlify Function. They are never sent to the browser.
+
+### Netlify environment variables
+
+| Variable | Required | Purpose |
+|---|---|---|
+| `GEMINI_API_KEY` | yes | Primary AI (Google AI Studio key) |
+| `GROQ_API_KEY` | yes | Fallback AI (Groq console key) |
+| `GEMINI_MODEL` | no | Default `gemini-3.8-flash` |
+| `GROQ_MODEL` | no | Default `llama-3.3-70b-versatile` |
+
+Set them in Netlify → Site configuration → Environment variables, then redeploy.
+Check the setup by opening `/.netlify/functions/ai-chat` — it shows which keys are
+configured (never the keys themselves).
+
+### Local development
+`npm run dev` does not run Netlify Functions (the app then simply stays in offline mode).
+To test the AI locally use `npx netlify dev` with the variables in a `.env` file (never commit it).
+
+### Tests
+`npm test` runs the function tests (provider fallback, key safety, input validation).
