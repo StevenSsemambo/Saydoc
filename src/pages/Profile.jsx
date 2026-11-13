@@ -114,7 +114,7 @@ export default function Profile() {
           { icon: Leaf, color: 'text-emerald-400', bg: 'bg-emerald-500/15', title: tr('remedy.title'), sub: '12 African plants', to: '/remedies' },
           ...(hwMode ? [{ icon: Stethoscope, color: 'text-blue-300', bg: 'bg-blue-600/15', title: 'Health Worker Assessment', sub: 'Clinical mode with ICD-10', to: '/healthworker' }] : []),
           { icon: Settings, color: 'text-mist', bg: 'bg-white/5', title: 'Settings & Language', sub: 'English, Luganda, Swahili', to: '/settings' },
-        ].map(({ color, bg, title, sub, to }) => (
+        ].map(({ icon: Icon, color, bg, title, sub, to }) => (
           <button key={to} onClick={() => nav(to)}
             className="w-full bg-charcoal rounded-2xl p-4 flex items-center gap-3 active:scale-98 transition-all">
             <div className={`w-10 h-10 ${bg} rounded-xl flex items-center justify-center`}>
@@ -134,7 +134,7 @@ export default function Profile() {
           { icon: Wifi, color: 'text-purple-400', bg: 'bg-purple-500/15', title: tr('profile.offline'), desc: 'SayMyDoc works completely without internet. All AI and features run on your device.' },
           { icon: Heart, color: 'text-pink-400', bg: 'bg-pink-500/15', title: 'About SayMyDoc', desc: 'Built by SayMyTech Developers in Kampala, Uganda. African-first health AI — designed for Africa, ready for the world.' },
           { icon: Info, color: 'text-yellow-400', bg: 'bg-yellow-500/15', title: tr('profile.disclaimer'), desc: tr('ui.disclaimer') },
-        ].map(({ color, bg, title, desc }) => (
+        ].map(({ icon: Icon, color, bg, title, desc }) => (
           <div key={title} className="bg-charcoal rounded-3xl p-4 flex items-start gap-3">
             <div className={`w-9 h-9 ${bg} rounded-xl flex items-center justify-center flex-shrink-0`}>
               <Icon size={16} className={color} />
