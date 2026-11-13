@@ -166,8 +166,8 @@ export default function Chat() {
   }, [lang, user, addMsg])
 
   const handleResponse = useCallback(async (response) => {
-    setTyping(false)
-    if (!response) return
+    if (response?.type !== 'follow_up') setTyping(false)
+    if (!response) { setTyping(false); return }
     if (response.type === 'crisis') {
       addMsg('ai', response.message, 'emergency')
       setDone(true)
@@ -179,8 +179,29 @@ export default function Chat() {
       return
     }
     if (response.type === 'follow_up') {
-      if (response.empathy) addMsg('ai', response.empathy, 'text')
-      addMsg('ai', { question: response.question, answers: response.answers, question_key: response.question_key }, 'follow_up')
+      // Online: the AI acknowledges what the user said and asks the engine's chosen
+      // question in natural words. The rule engine still decides WHICH question comes
+      // next and supplies the answer buttons. Offline / AI failure: the original wording.
+      let question = response.question
+      let empathy = response.empathy
+      if (aiAvailable()) {
+        const forSession = sessionRef.current
+        setTyping(true)
+        const baseQ = typeof response.question === 'string' ? response.question : (response.question?.en || '')
+        const ai = await askAI({
+          mode: 'ask',
+          lang,
+          messages: chatLogRef.current,
+          profile: user,
+          grounding: toGrounding({ 'Question to ask (ask exactly this)': baseQ }),
+        })
+        setTyping(false)
+        if (sessionRef.current !== forSession) return // user started a new check meanwhile
+        const text = ai && parseAIReply(ai.text).text
+        if (text) { question = text; empathy = null }
+      }
+      if (empathy) addMsg('ai', empathy, 'text')
+      addMsg('ai', { question, answers: response.answers, question_key: response.question_key }, 'follow_up')
       return
     }
     if (response.type === 'condition_select') {
@@ -199,7 +220,7 @@ export default function Chat() {
     if (response.type === 'clarify') {
       addMsg('ai', response.message, 'text')
     }
-  }, [addMsg, user, explainResult])
+  }, [addMsg, user, explainResult, lang])
 
   const startSession = useCallback(() => {
     const s = new InferenceSession({ name: user?.name, age: user?.age, sex: user?.sex, location: user?.location, lang })

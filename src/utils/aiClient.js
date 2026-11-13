@@ -30,7 +30,7 @@ export function aiAvailable() {
 /**
  * Ask the online AI.
  * @param {object} p
- * @param {'companion'|'checker'|'explain'} p.mode
+ * @param {'companion'|'checker'|'explain'|'ask'} p.mode
  * @param {'en'|'lg'|'sw'} p.lang
  * @param {{role:'user'|'assistant', content:string}[]} p.messages  last one must be 'user'
  * @param {{age?:number, sex?:string}} [p.profile]

@@ -184,3 +184,12 @@ test('GEMINI_MODEL / GROQ_MODEL overrides are tried first and may be comma-separ
     assert.equal(tried[0], 'my-custom-model')
   } finally { delete process.env.GEMINI_MODEL }
 })
+
+test("mode 'ask' wraps the engine's question, forbids extra questions, and adds no suggestion chips", async () => {
+  let sys
+  globalThis.fetch = async (url, init) => { sys = JSON.parse(init.body).systemInstruction.parts[0].text; return geminiOk('ok') }
+  await post({ mode: 'ask', lang: 'en', grounding: 'Question to ask (ask exactly this): Where is the headache?', messages: [{ role: 'user', content: "I'm feeling dizzy" }] })
+  assert.match(sys, /ONE follow-up question/)
+  assert.match(sys, /Where is the headache\?/)
+  assert.doesNotMatch(sys, /FOLLOW-UP CHIPS/)
+})
