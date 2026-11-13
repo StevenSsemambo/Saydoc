@@ -136,6 +136,9 @@ export default function ConditionResult({result}){
   const color=CAT_COLORS[result.category]||'#00A86B'
   const icon=CAT_ICONS[result.category]||'🩺'
   const conf=result.confidence||0
+  // Plain-language certainty band — a % alone reads as more precise than a rule engine can be.
+  const certainty=conf>=70?'good':conf>=50?'moderate':'low'
+  const certaintyColor=certainty==='good'?color:certainty==='moderate'?'#CA8A04':'#EA580C'
   const hasMeds=(result.suggested_medications||[]).length>0
   const hasRemedies=(result.suggested_remedies||[]).length>0||(result.home_remedies||[]).length>0
 
@@ -163,11 +166,18 @@ export default function ConditionResult({result}){
               </div>
             </div>
             <div className="text-right">
-              <p className="font-display font-bold text-2xl" style={{color}}>{conf}%</p>
-              <p className="text-mist text-xs">{tr('ui.confidence')}</p>
+              <p className="font-display font-bold text-sm" style={{color:certaintyColor}}>{tr('ui.certainty.'+certainty)}</p>
+              <p className="text-mist text-xs">~{conf}% {tr('ui.confidence')}</p>
             </div>
           </div>
-          <ConfBar value={conf} color={color}/>
+          <ConfBar value={conf} color={certaintyColor}/>
+        </div>
+
+        {/* Possibility, not a diagnosis */}
+        <div className="px-4 py-2.5 border-b border-white/5" style={{background:'rgba(202,138,4,0.10)'}}>
+          <p className="text-xs leading-relaxed" style={{color:'#FBBF24'}}>
+            {'⚠️ '}{tr('ui.possibility.note')}
+          </p>
         </div>
 
         {/* Description */}
@@ -289,8 +299,8 @@ export default function ConditionResult({result}){
       </div>
 
       {/* Disclaimer */}
-      <p className="text-mist/50 text-[10px] text-center leading-relaxed px-2">
-        SayMyDoc provides health guidance, not medical diagnosis. Always consult a qualified healthcare professional for medical advice.
+      <p className="text-mist/70 text-xs text-center leading-relaxed px-2">
+        {tr('ui.disclaimer')}
       </p>
     </div>
   )

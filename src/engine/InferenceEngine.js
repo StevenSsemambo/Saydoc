@@ -465,18 +465,44 @@ function checkEmergency(memory, rawText) {
 // RESULT BUILDER — uses ALL fields from conditions.json
 // ─────────────────────────────────────────────────────────────
 
+// ── Confidence calibration ────────────────────────────────────
+// The internal rule score is an additive sum clamped at 100 — it ranks
+// conditions but is NOT a probability, and a few matching symptoms can
+// saturate it. What we show the user is capped by how much evidence the
+// engine actually has, and never claims near-certainty.
+export const MAX_DISPLAY_CONFIDENCE = 90
+const MAX_USER_SELECTED_CONFIDENCE  = 75
+
+export function calibrateConfidence(raw, { answers = 0, symptoms = 0, margin = 100, userSelected = false } = {}) {
+  let cap = 50 + 10 * Math.min(answers, 3) + 3 * Math.min(symptoms, 3)   // 50 … 89
+  if (margin < THRESHOLD_LEAD_MIN) cap = Math.min(cap, 60)               // close call → stay modest
+  if (userSelected) cap = Math.min(cap, MAX_USER_SELECTED_CONFIDENCE)
+  cap = Math.min(cap, MAX_DISPLAY_CONFIDENCE)
+  return Math.max(0, Math.min(Math.round(raw), cap))
+}
+
 function buildResult(memory, overrideKey = null) {
-  let condKey, confidence
+  let condKey, rawScore
   if (overrideKey) {
     condKey = overrideKey
-    confidence = memory.candidates[overrideKey] || 50
+    rawScore = memory.candidates[overrideKey] || 50
   } else {
     const top = getTopCandidate(memory)
     if (!top) return null
-    ;[condKey, confidence] = top
+    ;[condKey, rawScore] = top
   }
   const cond = CONDITIONS[condKey]
   if (!cond) return null
+
+  const confidence = calibrateConfidence(rawScore, {
+    answers: memory.asked_questions.size,
+    symptoms: getSymptomKeys(memory).length,
+    margin: getLeadMargin(memory),
+    userSelected: !!overrideKey,
+  })
+  // Scale the alternatives by the same ratio so ordering is preserved and
+  // no alternative can look more certain than the main result.
+  const scale = rawScore > 0 ? confidence / rawScore : 1
 
   const allCandidates = Object.entries(memory.candidates)
     .filter(([, s]) => s > 5)
@@ -485,13 +511,14 @@ function buildResult(memory, overrideKey = null) {
     .map(([k, c]) => ({
       key: k,
       name: CONDITIONS[k]?.name || k,
-      confidence: c,
+      confidence: Math.min(Math.round(c * scale), MAX_DISPLAY_CONFIDENCE),
     }))
 
   return {
     condition:       condKey,
     name:            cond.name,
     confidence,
+    raw_score:       rawScore,
     category:        cond.category,
     description:     cond.description,
     body_mechanism:  cond.body_mechanism,
@@ -600,8 +627,10 @@ export class InferenceSession {
     const topScore   = getConfidenceLevel(this.memory)
     const leadMargin = getLeadMargin(this.memory)
 
-    // ── HIGH CONFIDENCE → resolve immediately ─────────────────
-    if (topScore >= THRESHOLD_RESOLVE && leadMargin >= THRESHOLD_LEAD_MIN) {
+    // ── HIGH CONFIDENCE → resolve, but never from the first message alone:
+    // if a useful verification question exists, ask it first.
+    if (topScore >= THRESHOLD_RESOLVE && leadMargin >= THRESHOLD_LEAD_MIN &&
+        (this.memory.asked_questions.size > 0 || !pickBestFollowUp(this.memory, candidates))) {
       const result = buildResult(this.memory)
       if (result) {
         this.memory.stage = 'resolved'

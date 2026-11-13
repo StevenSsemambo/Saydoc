@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "node --test netlify/functions/ai-chat.test.mjs"
+    "test": "npm run test:functions && npm run test:engine",
+    "test:engine": "node --import ./tests/register.mjs --test tests/engine.test.mjs",
+    "test:functions": "node --test netlify/functions/ai-chat.test.mjs"
   },
   "dependencies": {
     "dexie": "^4.4.2",

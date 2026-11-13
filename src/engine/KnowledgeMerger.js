@@ -13,8 +13,25 @@ import firstAidData from '../knowledge/firstaid.json'
 import nutritionData from '../knowledge/nutrition.json'
 
 // ── Merged conditions ─────────────────────────────────────────
+// Six conditions exist in both files. The extended entry wins, but it must not
+// silently DROP something the base entry had (e.g. malaria_severe's follow-up
+// questions), so empty/missing fields fall back to the base value.
+export function mergeConditions(base, extended) {
+  const merged = { ...base, ...extended }
+  for (const key of Object.keys(extended)) {
+    if (!base[key]) continue
+    const entry = { ...base[key], ...extended[key] }
+    for (const field of Object.keys(base[key])) {
+      const v = extended[key][field]
+      if (v == null || (Array.isArray(v) && v.length === 0)) entry[field] = base[key][field]
+    }
+    merged[key] = entry
+  }
+  return merged
+}
+
 export const MERGED_KB = {
-  conditions:          { ...kb1.conditions, ...kb2.conditions },
+  conditions:          mergeConditions(kb1.conditions, kb2.conditions),
   follow_up_questions: { ...kb1.follow_up_questions, ...kb2.follow_up_questions },
   emergency_flags:     [...kb1.emergency_flags, ...kb2.emergency_flags],
 }
