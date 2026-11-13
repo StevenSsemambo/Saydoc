@@ -4,6 +4,7 @@ import { useLang } from '../context/LangContext.jsx'
 import { useApp } from '../context/AppContext.jsx'
 import { getPreferences, savePreferences } from '../db/database.js'
 import { ALARM_SOUND_LIST, DEFAULT_ALARM_SOUND } from '../utils/alarmSounds.js'
+import { setCurrentAlarmSound } from '../utils/alarmState.js'
 import { Globe, Stethoscope, Bell, CheckCircle, Info, Volume2, Play } from 'lucide-react'
 
 export default function Settings() {
@@ -37,7 +38,7 @@ export default function Settings() {
 
   const handleSelectAlarmSound = async (soundId) => {
     setAlarmSoundId(soundId)
-    window._saymydocCurrentSound = soundId
+    setCurrentAlarmSound(soundId)
     if (user?.id) {
       const sound = ALARM_SOUND_LIST.find(s => s.id === soundId)
       await savePreferences(user.id, {
@@ -218,7 +219,7 @@ export default function Settings() {
           </div>
           <div className="space-y-2 text-xs text-mist">
             {[
-              ['Version', 'Sprint 4 — Full Release Candidate'],
+              ['Version', `v${__APP_VERSION__}`],
               ['Conditions', '39 fully profiled'],
               ['Follow-up questions', '114 intelligent questions'],
               ['Languages', 'English, Luganda, Swahili'],

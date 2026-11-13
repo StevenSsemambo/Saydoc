@@ -9,10 +9,8 @@ import {
   getMedsForCondition,
   getRemediesForCondition,
   getFirstAid,
-  findFirstAidByKeyword,
   findMedication,
   findRemedy,
-  getNutritionPlan,
   ALL_MEDICATIONS,
   ALL_REMEDIES,
   ALL_FIRSTAID,
@@ -1011,7 +1009,7 @@ const YOLANDA_LG = {
     suggestions: ['Omusujja w\'omwana', 'RDT kwa nnyumba', 'Paracetamol dosage', 'Ebikolwa by\'omusujja'],
   }),
   stomach: () => ({
-    message: `**Ekibaala / Olubuto Lunuma:**\n\n🤢 **Olubuto olunnuma** lusobola okujja olw\'ebimuli, obutamira mmere, oba okulwana.\n\n**Bika bye n'okukolera:**\n• Nywa amazzi mangi — ORS singa ofuna okusesema\n• Sirya ebyokulya ebisafu\n• Yimirira okunywa amazzi ag'obute obuwanvu\n\n**Bikolwa ebisobola okujja ne olubuto:**\n• Omusujja oguddukira — Keba omusujja\n• Okusesema okuvaayo (diarrhea) ne okufuwa — Keba cholera/okuzimba\n• Enjuba y'olubuto — Genda ku ddwaliro singa esuka ennaku 3`,
+    message: `**Ekibaala / Olubuto Lunuma:**\n\n🤢 **Olubuto olunnuma** lusobola okujja olw'ebimuli, obutamira mmere, oba okulwana.\n\n**Bika bye n'okukolera:**\n• Nywa amazzi mangi — ORS singa ofuna okusesema\n• Sirya ebyokulya ebisafu\n• Yimirira okunywa amazzi ag'obute obuwanvu\n\n**Bikolwa ebisobola okujja ne olubuto:**\n• Omusujja oguddukira — Keba omusujja\n• Okusesema okuvaayo (diarrhea) ne okufuwa — Keba cholera/okuzimba\n• Enjuba y'olubuto — Genda ku ddwaliro singa esuka ennaku 3`,
     suggestions: ['ORS engeri gy\'okuteeka', 'Ekibaala n\'omusujja', 'Cholera prevention', 'Stomach pain children'],
   }),
   cough: () => ({

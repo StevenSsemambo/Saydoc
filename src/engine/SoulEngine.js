@@ -2,7 +2,7 @@
 // Learns the user over time. Builds personal trigger profiles,
 // detects patterns in journal data, generates personalised insights.
 
-import { getJournalEntries, getSessions, saveTrigger, getTriggers } from '../db/database.js'
+import { getJournalEntries, getSessions,  } from '../db/database.js'
 
 // ── Pattern Analysis ──────────────────────────────────────────
 export async function analysePatterns(userId) {

@@ -1,5 +1,5 @@
 import React,{createContext,useContext,useState,useEffect,useCallback}from'react'
-import{getUser,saveUser,getPreferences,savePreferences}from'../db/database.js'
+import{getUser,saveUser,getPreferences}from'../db/database.js'
 
 const AppContext=createContext(null)
 

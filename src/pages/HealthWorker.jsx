@@ -705,7 +705,7 @@ function ReferralLetter({ patient, result, vitals, facility, onFacilityChange, c
 
   const shareLetter = async () => {
     if (navigator.share) {
-      try { await navigator.share({ title: 'Referral — ' + (patient?.name || 'Patient'), text: lines }); return } catch {}
+      try { await navigator.share({ title: 'Referral — ' + (patient?.name || 'Patient'), text: lines }); return } catch { /* best-effort: failure is fine */ }
     }
     if (navigator.clipboard) {
       await navigator.clipboard.writeText(lines)

@@ -9,7 +9,7 @@ import { User, Edit3, CheckCircle, Info, Shield, Wifi, Heart, Pill, Leaf, FileTe
 
 export default function Profile() {
   const { user, updateUser } = useApp()
-  const { lang, tr, hwMode } = useLang()
+  const { tr, hwMode } = useLang()
   const nav = useNavigate()
   const [editing, setEditing] = useState(false)
   const [form, setForm] = useState({ name: user?.name || '', age: user?.age || '', sex: user?.sex || '', location: user?.location || '' })
@@ -114,7 +114,7 @@ export default function Profile() {
           { icon: Leaf, color: 'text-emerald-400', bg: 'bg-emerald-500/15', title: tr('remedy.title'), sub: '12 African plants', to: '/remedies' },
           ...(hwMode ? [{ icon: Stethoscope, color: 'text-blue-300', bg: 'bg-blue-600/15', title: 'Health Worker Assessment', sub: 'Clinical mode with ICD-10', to: '/healthworker' }] : []),
           { icon: Settings, color: 'text-mist', bg: 'bg-white/5', title: 'Settings & Language', sub: 'English, Luganda, Swahili', to: '/settings' },
-        ].map(({ icon: Icon, color, bg, title, sub, to }) => (
+        ].map(({ color, bg, title, sub, to }) => (
           <button key={to} onClick={() => nav(to)}
             className="w-full bg-charcoal rounded-2xl p-4 flex items-center gap-3 active:scale-98 transition-all">
             <div className={`w-10 h-10 ${bg} rounded-xl flex items-center justify-center`}>
@@ -134,7 +134,7 @@ export default function Profile() {
           { icon: Wifi, color: 'text-purple-400', bg: 'bg-purple-500/15', title: tr('profile.offline'), desc: 'SayMyDoc works completely without internet. All AI and features run on your device.' },
           { icon: Heart, color: 'text-pink-400', bg: 'bg-pink-500/15', title: 'About SayMyDoc', desc: 'Built by SayMyTech Developers in Kampala, Uganda. African-first health AI — designed for Africa, ready for the world.' },
           { icon: Info, color: 'text-yellow-400', bg: 'bg-yellow-500/15', title: tr('profile.disclaimer'), desc: tr('ui.disclaimer') },
-        ].map(({ icon: Icon, color, bg, title, desc }) => (
+        ].map(({ color, bg, title, desc }) => (
           <div key={title} className="bg-charcoal rounded-3xl p-4 flex items-start gap-3">
             <div className={`w-9 h-9 ${bg} rounded-xl flex items-center justify-center flex-shrink-0`}>
               <Icon size={16} className={color} />
@@ -147,7 +147,7 @@ export default function Profile() {
         ))}
 
         <div className="text-center pt-2">
-          <p className="text-mist/40 text-xs">SayMyDoc Sprint 4 — Full Release Candidate</p>
+          <p className="text-mist/40 text-xs">SayMyDoc v{__APP_VERSION__}</p>
           <p className="text-mist/40 text-xs">39 conditions • 114 questions • 3 languages • 10 emergency flags</p>
           <p className="text-mist/40 text-xs">© 2026 SayMyTech Developers</p>
           <p className="text-emerald-700 text-xs mt-1 font-medium italic">"Because understanding your health is a human right."</p>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useApp } from '../context/AppContext.jsx'
 import { useLang } from '../context/LangContext.jsx'
-import { getHealthTips, t } from '../engine/LanguageEngine.js'
+import { getHealthTips } from '../engine/LanguageEngine.js'
 import { getSessions, getTodayJournal, getJournalEntries, getReminders, getTodayAdherence } from '../db/database.js'
 import { CONDITIONS } from '../engine/InferenceEngine.js'
 import { analysePatterns, getPredictiveAlert } from '../engine/SoulEngine.js'
@@ -104,7 +104,7 @@ export default function Home() {
 
         {/* Drawer items */}
         <div className="flex-1 overflow-y-auto px-3 py-3 space-y-1">
-          {DRAWER_ITEMS.map(({ to, icon: Icon, emoji, label_en, label_lg, sub_en, sub_lg, color, bg }) => {
+          {DRAWER_ITEMS.map(({ to, emoji, label_en, label_lg, sub_en, sub_lg, bg }) => {
             const label = lang === 'lg' ? label_lg : label_en
             const sub   = lang === 'lg' ? sub_lg   : sub_en
             return (
@@ -234,7 +234,7 @@ export default function Home() {
               { to: '/bodymap',  icon: '🗺️', label: tr('bodymap.title'), sub: 'Tap where it hurts', color: 'text-purple-400',  bg: 'bg-purple-500/15'  },
               { to: '/tracker',  icon: '💊', label: 'Med Tracker', sub: 'Streak & reminders',       color: 'text-red-400',     bg: 'bg-red-500/15'     },
               { to: '/clinics',  icon: '📍', label: 'Find Clinic', sub: 'Nearest to you · offline', color: 'text-emerald-400', bg: 'bg-emerald-500/15' },
-            ].map(({ to, icon, label, sub, color, bg }) => (
+            ].map(({ to, icon, label, sub, bg }) => (
               <button key={to} onClick={() => nav(to)}
                 className="bg-charcoal rounded-2xl p-4 flex items-center gap-3 active:scale-95 transition-all">
                 <div className={`w-10 h-10 ${bg} rounded-xl flex items-center justify-center flex-shrink-0`}>

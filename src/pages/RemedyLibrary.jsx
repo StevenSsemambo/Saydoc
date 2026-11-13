@@ -119,7 +119,7 @@ function RemedyCard({ remedy: rawRemedy, tr }) {
 }
 
 export default function RemedyLibrary() {
-  const { lang, tr } = useLang()
+  const { tr } = useLang()
   const nav = useNavigate()
   const audioText = remediesData.remedies.map(r => {
     const norm = normalizeRemedy(r)

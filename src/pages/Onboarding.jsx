@@ -23,7 +23,6 @@ function SayMyDocLogo({ size = 80 }) {
 
 import{useApp}from'../context/AppContext.jsx'
 import{useLang}from'../context/LangContext.jsx'
-import{t}from'../engine/LanguageEngine.js'
 import{useNavigate}from'react-router-dom'
 import{ChevronRight,Heart,Shield,Wifi}from'lucide-react'
 
@@ -34,7 +33,7 @@ export default function Onboarding(){
   const[profile,setProfile]=useState({name:'',age:'',sex:'',location:'Uganda'})
   const[setupMode,setSetupMode]=useState(false)
   const{completeOnboarding}=useApp()
-  const{lang,tr}=useLang()
+  const{tr}=useLang()
   const getSteps=()=>[
     {icon:'🩺',title:tr('onboard.step1.title'),sub:tr('onboard.step1.sub'),cta:tr('onboard.cta.start')},
     {icon:'🧠',title:tr('onboard.step2.title'),sub:tr('onboard.step2.sub'),cta:tr('onboard.cta.continue')},

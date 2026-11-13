@@ -4,6 +4,7 @@ import { useApp } from '../context/AppContext.jsx'
 import { useLang } from '../context/LangContext.jsx'
 import medsData from '../knowledge/medications.json'
 import { ALARM_SOUNDS, ALARM_SOUND_LIST, DEFAULT_ALARM_SOUND } from '../utils/alarmSounds.js'
+import { getCurrentAlarmSound, setCurrentAlarmSound, claimAlarmListener } from '../utils/alarmState.js'
 import {
   saveReminder, getReminders, deleteReminder,
   logDose, unlogDose, getAdherenceLogs, getTodayAdherence,
@@ -81,7 +82,7 @@ function playWebAudioBeep() {
       }
       beep(880,0,0.18); beep(1047,0.22,0.18); beep(1319,0.44,0.28)
       beep(880,0.85,0.18); beep(1047,1.07,0.18); beep(1319,1.29,0.35)
-      setTimeout(() => { try { ctx.close() } catch {} }, 2500)
+      setTimeout(() => { try { ctx.close() } catch { /* best-effort: failure is fine */ } }, 2500)
     }
     ctx.state === 'suspended' ? ctx.resume().then(doPlay) : doPlay()
     if (navigator.vibrate) navigator.vibrate([400, 150, 400, 150, 600])
@@ -90,21 +91,20 @@ function playWebAudioBeep() {
 
 // ── Bind the BroadcastChannel listener (idempotent) ──────────
 // FIX Bug 5: Old version captured currentSoundId via closure — stale if user
-// changes sound. Now always reads window._saymydocCurrentSound at fire time.
+// changes sound. Now always reads the current sound (utils/alarmState) at fire time.
 function bindAlarmListener() {
-  if (window._saymydocBcBound) return
-  window._saymydocBcBound = true
+  if (!claimAlarmListener()) return
   const bc = new BroadcastChannel('saymydoc-alarms')
   bc.onmessage = (e) => {
     if (e.data?.type !== 'PLAY_ALARM') return
     // Prefer sound data sent by SW; fallback to whatever is currently selected
-    const soundId   = window._saymydocCurrentSound || DEFAULT_ALARM_SOUND
+    const soundId   = getCurrentAlarmSound()
     const soundData = e.data.soundData || ALARM_SOUNDS[soundId]?.data || ALARM_SOUNDS.chime.data
     playAlarmFromDataUrl(soundData)
   }
   navigator.serviceWorker?.addEventListener('message', (e) => {
     if (e.data?.type === 'OPEN_LOG') {
-      const soundId = window._saymydocCurrentSound || DEFAULT_ALARM_SOUND
+      const soundId = getCurrentAlarmSound()
       playAlarmFromDataUrl(ALARM_SOUNDS[soundId]?.data || ALARM_SOUNDS.chime.data)
     }
   })
@@ -120,7 +120,7 @@ function notifySwReload() {
 async function persistAlarmSoundToDb(userId, soundId) {
   const soundData = ALARM_SOUNDS[soundId]?.data || ALARM_SOUNDS.chime.data
   await savePreferences(userId, { alarm_sound_id: soundId, alarm_sound_data: soundData })
-  window._saymydocCurrentSound = soundId
+  setCurrentAlarmSound(soundId)
 }
 
 // ── Fallback in-app scheduler (when SW unavailable) ──────────
@@ -502,7 +502,7 @@ function AddReminderModal({ onSave, onClose }) {
 }
 
 // ── Today's dose card ─────────────────────────────────────────
-function TodayDoseCard({ reminder, todayLogs, userId, onToggle }) {
+function TodayDoseCard({ reminder, todayLogs, onToggle }) {
   const today = new Date().toISOString().split('T')[0]
   const color = CAT_COLORS[reminder.med_category] || '#00A86B'
   const icon = CAT_ICONS[reminder.med_category] || '💊'
@@ -722,7 +722,7 @@ export default function MedicationTracker() {
       getPreferences(user.id).then(p => {
         const id = p?.alarm_sound_id || DEFAULT_ALARM_SOUND
         setAlarmSoundId(id)
-        window._saymydocCurrentSound = id
+        setCurrentAlarmSound(id)
         bindAlarmListener()  // FIX Bug 5: no stale closure arg needed
       }).catch(() => bindAlarmListener())
     } else {
@@ -759,7 +759,7 @@ export default function MedicationTracker() {
     // FIX Bug 4: fallback in-app scheduler was defined but NEVER called.
     // Call it here as a safety net for browsers where SW notifications are blocked.
     if (Notification.permission === 'granted' && rems.length) {
-      const soundId = window._saymydocCurrentSound || DEFAULT_ALARM_SOUND
+      const soundId = getCurrentAlarmSound()
       scheduleRemindersForToday(rems, soundId)
     }
   }, [user?.id])

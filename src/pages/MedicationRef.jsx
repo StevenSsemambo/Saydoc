@@ -117,7 +117,7 @@ function MedCard({ med, tr }) {
 }
 
 export default function MedicationRef() {
-  const { lang, tr } = useLang()
+  const { tr } = useLang()
   const [search, setSearch] = useState('')
   const [selectedMed, setSelectedMed] = useState(null)
   const nav = useNavigate()

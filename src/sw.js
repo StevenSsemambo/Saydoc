@@ -69,7 +69,7 @@ async function getAlarmSoundDataUrl() {
     for (const p of prefs) {
       if (p.alarm_sound_data) return p.alarm_sound_data
     }
-  } catch { }
+  } catch { /* best-effort: failure is fine */ }
   return null
 }
 
@@ -120,7 +120,7 @@ async function markFired(key) {
         const c = e.target.result
         if (c) { c.delete(); c.continue() }
       }
-  } catch { }
+  } catch { /* best-effort: failure is fine */ }
 }
 
 function firedKey(remId, dateStr, timeStr) { return `${remId}|${dateStr}|${timeStr}` }
@@ -159,7 +159,7 @@ async function fireReminder(rem, timeStr) {
     const bc = new BroadcastChannel('saymydoc-alarms')
     bc.postMessage({ type: 'PLAY_ALARM', reminderId: rem.id, timeStr, soundData })
     bc.close()
-  } catch { }
+  } catch { /* best-effort: failure is fine */ }
 }
 
 // ── Alarm check tick ──────────────────────────────────────────
@@ -219,7 +219,7 @@ async function schedulePreciseAlarms() {
       const delay  = fireAt - now
       if (delay > 0 && delay < 86_400_000) {
         setTimeout(async () => {
-          try { await fireReminder(rem, timeStr) } catch { }
+          try { await fireReminder(rem, timeStr) } catch { /* best-effort: failure is fine */ }
         }, delay)
       }
     }
@@ -275,7 +275,7 @@ self.addEventListener('notificationclick', (e) => {
               data:               { reminderId, timeStr, url: '/medication' },
             })
           }
-        } catch { }
+        } catch { /* best-effort: failure is fine */ }
         resolve()
       }, 10 * 60 * 1000)
     }))

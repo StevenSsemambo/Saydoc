@@ -25,7 +25,7 @@ export default function BottomNav() {
   return (
     <nav className="bg-charcoal border-t border-white/5 safe-bottom flex-shrink-0">
       <div className="flex items-center justify-around px-1 py-1.5">
-        {TABS.map(({ to, icon: Icon, label_en, label_lg, color }) => {
+        {TABS.map(({ to, label_en, label_lg, color }) => {
           const active = loc.pathname === to || (to !== '/' && loc.pathname.startsWith(to))
           const accent = ACCENT[color] || ACCENT.emerald
           const label = lang === 'lg' ? label_lg : label_en

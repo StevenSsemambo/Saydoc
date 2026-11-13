@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useLang } from '../context/LangContext.jsx'
 import {
@@ -234,7 +234,7 @@ function HydrationTracker({ lang }) {
   const update = (n) => {
     const v = clamp(n, 0, 20)
     setGlasses(v)
-    try { localStorage.setItem(WATER_KEY, String(v)) } catch {}
+    try { localStorage.setItem(WATER_KEY, String(v)) } catch { /* best-effort: failure is fine */ }
   }
 
   const pct = Math.min(100, Math.round((glasses / goal) * 100))

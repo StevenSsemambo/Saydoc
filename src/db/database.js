@@ -1,5 +1,8 @@
 import Dexie from 'dexie'
 
+// NOTE: the database keeps its original name (from the app's earlier "YoSymptom" days).
+// Renaming it would orphan every existing user's saved data, so do not change it
+// without writing a migration. The service worker (src/sw.js) opens the same name.
 export const db = new Dexie('YoSymptomDB')
 
 db.version(1).stores({

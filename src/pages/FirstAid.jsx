@@ -43,7 +43,7 @@ function normalizeSituation(s) {
 
 function FirstAidCard({ situation: rawSituation }) {
   const situation = normalizeSituation(rawSituation)
-  const { lang, tr } = useLang()
+  const { lang } = useLang()
   const [open, setOpen] = useState(false)
   const SEVERITY_CONFIG = getSeverityConfig(lang)
   const cfg = SEVERITY_CONFIG[situation.severity] || SEVERITY_CONFIG.low

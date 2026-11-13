@@ -3,116 +3,60 @@
 **Created by SayMyTech Developers | Kampala, Uganda**
 *Because understanding your health is a human right.*
 
----
+SayMyDoc is an offline-first health companion PWA built for Uganda and East Africa.
+Describe how you feel in plain language (English, Luganda or Swahili) and get clear,
+cautious guidance — with real AI when you're online, and a built-in rule-based
+engine that always works when you're not.
 
-## What Is SayMyDoc?
-
-SayMyDoc is a fully offline, AI-powered personal health companion PWA built for Africa and the world. Describe your symptoms in plain language and the AI helps you understand what your body is telling you — with zero internet required.
-
----
-
-## Features (Sprint 1)
-
-- 🧠 **AI Symptom Inference Engine** — forward-chaining rule-based AI with confidence scoring
-- 💬 **Conversational Symptom Chat** — real conversation, not a form
-- 📚 **8 Conditions at Launch** — Migraine, Tension Headache, Malaria, Typhoid, Flu, Gastritis, UTI, Anxiety, Asthma
-- 📖 **Health Journal** — daily mood, sleep, water, stress and symptom tracking
-- 📋 **Session History** — all past symptom checks saved locally
-- 🏠 **Health Library** — browse conditions and learn about your body
-- 🚨 **Emergency Detection** — flags life-threatening symptom patterns instantly
-- 🔒 **100% Offline** — all data on your device, nothing uploaded anywhere
-- 📱 **PWA** — installable from browser, works like a native app
+> SayMyDoc gives health **information**, not medical diagnosis. It never replaces a
+> clinician. In an emergency, go to the nearest health facility.
 
 ---
 
-## Tech Stack
+## Features
+
+- 🧠 **Symptom checker** — rule-based inference engine over ~102 conditions, with follow-up
+  questions chosen for maximum information gain, emergency detection, and *calibrated*
+  confidence (never claims certainty; max 90%)
+- 🤖 **Online AI** — Gemini Flash with Groq fallback, then the offline engine (see below)
+- 💬 **Yolanda, the health companion** — Q&A on conditions, medicines, first aid, nutrition
+- 💊 **Medication reference + reminders** — 44 medicines, alarms that work with the app closed
+- 🩹 **First aid** — 26 step-by-step situations
+- 🌿 **Remedy library** — 24 traditional remedies with an evidence rating
+- 🏥 **Nearby clinics** — 293 Ugandan facilities, works offline
+- 📖 **Journal, insights, history, PDF health report** (all offline)
+- 🧑‍⚕️ **Health-worker mode**
+- 🌍 **English, Luganda, Swahili**
+- 🔒 **Your data stays on your device** (IndexedDB). When you are online, AI chat sends your message text
+  (plus age and sex, if set) to the AI service via the Netlify Function. Nothing else leaves the device.
+
+## Tech stack
 
 | Layer | Tech |
 |-------|------|
-| Frontend | React 18 + Vite |
-| Styling | Tailwind CSS |
-| Offline DB | Dexie.js (IndexedDB) |
-| PWA | VitePWA + Workbox |
-| AI Engine | Pure JavaScript (no APIs) |
-| Knowledge Base | Structured JSON |
+| Frontend | React 19 + Vite 8, React Router 7 |
+| Styling | Tailwind CSS 3, self-hosted Inter/Poppins (no external fonts) |
+| Offline DB | Dexie (IndexedDB) |
+| PWA | vite-plugin-pwa (injectManifest) + Workbox; pages are lazy-loaded and precached |
+| Offline AI | Pure JavaScript rule engine + JSON knowledge base |
+| Online AI | Netlify Function → Gemini → Groq |
+| PDF | jsPDF (bundled, loaded on demand) |
 
----
+## Getting started
 
-## Getting Started
-
-### Development
 ```bash
 npm install
-npm run dev
-```
-Open http://localhost:5173
-
-### Production Build
-```bash
+npm run dev        # app only (stays in offline mode — no Netlify Functions)
 npm run build
-```
-Deploy the `dist/` folder to Netlify by drag-and-drop.
-
-### Deploy to Netlify
-1. Run `npm run build`
-2. Drag the `dist/` folder to https://app.netlify.com/drop
-3. Done — your app is live and offline-capable
-
----
-
-## Project Structure
-
-```
-src/
-├── engine/
-│   ├── InferenceEngine.js   # Core AI — forward-chaining inference
-│   ├── NLPProcessor.js      # Text → symptom extraction
-│   └── WorkingMemory.js     # Session state manager
-├── knowledge/
-│   └── conditions.json      # Full medical knowledge base
-├── db/
-│   └── database.js          # Dexie.js schema + helpers
-├── pages/
-│   ├── Home.jsx             # Dashboard
-│   ├── Chat.jsx             # Symptom chat interface
-│   ├── Journal.jsx          # Daily health journal
-│   ├── History.jsx          # Past sessions
-│   ├── Profile.jsx          # User settings
-│   ├── Onboarding.jsx       # First-time setup
-│   └── ConditionDetail.jsx  # Full condition page
-├── components/
-│   ├── layout/BottomNav.jsx
-│   ├── chat/ConditionResult.jsx
-│   └── ui/LoadingScreen.jsx
-└── context/
-    └── AppContext.jsx        # Global user state
+npm test           # function + engine tests
+npm run lint
 ```
 
----
-
-## Sprint Roadmap
-
-- ✅ **Sprint 1** — Foundation, AI Engine, Core Chat, Journal, History (THIS BUILD)
-- 🔜 **Sprint 2** — Soul Engine, Pattern Detection, Trigger Analysis
-- 🔜 **Sprint 3** — 40+ conditions, Body Map, Medication Reference
-- 🔜 **Sprint 4** — Luganda language, Emotional Intelligence, PDF export
-- 🔜 **Sprint 5** — Health Worker Mode, Community Features
-
----
-
-## About
-
-**SayMyTech Developers** builds offline-first, African-context technology.
-Founder: Ssemambo Steven | Kampala, Uganda | 2026
-
-> "If this conversation was valuable to you — imagine what a structured, intelligent app version would do for someone with no access to this kind of information."
+Deploy with Netlify (`netlify.toml` is included). Set the environment variables below.
 
 ---
 
 ## 🤖 Online AI (Gemini → Groq → offline engine)
-
-SayMyDoc answers with a real LLM when the person is online and falls back to the
-built-in offline rule engine when they are not, or when the AI services fail.
 
 ```
 Browser ──► /.netlify/functions/ai-chat ──► Gemini Flash (primary)
@@ -133,12 +77,22 @@ Netlify Function. They are never sent to the browser.
 | `GROQ_MODEL` | no | Default `llama-3.3-70b-versatile` |
 
 Set them in Netlify → Site configuration → Environment variables, then redeploy.
-Check the setup by opening `/.netlify/functions/ai-chat` — it shows which keys are
-configured (never the keys themselves).
+Open `/.netlify/functions/ai-chat` to see which keys are configured (never the keys).
 
-### Local development
-`npm run dev` does not run Netlify Functions (the app then simply stays in offline mode).
-To test the AI locally use `npx netlify dev` with the variables in a `.env` file (never commit it).
+To test the AI locally use `npx netlify dev` with the variables in a `.env` file
+(git-ignored — never commit it).
 
-### Tests
-`npm test` runs the function tests (provider fallback, key safety, input validation).
+### Safety design
+- Self-harm and emergency detection run in the **offline** engine first, on-device.
+- The AI is instructed never to give doses, never to diagnose definitively, to send
+  emergencies to a clinic, and to treat user text as data, not instructions.
+- AI text is HTML-escaped before display.
+
+## Notes for maintainers
+
+- The IndexedDB database is still named `YoSymptomDB` (from the app's earlier name).
+  Renaming it would orphan existing users' data — write a migration first.
+- Content that needs clinical review before wide release: medicine doses
+  (`src/knowledge/medications.json`), crisis hotline numbers (`EmotionalEngine.js`),
+  and Luganda/Swahili translations.
+- 25 conditions have no follow-up questions yet (see `follow_up_keys` in the knowledge files).
