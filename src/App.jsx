@@ -1,27 +1,27 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { AppProvider, useApp } from './context/AppContext.jsx'
 import { LangProvider } from './context/LangContext.jsx'
 import BottomNav from './components/layout/BottomNav.jsx'
 import Onboarding from './pages/Onboarding.jsx'
-import Home from './pages/Home.jsx'
-import Chat from './pages/Chat.jsx'
-import Companion from './pages/Companion.jsx'
-import Journal from './pages/Journal.jsx'
-import Insights from './pages/Insights.jsx'
-import Library from './pages/Library.jsx'
-import FirstAid from './pages/FirstAid.jsx'
-import History from './pages/History.jsx'
-import Profile from './pages/Profile.jsx'
-import Settings from './pages/Settings.jsx'
-import BodyMap from './pages/BodyMap.jsx'
-import MedicationRef from './pages/MedicationRef.jsx'
-import MedicationTracker from './pages/MedicationTracker.jsx'
-import RemedyLibrary from './pages/RemedyLibrary.jsx'
-import HealthWorker from './pages/HealthWorker.jsx'
-import ConditionDetail from './pages/ConditionDetail.jsx'
-import HealthTools from './pages/HealthTools.jsx'
-import NearbyClinics from './pages/NearbyClinics.jsx'
+const Home = lazy(() => import('./pages/Home.jsx'))
+const Chat = lazy(() => import('./pages/Chat.jsx'))
+const Companion = lazy(() => import('./pages/Companion.jsx'))
+const Journal = lazy(() => import('./pages/Journal.jsx'))
+const Insights = lazy(() => import('./pages/Insights.jsx'))
+const Library = lazy(() => import('./pages/Library.jsx'))
+const FirstAid = lazy(() => import('./pages/FirstAid.jsx'))
+const History = lazy(() => import('./pages/History.jsx'))
+const Profile = lazy(() => import('./pages/Profile.jsx'))
+const Settings = lazy(() => import('./pages/Settings.jsx'))
+const BodyMap = lazy(() => import('./pages/BodyMap.jsx'))
+const MedicationRef = lazy(() => import('./pages/MedicationRef.jsx'))
+const MedicationTracker = lazy(() => import('./pages/MedicationTracker.jsx'))
+const RemedyLibrary = lazy(() => import('./pages/RemedyLibrary.jsx'))
+const HealthWorker = lazy(() => import('./pages/HealthWorker.jsx'))
+const ConditionDetail = lazy(() => import('./pages/ConditionDetail.jsx'))
+const HealthTools = lazy(() => import('./pages/HealthTools.jsx'))
+const NearbyClinics = lazy(() => import('./pages/NearbyClinics.jsx'))
 import LoadingScreen from './components/ui/LoadingScreen.jsx'
 
 class ErrorBoundary extends React.Component {
@@ -68,6 +68,7 @@ function AppRoutes() {
   return (
     <div className="flex flex-col h-full">
       <div className="flex-1 overflow-hidden">
+        <Suspense fallback={<div className="h-full flex items-center justify-center"><div className="typing-dot" /></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/chat" element={<Chat />} />
@@ -89,6 +90,7 @@ function AppRoutes() {
           <Route path="/clinics" element={<NearbyClinics />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+        </Suspense>
       </div>
       <BottomNav />
     </div>

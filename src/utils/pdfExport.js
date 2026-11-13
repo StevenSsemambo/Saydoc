@@ -1,12 +1,10 @@
 // PDF Health Report Generator
-// Uses jsPDF (loaded dynamically) to create offline PDF reports
+// Uses jsPDF, bundled with the app and loaded on demand, so reports work fully offline.
 
 export async function generateHealthReport(user, sessions, journal, patterns) {
-  // Dynamically import jsPDF to keep bundle small
   let jsPDF
   try {
-    const module = await import('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js')
-    jsPDF = window.jspdf?.jsPDF || module?.jsPDF
+    ;({ jsPDF } = await import('jspdf'))
   } catch (e) {
     console.error('jsPDF load error:', e)
     // Fallback: generate plain text report

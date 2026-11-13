@@ -4,7 +4,7 @@
 import { precacheAndRoute, cleanupOutdatedCaches } from 'workbox-precaching'
 import { clientsClaim } from 'workbox-core'
 import { registerRoute } from 'workbox-routing'
-import { CacheFirst, NetworkFirst } from 'workbox-strategies'
+import { NetworkFirst } from 'workbox-strategies'
 import { ExpirationPlugin } from 'workbox-expiration'
 
 self.skipWaiting()
@@ -12,13 +12,6 @@ clientsClaim()
 cleanupOutdatedCaches()
 precacheAndRoute(self.__WB_MANIFEST || [])
 
-registerRoute(
-  ({ url }) => url.origin === 'https://fonts.googleapis.com',
-  new CacheFirst({
-    cacheName: 'google-fonts-cache',
-    plugins: [new ExpirationPlugin({ maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 365 })],
-  })
-)
 registerRoute(
   ({ request }) => request.destination === 'script' || /\.json$/i.test(request.url),
   new NetworkFirst({
@@ -32,17 +25,20 @@ registerRoute(
 // ─────────────────────────────────────────────────────────────
 
 const DB_NAME    = 'YoSymptomDB'
-const DB_VERSION = 2
 const REM_STORE  = 'ys_reminders'
 const PREF_STORE = 'ys_preferences'
 const ALARM_TAG  = 'saymydoc-med-alarm'
 
 function openDB() {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(DB_NAME, DB_VERSION)
+    // No version → open whatever version the app (Dexie) has created, so a future
+    // schema bump can never make this fail with a VersionError.
+    const req = indexedDB.open(DB_NAME)
     req.onerror = () => reject(req.error)
     req.onsuccess = () => resolve(req.result)
-    req.onupgradeneeded = () => {}
+    // The DB does not exist yet (app never opened): do NOT create an empty one
+    // here — that would interfere with Dexie's own first-run setup.
+    req.onupgradeneeded = (e) => { try { e.target.transaction.abort() } catch { /* already aborted */ } }
   })
 }
 
