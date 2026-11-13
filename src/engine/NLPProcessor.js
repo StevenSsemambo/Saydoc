@@ -607,7 +607,10 @@ const SYMPTOM_MAP = {
   'expecting':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
   'carrying baby':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
   'in family way':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
-  'olubuto':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
+  // "olubuto" alone is ambiguous in Luganda (belly OR pregnancy) — it used to tag every
+  // belly complaint as pregnancy. Only unambiguous pregnancy phrases map here now.
+  'ndi lubuto':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
+  'nina olubuto':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
   'mimba':{'key':'pregnancy','severity_hint':4,'tag':'pregnancy'},
 
   // ── Thirst (excessive / pathological) ────────────────────────
@@ -1472,6 +1475,8 @@ export const EXTENDED_SYMPTOMS = {}
 export const LUGANDA_SYMPTOMS = {
   'omutwe': { key: 'headache', severity_hint: 5 },
   'omutwe gunjuma': { key: 'headache', severity_hint: 7 },
+  'omutwe gunnuma': { key: 'headache', severity_hint: 6 },
+  'omutwe gunnuma nnyo': { key: 'headache', severity_hint: 8 },
   'omutwe gunuma': { key: 'headache', severity_hint: 6 },
   'omutwe gunafu': { key: 'headache', severity_hint: 5 },
   'omutwe gujja mangu': { key: 'headache', severity_hint: 9 },
@@ -1492,6 +1497,10 @@ export const LUGANDA_SYMPTOMS = {
   'empisi': { key: 'chills', severity_hint: 5 },
   'ekibaala': { key: 'abdominal_pain', severity_hint: 6 },
   'ekibaala kinuma': { key: 'abdominal_pain', severity_hint: 7 },
+  'nkoola': { key: 'cough', severity_hint: 5 },
+  'nkoola nnyo': { key: 'cough', severity_hint: 7 },
+  'olubuto lunnuma': { key: 'abdominal_pain', severity_hint: 6 },
+  'olubuto lunnuma nnyo': { key: 'abdominal_pain', severity_hint: 8 },
   'olubuto lunuma': { key: 'abdominal_pain', severity_hint: 6 },
   'olubuto lukunnumba': { key: 'abdominal_pain', severity_hint: 5 },
   'okusesema': { key: 'diarrhoea', severity_hint: 6 },

@@ -202,7 +202,7 @@ export default function Chat() {
   }, [addMsg, user, explainResult])
 
   const startSession = useCallback(() => {
-    const s = new InferenceSession({ name: user?.name, age: user?.age, sex: user?.sex, location: user?.location })
+    const s = new InferenceSession({ name: user?.name, age: user?.age, sex: user?.sex, location: user?.location, lang })
     sessionRef.current = s
     setSession(s)
     setMessages([])
@@ -210,7 +210,7 @@ export default function Chat() {
     setInput('')
     chatLogRef.current = []
     setTimeout(() => addMsg('ai', getGreeting(user?.name), 'text'), 300)
-  }, [user, addMsg])
+  }, [user, addMsg, lang])
 
   useEffect(() => {
     startSession()
@@ -238,6 +238,7 @@ export default function Chat() {
     setMessages(m => m.filter(msg => msg.type !== 'follow_up'))
     setTyping(true)
     await new Promise(r => setTimeout(r, 800 + Math.random() * 600))
+    sessionRef.current.lang = lang // follow the language chosen in Settings
     const response = sessionRef.current.process(t)
 
     // The rule engine could not understand the message → let the online AI

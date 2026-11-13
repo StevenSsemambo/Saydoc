@@ -10,7 +10,7 @@
 // ─────────────────────────────────────────────────────────────
 
 import { MERGED_KB, getMedsForCondition, getRemediesForCondition, findMedication, findRemedy } from './KnowledgeMerger.js'
-import { processText } from './NLPProcessor.js'
+import { processTextMultilingual } from './NLPProcessor.js'
 import {
   detectEmotion, getEmpathyPrefix, detectSelfHarmRisk,
   getSelfHarmResponse, getConditionEmpathy, getSupportiveClosing,
@@ -594,7 +594,7 @@ export class InferenceSession {
     const empathy = getEmpathyPrefix(emotion)
 
     // NLP extraction
-    const nlpResult = processText(userText)
+    const nlpResult = processTextMultilingual(userText, this.lang)
     addSymptoms(this.memory, nlpResult)
 
     // Nothing detected yet

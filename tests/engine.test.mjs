@@ -88,3 +88,18 @@ test('REGRESSION: merging duplicate conditions does not drop base follow-ups', (
   assert.equal(ms.severity_class, 'critical', 'extended values still win where defined')
   for (const q of ms.follow_up_keys) assert.ok(MERGED_KB.follow_up_questions[q], `missing question ${q}`)
 })
+
+test('Luganda: fever + headache sentence is understood by the offline checker', () => {
+  const s = new InferenceSession({ name: 'T', age: 30, sex: 'female', lang: 'lg' })
+  const r = s.process("nina omusujja n'omutwe gunnuma")
+  assert.notEqual(r.type, 'clarify')
+})
+
+test('REGRESSION: Luganda "olubuto lunnuma" (stomach hurts) is not read as pregnancy', async () => {
+  const { processTextMultilingual } = await import('../src/engine/NLPProcessor.js')
+  const keys = processTextMultilingual('olubuto lunnuma', 'lg').symptoms.map(x => x.key)
+  assert.ok(keys.includes('abdominal_pain'))
+  assert.ok(!keys.includes('pregnancy'))
+  const preg = processTextMultilingual('ndi lubuto mu myezi mukaaga', 'lg').symptoms.map(x => x.key)
+  assert.ok(preg.includes('pregnancy'), 'explicit pregnancy phrase still works')
+})
