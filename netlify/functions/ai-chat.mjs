@@ -9,20 +9,38 @@
 // API keys live ONLY in Netlify environment variables — they are
 // never sent to the browser.
 //
-// Optional overrides (all have safe defaults):
-//   GEMINI_MODEL   default: gemini-3.8-flash
-//   GROQ_MODEL     default: llama-3.3-70b-versatile
+// Each provider tries an ordered LIST of models, so one retired or
+// quota-limited model does not take the whole AI down:
+//   Gemini: gemini-3.8-flash → gemini-3.5-flash → gemini-2.5-flash
+//   Groq:   openai/gpt-oss-120b → openai/gpt-oss-20b
+// (Groq removed its free Llama models on 2026-08-16.)
+//
+// Optional overrides — comma-separated, tried BEFORE the defaults:
+//   GEMINI_MODEL   e.g. gemini-3.5-flash
+//   GROQ_MODEL     e.g. openai/gpt-oss-20b
+//
+// Self-test:  GET /.netlify/functions/ai-chat?test=1
+//   → calls every model once and reports status per model (never keys).
 // ─────────────────────────────────────────────────────────────
 
-const GEMINI_MODEL = () => process.env.GEMINI_MODEL || 'gemini-3.8-flash'
-const GROQ_MODEL   = () => process.env.GROQ_MODEL   || 'llama-3.3-70b-versatile'
+const modelList = (envName, defaults) => [
+  ...new Set([
+    ...(process.env[envName] || '').split(',').map(x => x.trim()).filter(Boolean),
+    ...defaults,
+  ]),
+]
+const GEMINI_MODELS = () => modelList('GEMINI_MODEL', ['gemini-3.8-flash', 'gemini-3.5-flash', 'gemini-2.5-flash'])
+const GROQ_MODELS   = () => modelList('GROQ_MODEL',   ['openai/gpt-oss-120b', 'openai/gpt-oss-20b'])
 
-const PROVIDER_TIMEOUT_MS = 9000 // two providers → worst case ~18s, under the client's 20s limit
+// Netlify functions time out at ~10s by default, so the WHOLE chain shares one budget.
+const TOTAL_BUDGET_MS    = 9000
+const ATTEMPT_TIMEOUT_MS = 6000
 const MAX_MESSAGES        = 16
 const MAX_MESSAGE_CHARS   = 1500
 const MAX_TOTAL_CHARS     = 7000
 const MAX_GROUNDING_CHARS = 3500
-const MAX_OUTPUT_TOKENS   = 1200
+const GEMINI_MAX_TOKENS   = 2048 // headroom: 3.x models spend some on internal thinking
+const GROQ_MAX_TOKENS     = 900  // free tier is only 8k tokens/min — keep requests small
 
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), {
@@ -33,10 +51,9 @@ const json = (body, status = 200) =>
 // ── Best-effort per-IP throttle (resets when the function instance recycles).
 // Protects your free-tier quota from casual abuse; not a hard guarantee.
 const hits = new Map()
-function throttled(ip) {
+function throttled(ip, limit = 20) {
   const now = Date.now()
   const windowMs = 60_000
-  const limit = 20
   const arr = (hits.get(ip) || []).filter(t => now - t < windowMs)
   arr.push(now)
   hits.set(ip, arr)
@@ -103,10 +120,18 @@ function buildSystemPrompt({ mode, lang, profile, grounding }) {
 
 // ── Providers ───────────────────────────────────────────────
 
-async function callGemini({ system, messages }) {
+const shortMessage = (raw) => {
+  try { const j = JSON.parse(raw); return String(j?.error?.message || j?.message || raw).slice(0, 160) }
+  catch { return String(raw || '').slice(0, 160) }
+}
+
+class ProviderError extends Error {
+  constructor(reason, status, detail) { super(reason); this.reason = reason; this.status = status; this.detail = detail }
+}
+
+async function callGemini({ system, messages, model, timeoutMs }) {
   const key = process.env.GEMINI_API_KEY
-  if (!key) throw new Error('gemini_not_configured')
-  const model = GEMINI_MODEL()
+  if (!key) throw new ProviderError('not_configured')
 
   const res = await fetch(
     `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
@@ -119,56 +144,60 @@ async function callGemini({ system, messages }) {
           role: m.role === 'assistant' ? 'model' : 'user',
           parts: [{ text: m.content }],
         })),
-        generationConfig: { temperature: 0.4, maxOutputTokens: MAX_OUTPUT_TOKENS },
+        generationConfig: { temperature: 0.4, maxOutputTokens: GEMINI_MAX_TOKENS },
       }),
-      signal: AbortSignal.timeout(PROVIDER_TIMEOUT_MS),
+      signal: AbortSignal.timeout(timeoutMs),
     }
   )
 
-  if (!res.ok) {
-    const detail = (await res.text().catch(() => '')).slice(0, 300)
-    throw new Error(`gemini_http_${res.status}: ${detail}`)
-  }
+  if (!res.ok) throw new ProviderError(`http_${res.status}`, res.status, shortMessage(await res.text().catch(() => '')))
   const data = await res.json()
-  if (data?.promptFeedback?.blockReason) throw new Error(`gemini_blocked: ${data.promptFeedback.blockReason}`)
+  if (data?.promptFeedback?.blockReason) throw new ProviderError('blocked', 200, data.promptFeedback.blockReason)
   const cand = data?.candidates?.[0]
   if (!cand || cand.finishReason === 'SAFETY' || cand.finishReason === 'PROHIBITED_CONTENT') {
-    throw new Error(`gemini_no_candidate: ${cand?.finishReason || 'empty'}`)
+    throw new ProviderError('no_candidate', 200, cand?.finishReason || 'empty')
   }
   const text = (cand.content?.parts || [])
     .filter(p => typeof p.text === 'string' && !p.thought)
     .map(p => p.text)
     .join('')
     .trim()
-  if (!text) throw new Error('gemini_empty')
+  if (!text) throw new ProviderError('empty', 200, cand.finishReason || '')
   return { text, provider: 'gemini', model }
 }
 
-async function callGroq({ system, messages }) {
+async function callGroq({ system, messages, model, timeoutMs }) {
   const key = process.env.GROQ_API_KEY
-  if (!key) throw new Error('groq_not_configured')
-  const model = GROQ_MODEL()
+  if (!key) throw new ProviderError('not_configured')
 
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+  const send = async (extras) => fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
     body: JSON.stringify({
       model,
       temperature: 0.4,
-      max_tokens: MAX_OUTPUT_TOKENS,
+      max_completion_tokens: GROQ_MAX_TOKENS,
       messages: [{ role: 'system', content: system }, ...messages],
+      ...extras,
     }),
-    signal: AbortSignal.timeout(PROVIDER_TIMEOUT_MS),
+    signal: AbortSignal.timeout(timeoutMs),
   })
 
-  if (!res.ok) {
-    const detail = (await res.text().catch(() => '')).slice(0, 300)
-    throw new Error(`groq_http_${res.status}: ${detail}`)
-  }
+  // gpt-oss models "think" first; keep that short so the answer fits and returns fast.
+  const isReasoning = model.startsWith('openai/gpt-oss')
+  let res = await send(isReasoning ? { reasoning_effort: 'low' } : {})
+  if (res.status === 400 && isReasoning) res = await send({}) // param not accepted → retry plain
+
+  if (!res.ok) throw new ProviderError(`http_${res.status}`, res.status, shortMessage(await res.text().catch(() => '')))
   const data = await res.json()
   const text = (data?.choices?.[0]?.message?.content || '').trim()
-  if (!text) throw new Error('groq_empty')
+  if (!text) throw new ProviderError('empty', 200, data?.choices?.[0]?.finish_reason || '')
   return { text, provider: 'groq', model }
+}
+
+const PROVIDERS = {
+  gemini: { call: callGemini, models: GEMINI_MODELS },
+  groq:   { call: callGroq,   models: GROQ_MODELS },
 }
 
 // ── Input validation ────────────────────────────────────────
@@ -207,18 +236,42 @@ function sanitise(body) {
 
 // ── Handler ─────────────────────────────────────────────────
 
+const reasonOf = (err) =>
+  err?.name === 'TimeoutError' || err?.name === 'AbortError' ? 'timeout' : (err?.reason || 'network_error')
+
 export default async (req) => {
-  // GET = configuration check (booleans only — never reveals keys)
+  const ip = req.headers.get('x-nf-client-connection-ip') || req.headers.get('x-forwarded-for') || 'unknown'
+
   if (req.method === 'GET') {
+    const url = new URL(req.url)
+
+    // Self-test: one tiny call per model. Costs a few free-tier requests, so it is throttled hard.
+    if (url.searchParams.get('test')) {
+      if (throttled(`test:${ip}`, 3)) return json({ error: 'rate_limited' }, 429)
+      const jobs = []
+      for (const [name, p] of Object.entries(PROVIDERS)) {
+        for (const model of p.models()) {
+          jobs.push(
+            p.call({ system: 'Reply with the single word: ok', messages: [{ role: 'user', content: 'ping' }], model, timeoutMs: 8000 })
+              .then(() => ({ provider: name, model, ok: true }))
+              .catch(err => ({ provider: name, model, ok: false, reason: reasonOf(err), status: err?.status, message: err?.detail }))
+          )
+        }
+      }
+      const results = await Promise.all(jobs)
+      return json({ ok: true, anyWorking: results.some(r => r.ok), results })
+    }
+
+    // Configuration check (booleans and model names only — never keys)
     return json({
       ok: true,
-      gemini: { configured: !!process.env.GEMINI_API_KEY, model: GEMINI_MODEL() },
-      groq:   { configured: !!process.env.GROQ_API_KEY,   model: GROQ_MODEL() },
+      gemini: { configured: !!process.env.GEMINI_API_KEY, models: GEMINI_MODELS() },
+      groq:   { configured: !!process.env.GROQ_API_KEY,   models: GROQ_MODELS() },
+      hint: 'Add ?test=1 to run a live self-test of every model.',
     })
   }
   if (req.method !== 'POST') return json({ error: 'method_not_allowed' }, 405)
 
-  const ip = req.headers.get('x-nf-client-connection-ip') || req.headers.get('x-forwarded-for') || 'unknown'
   if (throttled(ip)) return json({ error: 'rate_limited' }, 429)
 
   let input
@@ -230,19 +283,27 @@ export default async (req) => {
   if (!input) return json({ error: 'bad_request' }, 400)
 
   const system = buildSystemPrompt(input)
-  const args = { system, messages: input.messages }
+  const started = Date.now()
+  const attempts = []
+  const skip = new Set() // providers whose key/config is unusable — don't try their other models
 
-  const failures = []
-  for (const [name, fn] of [['gemini', callGemini], ['groq', callGroq]]) {
-    try {
-      const out = await fn(args)
-      return json({ ok: true, text: out.text, provider: out.provider, model: out.model })
-    } catch (err) {
-      failures.push(`${name}: ${err.message}`)
-      console.error(`[ai-chat] ${name} failed →`, err.message)
+  for (const [name, p] of Object.entries(PROVIDERS)) {
+    for (const model of p.models()) {
+      if (skip.has(name)) break
+      const remaining = TOTAL_BUDGET_MS - (Date.now() - started)
+      if (remaining < 1500) break
+      try {
+        const out = await p.call({ system, messages: input.messages, model, timeoutMs: Math.min(ATTEMPT_TIMEOUT_MS, remaining) })
+        return json({ ok: true, text: out.text, provider: out.provider, model: out.model })
+      } catch (err) {
+        const reason = reasonOf(err)
+        attempts.push({ provider: name, model, reason })
+        console.error(`[ai-chat] ${name}/${model} failed → ${reason}${err?.detail ? ` (${err.detail})` : ''}`)
+        if (reason === 'not_configured' || err?.status === 401 || err?.status === 403) skip.add(name)
+      }
     }
   }
 
-  const notConfigured = failures.every(f => f.includes('not_configured'))
-  return json({ ok: false, error: notConfigured ? 'not_configured' : 'all_providers_failed' }, 503)
+  const notConfigured = attempts.length > 0 && attempts.every(a => a.reason === 'not_configured')
+  return json({ ok: false, error: notConfigured ? 'not_configured' : 'all_providers_failed', attempts }, 503)
 }

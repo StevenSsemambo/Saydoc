@@ -1,4 +1,4 @@
-// Run with:  node --test netlify/functions/
+// Run with:  npm run test:functions
 import assert from 'node:assert/strict';
 import { test, beforeEach } from 'node:test';
 
@@ -35,7 +35,9 @@ test('falls back to Groq when Gemini hits its limit (429)', async () => {
     return String(url).includes('generativelanguage') ? new Response('quota', { status: 429 }) : groqOk('groq answer')
   }
   const data = await (await post(valid)).json()
-  assert.equal(data.provider, 'groq'); assert.equal(data.text, 'groq answer'); assert.equal(calls.length, 2)
+  assert.equal(data.provider, 'groq'); assert.equal(data.text, 'groq answer')
+  assert.equal(calls.filter(u => u.includes('generativelanguage')).length, 3, 'tries every Gemini model first')
+  assert.equal(calls.filter(u => u.includes('groq.com')).length, 1)
 })
 
 test('falls back to Groq when Gemini throws / times out', async () => {
@@ -117,4 +119,68 @@ test('reports not_configured when no keys exist', async () => {
     const res = await post(valid)
     assert.equal(res.status, 503); assert.equal((await res.json()).error, 'not_configured')
   } finally { process.env.GEMINI_API_KEY = g; process.env.GROQ_API_KEY = q }
+})
+
+test('MODEL CHAIN: a retired Gemini model (404) falls through to the next Gemini model', async () => {
+  const tried = []
+  globalThis.fetch = async (url) => {
+    const m = String(url).match(/models\/([^:]+):/)?.[1]
+    tried.push(m)
+    return m === 'gemini-3.8-flash' ? new Response('{"error":{"message":"model not found"}}', { status: 404 }) : geminiOk('from 3.5')
+  }
+  const data = await (await post(valid)).json()
+  assert.equal(data.provider, 'gemini'); assert.equal(data.model, 'gemini-3.5-flash'); assert.deepEqual(tried, ['gemini-3.8-flash', 'gemini-3.5-flash'])
+})
+
+test('MODEL CHAIN: Groq defaults are the free gpt-oss models (Llama left the free tier)', async () => {
+  const models = []
+  globalThis.fetch = async (url, init) => {
+    if (String(url).includes('generativelanguage')) return new Response('quota', { status: 429 })
+    models.push(JSON.parse(init.body).model)
+    return models.length === 1 ? new Response('{"error":{"message":"gone"}}', { status: 404 }) : groqOk('ok')
+  }
+  const data = await (await post(valid)).json()
+  assert.deepEqual(models, ['openai/gpt-oss-120b', 'openai/gpt-oss-20b']); assert.equal(data.provider, 'groq')
+  assert.ok(!models.some(m => m.includes('llama')))
+})
+
+test('an invalid key (401) skips that provider\'s remaining models', async () => {
+  const urls = []
+  globalThis.fetch = async (url) => {
+    urls.push(String(url))
+    return String(url).includes('generativelanguage') ? new Response('{"error":{"message":"API key not valid"}}', { status: 400 + 1 }) : groqOk('ok')
+  }
+  const data = await (await post(valid)).json()
+  assert.equal(data.provider, 'groq'); assert.equal(urls.filter(u => u.includes('generativelanguage')).length, 1)
+})
+
+test('503 body lists attempts (provider, model, reason) without secrets', async () => {
+  globalThis.fetch = async () => new Response('{"error":{"message":"nope"}}', { status: 500 })
+  const res = await post(valid); const raw = await res.text(); const body = JSON.parse(raw)
+  assert.equal(res.status, 503)
+  assert.ok(body.attempts.length >= 2); assert.ok(body.attempts.every(a => a.provider && a.model && a.reason))
+  assert.ok(!raw.includes('test-gemini-key') && !raw.includes('test-groq-key'))
+})
+
+test('SELF-TEST: ?test=1 reports each model with a status and no keys', async () => {
+  globalThis.fetch = async (url) => String(url).includes('generativelanguage')
+    ? new Response('{"error":{"message":"models/x is not found"}}', { status: 404 })
+    : groqOk('ok')
+  const res = await handler(new Request('http://x/.netlify/functions/ai-chat?test=1', { headers: { 'x-nf-client-connection-ip': '7.7.7.7' } }))
+  const raw = await res.text(); const data = JSON.parse(raw)
+  assert.equal(data.anyWorking, true)
+  const g = data.results.filter(r => r.provider === 'gemini'); const q = data.results.filter(r => r.provider === 'groq')
+  assert.ok(g.length === 3 && g.every(r => !r.ok && r.status === 404 && /not found/.test(r.message)))
+  assert.ok(q.length === 2 && q.every(r => r.ok))
+  assert.ok(!raw.includes('test-gemini-key') && !raw.includes('test-groq-key'))
+})
+
+test('GEMINI_MODEL / GROQ_MODEL overrides are tried first and may be comma-separated', async () => {
+  process.env.GEMINI_MODEL = 'my-custom-model, gemini-3.5-flash'
+  try {
+    const tried = []
+    globalThis.fetch = async (url) => { tried.push(String(url).match(/models\/([^:]+):/)?.[1]); return geminiOk('ok') }
+    await post(valid)
+    assert.equal(tried[0], 'my-custom-model')
+  } finally { delete process.env.GEMINI_MODEL }
 })
