@@ -33,6 +33,12 @@ const translations = {
 
   'chat.placeholder':        { en: 'Describe how you feel...', lg: 'Gamba ebikolwa byawe...', sw: 'Eleza unavyohisi...' },
   'chat.ai.name':            { en: 'SayMyDoc AI', lg: 'SayMyDoc AI', sw: 'SayMyDoc AI' },
+  'ai.notice.text':          { en: 'Online AI is on. When you are online, the words you type here (and your age and sex) are sent to an AI service (Google Gemini or Groq) to write replies. Do not type your name, phone number or address. Your saved history stays on your phone. Free AI services may review messages.', sw: 'AI ya mtandaoni imewashwa. Ukiwa mtandaoni, maneno unayoandika hapa (na umri na jinsia yako) hutumwa kwa huduma ya AI (Google Gemini au Groq) kuandika majibu. Usiandike jina, namba ya simu au anwani yako. Historia yako inabaki kwenye simu yako. Huduma za bure za AI zinaweza kukagua jumbe.' },
+  'ai.notice.ok':            { en: 'OK, got it', sw: 'Sawa, nimeelewa' },
+  'ai.notice.off':           { en: 'Turn off online AI', sw: 'Zima AI ya mtandaoni' },
+  'ai.settings.title':       { en: 'Online AI', sw: 'AI ya mtandaoni' },
+  'ai.settings.sub':         { en: 'Smarter answers when you are online. Off = the built-in offline engine only.', sw: 'Majibu bora ukiwa mtandaoni. Ikizimwa = injini ya ndani isiyohitaji mtandao pekee.' },
+  'ai.settings.detail':      { en: 'When on, your typed messages (plus age and sex) are sent to Google Gemini or Groq to write replies. Phone numbers and emails are removed first. Never type your name or address. Free AI services may keep or review messages. Emergency and self-harm checks always run on your phone first.', sw: 'Ikiwa imewashwa, jumbe unazoandika (pamoja na umri na jinsia) hutumwa kwa Google Gemini au Groq kuandika majibu. Namba za simu na barua pepe huondolewa kwanza. Usiandike jina au anwani yako. Huduma za bure za AI zinaweza kuhifadhi au kukagua jumbe. Ukaguzi wa dharura na kujidhuru hufanywa kwenye simu yako kwanza.' },
   'ai.status.online':        { en: '● AI online', sw: '● AI mtandaoni' },
   'ai.status.offline':       { en: '● Offline mode', sw: '● Hali ya nje ya mtandao' },
   'chat.online':             { en: '● Offline-ready', lg: '● Tobuze kutandiika', sw: '● Iko tayari bila mtandao' },
@@ -271,6 +277,7 @@ const translations = {
   },
 
   'meds.title':          { en: 'Medication Guide', lg: 'Ekulembeka Eddagala', sw: 'Mwongozo wa Dawa' },
+  'meds.dose.verify':    { en: '⚠️ General reference only. Doses depend on age, weight, pregnancy and other illnesses. Always check the medicine label and confirm with a pharmacist or health worker before taking or giving any medicine — especially for children.', lg: "⚠️ Kino kyakulabirako kyokka. Omuwendo gw'eddagala gwesigama ku myaka, obuzito, olubuto n'endwadde endala. Buli kiseera soma ku kipapula ky'eddagala era obuuze omusawo oba omukozi w'eddagala nga tonnaliryoka oba okuliwa omuntu — naddala abaana.", sw: '⚠️ Rejea ya jumla tu. Kipimo kinategemea umri, uzito, ujauzito na magonjwa mengine. Daima soma lebo ya dawa na uthibitishe na mfamasia au mhudumu wa afya kabla ya kutumia au kumpa mtu dawa — hasa watoto.' },
   'meds.subtitle':       { en: 'Common medicines in Uganda — uses, doses, warnings', lg: "Eddagala ery'enjawulo mu Uganda", sw: 'Dawa za kawaida Uganda — matumizi, kipimo, onyo' },
   'meds.search':         { en: 'Search by name or condition...', lg: 'Noonya erinnya oba obulwadde...', sw: 'Tafuta kwa jina au hali...' },
   'meds.used.for':       { en: 'USED FOR', lg: 'EKOLEDDWAKO', sw: 'INATUMIKA KWA' },

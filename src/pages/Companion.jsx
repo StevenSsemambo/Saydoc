@@ -8,6 +8,7 @@ import { Send, RefreshCw, Sparkles, MessageCircle, BookOpen, Pill, Leaf, Heart, 
 import { VoiceInputInline } from '../components/ui/VoiceInput.jsx'
 import { MessageAudioBtn } from '../components/ui/AudioReader.jsx'
 import { askAI, aiAvailable, parseAIReply, useAIStatus } from '../utils/aiClient.js'
+import AINotice from '../components/ui/AINotice.jsx'
 
 function TypingDots() {
   return (
@@ -104,7 +105,7 @@ export default function Companion() {
     setTyping(false)
     if (!response) return
 
-    if (response.type === 'crisis') {
+    if (response.type === 'crisis' || response.type === 'emergency') {
       addMsg('ai', { text: response.message, type: 'crisis' })
       return
     }
@@ -169,7 +170,7 @@ export default function Companion() {
     // 1. Offline engine runs first: instant, and it owns crisis detection.
     const response = sessionRef.current.respond(t)
 
-    if (response?.type === 'crisis' || response?.type === 'redirect_to_checker') {
+    if (response?.type === 'crisis' || response?.type === 'emergency' || response?.type === 'redirect_to_checker') {
       handleResponse(response)
       return
     }
@@ -231,6 +232,7 @@ export default function Companion() {
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
+        <AINotice />
         {messages.map(msg => (
           <MessageBubble key={msg.id} msg={msg} onSuggestion={handleSuggestion} />
         ))}

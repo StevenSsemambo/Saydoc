@@ -3,6 +3,7 @@
 // No external APIs. Pure in-app intelligence with massive health knowledge.
 
 import { CONDITIONS } from './InferenceEngine.js'
+import { detectRedFlag } from './RedFlags.js'
 import { LUGANDA_SYMPTOMS } from './NLPProcessor.js'
 import { detectSelfHarmRisk, getSelfHarmResponse, detectEmotion, getEmpathyPrefix } from './EmotionalEngine.js'
 import {
@@ -570,6 +571,13 @@ export class CompanionSession {
 
     if (detectSelfHarmRisk(userText)) {
       const response = getSelfHarmResponse()
+      this.history.push({ role:'ai', text:response.message, time:Date.now() })
+      return response
+    }
+
+    const redFlag = detectRedFlag(userText, this.user?.lang || 'en')
+    if (redFlag) {
+      const response = { type: 'emergency', message: redFlag.message, urgency: redFlag.urgency }
       this.history.push({ role:'ai', text:response.message, time:Date.now() })
       return response
     }

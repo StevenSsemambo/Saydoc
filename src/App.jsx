@@ -23,6 +23,7 @@ const ConditionDetail = lazy(() => import('./pages/ConditionDetail.jsx'))
 const HealthTools = lazy(() => import('./pages/HealthTools.jsx'))
 const NearbyClinics = lazy(() => import('./pages/NearbyClinics.jsx'))
 import LoadingScreen from './components/ui/LoadingScreen.jsx'
+import UpdateBanner from './components/ui/UpdateBanner.jsx'
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -103,6 +104,7 @@ export default function App() {
       <AppProvider>
         <LangProvider>
           <AppRoutes />
+          <UpdateBanner />
         </LangProvider>
       </AppProvider>
     </ErrorBoundary>

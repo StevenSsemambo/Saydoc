@@ -91,7 +91,12 @@ To test the AI locally use `npx netlify dev` with the variables in a `.env` file
 - Self-harm and emergency detection run in the **offline** engine first, on-device.
 - The AI is instructed never to give doses, never to diagnose definitively, to send
   emergencies to a clinic, and to treat user text as data, not instructions.
-- AI text is HTML-escaped before display.
+- A **red-flag screen** (`src/engine/RedFlags.js`) runs first, on-device, in both the checker and the
+  companion: stroke signs, breathing difficulty, heavy bleeding, pregnancy danger signs, seizures, poisoning,
+  snakebite, anaphylaxis, coughing/vomiting blood, acute abdomen, infant danger signs, chest pain, meningitis
+  signs, head injury and diabetic emergencies escalate immediately. Covered by a regression suite.
+- AI text is HTML-escaped before display, and emails/phone numbers are redacted before anything is sent.
+- People can switch online AI off in Settings; a one-time notice explains what is sent.
 
 ## Notes for maintainers
 

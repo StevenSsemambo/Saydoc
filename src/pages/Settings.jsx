@@ -5,13 +5,15 @@ import { useApp } from '../context/AppContext.jsx'
 import { getPreferences, savePreferences } from '../db/database.js'
 import { ALARM_SOUND_LIST, DEFAULT_ALARM_SOUND } from '../utils/alarmSounds.js'
 import { setCurrentAlarmSound } from '../utils/alarmState.js'
-import { Globe, Stethoscope, Bell, CheckCircle, Info, Volume2, Play } from 'lucide-react'
+import { Globe, Stethoscope, Bell, CheckCircle, Info, Volume2, Play, Sparkles } from 'lucide-react'
+import { isAIEnabled, setAIEnabled } from '../utils/aiClient.js'
 
 export default function Settings() {
   const nav = useNavigate()
   const { lang, setLang, hwMode, setHwMode, LANGUAGES, tr } = useLang()
   const { user } = useApp()
   const [saved, setSaved] = useState(false)
+  const [aiOn, setAiOn] = useState(isAIEnabled)
   const [alarmSoundId, setAlarmSoundId] = useState(DEFAULT_ALARM_SOUND)
   const [playing, setPlaying] = useState(null)
   const [notifPerm, setNotifPerm] = useState(() =>
@@ -140,6 +142,25 @@ export default function Settings() {
               </button>
             </div>
           )}
+        </div>
+
+        {/* Online AI (privacy control) */}
+        <div className="bg-charcoal rounded-3xl p-4 space-y-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-emerald-600/15 rounded-xl flex items-center justify-center">
+              <Sparkles size={18} className="text-emerald-400" />
+            </div>
+            <div className="flex-1">
+              <p className="text-cream font-semibold text-sm">{tr('ai.settings.title')}</p>
+              <p className="text-mist text-xs">{tr('ai.settings.sub')}</p>
+            </div>
+            <button role="switch" aria-checked={aiOn} aria-label={tr('ai.settings.title')}
+              onClick={() => { const next = !aiOn; setAiOn(next); setAIEnabled(next) }}
+              className={`w-12 h-6 rounded-full transition-all relative ${aiOn ? 'bg-emerald-600' : 'bg-midnight border border-white/20'}`}>
+              <div className={`w-5 h-5 rounded-full bg-white absolute top-0.5 transition-all ${aiOn ? 'right-0.5' : 'left-0.5'}`} />
+            </button>
+          </div>
+          <p className="text-mist/80 text-xs leading-relaxed">{tr('ai.settings.detail')}</p>
         </div>
 
         {/* Notifications & Alarm Sound */}

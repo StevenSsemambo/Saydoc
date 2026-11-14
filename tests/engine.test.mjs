@@ -103,3 +103,82 @@ test('REGRESSION: Luganda "olubuto lunnuma" (stomach hurts) is not read as pregn
   const preg = processTextMultilingual('ndi lubuto mu myezi mukaaga', 'lg').symptoms.map(x => x.key)
   assert.ok(preg.includes('pregnancy'), 'explicit pregnancy phrase still works')
 })
+
+// ── Red-flag safety regression suite ─────────────────────────────────────
+const RED_FLAG_PHRASES = [
+  'I have severe chest pain and I cannot breathe',
+  'my father suddenly cannot speak and his face is drooping on one side',
+  'my child is having fits and is not waking up',
+  'I am bleeding heavily and feel faint',
+  'I am 8 months pregnant and bleeding with severe abdominal pain',
+  'a snake just bit my leg',
+  'my baby is not feeding and is very sleepy and has fever',
+  'I swallowed kerosene',
+  'someone is unconscious and not breathing',
+  'severe headache stiff neck and fever and rash',
+  'I am coughing blood',
+  'my vomit is black and I feel dizzy',
+  'I have a severe allergic reaction, my face and tongue are swelling',
+  'a child has difficulty breathing and the chest is pulling in',
+  'sudden severe pain in my belly, hard like a board',
+  'my grandmother has slurred speech and one side of her body is weak',
+  'he hit his head and keeps vomiting and is very sleepy',
+  'my diabetic uncle is confused and fainted',
+  'I think I am having a heart attack',
+]
+
+const BENIGN_PHRASES = [
+  'I have a mild headache',
+  'I have a runny nose and sneezing',
+  'my throat is a bit sore',
+  'I have a small cut on my finger',
+  'I feel tired today',
+  'what is malaria',
+]
+
+test('SAFETY: every red-flag phrase escalates to an emergency', () => {
+  for (const phrase of RED_FLAG_PHRASES) {
+    const r = newSession().process(phrase)
+    assert.equal(r.type, 'emergency', `"${phrase}" returned ${r.type}`)
+    assert.match(r.message, /EMERGENCY/i)
+  }
+})
+
+test('SAFETY: benign phrases are not escalated as emergencies', () => {
+  for (const phrase of BENIGN_PHRASES) {
+    const r = newSession().process(phrase)
+    assert.notEqual(r.type, 'emergency', `"${phrase}" wrongly escalated`)
+  }
+})
+
+test('SAFETY: the Companion escalates red flags instead of chatting', async () => {
+  const { CompanionSession } = await import('../src/engine/CompanionBrain.js')
+  for (const phrase of RED_FLAG_PHRASES.slice(0, 8)) {
+    const c = new CompanionSession({ name: 'T', age: 30, sex: 'female', lang: 'en' })
+    assert.equal(c.respond(phrase).type, 'emergency', phrase)
+  }
+  const c = new CompanionSession({ name: 'T', lang: 'en' })
+  assert.notEqual(c.respond('what is malaria?').type, 'emergency')
+})
+
+test('SAFETY: Swahili red flags escalate with a Swahili message', () => {
+  const s = new InferenceSession({ name: 'T', age: 30, sex: 'male', lang: 'sw' })
+  const r = s.process('amemeza sumu')
+  assert.equal(r.type, 'emergency')
+  assert.match(r.message, /DHARURA/)
+})
+
+// ── Medication data integrity ────────────────────────────────────────────
+test('medications.json: every entry is complete, with both doses and warnings', async () => {
+  const { default: meds } = await import('../src/knowledge/medications.json', { with: { type: 'json' } })
+  const list = meds.medications
+  const ids = new Set()
+  for (const m of list) {
+    assert.ok(!ids.has(m.id), `duplicate id ${m.id}`); ids.add(m.id)
+    for (const k of ['name', 'category', 'adult_dose', 'child_dose'])
+      assert.ok(typeof m[k] === 'string' && m[k].trim(), `${m.id}: missing ${k}`)
+    for (const k of ['uses', 'key_warnings'])
+      assert.ok(Array.isArray(m[k]) && m[k].length, `${m.id}: missing ${k}`)
+  }
+  assert.ok(list.length >= 40)
+})

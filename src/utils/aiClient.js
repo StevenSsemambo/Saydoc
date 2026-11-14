@@ -19,12 +19,32 @@ const STATUS_TIMEOUT_MS = 6000
 let pausedUntil = 0
 const pause = (ms) => { pausedUntil = Date.now() + ms }
 
+// ── Privacy: the person can switch online AI off for this device ──────────
+const PREF_KEY = 'saymydoc_online_ai'
+const PREF_EVENT = 'saymydoc-ai-pref'
+
+export function isAIEnabled() {
+  try { return localStorage.getItem(PREF_KEY) !== '0' } catch { return true }
+}
+export function setAIEnabled(on) {
+  try { localStorage.setItem(PREF_KEY, on ? '1' : '0') } catch { /* private mode: setting lasts this session only */ }
+  try { window.dispatchEvent(new Event(PREF_EVENT)) } catch { /* no window */ }
+}
+
+// Strip things that identify a person before text leaves the device.
+// (Names are never sent as a field; this also catches ones typed into a message.)
+export function redact(text) {
+  return String(text || '')
+    .replace(/[\w.+-]+@[\w-]+\.[\w.-]+/g, '[email]')
+    .replace(/\+?\d[\d\s().-]{7,}\d/g, '[number]')
+}
+
 export function isOnline() {
   return typeof navigator === 'undefined' || navigator.onLine !== false
 }
 
 export function aiAvailable() {
-  return isOnline() && Date.now() >= pausedUntil
+  return isAIEnabled() && isOnline() && Date.now() >= pausedUntil
 }
 
 /**
@@ -49,7 +69,7 @@ export async function askAI({ mode = 'companion', lang = 'en', messages, profile
       body: JSON.stringify({
         mode,
         lang,
-        messages,
+        messages: (messages || []).map(m => ({ ...m, content: redact(m.content) })),
         profile: profile ? { age: profile.age, sex: profile.sex } : undefined,
         grounding,
       }),
@@ -108,9 +128,10 @@ export function toGrounding(parts) {
     .slice(0, 3400)
 }
 
-// ── Status: 'checking' | 'online' | 'offline' | 'unavailable' ─────
+// ── Status: 'checking' | 'online' | 'offline' | 'unavailable' | 'off' (switched off by the user) ─────
 // 'unavailable' = we have internet but the AI service is not set up / not reachable.
 async function probe() {
+  if (!isAIEnabled()) return 'off'
   if (!isOnline()) return 'offline'
   const ctrl = new AbortController()
   const timer = setTimeout(() => ctrl.abort(), STATUS_TIMEOUT_MS)
@@ -138,8 +159,10 @@ export function useAIStatus() {
     check()
     window.addEventListener('online', check)
     window.addEventListener('offline', goOffline)
+    window.addEventListener(PREF_EVENT, check)
     return () => {
       alive = false
+      window.removeEventListener(PREF_EVENT, check)
       window.removeEventListener('online', check)
       window.removeEventListener('offline', goOffline)
     }

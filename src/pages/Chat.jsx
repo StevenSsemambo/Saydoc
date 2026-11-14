@@ -9,6 +9,7 @@ import { InferenceSession, getGreeting } from '../engine/InferenceEngine.js'
 import { saveSession } from '../db/database.js'
 import ConditionResult from '../components/chat/ConditionResult.jsx'
 import { askAI, aiAvailable, parseAIReply, toGrounding, useAIStatus } from '../utils/aiClient.js'
+import AINotice from '../components/ui/AINotice.jsx'
 
 function TypingDots() {
   return <div className="flex gap-1.5 items-center p-1"><div className="typing-dot" /><div className="typing-dot" /><div className="typing-dot" /></div>
@@ -336,6 +337,7 @@ export default function Chat() {
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
+        <AINotice />
         {messages.map(msg => (
           <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'} animate-slide-up`}>
             {msg.role === 'ai' && msg.type === 'text' && <div className="flex flex-col items-start gap-1"><div className="bubble-ai">{msg.content}</div><MessageAudioBtn text={msg.content} /></div>}

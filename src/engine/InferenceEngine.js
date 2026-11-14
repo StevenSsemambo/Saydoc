@@ -22,6 +22,7 @@ import {
   getTopCandidate, getConfidenceLevel, getLeadMargin,
 } from './WorkingMemory.js'
 
+import { detectRedFlag } from './RedFlags.js'
 const CONDITIONS  = MERGED_KB.conditions
 const FOLLOW_UPS  = MERGED_KB.follow_up_questions
 const EMERG_FLAGS = MERGED_KB.emergency_flags
@@ -587,6 +588,19 @@ export class InferenceSession {
 
     this.memory.cycle++
     this.memory.messages.push({ role: 'user', text: userText })
+
+    // Red-flag screen — runs before NLP so life-threatening descriptions
+    // escalate even when no known symptom is extracted.
+    const redFlag = detectRedFlag(userText, this.lang)
+    if (redFlag) {
+      return {
+        type: 'emergency',
+        message: redFlag.message,
+        urgency: redFlag.urgency,
+        flag: { id: redFlag.id, urgency: redFlag.urgency, message: redFlag.message },
+        empathy: getEmpathyPrefix(detectEmotion(userText)),
+      }
+    }
 
     const emotion = detectEmotion(userText)
     this.memory.emotion = emotion

@@ -65,6 +65,9 @@ function MedCard({ med, tr }) {
           {/* Doses */}
           <div className="px-4 py-3 border-b border-white/5">
             <p className="label-text mb-2">{tr('meds.dosage')}</p>
+            <div role="note" className="bg-amber-500/10 border border-amber-500/30 rounded-2xl px-3 py-2 mb-2">
+              <p className="text-amber-300 text-xs leading-relaxed font-medium">{tr('meds.dose.verify')}</p>
+            </div>
             <div className="space-y-2">
               <div className="bg-midnight rounded-2xl p-3">
                 <p className="text-emerald-400 text-xs font-semibold mb-1">{tr('meds.adult')}</p>
