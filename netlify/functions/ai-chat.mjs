@@ -11,7 +11,8 @@
 //
 // Each provider tries an ordered LIST of models, so one retired or
 // quota-limited model does not take the whole AI down:
-//   Gemini: gemini-3.8-flash → gemini-3.5-flash → gemini-2.5-flash
+//   Gemini: gemini-3.8-flash → gemini-3.5-flash-lite → gemini-3.5-flash
+//           (gemini-2.5-flash is closed to new users — 404)
 //   Groq:   openai/gpt-oss-120b → openai/gpt-oss-20b
 // (Groq removed its free Llama models on 2026-08-16.)
 //
@@ -29,12 +30,22 @@ const modelList = (envName, defaults) => [
     ...defaults,
   ]),
 ]
-const GEMINI_MODELS = () => modelList('GEMINI_MODEL', ['gemini-3.8-flash', 'gemini-3.5-flash', 'gemini-2.5-flash'])
+const GEMINI_MODELS = () => modelList('GEMINI_MODEL', ['gemini-3.8-flash', 'gemini-3.5-flash-lite', 'gemini-3.5-flash'])
 const GROQ_MODELS   = () => modelList('GROQ_MODEL',   ['openai/gpt-oss-120b', 'openai/gpt-oss-20b'])
 
 // Netlify functions time out at ~10s by default, so the WHOLE chain shares one budget.
 const TOTAL_BUDGET_MS    = 9000
-const ATTEMPT_TIMEOUT_MS = 6000
+// Gemini is the primary but is also the one that gets "high demand" 503s and timeouts.
+// Cap its share so the fallback (Groq) ALWAYS has time left to answer.
+const PROVIDER_BUDGET_MS = { gemini: 4500, groq: TOTAL_BUDGET_MS }
+const ATTEMPT_TIMEOUT_MS = { gemini: 3500, groq: 6000 }
+
+// Simple circuit breaker (per warm function instance): a model that just failed because
+// it is busy, slow or retired is skipped for a while instead of costing every message
+// several seconds. Cleared on success.
+const cooldown = new Map()
+const COOLDOWN_MS = { http_429: 60_000, http_503: 45_000, http_500: 45_000, http_502: 45_000, http_504: 45_000, timeout: 45_000, http_404: 10 * 60_000 }
+export const __testing = { reset: () => cooldown.clear() }
 const MAX_MESSAGES        = 16
 const MAX_MESSAGE_CHARS   = 1500
 const MAX_TOTAL_CHARS     = 7000
@@ -290,17 +301,25 @@ export default async (req) => {
   const skip = new Set() // providers whose key/config is unusable — don't try their other models
 
   for (const [name, p] of Object.entries(PROVIDERS)) {
+    const providerStart = Date.now()
     for (const model of p.models()) {
       if (skip.has(name)) break
-      const remaining = TOTAL_BUDGET_MS - (Date.now() - started)
-      if (remaining < 1500) break
+      const key = `${name}/${model}`
+      if ((cooldown.get(key) || 0) > Date.now()) { attempts.push({ provider: name, model, reason: 'cooling_down' }); continue }
+      const left = Math.min(
+        TOTAL_BUDGET_MS - (Date.now() - started),
+        PROVIDER_BUDGET_MS[name] - (Date.now() - providerStart),
+      )
+      if (left < 1200) break
       try {
-        const out = await p.call({ system, messages: input.messages, model, timeoutMs: Math.min(ATTEMPT_TIMEOUT_MS, remaining) })
+        const out = await p.call({ system, messages: input.messages, model, timeoutMs: Math.min(ATTEMPT_TIMEOUT_MS[name], left) })
+        cooldown.delete(key)
         return json({ ok: true, text: out.text, provider: out.provider, model: out.model })
       } catch (err) {
         const reason = reasonOf(err)
         attempts.push({ provider: name, model, reason })
         console.error(`[ai-chat] ${name}/${model} failed → ${reason}${err?.detail ? ` (${err.detail})` : ''}`)
+        if (COOLDOWN_MS[reason]) cooldown.set(key, Date.now() + COOLDOWN_MS[reason])
         if (reason === 'not_configured' || err?.status === 401 || err?.status === 403) skip.add(name)
       }
     }

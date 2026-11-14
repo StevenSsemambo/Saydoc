@@ -5,11 +5,11 @@ import { test, beforeEach } from 'node:test';
 process.env.GEMINI_API_KEY = 'test-gemini-key';
 process.env.GROQ_API_KEY = 'test-groq-key';
 
-const { default: handler } = await import('../netlify/functions/ai-chat.mjs');
+const { default: handler, __testing } = await import('../netlify/functions/ai-chat.mjs');
 
 const realFetch = globalThis.fetch
 let calls
-beforeEach(() => { calls = []; globalThis.fetch = realFetch })
+beforeEach(() => { calls = []; globalThis.fetch = realFetch; __testing.reset() })
 
 const geminiOk = (text) => new Response(JSON.stringify({ candidates: [{ finishReason: 'STOP', content: { parts: [{ text }] } }] }), { status: 200 })
 const groqOk = (text) => new Response(JSON.stringify({ choices: [{ message: { content: text } }] }), { status: 200 })
@@ -126,10 +126,10 @@ test('MODEL CHAIN: a retired Gemini model (404) falls through to the next Gemini
   globalThis.fetch = async (url) => {
     const m = String(url).match(/models\/([^:]+):/)?.[1]
     tried.push(m)
-    return m === 'gemini-3.8-flash' ? new Response('{"error":{"message":"model not found"}}', { status: 404 }) : geminiOk('from 3.5')
+    return m === 'gemini-3.8-flash' ? new Response('{"error":{"message":"model not found"}}', { status: 404 }) : geminiOk('from lite')
   }
   const data = await (await post(valid)).json()
-  assert.equal(data.provider, 'gemini'); assert.equal(data.model, 'gemini-3.5-flash'); assert.deepEqual(tried, ['gemini-3.8-flash', 'gemini-3.5-flash'])
+  assert.equal(data.provider, 'gemini'); assert.equal(data.model, 'gemini-3.5-flash-lite'); assert.deepEqual(tried, ['gemini-3.8-flash', 'gemini-3.5-flash-lite'])
 })
 
 test('MODEL CHAIN: Groq defaults are the free gpt-oss models (Llama left the free tier)', async () => {
@@ -192,4 +192,36 @@ test("mode 'ask' wraps the engine's question, forbids extra questions, and adds 
   assert.match(sys, /ONE follow-up question/)
   assert.match(sys, /Where is the headache\?/)
   assert.doesNotMatch(sys, /FOLLOW-UP CHIPS/)
+})
+
+test('BUDGET: if Gemini hangs, Groq still gets time to answer (the real-world failure)', async () => {
+  globalThis.fetch = async (url, init) => {
+    if (String(url).includes('generativelanguage')) {
+      return new Promise((_, reject) => init.signal.addEventListener('abort', () => reject(Object.assign(new Error('t'), { name: 'TimeoutError' }))))
+    }
+    return groqOk('groq saved the day')
+  }
+  const t0 = Date.now()
+  const keepAlive = setInterval(() => {}, 100) // AbortSignal.timeout timers are unref'd; a real socket would keep the loop alive
+  let data
+  try { data = await (await post(valid)).json() } finally { clearInterval(keepAlive) }
+  assert.equal(data.provider, 'groq'); assert.equal(data.text, 'groq saved the day')
+  assert.ok(Date.now() - t0 < 9000, 'finishes inside the 9s function budget')
+})
+
+test('CIRCUIT BREAKER: a model that just returned 503 is skipped on the next message', async () => {
+  globalThis.fetch = async (url) => String(url).includes('generativelanguage') ? new Response('{"error":{"message":"high demand"}}', { status: 503 }) : groqOk('ok')
+  await post(valid)
+  calls = []
+  globalThis.fetch = async (url) => { calls.push(String(url)); return String(url).includes('generativelanguage') ? new Response('x', { status: 503 }) : groqOk('ok') }
+  const data = await (await post(valid)).json()
+  assert.equal(data.provider, 'groq')
+  assert.equal(calls.filter(u => u.includes('generativelanguage')).length, 0, 'cooled-down Gemini models are not retried immediately')
+})
+
+test('retired model names are not in the defaults (gemini-2.5-flash is closed to new users)', async () => {
+  const tried = []
+  globalThis.fetch = async (url) => { tried.push(String(url).match(/models\/([^:]+):/)?.[1]); return new Response('x', { status: 500 }) }
+  await post(valid)
+  assert.ok(!tried.includes('gemini-2.5-flash'))
 })

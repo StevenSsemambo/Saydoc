@@ -73,7 +73,7 @@ Netlify Function. They are never sent to the browser.
 |---|---|---|
 | `GEMINI_API_KEY` | yes | Primary AI (Google AI Studio key) |
 | `GROQ_API_KEY` | yes | Fallback AI (Groq console key) |
-| `GEMINI_MODEL` | no | Comma-separated, tried first. Defaults: `gemini-3.8-flash` → `gemini-3.5-flash` → `gemini-2.5-flash` |
+| `GEMINI_MODEL` | no | Comma-separated, tried first. Defaults: `gemini-3.8-flash` → `gemini-3.5-flash-lite` → `gemini-3.5-flash` |
 | `GROQ_MODEL` | no | Comma-separated, tried first. Defaults: `openai/gpt-oss-120b` → `openai/gpt-oss-20b` (Groq removed free Llama models on 2026-08-16) |
 
 Set them in Netlify → Site configuration → Environment variables, then redeploy.
@@ -81,6 +81,8 @@ Open `/.netlify/functions/ai-chat` to see which keys are configured (never the k
 Open `/.netlify/functions/ai-chat?test=1` to run a live self-test: it calls every model once and
 shows each one's status (e.g. `404` = model name retired, `429` = quota, `401/403` = bad key).
 Model names change often — if a provider stops working, run the self-test first.
+Gemini gets at most 4.5 s of the 9 s function budget so Groq can always answer, and a model that just
+failed (busy / slow / retired) is skipped for a short while.
 
 To test the AI locally use `npx netlify dev` with the variables in a `.env` file
 (git-ignored — never commit it).
